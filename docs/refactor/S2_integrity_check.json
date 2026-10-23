@@ -1,0 +1,96 @@
+{
+  "verified_at": "2026-10-19T21:45:19.805642+08:00",
+  "passed": true,
+  "baseline_entries": 31479,
+  "authorized_modified_original_files": [
+    "scripts/r4_experiment.py",
+    "scripts/r4_methods.py",
+    "scripts/r4_metrics.py",
+    "scripts/r4_prepare.jl",
+    "scripts/r5_batch_julia.jl",
+    "src/data_bridge.py"
+  ],
+  "unchanged_original_entries": 31473,
+  "removed_original_files": [],
+  "added_production_and_test_files": [
+    "src/bridge/numeric_io.py",
+    "src/data/contracts.py",
+    "src/metrics/structure.py",
+    "src/preprocessing/taylor.py",
+    "src/preprocessing/taylor_scaling.jl",
+    "src/solvers/methods.py",
+    "src/solvers/plain_lasso.py",
+    "src/solvers/stlsq.jl",
+    "tests/test_refactor_s2.py"
+  ],
+  "source_functions_AST_identical": 14,
+  "formal_R5_files_unchanged": 4113,
+  "S1_audit_artifacts_unchanged": true,
+  "golden_index_111_files_unchanged": true,
+  "upstream": [
+    {
+      "repo": "THIS",
+      "clean": true,
+      "exit_code": 0
+    },
+    {
+      "repo": "Su-AdaptiveLASSO",
+      "clean": true,
+      "exit_code": 0
+    }
+  ],
+  "required_successful_logs": 16,
+  "historical_manifests": [
+    {
+      "path": "results/r1/artifact_manifest.toml",
+      "source_hash_mismatch_paths": [],
+      "experiment_artifacts_unchanged": true,
+      "historical_manifest_unchanged": true
+    },
+    {
+      "path": "results/r3/artifact_manifest.toml",
+      "source_hash_mismatch_paths": [
+        "src/data_bridge.py"
+      ],
+      "experiment_artifacts_unchanged": true,
+      "historical_manifest_unchanged": true
+    },
+    {
+      "path": "results/r4/artifact_manifest.toml",
+      "source_hash_mismatch_paths": [
+        "scripts/r4_experiment.py",
+        "scripts/r4_methods.py",
+        "scripts/r4_metrics.py",
+        "scripts/r4_prepare.jl"
+      ],
+      "experiment_artifacts_unchanged": true,
+      "historical_manifest_unchanged": true
+    },
+    {
+      "path": "results/r5/artifact_manifest.toml",
+      "source_hash_mismatch_paths": [
+        "scripts/r5_batch_julia.jl"
+      ],
+      "experiment_artifacts_unchanged": true,
+      "historical_manifest_unchanged": true
+    },
+    {
+      "path": "results/r5/e1_full_independent/artifact_manifest.toml",
+      "source_hash_mismatch_paths": [
+        "scripts/r5_batch_julia.jl"
+      ],
+      "experiment_artifacts_unchanged": true,
+      "historical_manifest_unchanged": true
+    }
+  ],
+  "preserved_failed_logs": [
+    "S2_A_python_tests.log",
+    "S2_A_retry1_trial_smoke.log"
+  ],
+  "rollback_records": [
+    "S2_A_rollback.json",
+    "S2_A_retry1_rollback.json"
+  ],
+  "failures_explained": "Two new cross-path bitwise assumptions reproduced in S1; corrected comparison references only, no tolerances or algorithm formulas changed",
+  "S3_S6_executed": false
+}

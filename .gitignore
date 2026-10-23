@@ -1,0 +1,5 @@
+/upstream/
+/.venv-r0/
+/.julia-depot-r0/
+__pycache__/
+*.py[cod]

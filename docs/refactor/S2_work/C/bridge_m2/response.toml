@@ -1,0 +1,11 @@
+"schema_version" = "r3-csv-toml-1"
+"mode" = "solve"
+"solver" = "adaptive_lasso"
+"request_metadata_sha256" = "63afb962e356a526f422cafe6c93e2f083123aefcbf976762c6113bcf2d57a23"
+"feature_order_hash" = "c039ccfc464622c630602a426fc51dabe9cd81df367c86ffe3047772d8e3bbe2"
+"feature_count" = 165
+"feature_entry_count" = 495
+"coefficient_shape" = [8, 165]
+"sklearn_version" = "1.6.1"
+"numpy_version" = "1.26.4"
+"output_sha256" = {"coefficients.csv" = "364d1f03d9aa783017f5714f578ae75ca55ecd3f3325c4c401f4868c5fcd2bf6", "diagnostics.toml" = "70b9aa8e66ac1a94992fa5386acda39a05b94e293271225c13fc64a3e67650c2"}

@@ -1,0 +1,8 @@
+START=2026-10-19T21:12:02.607569+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B /home/yg/THIS-Lasso/docs/refactor/S1_audit.py verify
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S1_work/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S1_work/julia_depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+S1_ORIGINAL_INTEGRITY_PASS 31479 entries; S2 not executed
+EXIT_CODE=0
+END=2026-10-19T21:12:05.043907+08:00
+WALL_SECONDS=2.4365434399805963

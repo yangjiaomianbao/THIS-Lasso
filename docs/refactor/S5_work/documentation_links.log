@@ -1,0 +1,7 @@
+START=2026-10-20T15:06:39.606909+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B /home/yg/THIS-Lasso/docs/refactor/S3_link_audit.py S5
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S5_work/documentation_links/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S5_work/documentation_links/depot:/home/yg/THIS-Lasso/.julia-depot-r0"}
+{"stage": "S5", "local_links": 505, "direct_ok": 432, "historical_links_resolved": 73, "unresolved": [], "immutable_history_links_not_rewritten": true, "scope": "local own documentation and consolidated R0 log; network links and upstream docs not changed"}
+EXIT_CODE=0
+WALL_SECONDS=0.0912218049634248

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "deleted_files": 6385,
+  "deleted_logical_bytes": 144095231,
+  "estimated_physical_cache_blocks_released": 158478336,
+  "backup_archive_bytes": 48832821,
+  "backup_archive_allocated_bytes": 48836608,
+  "net_cache_minus_backup_logical_bytes": 95262410,
+  "net_cache_blocks_minus_backup_blocks": 109641728,
+  "cache_backup_sha256": "56e750fb301cf99b62ef870cb4be33ee9c7873727c077c45bea4a6fa231e3fdb",
+  "python_shared_caches_retained": 1140,
+  "julia_native_caches_retained": 44,
+  "formal_or_source_files_deleted": 0,
+  "tests_pending": true
+}

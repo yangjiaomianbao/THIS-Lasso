@@ -1,0 +1,8 @@
+"verified_at" = "2026-10-17T22:27:44.643472+08:00"
+"corrected_rng_stream_count" = 4800
+"corrected_initial_states" = 4800
+"corrected_unique_initial_states" = 4800
+"aborted_initial_states" = 4800
+"aborted_unique_initial_states" = 189
+"aborted_scored" = false
+"prior_generator_unchanged" = true

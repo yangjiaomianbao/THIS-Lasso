@@ -1,0 +1,60 @@
+experiment = "paper_dynamics_pilot_v1"
+source = "https://arxiv.org/html/2402.00078v2"
+seeds = [2026102101, 2026102102]
+systems = ["kuramoto", "lorenz"]
+method_order = ["M0", "M0s", "M1", "M2", "M1v", "M3"]
+dmax = 3
+train_trajectories = 128
+validation_trajectories = 32
+test_trajectories = 32
+integration_steps = 2
+save_every = 1
+noise_ratios = [0.0, 0.05]
+noise_master_seed = 2026102103
+decode_threshold = 1e-8
+sampling = "Independent short RK4 trajectories around a fixed nonzero center; analytic derivatives, no wrapping"
+evaluation = "Physical directed pair/triple topology; max native eligible centered-Taylor coefficient; all choices locked before truth/test scoring"
+scope = "Two-seed engineering pilot, not a reproduction of paper figures or a formal statistical claim"
+
+[kuramoto]
+physical_nodes = 4
+center = [0.4, -0.3, 0.2, -0.5]
+box_width = 0.6
+integration_dt = 0.005
+omega = [0.12, -0.15, 0.08, -0.10]
+pair_edges = [[1, 2, 0.6], [1, 3, 0.4], [2, 3, 0.5], [2, 4, 0.3], [4, 1, 0.45]]
+triple_edges = [[1, 2, 3, 0.25], [2, 3, 4, 0.20]]
+
+[lorenz]
+physical_nodes = 3
+center = [0.4, -0.3, 0.2, -0.5, 0.6, -0.4, 0.7, -0.2, 0.5]
+box_width = 0.7
+integration_dt = 0.001
+sigma = 10.0
+rho = 28.0
+beta = 2.6666666666666665
+pair_edges = [[1, 2, 0.45], [1, 3, 0.30], [2, 3, 0.35]]
+triple_edges = [[1, 2, 3, 0.20]]
+triple_convention = "Each configured (target,j,k) contributes once: a*(x_j*x_k^2-x_target^3); j,k roles explicit, structure scores use unordered source sets"
+
+[stlsq]
+lambda = 0.1
+rho = 1.0
+niter = 10
+
+[lasso]
+max_iter = 100000
+tol = 1e-10
+kkt_tolerance = 1e-6
+validation_tolerance = 1e-12
+alpha_fractions = [1.0, 0.3, 0.1, 0.03, 0.01, 0.003, 0.001, 0.0003, 0.0001, 0.00001, 0.000001, 0.00000001]
+
+[adaptive]
+initialization = "ridge"
+standardize = false
+fit_intercept = true
+ridge_rho = 1.0
+gamma = 1.0
+eps = 1e-6
+bic_noise_floor = 1e-12
+bic_condition_limit = 100000000.0

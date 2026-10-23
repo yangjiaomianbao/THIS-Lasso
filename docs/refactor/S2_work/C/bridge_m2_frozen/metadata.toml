@@ -1,0 +1,37 @@
+K = 300
+N = 8
+P = 165
+Y_shape = [8, 300]
+d_shape = [165, 3]
+dmax = 3
+feature_entry_count = 495
+feature_order_hash = "c039ccfc464622c630602a426fc51dabe9cd81df367c86ffe3047772d8e3bbe2"
+float_format = "%.17g"
+has_validation = false
+index_base = 1
+padding_node_id = 0
+schema_version = "r3-csv-toml-1"
+solver = "adaptive_lasso"
+theta_shape = [165, 300]
+this_commit = "865efc43fe8ec21966659b482ca5756396974425"
+
+[config]
+alpha_fractions = [1.0, 0.3, 0.1, 0.03, 0.01, 0.003, 0.001, 0.0003, 0.0001, 1.0e-5, 1.0e-6, 1.0e-8]
+bic_condition_limit = 1.0e8
+bic_noise_floor = 1.0e-12
+eps = 1.0e-6
+fit_intercept = true
+gamma = 1.0
+initialization = "ridge"
+kkt_tolerance = 1.0e-6
+max_iter = 100000
+ridge_rho = 1.0
+selection = "bic"
+standardize = false
+tol = 1.0e-10
+validation_tolerance = 1.0e-12
+
+[file_sha256]
+"Y.csv" = "cdcd287bfd9c05a018074e77c9013c2f7dbc44d37bde53b38efca71dabbe34bc"
+"monomial_indices.csv" = "c039ccfc464622c630602a426fc51dabe9cd81df367c86ffe3047772d8e3bbe2"
+"theta.csv" = "f74f05e6b69d70da6a7b4a308cba80489d19c918e73a67bd16b334f212ed1fc7"

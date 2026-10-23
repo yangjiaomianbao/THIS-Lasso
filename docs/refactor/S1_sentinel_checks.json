@@ -1,0 +1,96 @@
+{
+  "counts": {
+    "OK": 420,
+    "NA": 60,
+    "FAILED": 0
+  },
+  "checks": [
+    {
+      "noise_ratio": 0.05,
+      "method": "M0",
+      "triple_F1_mean": 0.6700000000000003,
+      "reported_4dp": 0.67,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.05,
+      "method": "M1",
+      "triple_F1_mean": 0.8362698412698413,
+      "reported_4dp": 0.8363,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.05,
+      "method": "M2",
+      "triple_F1_mean": 0.876911976911977,
+      "reported_4dp": 0.8769,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.05,
+      "method": "M3",
+      "triple_F1_mean": 0.4959529153337204,
+      "reported_4dp": 0.496,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.1,
+      "method": "M0",
+      "triple_F1_mean": 0.6700000000000003,
+      "reported_4dp": 0.67,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.1,
+      "method": "M1",
+      "triple_F1_mean": 0.8362698412698413,
+      "reported_4dp": 0.8363,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.1,
+      "method": "M2",
+      "triple_F1_mean": 0.8224410774410776,
+      "reported_4dp": 0.8224,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.1,
+      "method": "M3",
+      "triple_F1_mean": 0.4233987987578646,
+      "reported_4dp": 0.4234,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.2,
+      "method": "M0",
+      "triple_F1_mean": 0.6600000000000003,
+      "reported_4dp": 0.66,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.2,
+      "method": "M1",
+      "triple_F1_mean": 0.7994973544973545,
+      "reported_4dp": 0.7995,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.2,
+      "method": "M2",
+      "triple_F1_mean": 0.6681481481481484,
+      "reported_4dp": 0.6681,
+      "match": true
+    },
+    {
+      "noise_ratio": 0.2,
+      "method": "M3",
+      "triple_F1_mean": 0.348916297068471,
+      "reported_4dp": 0.3489,
+      "match": true
+    }
+  ],
+  "existing_candidate_warning_count": 979,
+  "existing_selected_warning_count": 0,
+  "purpose": "read-only sentinel recomputation from saved trial scores; never parameter selection"
+}

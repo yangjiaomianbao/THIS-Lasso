@@ -1,0 +1,17 @@
+"created_at" = "2026-10-17T22:25:45.857242+08:00"
+"experiment" = "E1"
+"phase" = "full"
+"authorization" = "User: 执行下一阶段; interpreted as the pending R5 E1 30-seed extension after smoke"
+"R4_full_completed" = false
+"E2_E3_authorized" = false
+"config_sha256" = "7d9b387a94b7bdb60e07ee8c207629fed91bd0a3d6e76c1cdc25e9d87d865d3a"
+"base_sha256" = "a13a17df145259d0ed6a87a8f47824e994d4997a46a3c90de0b3a3817065b5eb"
+"source_sha256" = {"scripts/r5_batch.py" = "0dfcd08ad79532fa0b6e935ad8e4df579826777b9d6107609f0da23c78a415fb", "scripts/r5_batch_analyse.py" = "7e4f5e2c2f9cb025882bb4cbdeadd0eb842e9c87f0002b418669bd804fc0e81c", "scripts/r5_batch_audit.py" = "fd687553565afa60abda01ace0e4415eabdb8298bcab37b36cce7e9f3ee2e500", "scripts/r5_batch_julia.jl" = "60c3f1603adddf9f9cb5b2ae5e5328b50e078ee88537d0c55bde046a2bb657e3", "scripts/r5_batch_log.py" = "2eeec97675ef6c53c5e72f10230b33b160451c37535eaa1877907a0a823e6943", "scripts/r5_batch_stats.py" = "6ecf8624f6735648deda376bd074b33c5c6f4f6fd4b6ea6f2976dd405ee4b258", "scripts/r5_batch_worker.py" = "36c1d66e006e4619109f79636a17a765495af5a0498a3b36debfd5ac47fa79b1"}
+"seed_order" = [22261017, 22261018, 22261019, 22261020, 22261021, 22261022, 22261023, 22261024, 22261025, 22261026, 22261027, 22261028, 22261029, 22261030, 22261031, 22261032, 22261033, 22261034, 22261035, 22261036, 22261037, 22261038, 22261039, 22261040, 22261041, 22261042, 22261043, 22261044, 22261045, 22261046]
+"pilot_clean_data_reused" = false
+"pilot_noise_streams_included" = true
+"new_28_sensitivity" = true
+"trajectory_rng_namespaces_disjoint" = true
+"correction" = "Previous attempt aborted before any scoring: consecutive seed+trajectory namespaces overlapped; only data RNG namespaces changed, solver/noise/selection unchanged"
+"numerical_budget" = "unchanged from smoke; retained warnings and failures"
+"statistics" = "10000 paired-seed percentile bootstrap, pointwise 95%, finite-case availability explicit"

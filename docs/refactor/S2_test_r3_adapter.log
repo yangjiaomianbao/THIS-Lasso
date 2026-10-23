@@ -1,0 +1,32 @@
+START=2026-10-19T21:43:22.964025+08:00
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no --history-file=no --compiled-modules=no --project=/home/yg/THIS-Lasso/environment/r0/julia /home/yg/THIS-Lasso/tests/test_r3_adapter.jl
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/test_r3_adapter/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/test_r3_adapter/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+Test Summary:                                          | Pass  Total  Time
+R3 native decoding, including threshold and exclusions |   11     11  3.7s
+R3_BRIDGE_PASS solver=lasso mode=echo N=1 P=1 K=1
+R3_BRIDGE_PASS solver=lasso mode=echo N=1 P=2 K=3
+R3_BRIDGE_PASS solver=lasso mode=echo N=3 P=1 K=1
+Test Summary:                                      | Pass  Total  Time
+R3 cross-language CSV precision and singleton axes |   18     18  3.9s
+PYTHON_COMMAND=`/home/yg/THIS-Lasso/.venv-r0/bin/python /home/yg/THIS-Lasso/scripts/r3_bridge.py /home/yg/THIS-Lasso/docs/refactor/S2_work/test_r3_adapter/tmp/jl_rQTMn8`
+R3_BRIDGE_PASS solver=lasso mode=solve N=3 P=20 K=160
+PYTHON_COMMAND=`/home/yg/THIS-Lasso/.venv-r0/bin/python /home/yg/THIS-Lasso/scripts/r3_bridge.py /home/yg/THIS-Lasso/docs/refactor/S2_work/test_r3_adapter/tmp/jl_dDHFoY`
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=3 P=20 K=160
+Test Summary:                                              | Pass  Total  Time
+R3 Python coefficients return to the correct Julia feature |   20     20  2.1s
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+Test Summary:                                     | Pass  Total  Time
+R3 R1 truth mapping and native coefficient parity |   14     14  0.5s
+R3_ADAPTER_TESTS_PASS
+EXIT_CODE=0
+WALL_SECONDS=11.643236103001982

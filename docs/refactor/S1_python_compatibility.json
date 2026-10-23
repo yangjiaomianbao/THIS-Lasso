@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "trial": "results/r5/e1_full_independent/seed_22261035/noise_000/M1",
+      "method": "M1",
+      "status": "NA",
+      "nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "guard_reason_exact": true,
+      "no_fallback": true
+    },
+    {
+      "trial": "results/r5/e1_full_independent/seed_22261035/noise_000/M2",
+      "method": "M2",
+      "status": "NA",
+      "nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "guard_reason_exact": true,
+      "no_fallback": true
+    },
+    {
+      "trial": "results/r5/e1_full_independent/seed_22261035/noise_000/M3",
+      "method": "M3",
+      "status": "OK",
+      "max_abs_coef_difference": 0.0,
+      "coefficients_bitwise_equal": true,
+      "support_exact": true,
+      "alpha_max_abs_difference": 0.0,
+      "initial_coef_max_abs_difference": 0.0,
+      "weight_max_abs_difference": 0.0,
+      "selected_alphas": [
+        1.4146941712859182e-07,
+        1.4094840137006682e-09,
+        1.6130069261855225e-09,
+        1.9609102617358248e-09,
+        2.4792276594534295e-09,
+        2.2942169884522342e-09,
+        2.288591945681731e-09,
+        2.8749977456153085e-09
+      ],
+      "metrics": {
+        "pairwise": {
+          "TP": 10,
+          "FP": 0,
+          "FN": 0,
+          "TN": 46,
+          "F1": 1.0
+        },
+        "triple": {
+          "TP": 3,
+          "FP": 0,
+          "FN": 0,
+          "TN": 165,
+          "F1": 1.0
+        }
+      }
+    },
+    {
+      "trial": "results/r5/e1_full_independent/seed_22261035/noise_050/M1",
+      "method": "M1",
+      "status": "OK",
+      "max_abs_coef_difference": 0.0,
+      "coefficients_bitwise_equal": true,
+      "support_exact": true,
+      "alpha_max_abs_difference": 0.0,
+      "initial_coef_max_abs_difference": 0.0,
+      "weight_max_abs_difference": 0.0,
+      "selected_alphas": [
+        0.005341230906509734,
+        0.003210571236389782,
+        0.004236663704914277,
+        0.004150297226667702,
+        0.004445446040833716,
+        0.0028789493547900858,
+        0.0038520076802657953,
+        0.0038995482445860568
+      ],
+      "metrics": {
+        "pairwise": {
+          "TP": 10,
+          "FP": 0,
+          "FN": 0,
+          "TN": 46,
+          "F1": 1.0
+        },
+        "triple": {
+          "TP": 3,
+          "FP": 1,
+          "FN": 0,
+          "TN": 164,
+          "F1": 0.8571428571428571
+        }
+      }
+    },
+    {
+      "trial": "results/r5/e1_full_independent/seed_22261035/noise_050/M2",
+      "method": "M2",
+      "status": "OK",
+      "max_abs_coef_difference": 0.0,
+      "coefficients_bitwise_equal": true,
+      "support_exact": true,
+      "alpha_max_abs_difference": 0.0,
+      "initial_coef_max_abs_difference": 0.0,
+      "weight_max_abs_difference": 0.0,
+      "selected_alphas": [
+        6.674790848340468e-05,
+        6.419954437142229e-05,
+        4.2593978567356545e-05,
+        7.98912932097949e-05,
+        0.00010763349843650895,
+        0.00010376342499563355,
+        5.595958042530077e-05,
+        0.00010132776104521222
+      ],
+      "metrics": {
+        "pairwise": {
+          "TP": 10,
+          "FP": 0,
+          "FN": 0,
+          "TN": 46,
+          "F1": 1.0
+        },
+        "triple": {
+          "TP": 2,
+          "FP": 1,
+          "FN": 1,
+          "TN": 164,
+          "F1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "trial": "results/r5/e1_full_independent/seed_22261035/noise_050/M3",
+      "method": "M3",
+      "status": "OK",
+      "max_abs_coef_difference": 0.0,
+      "coefficients_bitwise_equal": true,
+      "support_exact": true,
+      "alpha_max_abs_difference": 0.0,
+      "initial_coef_max_abs_difference": 0.0,
+      "weight_max_abs_difference": 0.0,
+      "selected_alphas": [
+        1.3636778076823728e-05,
+        4.384189873413882e-05,
+        1.6006484578947602e-05,
+        0.00019369674505307553,
+        7.648498788142913e-05,
+        7.097144659093469e-05,
+        6.890093671526661e-05,
+        8.150837321459068e-05
+      ],
+      "metrics": {
+        "pairwise": {
+          "TP": 10,
+          "FP": 2,
+          "FN": 0,
+          "TN": 44,
+          "F1": 0.9090909090909091
+        },
+        "triple": {
+          "TP": 2,
+          "FP": 6,
+          "FN": 1,
+          "TN": 159,
+          "F1": 0.36363636363636365
+        }
+      }
+    },
+    {
+      "trial": "results/r4/dry_run/seed_22261017/M1v",
+      "method": "M1v",
+      "status": "OK",
+      "max_abs_coef_difference": 0.0,
+      "coefficients_bitwise_equal": true,
+      "support_exact": true,
+      "alpha_max_abs_difference": 0.0,
+      "initial_coef_max_abs_difference": 0.0,
+      "weight_max_abs_difference": 0.0,
+      "selected_alphas": [
+        4.2509776861784755e-07,
+        4.696233470878527e-07,
+        4.382581261149101e-07,
+        5.331177345358146e-07,
+        5.781360731709521e-07,
+        6.190401557078971e-07,
+        5.443527154716863e-07,
+        6.460611948390254e-07
+      ],
+      "metrics": {
+        "pairwise": {
+          "TP": 10,
+          "FP": 0,
+          "FN": 0,
+          "TN": 46,
+          "F1": 1.0
+        },
+        "triple": {
+          "TP": 3,
+          "FP": 0,
+          "FN": 0,
+          "TN": 165,
+          "F1": 1.0
+        }
+      }
+    }
+  ],
+  "replay_scope": "one paired R5 seed, two levels, plus existing R4 M1v control; no new experimental protocol",
+  "output_policy": "in-memory fits only; no results directory writes"
+}

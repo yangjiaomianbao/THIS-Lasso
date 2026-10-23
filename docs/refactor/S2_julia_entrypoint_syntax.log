@@ -1,0 +1,10 @@
+START=2026-10-19T21:44:04.752267+08:00
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no --history-file=no --compiled-modules=no -e 'function valid(x); x isa Expr || return true; x.head in (:error,:incomplete) && return false; all(valid,x.args); end; for file in ARGS; @assert valid(Meta.parseall(read(file,String))); println("JULIA_PARSE_PASS ",file); end' scripts/r4_prepare.jl scripts/r5_batch_julia.jl src/solvers/stlsq.jl src/preprocessing/taylor_scaling.jl
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/julia_entrypoint_syntax/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/julia_entrypoint_syntax/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+JULIA_PARSE_PASS scripts/r4_prepare.jl
+JULIA_PARSE_PASS scripts/r5_batch_julia.jl
+JULIA_PARSE_PASS src/solvers/stlsq.jl
+JULIA_PARSE_PASS src/preprocessing/taylor_scaling.jl
+EXIT_CODE=0
+WALL_SECONDS=0.20028270594775677

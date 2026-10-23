@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "original_path_inventory": "S0_inventory.csv",
+  "original_content_reference": "S1_baseline_manifest.csv",
+  "original_entries": 31475,
+  "planned_final_inventory": true,
+  "counts": {
+    "code": {
+      "modified": 6,
+      "added": 8,
+      "deleted": 0
+    },
+    "configs": {
+      "modified": 0,
+      "added": 0,
+      "deleted": 0
+    },
+    "tests": {
+      "modified": 0,
+      "added": 1,
+      "deleted": 0
+    },
+    "docs": {
+      "modified": 1,
+      "added": 265,
+      "deleted": 0
+    },
+    "archive": {
+      "modified": 0,
+      "added": 5,
+      "deleted": 0
+    },
+    "deleted": {
+      "modified": 0,
+      "added": 0,
+      "deleted": 6385
+    }
+  },
+  "renamed_files": 0,
+  "moved_files": 0,
+  "production_code_changes_after_S2": 0,
+  "note": "Audit scripts and trial outputs under docs/refactor are audit deliverables, classified as docs; no new scientific experiments."
+}

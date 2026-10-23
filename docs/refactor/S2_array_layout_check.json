@@ -1,0 +1,7 @@
+{
+  "matrix_values_bitwise_equal": true,
+  "direct_batch_design_C_contiguous": true,
+  "bridge_design_F_contiguous": true,
+  "mean_axis0_max_abs_difference": 1.51360405690563e-16,
+  "note": "Both layouts and mean reduction order already existed in frozen R3 versus batch code; neither was normalized in S2."
+}

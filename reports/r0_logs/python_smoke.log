@@ -1,0 +1,19 @@
+START=2026-10-16T21:29:36.293570+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg OPENBLAS_NUM_THREADS=1 .venv-r0/bin/python scripts/smoke_r0.py
+numpy=1.26.4
+scipy=1.11.4
+scikit-learn=1.6.1
+statsmodels=0.14.0
+skglm=0.5
+matplotlib=3.9.4
+pandas=2.2.3
+tabulate=0.9.0
+Python=3.11.17 (main, Oct  1 2026, 20:17:42) [GCC 14.3.0]; executable=/home/yg/THIS-Lasso/.venv-r0/bin/python
+Unmodified Su GeneralInteraction import passed (including skglm).
+LassoLarsIC: X=(80, 5); alpha=0.0056908236702308797; MSE=0.0019943814886417008
+coef=[ 1.49441599  0.         -0.79447487  0.          0.29368929]; intercept=0.69079833653519596
+Original Su single-node call passed: coef=[ 1.49372514 -0.80157072  0.3054422 ]; alpha=0
+R0_PYTHON_SMOKE_PASS
+EXIT_CODE=0
+END=2026-10-16T21:29:38.325987+08:00

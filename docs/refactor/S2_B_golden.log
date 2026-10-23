@@ -1,0 +1,12 @@
+START=2026-10-19T21:40:55.541160+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B /home/yg/THIS-Lasso/docs/refactor/S2_audit.py golden --phase B
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/B_golden/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/B_golden/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+S1_PYTHON_COMPAT_PASS results/r5/e1_full_independent/seed_22261035/noise_000/M3
+S1_PYTHON_COMPAT_PASS results/r5/e1_full_independent/seed_22261035/noise_050/M1
+S1_PYTHON_COMPAT_PASS results/r5/e1_full_independent/seed_22261035/noise_050/M2
+S1_PYTHON_COMPAT_PASS results/r5/e1_full_independent/seed_22261035/noise_050/M3
+S1_PYTHON_COMPAT_PASS results/r4/dry_run/seed_22261017/M1v
+S2_B_S1_GOLDEN_PASS
+EXIT_CODE=0
+WALL_SECONDS=44.992088390979916

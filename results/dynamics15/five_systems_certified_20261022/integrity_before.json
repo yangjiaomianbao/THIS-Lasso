@@ -1,0 +1,8 @@
+{
+  "entries_checked": 25368,
+  "all_original_delivery_entries_exact": true,
+  "manifest_sha256": "e71eae7257bb4af486cf7a0042c2b1fb629ab8a5b7b3b5ab61fbd76e2ff78227",
+  "formal_R5_files_covered": 4113,
+  "small_dynamics_pilot_unchanged": true,
+  "prior_30_node_artifacts_unchanged": 6427
+}

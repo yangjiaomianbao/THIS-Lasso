@@ -1,0 +1,30 @@
+Test Summary:                          | Pass  Total  Time
+kuramoto 2026102201 data and expansion |    4      4  0.1s
+DATA_READY kuramoto 2026102201 N=15 P=816 K=1536
+Test Summary:                          | Pass  Total  Time
+kuramoto 2026102202 data and expansion |    4      4  0.0s
+DATA_READY kuramoto 2026102202 N=15 P=816 K=1536
+Test Summary:                        | Pass  Total  Time
+lorenz 2026102201 data and expansion |    5      5  0.7s
+DATA_READY lorenz 2026102201 N=45 P=17296 K=1536
+Test Summary:                        | Pass  Total  Time
+lorenz 2026102202 data and expansion |    5      5  0.0s
+DATA_READY lorenz 2026102202 N=45 P=17296 K=1536
+Test Summary:                                | Pass  Total  Time
+lotka_volterra 2026102201 data and expansion |    5      5  0.0s
+DATA_READY lotka_volterra 2026102201 N=15 P=816 K=1536
+Test Summary:                                | Pass  Total  Time
+lotka_volterra 2026102202 data and expansion |    5      5  0.0s
+DATA_READY lotka_volterra 2026102202 N=15 P=816 K=1536
+Test Summary:                               | Pass  Total  Time
+stuart_landau 2026102201 data and expansion |    5      5  0.0s
+DATA_READY stuart_landau 2026102201 N=30 P=5456 K=1536
+Test Summary:                               | Pass  Total  Time
+stuart_landau 2026102202 data and expansion |    5      5  0.0s
+DATA_READY stuart_landau 2026102202 N=30 P=5456 K=1536
+Test Summary:                     | Pass  Total  Time
+sis 2026102201 data and expansion |    5      5  0.0s
+DATA_READY sis 2026102201 N=15 P=816 K=1536
+Test Summary:                     | Pass  Total  Time
+sis 2026102202 data and expansion |    5      5  0.0s
+DATA_READY sis 2026102202 N=15 P=816 K=1536

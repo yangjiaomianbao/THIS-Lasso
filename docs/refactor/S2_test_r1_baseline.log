@@ -1,0 +1,19 @@
+START=2026-10-19T21:43:06.792630+08:00
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no --history-file=no --compiled-modules=no --project=/home/yg/THIS-Lasso/environment/r0/julia /home/yg/THIS-Lasso/tests/test_r1_baseline.jl
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/test_r1_baseline/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/test_r1_baseline/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+Test Summary:    | Pass  Total  Time
+R1 prerequisites |    2      2  0.1s
+Test Summary:                         | Pass  Total  Time
+Hand-calculated 3-node Taylor library |   25     25  0.0s
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+Test Summary:                                            | Pass  Total  Time
+Known polynomial coefficients and original THIS decoding |   10     10  3.3s
+Test Summary:                                                    | Pass  Total  Time
+Stable trajectories, analytic derivatives and independent splits |   21     21  1.3s
+Test Summary:                  | Pass  Total  Time
+Edge metrics and serialization |   10     10  2.1s
+R1_UNIT_TESTS_PASS
+EXIT_CODE=0
+WALL_SECONDS=9.13598191482015

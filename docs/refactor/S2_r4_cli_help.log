@@ -1,0 +1,14 @@
+START=2026-10-19T21:43:07.384292+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B scripts/r4_experiment.py --help
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/r4_cli_help/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/r4_cli_help/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+usage: r4_experiment.py [-h] [--config CONFIG] [--output OUTPUT]
+
+R4 phase A: exactly two predeclared seeds, with locked choices before scoring.
+
+options:
+  -h, --help       show this help message and exit
+  --config CONFIG
+  --output OUTPUT
+EXIT_CODE=0
+WALL_SECONDS=0.5784799279645085

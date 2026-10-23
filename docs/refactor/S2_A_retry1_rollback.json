@@ -1,0 +1,10 @@
+{
+  "restored": [
+    "src/data_bridge.py",
+    "scripts/r4_methods.py"
+  ],
+  "python_tests_passed": 91,
+  "golden_batch_replay_all_coefficients_exact": true,
+  "trigger": "new cross-language test incorrectly demanded bitwise equality to direct batch design; frozen R3 bridge and batch have different array memory layouts",
+  "new_files_retained": true
+}

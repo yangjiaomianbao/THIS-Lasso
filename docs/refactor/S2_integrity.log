@@ -1,0 +1,7 @@
+START=2026-10-19T21:45:16.716255+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B /home/yg/THIS-Lasso/docs/refactor/S2_integrity.py
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/integrity/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/integrity/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+S2_INTEGRITY_PASS 31473 original entries unchanged; 6 authorized source edits; 9 added source/test files; 4113 formal files unchanged; S3 NOT EXECUTED
+EXIT_CODE=0
+WALL_SECONDS=3.1049036108888686

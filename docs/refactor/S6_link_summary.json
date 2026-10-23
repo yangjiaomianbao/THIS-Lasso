@@ -1,0 +1,9 @@
+{
+  "stage": "S6",
+  "local_links": 552,
+  "direct_ok": 479,
+  "historical_links_resolved": 73,
+  "unresolved": [],
+  "immutable_history_links_not_rewritten": true,
+  "scope": "local own documentation and consolidated R0 log; network links and upstream docs not changed"
+}

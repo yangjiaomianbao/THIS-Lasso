@@ -1,0 +1,19 @@
+START=2026-10-19T21:11:15.077400+08:00
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no --history-file=no --compiled-modules=no --project=/home/yg/THIS-Lasso/environment/r0/julia /home/yg/THIS-Lasso/docs/refactor/S1_julia_compatibility.jl
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S1_work/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S1_work/julia_depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+S1_M0_MAX_ABS_DIFF noise_000 0.0
+[ Info: THIS completed.
+[ Info: Dictionary of inferred adjacency tensors built.
+S1_M0_MAX_ABS_DIFF noise_050 0.0
+Test Summary:                                                               | Pass  Total  Time
+S1 formal paired Taylor, training scales, M0 and saved coefficient decoding |   63     63  6.1s
+S1_M0s_MAX_ABS_DIFF 0.0
+Test Summary:                        | Pass  Total  Time
+S1 existing R4 M0s control preserved |   11     11  0.3s
+S1_JULIA_COMPATIBILITY_PASS
+EXIT_CODE=0
+END=2026-10-19T21:11:22.679391+08:00
+WALL_SECONDS=7.6021144930273294

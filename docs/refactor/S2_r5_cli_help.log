@@ -1,0 +1,14 @@
+START=2026-10-19T21:43:07.963139+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B scripts/r5_batch.py --help
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/r5_cli_help/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/r5_cli_help/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+usage: r5_batch.py [-h] [--config CONFIG] [--output OUTPUT]
+
+Authorized full E1 orchestration. All 480 model choices lock before scoring.
+
+options:
+  -h, --help       show this help message and exit
+  --config CONFIG
+  --output OUTPUT
+EXIT_CODE=0
+WALL_SECONDS=0.601142301922664

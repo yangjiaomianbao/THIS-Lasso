@@ -1,0 +1,176 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=1.2cm]{geometry}
+\usepackage{booktabs,longtable,xcolor}
+\begin{document}
+\small
+\begin{longtable}{lllrrrrr}
+\caption{Table 1. Performance Comparison for Three-body Interaction Reconstruction (mean)}\\
+\toprule
+Dynamics & Noise & Method & F1 $\uparrow$ & AP $\uparrow$ & MCC $\uparrow$ & Jaccard $\uparrow$ & OK/2 \\
+\midrule
+\endfirsthead
+\toprule
+Dynamics & Noise & Method & F1 $\uparrow$ & AP $\uparrow$ & MCC $\uparrow$ & Jaccard $\uparrow$ & OK/2 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Kuramoto & 0\% & STLSQ raw & 0.2353 & 0.1429 & 0.3634 & 0.1333 & 2/2 \\
+Kuramoto & 0\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Kuramoto & 0\% & LASSO BIC & 0.1493 & \textcolor{red}{\textbf{1.0000}} & 0.2651 & 0.0807 & 2/2 \\
+Kuramoto & 0\% & Adaptive BIC & \textcolor{red}{\textbf{0.9494}} & 0.9341 & \textcolor{red}{\textbf{0.9492}} & \textcolor{red}{\textbf{0.9042}} & 2/2 \\
+Kuramoto & 0\% & LASSO val & 0.0616 & \textcolor{red}{\textbf{1.0000}} & 0.1450 & 0.0318 & 2/2 \\
+Kuramoto & 0\% & Adaptive val & 0.0673 & \textcolor{red}{\textbf{1.0000}} & 0.1553 & 0.0348 & 2/2 \\
+\midrule
+Kuramoto & 5\% & STLSQ raw & 0.2353 & 0.1429 & 0.3634 & 0.1333 & 2/2 \\
+Kuramoto & 5\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Kuramoto & 5\% & LASSO BIC & 0.7273 & 0.8022 & 0.7270 & 0.5714 & 2/2 \\
+Kuramoto & 5\% & Adaptive BIC & \textcolor{red}{\textbf{0.8138}} & 0.7996 & \textcolor{red}{\textbf{0.8120}} & \textcolor{red}{\textbf{0.6863}} & 2/2 \\
+Kuramoto & 5\% & LASSO val & 0.1291 & \textcolor{red}{\textbf{0.8104}} & 0.2240 & 0.0690 & 2/2 \\
+Kuramoto & 5\% & Adaptive val & 0.3647 & 0.7337 & 0.4119 & 0.2238 & 2/2 \\
+\midrule
+Lorenz & 0\% & STLSQ raw & 0.0217 & 0.0168 & -0.0015 & 0.0110 & 2/2 \\
+Lorenz & 0\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Lorenz & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & 2/2 \\
+Lorenz & 0\% & Adaptive val & 0.0784 & 0.7716 & 0.1569 & 0.0409 & 2/2 \\
+\midrule
+Lorenz & 5\% & STLSQ raw & 0.0218 & 0.0155 & 0.0075 & 0.0110 & 2/2 \\
+Lorenz & 5\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Lorenz & 5\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 5\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 5\% & LASSO val & \textcolor{red}{\textbf{0.0385}} & \textcolor{red}{\textbf{0.0232}} & \textcolor{red}{\textbf{0.0514}} & \textcolor{red}{\textbf{0.0197}} & 2/2 \\
+Lorenz & 5\% & Adaptive val & 0.0236 & 0.0114 & 0.0071 & 0.0119 & 2/2 \\
+\midrule
+Lotka--Volterra & 0\% & STLSQ raw & 0.6364 & 0.4725 & 0.6811 & 0.4667 & 2/2 \\
+Lotka--Volterra & 0\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Lotka--Volterra & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lotka--Volterra & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lotka--Volterra & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & 2/2 \\
+Lotka--Volterra & 0\% & Adaptive val & 0.9677 & \textcolor{red}{\textbf{1.0000}} & 0.9679 & 0.9375 & 2/2 \\
+\midrule
+Lotka--Volterra & 5\% & STLSQ raw & 0.5714 & 0.4066 & 0.6304 & 0.4000 & 2/2 \\
+Lotka--Volterra & 5\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Lotka--Volterra & 5\% & LASSO BIC & 0.8802 & 0.9670 & 0.8835 & 0.7868 & 2/2 \\
+Lotka--Volterra & 5\% & Adaptive BIC & \textcolor{red}{\textbf{0.9384}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{0.9399}} & \textcolor{red}{\textbf{0.8854}} & 2/2 \\
+Lotka--Volterra & 5\% & LASSO val & 0.2619 & 0.9894 & 0.3755 & 0.1509 & 2/2 \\
+Lotka--Volterra & 5\% & Adaptive val & 0.7643 & 0.9194 & 0.7900 & 0.6476 & 2/2 \\
+\midrule
+Stuart--Landau & 0\% & STLSQ raw & 0.7182 & 0.5714 & 0.7481 & 0.5667 & 2/2 \\
+Stuart--Landau & 0\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Stuart--Landau & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & 2/2 \\
+Stuart--Landau & 0\% & Adaptive val & 0.1112 & \textcolor{red}{\textbf{1.0000}} & 0.2190 & 0.0590 & 2/2 \\
+\midrule
+Stuart--Landau & 5\% & STLSQ raw & \textcolor{red}{\textbf{0.6800}} & 0.5681 & \textcolor{red}{\textbf{0.6914}} & \textcolor{red}{\textbf{0.5165}} & 2/2 \\
+Stuart--Landau & 5\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+Stuart--Landau & 5\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 5\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 5\% & LASSO val & 0.0683 & \textcolor{red}{\textbf{1.0000}} & 0.1569 & 0.0353 & 2/2 \\
+Stuart--Landau & 5\% & Adaptive val & 0.2151 & \textcolor{red}{\textbf{1.0000}} & 0.3327 & 0.1205 & 2/2 \\
+\midrule
+SIS & 0\% & STLSQ raw & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+SIS & 0\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+SIS & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+SIS & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+SIS & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & 2/2 \\
+SIS & 0\% & Adaptive val & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & \textcolor{red}{\textbf{1.0000}} & 2/2 \\
+\midrule
+SIS & 5\% & STLSQ raw & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+SIS & 5\% & STLSQ std & 0.0000 & 0.0110 & NA [n=0/2] & 0.0000 & 2/2 \\
+SIS & 5\% & LASSO BIC & \textcolor{red}{\textbf{0.9062}} & 0.9627 & \textcolor{red}{\textbf{0.9072}} & \textcolor{red}{\textbf{0.8284}} & 2/2 \\
+SIS & 5\% & Adaptive BIC & 0.8714 & 0.8022 & 0.8755 & 0.7729 & 2/2 \\
+SIS & 5\% & LASSO val & 0.2660 & \textcolor{red}{\textbf{0.9940}} & 0.3794 & 0.1535 & 2/2 \\
+SIS & 5\% & Adaptive val & 0.4118 & 0.6155 & 0.4311 & 0.2609 & 2/2 \\
+\end{longtable}
+\noindent NA is excluded from means; [n=k/2] denotes the metric-specific valid seed count. 
+SD uses ddof=1. Red bold indicates the best mean within each dynamics/noise group, including ties (absolute tolerance $10^{-12}$).
+\clearpage
+\begin{longtable}{lllrrrrr}
+\caption{Table 1. Performance Comparison for Three-body Interaction Reconstruction (mean $\pm$ sample SD)}\\
+\toprule
+Dynamics & Noise & Method & F1 $\uparrow$ & AP $\uparrow$ & MCC $\uparrow$ & Jaccard $\uparrow$ & OK/2 \\
+\midrule
+\endfirsthead
+\toprule
+Dynamics & Noise & Method & F1 $\uparrow$ & AP $\uparrow$ & MCC $\uparrow$ & Jaccard $\uparrow$ & OK/2 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Kuramoto & 0\% & STLSQ raw & 0.2353 $\pm$ 0.0000 & 0.1429 $\pm$ 0.0000 & 0.3634 $\pm$ 0.0000 & 0.1333 $\pm$ 0.0000 & 2/2 \\
+Kuramoto & 0\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Kuramoto & 0\% & LASSO BIC & 0.1493 $\pm$ 0.0182 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.2651 $\pm$ 0.0203 & 0.0807 $\pm$ 0.0107 & 2/2 \\
+Kuramoto & 0\% & Adaptive BIC & \textcolor{red}{\textbf{0.9494 $\pm$ 0.0228}} & 0.9341 $\pm$ 0.0000 & \textcolor{red}{\textbf{0.9492 $\pm$ 0.0234}} & \textcolor{red}{\textbf{0.9042 $\pm$ 0.0412}} & 2/2 \\
+Kuramoto & 0\% & LASSO val & 0.0616 $\pm$ 0.0009 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.1450 $\pm$ 0.0017 & 0.0318 $\pm$ 0.0005 & 2/2 \\
+Kuramoto & 0\% & Adaptive val & 0.0673 $\pm$ 0.0010 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.1553 $\pm$ 0.0017 & 0.0348 $\pm$ 0.0005 & 2/2 \\
+\midrule
+Kuramoto & 5\% & STLSQ raw & 0.2353 $\pm$ 0.0000 & 0.1429 $\pm$ 0.0000 & 0.3634 $\pm$ 0.0000 & 0.1333 $\pm$ 0.0000 & 2/2 \\
+Kuramoto & 5\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Kuramoto & 5\% & LASSO BIC & 0.7273 $\pm$ 0.0000 & 0.8022 $\pm$ 0.0000 & 0.7270 $\pm$ 0.0000 & 0.5714 $\pm$ 0.0000 & 2/2 \\
+Kuramoto & 5\% & Adaptive BIC & \textcolor{red}{\textbf{0.8138 $\pm$ 0.0195}} & 0.7996 $\pm$ 0.0036 & \textcolor{red}{\textbf{0.8120 $\pm$ 0.0201}} & \textcolor{red}{\textbf{0.6863 $\pm$ 0.0277}} & 2/2 \\
+Kuramoto & 5\% & LASSO val & 0.1291 $\pm$ 0.0009 & \textcolor{red}{\textbf{0.8104 $\pm$ 0.0116}} & 0.2240 $\pm$ 0.0119 & 0.0690 $\pm$ 0.0005 & 2/2 \\
+Kuramoto & 5\% & Adaptive val & 0.3647 $\pm$ 0.0595 & 0.7337 $\pm$ 0.0896 & 0.4119 $\pm$ 0.0656 & 0.2238 $\pm$ 0.0446 & 2/2 \\
+\midrule
+Lorenz & 0\% & STLSQ raw & 0.0217 $\pm$ 0.0015 & 0.0168 $\pm$ 0.0071 & -0.0015 $\pm$ 0.0218 & 0.0110 $\pm$ 0.0007 & 2/2 \\
+Lorenz & 0\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Lorenz & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 2/2 \\
+Lorenz & 0\% & Adaptive val & 0.0784 $\pm$ 0.0223 & 0.7716 $\pm$ 0.0423 & 0.1569 $\pm$ 0.0341 & 0.0409 $\pm$ 0.0121 & 2/2 \\
+\midrule
+Lorenz & 5\% & STLSQ raw & 0.0218 $\pm$ 0.0000 & 0.0155 $\pm$ 0.0011 & 0.0075 $\pm$ 0.0008 & 0.0110 $\pm$ 0.0000 & 2/2 \\
+Lorenz & 5\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Lorenz & 5\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 5\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lorenz & 5\% & LASSO val & \textcolor{red}{\textbf{0.0385 $\pm$ 0.0047}} & \textcolor{red}{\textbf{0.0232 $\pm$ 0.0042}} & \textcolor{red}{\textbf{0.0514 $\pm$ 0.0163}} & \textcolor{red}{\textbf{0.0197 $\pm$ 0.0025}} & 2/2 \\
+Lorenz & 5\% & Adaptive val & 0.0236 $\pm$ 0.0095 & 0.0114 $\pm$ 0.0007 & 0.0071 $\pm$ 0.0154 & 0.0119 $\pm$ 0.0049 & 2/2 \\
+\midrule
+Lotka--Volterra & 0\% & STLSQ raw & 0.6364 $\pm$ 0.0000 & 0.4725 $\pm$ 0.0000 & 0.6811 $\pm$ 0.0000 & 0.4667 $\pm$ 0.0000 & 2/2 \\
+Lotka--Volterra & 0\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Lotka--Volterra & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lotka--Volterra & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Lotka--Volterra & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 2/2 \\
+Lotka--Volterra & 0\% & Adaptive val & 0.9677 $\pm$ 0.0000 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.9679 $\pm$ 0.0000 & 0.9375 $\pm$ 0.0000 & 2/2 \\
+\midrule
+Lotka--Volterra & 5\% & STLSQ raw & 0.5714 $\pm$ 0.0000 & 0.4066 $\pm$ 0.0000 & 0.6304 $\pm$ 0.0000 & 0.4000 $\pm$ 0.0000 & 2/2 \\
+Lotka--Volterra & 5\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Lotka--Volterra & 5\% & LASSO BIC & 0.8802 $\pm$ 0.0326 & 0.9670 $\pm$ 0.0466 & 0.8835 $\pm$ 0.0270 & 0.7868 $\pm$ 0.0520 & 2/2 \\
+Lotka--Volterra & 5\% & Adaptive BIC & \textcolor{red}{\textbf{0.9384 $\pm$ 0.0415}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{0.9399 $\pm$ 0.0396}} & \textcolor{red}{\textbf{0.8854 $\pm$ 0.0737}} & 2/2 \\
+Lotka--Volterra & 5\% & LASSO val & 0.2619 $\pm$ 0.0337 & 0.9894 $\pm$ 0.0150 & 0.3755 $\pm$ 0.0300 & 0.1509 $\pm$ 0.0223 & 2/2 \\
+Lotka--Volterra & 5\% & Adaptive val & 0.7643 $\pm$ 0.2323 & 0.9194 $\pm$ 0.0725 & 0.7900 $\pm$ 0.1983 & 0.6476 $\pm$ 0.3098 & 2/2 \\
+\midrule
+Stuart--Landau & 0\% & STLSQ raw & 0.7182 $\pm$ 0.1157 & 0.5714 $\pm$ 0.1399 & 0.7481 $\pm$ 0.0947 & 0.5667 $\pm$ 0.1414 & 2/2 \\
+Stuart--Landau & 0\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Stuart--Landau & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 2/2 \\
+Stuart--Landau & 0\% & Adaptive val & 0.1112 $\pm$ 0.0264 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.2190 $\pm$ 0.0341 & 0.0590 $\pm$ 0.0148 & 2/2 \\
+\midrule
+Stuart--Landau & 5\% & STLSQ raw & \textcolor{red}{\textbf{0.6800 $\pm$ 0.0566}} & 0.5681 $\pm$ 0.0419 & \textcolor{red}{\textbf{0.6914 $\pm$ 0.0583}} & \textcolor{red}{\textbf{0.5165 $\pm$ 0.0650}} & 2/2 \\
+Stuart--Landau & 5\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+Stuart--Landau & 5\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 5\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+Stuart--Landau & 5\% & LASSO val & 0.0683 $\pm$ 0.0010 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.1569 $\pm$ 0.0017 & 0.0353 $\pm$ 0.0005 & 2/2 \\
+Stuart--Landau & 5\% & Adaptive val & 0.2151 $\pm$ 0.0033 & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 0.3327 $\pm$ 0.0031 & 0.1205 $\pm$ 0.0021 & 2/2 \\
+\midrule
+SIS & 0\% & STLSQ raw & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+SIS & 0\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+SIS & 0\% & LASSO BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+SIS & 0\% & Adaptive BIC & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & NA [n=0/2] & 0/2 \\
+SIS & 0\% & LASSO val & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 2/2 \\
+SIS & 0\% & Adaptive val & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & \textcolor{red}{\textbf{1.0000 $\pm$ 0.0000}} & 2/2 \\
+\midrule
+SIS & 5\% & STLSQ raw & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+SIS & 5\% & STLSQ std & 0.0000 $\pm$ 0.0000 & 0.0110 $\pm$ 0.0000 & NA [n=0/2] & 0.0000 $\pm$ 0.0000 & 2/2 \\
+SIS & 5\% & LASSO BIC & \textcolor{red}{\textbf{0.9062 $\pm$ 0.0041}} & 0.9627 $\pm$ 0.0405 & \textcolor{red}{\textbf{0.9072 $\pm$ 0.0065}} & \textcolor{red}{\textbf{0.8284 $\pm$ 0.0069}} & 2/2 \\
+SIS & 5\% & Adaptive BIC & 0.8714 $\pm$ 0.0356 & 0.8022 $\pm$ 0.0932 & 0.8755 $\pm$ 0.0289 & 0.7729 $\pm$ 0.0560 & 2/2 \\
+SIS & 5\% & LASSO val & 0.2660 $\pm$ 0.0166 & \textcolor{red}{\textbf{0.9940 $\pm$ 0.0026}} & 0.3794 $\pm$ 0.0148 & 0.1535 $\pm$ 0.0111 & 2/2 \\
+SIS & 5\% & Adaptive val & 0.4118 $\pm$ 0.0796 & 0.6155 $\pm$ 0.1089 & 0.4311 $\pm$ 0.0897 & 0.2609 $\pm$ 0.0632 & 2/2 \\
+\end{longtable}
+\noindent NA is excluded from means; [n=k/2] denotes the metric-specific valid seed count. 
+SD uses ddof=1. Red bold indicates the best mean within each dynamics/noise group, including ties (absolute tolerance $10^{-12}$).
+\clearpage
+\end{document}

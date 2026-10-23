@@ -1,0 +1,3347 @@
+R0 setup history: original commands, outputs and exit codes preserved.
+Combined 2026-10-16 (Asia/Shanghai). Source filenames and hashes identify each record.
+
+===== BEGIN activation_check.log SHA256=f4bbf51d2e665972fc215e7c0473c7c27b1ddd02d09049a0d0da2af35eb3f77f =====
+START=2026-10-16T21:30:03.758751+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=bash -c 'source environment/r0/activate.sh && python --version && julia --version && command -v python && command -v julia'
+Python 3.11.17
+julia version 1.9.4
+/home/yg/THIS-Lasso/.venv-r0/bin/python
+/home/yg/.local/opt/julia-1.9.4/bin/julia
+EXIT_CODE=0
+END=2026-10-16T21:30:05.287834+08:00
+
+===== END activation_check.log =====
+
+===== BEGIN clone_su.log SHA256=2490a0d390208cc76e89ff67139b3fc831962776831e1d7024de29bbabc4fd8f =====
+START=2026-10-16T21:07:24.875152+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy git clone https://github.com/Weiwei-Su112/Adaptive-LASSO-for-higher-order-oscillatory-systems.git upstream/Su-AdaptiveLASSO
+Cloning into 'upstream/Su-AdaptiveLASSO'...
+EXIT_CODE=0
+END=2026-10-16T21:08:19.163424+08:00
+
+===== END clone_su.log =====
+
+===== BEGIN clone_this.log SHA256=59a89644222f44cecf0eb02d5ab00f695b24298c7bee58cace3f01e58e596dcd =====
+START=2026-10-16T21:06:36.645042+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy git clone https://github.com/TaylorBasedHypergraphInference/THIS.git upstream/THIS
+Cloning into 'upstream/THIS'...
+EXIT_CODE=0
+END=2026-10-16T21:06:37.988822+08:00
+
+===== END clone_this.log =====
+
+===== BEGIN environment_lock.log SHA256=367937b5859c660e8e46826d4dee93c64c60bb2eeabe3aa92add96bc34d03725 =====
+START=2026-10-16T21:30:02.920234+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=python -c 'from pathlib import Path; import subprocess; r=Path.cwd(); out=r/"environment/r0"; py=r/".venv-r0/bin/python";
+commands=[("requirements.lock.txt",[str(py),"-m","pip","freeze","--all"]),("conda-linux-64.lock.txt",["conda","list","--explicit","--prefix",str(r/".venv-r0")])]
+for name,argv in commands:
+ result=subprocess.run(argv,check=True,text=True,stdout=subprocess.PIPE); (out/name).write_text(result.stdout); print("LOCKED",name,"COMMAND",argv)
+print(subprocess.check_output([str(py),"--version"],text=True).strip())'
+LOCKED requirements.lock.txt COMMAND ['/home/yg/THIS-Lasso/.venv-r0/bin/python', '-m', 'pip', 'freeze', '--all']
+LOCKED conda-linux-64.lock.txt COMMAND ['conda', 'list', '--explicit', '--prefix', '/home/yg/THIS-Lasso/.venv-r0']
+Python 3.11.17
+EXIT_CODE=0
+END=2026-10-16T21:30:03.674242+08:00
+
+===== END environment_lock.log =====
+
+===== BEGIN environment_preflight.log SHA256=d336baa4ab2fdf4f8e76c1b94ab2be9a818dc4cfac9a7367d4d204b07df6c56d =====
+R0 environment preflight only. No smoke tests or installation.
+Client date: 2026-10-16; timezone: Asia/Shanghai
+Recorded timestamp: 2026-10-16T21:02:07.521973+08:00
+Session cwd: /home/yg; target project: /home/yg/THIS-Lasso
+
+$ uname -a
+Linux dell 6.8.0-147-generic #147~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Sep 28 22:03:08 UTC  x86_64 x86_64 x86_64 GNU/Linux
+EXIT_CODE=0
+
+$ bash -c 'command -v julia; julia --version'
+bash: line 1: julia: command not found
+EXIT_CODE=127
+
+$ python --version
+Python 3.13.12
+EXIT_CODE=0
+
+$ git --version
+git version 2.34.1
+EXIT_CODE=0
+
+$ conda env list
+
+# conda environments:
+#
+# * -> active
+# + -> frozen
+                         /home/yg/.conda
+base                 *   /home/yg/miniconda3
+AIDD                     /home/yg/miniconda3/envs/AIDD
+higher_order             /home/yg/miniconda3/envs/higher_order
+nd3                      /home/yg/miniconda3/envs/nd3
+nri_py311                /home/yg/miniconda3/envs/nri_py311
+
+EXIT_CODE=0
+
+$ /home/yg/miniconda3/envs/nri_py311/bin/python -c 'import sys, importlib.metadata as m
+print(sys.version)
+print(sys.executable)
+for name in ['"'"'numpy'"'"','"'"'scipy'"'"','"'"'scikit-learn'"'"','"'"'matplotlib'"'"','"'"'pandas'"'"','"'"'statsmodels'"'"','"'"'skglm'"'"','"'"'tabulate'"'"']:
+    try: print(name, m.version(name))
+    except m.PackageNotFoundError: print(name, '"'"'NOT INSTALLED'"'"')
+'
+3.11.15 (main, Mar 11 2026, 17:20:07) [GCC 14.3.0]
+/home/yg/miniconda3/envs/nri_py311/bin/python
+numpy 2.4.4
+scipy NOT INSTALLED
+scikit-learn NOT INSTALLED
+matplotlib NOT INSTALLED
+pandas NOT INSTALLED
+statsmodels NOT INSTALLED
+skglm NOT INSTALLED
+tabulate NOT INSTALLED
+EXIT_CODE=0
+
+$ git -C /home/yg/THIS-Lasso/THIS-main rev-parse --show-toplevel HEAD
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+EXIT_CODE=128
+
+$ git -C /home/yg/THIS-Lasso/Adaptive-LASSO-for-higher-order-oscillatory-systems-main rev-parse --show-toplevel HEAD
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+EXIT_CODE=128
+
+$ find /home/yg /opt /usr/local -maxdepth 5 -type f -name julia -print
+find: ‘/opt/1panel/log’: Permission denied
+find: ‘/opt/containerd’: Permission denied
+EXIT_CODE=1
+
+$ head -n 12 /home/yg/THIS-Lasso/THIS-main/LICENSE
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+EXIT_CODE=0
+
+$ cat /home/yg/THIS-Lasso/Adaptive-LASSO-for-higher-order-oscillatory-systems-main/LICENSE
+MIT License
+
+Copyright (c) 2025 Weiwei-Su112
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+EXIT_CODE=0
+
+===== END environment_preflight.log =====
+
+===== BEGIN folder_reorganization.log SHA256=8f233aea80c37740d5be13c30d03a36f881844cf8660711e8067947b79d5f21b =====
+START=2026-10-16T21:22:19.017187+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=python -c 'from pathlib import Path; import hashlib,json,subprocess; r=Path.cwd(); pairs=[("THIS-main","archive/original-downloads/THIS-main"),("Adaptive-LASSO-for-higher-order-oscillatory-systems-main","archive/original-downloads/Adaptive-LASSO-for-higher-order-oscillatory-systems-main"),("reports/R0_report.md","reports/r0_logs/R0_preflight_report.md"),("reports/r0_environment_check.log","reports/r0_logs/environment_preflight.log")];
+def snapshot(p):
+ return {str(f.relative_to(p)):hashlib.sha256(f.read_bytes()).hexdigest() for f in p.rglob("*") if f.is_file()} if p.is_dir() else hashlib.sha256(p.read_bytes()).hexdigest()
+for src,dst in pairs:
+ assert (r/src).exists(),src
+ assert not (r/dst).exists(),dst
+before={src:snapshot(r/src) for src,dst in pairs}; task_before=snapshot(r/"codex任务文件夹")
+for src,dst in pairs:
+ (r/dst).parent.mkdir(parents=True,exist_ok=True); (r/src).rename(r/dst); assert snapshot(r/dst)==before[src]; print("MOVED",src,"->",dst,"; contents verified unchanged")
+assert snapshot(r/"codex任务文件夹")==task_before
+for repo in ("THIS","Su-AdaptiveLASSO"):
+ status=subprocess.check_output(["git","-C",str(r/"upstream"/repo),"status","--porcelain"],text=True); assert not status; print("UPSTREAM_CLEAN",repo)
+print("TASK_FILES_UNCHANGED")'
+MOVED THIS-main -> archive/original-downloads/THIS-main ; contents verified unchanged
+MOVED Adaptive-LASSO-for-higher-order-oscillatory-systems-main -> archive/original-downloads/Adaptive-LASSO-for-higher-order-oscillatory-systems-main ; contents verified unchanged
+MOVED reports/R0_report.md -> reports/r0_logs/R0_preflight_report.md ; contents verified unchanged
+MOVED reports/r0_environment_check.log -> reports/r0_logs/environment_preflight.log ; contents verified unchanged
+UPSTREAM_CLEAN THIS
+UPSTREAM_CLEAN Su-AdaptiveLASSO
+TASK_FILES_UNCHANGED
+EXIT_CODE=0
+END=2026-10-16T21:22:19.069321+08:00
+
+===== END folder_reorganization.log =====
+
+===== BEGIN julia_dependencies.log SHA256=04eb08bfe6272e9f01d63781e896903bf8c5b663dce7efc51b5890bab434eb70 =====
+START=2026-10-16T21:09:58.636495+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy JULIA_DEPOT_PATH=/home/yg/THIS-Lasso/.julia-depot-r0 JULIA_PKG_SERVER=https://mirrors.ustc.edu.cn/julia JULIA_PKG_PRECOMPILE_AUTO=0 JULIA_NUM_PRECOMPILE_TASKS=2 OPENBLAS_NUM_THREADS=1 /home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no environment/r0/install_julia.jl
+  Activating new project at `~/THIS-Lasso/environment/r0/julia`
+  Installing known registries into `~/THIS-Lasso/.julia-depot-r0`
+    Updating registry at `~/THIS-Lasso/.julia-depot-r0/registries/General.toml`
+   Resolving package versions...
+   Installed oneTBB_jll ────── v2023.1.0+0
+   Installed Preferences ───── v1.6.0
+   Installed MKL_jll ───────── v2025.2.0+0
+   Installed JLLWrappers ───── v1.8.0
+   Installed FFTW ──────────── v1.9.0
+   Installed Combinatorics ─── v1.1.0
+   Installed AbstractFFTs ──── v1.5.0
+   Installed Reexport ──────── v1.2.2
+   Installed DelimitedFiles ── v1.9.1
+   Installed IntelOpenMP_jll ─ v2025.2.0+0
+   Installed FFTW_jll ──────── v3.3.12+0
+   Installed Compat ────────── v4.18.1
+   Installed BitIntegers ───── v0.3.7
+   Installed EDF ───────────── v0.8.1
+    Updating `~/THIS-Lasso/environment/r0/julia/Project.toml`
+  [861a8166] + Combinatorics v1.1.0
+  [8bb1440f] + DelimitedFiles v1.9.1
+  [ccffbfc1] + EDF v0.8.1
+⌅ [7a1cc6ca] + FFTW v1.9.0
+  [37e2e46d] + LinearAlgebra
+  [10745b16] + Statistics v1.9.0
+    Updating `~/THIS-Lasso/environment/r0/julia/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.5.0
+  [c3b6d118] + BitIntegers v0.3.7
+  [861a8166] + Combinatorics v1.1.0
+  [34da2185] + Compat v4.18.1
+  [8bb1440f] + DelimitedFiles v1.9.1
+  [ccffbfc1] + EDF v0.8.1
+⌅ [7a1cc6ca] + FFTW v1.9.0
+  [692b3bcd] + JLLWrappers v1.8.0
+  [21216c6a] + Preferences v1.6.0
+  [189a3867] + Reexport v1.2.2
+  [f5851436] + FFTW_jll v3.3.12+0
+  [1d5cc7b8] + IntelOpenMP_jll v2025.2.0+0
+  [856f044c] + MKL_jll v2025.2.0+0
+  [1317d2d5] + oneTBB_jll v2023.1.0+0
+  [0dad84c5] + ArgTools v1.1.1
+  [56f22d72] + Artifacts
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [f43a241f] + Downloads v1.6.0
+  [7b1f6079] + FileWatching
+  [b77e0a4c] + InteractiveUtils
+  [4af54fe1] + LazyArtifacts
+  [b27032c2] + LibCURL v0.6.4
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [ca575930] + NetworkOptions v1.2.0
+  [44cfe95a] + Pkg v1.9.2
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA v0.7.0
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics v1.9.0
+  [fa267f1f] + TOML v1.0.3
+  [a4e569a6] + Tar v1.10.0
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+  [e66e0078] + CompilerSupportLibraries_jll v1.0.5+0
+  [deac9b47] + LibCURL_jll v8.4.0+0
+  [29816b5a] + LibSSH2_jll v1.11.0+1
+  [c8ffd9c3] + MbedTLS_jll v2.28.2+0
+  [14a3606d] + MozillaCACerts_jll v2022.10.11
+  [4536629a] + OpenBLAS_jll v0.3.21+4
+  [bea87d4a] + SuiteSparse_jll v5.10.1+6
+  [83775a58] + Zlib_jll v1.2.13+0
+  [8e850b90] + libblastrampoline_jll v5.8.0+0
+  [8e850ede] + nghttp2_jll v1.52.0+1
+  [3f19e933] + p7zip_jll v17.4.0+0
+        Info Packages marked with ⌅ have new versions available but compatibility constraints restrict them from upgrading. To see why use `status --outdated -m`
+Precompiling project...
+[32m  ✓ [39mStatistics
+[32m  ✓ [39mCombinatorics
+[32m  ✓ [39m[90mAbstractFFTs[39m
+[32m  ✓ [39m[90mCompat[39m
+[32m  ✓ [39m[90mCompilerSupportLibraries_jll[39m
+[32m  ✓ [39m[90mReexport[39m
+[32m  ✓ [39m[90mBitIntegers[39m
+[32m  ✓ [39m[90mMbedTLS_jll[39m
+[32m  ✓ [39m[90mZlib_jll[39m
+[32m  ✓ [39mDelimitedFiles
+[32m  ✓ [39m[90mSuiteSparse_jll[39m
+[32m  ✓ [39m[90mPreferences[39m
+[32m  ✓ [39m[90mCompat → CompatLinearAlgebraExt[39m
+[32m  ✓ [39m[90mAbstractFFTs → AbstractFFTsTestExt[39m
+[32m  ✓ [39m[90mLibSSH2_jll[39m
+[32m  ✓ [39m[90mJLLWrappers[39m
+[32m  ✓ [39mEDF
+[32m  ✓ [39m[90moneTBB_jll[39m
+[32m  ✓ [39m[90mIntelOpenMP_jll[39m
+[32m  ✓ [39m[90mFFTW_jll[39m
+[32m  ✓ [39m[90mMKL_jll[39m
+[32m  ✓ [39mFFTW
+  22 dependencies successfully precompiled in 33 seconds
+  [33m1[39m dependency had output during precompilation:[33m
+┌ [39mMKL_jll [856f044c-d86e-5d09-b602-aeab76dc8ba7][33m
+│  [39mDownloading artifact: IntelOpenMP[33m
+│  [39m Downloading artifact: oneTBB[33m
+└  [39m
+Status `~/THIS-Lasso/environment/r0/julia/Manifest.toml`
+  [621f4979] AbstractFFTs v1.5.0
+  [c3b6d118] BitIntegers v0.3.7
+  [861a8166] Combinatorics v1.1.0
+  [34da2185] Compat v4.18.1
+  [8bb1440f] DelimitedFiles v1.9.1
+  [ccffbfc1] EDF v0.8.1
+⌅ [7a1cc6ca] FFTW v1.9.0
+  [692b3bcd] JLLWrappers v1.8.0
+  [21216c6a] Preferences v1.6.0
+  [189a3867] Reexport v1.2.2
+  [f5851436] FFTW_jll v3.3.12+0
+  [1d5cc7b8] IntelOpenMP_jll v2025.2.0+0
+  [856f044c] MKL_jll v2025.2.0+0
+  [1317d2d5] oneTBB_jll v2023.1.0+0
+  [0dad84c5] ArgTools v1.1.1
+  [56f22d72] Artifacts
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [f43a241f] Downloads v1.6.0
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [4af54fe1] LazyArtifacts
+  [b27032c2] LibCURL v0.6.4
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [ca575930] NetworkOptions v1.2.0
+  [44cfe95a] Pkg v1.9.2
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA v0.7.0
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics v1.9.0
+  [fa267f1f] TOML v1.0.3
+  [a4e569a6] Tar v1.10.0
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+  [e66e0078] CompilerSupportLibraries_jll v1.0.5+0
+  [deac9b47] LibCURL_jll v8.4.0+0
+  [29816b5a] LibSSH2_jll v1.11.0+1
+  [c8ffd9c3] MbedTLS_jll v2.28.2+0
+  [14a3606d] MozillaCACerts_jll v2022.10.11
+  [4536629a] OpenBLAS_jll v0.3.21+4
+  [bea87d4a] SuiteSparse_jll v5.10.1+6
+  [83775a58] Zlib_jll v1.2.13+0
+  [8e850b90] libblastrampoline_jll v5.8.0+0
+  [8e850ede] nghttp2_jll v1.52.0+1
+  [3f19e933] p7zip_jll v17.4.0+0
+Info Packages marked with ⌅ have new versions available but compatibility constraints restrict them from upgrading. To see why use `status --outdated -m`
+EXIT_CODE=0
+END=2026-10-16T21:10:42.043932+08:00
+
+===== END julia_dependencies.log =====
+
+===== BEGIN julia_download.log SHA256=43228001d87121d19b87b8d6c41363c6364332233258bb31657965fe5efb02d7 =====
+START=2026-10-16T21:05:41.279611+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=curl --fail --location --connect-timeout 20 --max-time 300 --output /home/yg/.local/opt/julia-1.9.4-linux-x86_64.tar.gz https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.4-linux-x86_64.tar.gz
+curl: (7) Couldn't connect to server
+EXIT_CODE=7
+END=2026-10-16T21:05:41.285903+08:00
+
+===== END julia_download.log =====
+
+===== BEGIN julia_download_direct.log SHA256=aebf33ad2def292881dab13cf7c28e85b3566c1dfd223b5a8d3d48349b85ad25 =====
+START=2026-10-16T21:05:57.784379+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy curl --fail --location --connect-timeout 20 --max-time 300 --output /home/yg/.local/opt/julia-1.9.4-linux-x86_64.tar.gz https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.4-linux-x86_64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0  139M    0  719k    0     0   350k      0  0:06:47  0:00:02  0:06:45  350k
+  0  139M    0  918k    0     0   307k      0  0:07:44  0:00:02  0:07:42  307k
+  0  139M    0 1006k    0     0   252k      0  0:09:24  0:00:03  0:09:21  252k
+  0  139M    0 1066k    0     0   209k      0  0:11:20  0:00:05  0:11:15  209k
+  0  139M    0 1112k    0     0   186k      0  0:12:45  0:00:05  0:12:40  225k
+  0  139M    0 1221k    0     0   175k      0  0:13:35  0:00:06  0:13:29  102k
+  0  139M    0 1308k    0     0   162k      0  0:14:40  0:00:08  0:14:32 78574
+  0  139M    0 1359k    0     0   151k      0  0:15:44  0:00:08  0:15:36 72018
+  0  139M    0 1409k    0     0   141k      0  0:16:51  0:00:09  0:16:42 71559
+  1  139M    1 1463k    0     0   132k      0  0:18:01  0:00:11  0:17:50 70251
+  1  139M    1 1510k    0     0   126k      0  0:18:51  0:00:11  0:18:40 59200
+  1  139M    1 1592k    0     0   122k      0  0:19:22  0:00:12  0:19:10 59428
+  1  139M    1 1694k    0     0   120k      0  0:19:45  0:00:14  0:19:31 67614
+  1  139M    1 1763k    0     0   117k      0  0:20:14  0:00:15  0:19:59 72288
+  1  139M    1 1799k    0     0   112k      0  0:21:07  0:00:15  0:20:52 70336
+  1  139M    1 1826k    0     0   107k      0  0:22:06  0:00:16  0:21:50 64673
+  1  139M    1 1866k    0     0   103k      0  0:22:55  0:00:17  0:22:38 55850
+  1  139M    1 1890k    0     0    98k      0  0:24:02  0:00:19  0:23:43 39923
+  1  139M    1 1906k    0     0  97598      0  0:24:57  0:00:20  0:24:37 29287
+  1  139M    1 1942k    0     0  94659      0  0:25:44  0:00:21  0:25:23 28979
+  1  139M    1 1974k    0     0  91813      0  0:26:31  0:00:22  0:26:09 30089
+  1  139M    1 2032k    0     0  90603      0  0:26:53  0:00:22  0:26:31 34169
+  1  139M    1 2106k    0     0  89918      0  0:27:05  0:00:23  0:26:42 45274
+  1  139M    1 2146k    0     0  87928      0  0:27:42  0:00:24  0:27:18 49185
+  1  139M    1 2203k    0     0  86818      0  0:28:03  0:00:25  0:27:38 53732
+  1  139M    1 2247k    0     0  85216      0  0:28:35  0:00:27  0:28:08 56102
+  1  139M    1 2313k    0     0  84442      0  0:28:50  0:00:28  0:28:22 56554
+  1  139M    1 2358k    0     0  83341      0  0:29:13  0:00:28  0:28:45 51718
+  1  139M    1 2398k    0     0  81804      0  0:29:46  0:00:30  0:29:16 51348
+  1  139M    1 2433k    0     0  80442      0  0:30:17  0:00:30  0:29:47 47186
+  1  139M    1 2491k    0     0  79589      0  0:30:36  0:00:32  0:30:04 49488
+  1  139M    1 2536k    0     0  78784      0  0:30:55  0:00:32  0:30:23 46542
+  1  139M    1 2576k    0     0  77537      0  0:31:25  0:00:34  0:30:51 44258
+  1  139M    1 2618k    0     0  76662      0  0:31:46  0:00:34  0:31:12 45510
+  1  139M    1 2698k    0     0  76804      0  0:31:43  0:00:35  0:31:08 54296
+  1  139M    1 2786k    0     0  77124      0  0:31:35  0:00:36  0:30:59 61104
+  1  139M    1 2821k    0     0  76043      0  0:32:02  0:00:37  0:31:25 58026
+  1  139M    1 2850k    0     0  74654      0  0:32:37  0:00:39  0:31:58 55297
+  2  139M    2 2877k    0     0  73692      0  0:33:03  0:00:39  0:32:24 52936
+  2  139M    2 2946k    0     0  73591      0  0:33:06  0:00:40  0:32:26 50570
+  2  139M    2 2991k    0     0  72776      0  0:33:28  0:00:42  0:32:46 41245
+  2  139M    2 3015k    0     0  71745      0  0:33:57  0:00:43  0:33:14 39447
+  2  139M    2 3070k    0     0  71472      0  0:34:05  0:00:43  0:33:22 46056
+  2  139M    2 3110k    0     0  70802      0  0:34:24  0:00:44  0:33:40 47720
+  2  139M    2 3146k    0     0  69823      0  0:34:53  0:00:46  0:34:07 39806
+  2  139M    2 3170k    0     0  69100      0  0:35:15  0:00:46  0:34:29 37425
+  2  139M    2 3218k    0     0  68541      0  0:35:32  0:00:48  0:34:44 41149
+  2  139M    2 3266k    0     0  68042      0  0:35:48  0:00:49  0:34:59 38853
+  2  139M    2 3287k    0     0  67320      0  0:36:11  0:00:50  0:35:21 36137
+  2  139M    2 3303k    0     0  66367      0  0:36:42  0:00:50  0:35:52 33321
+  2  139M    2 3347k    0     0  65922      0  0:36:57  0:00:51  0:36:06 36166
+  2  139M    2 3402k    0     0  65707      0  0:37:04  0:00:53  0:36:11 38160
+  2  139M    2 3455k    0     0  65505      0  0:37:11  0:00:54  0:36:17 39855
+  2  139M    2 3508k    0     0  65174      0  0:37:22  0:00:55  0:36:27 44249
+  2  139M    2 3534k    0     0  64663      0  0:37:40  0:00:55  0:36:45 47298
+  2  139M    2 3563k    0     0  63970      0  0:38:04  0:00:57  0:37:07 43869
+  2  139M    2 3610k    0     0  63748      0  0:38:12  0:00:57  0:37:15 42819
+  2  139M    2 3692k    0     0  64114      0  0:37:59  0:00:58  0:37:01 48962
+  2  139M    2 3739k    0     0  63849      0  0:38:09  0:00:59  0:37:10 48753
+  2  139M    2 3763k    0     0  63176      0  0:38:33  0:01:01  0:37:32 46638
+  2  139M    2 3826k    0     0  63173      0  0:38:33  0:01:02  0:37:31 54031
+  2  139M    2 3890k    0     0  63261      0  0:38:30  0:01:02  0:37:28 57586
+  2  139M    2 3932k    0     0  62926      0  0:38:42  0:01:03  0:37:39 48959
+  2  139M    2 4006k    0     0  63132      0  0:38:35  0:01:04  0:37:31 54542
+  2  139M    2 4088k    0     0  63452      0  0:38:23  0:01:05  0:37:18 66824
+  2  139M    2 4142k    0     0  63307      0  0:38:28  0:01:07  0:37:21 64968
+  2  139M    2 4186k    0     0  62996      0  0:38:40  0:01:08  0:37:32 59714
+  2  139M    2 4207k    0     0  62451      0  0:39:00  0:01:08  0:37:52 56371
+  2  139M    2 4271k    0     0  62492      0  0:38:58  0:01:09  0:37:49 54211
+  3  139M    3 4336k    0     0  62573      0  0:38:55  0:01:10  0:37:45 50934
+  3  139M    3 4407k    0     0  62668      0  0:38:52  0:01:12  0:37:40 54135
+  3  139M    3 4470k    0     0  62703      0  0:38:51  0:01:13  0:37:38 58671
+  3  139M    3 4539k    0     0  62824      0  0:38:46  0:01:13  0:37:33 67958
+  3  139M    3 4607k    0     0  62934      0  0:38:42  0:01:14  0:37:28 69140
+  3  139M    3 4648k    0     0  62587      0  0:38:55  0:01:16  0:37:39 62790
+  3  139M    3 4685k    0     0  62277      0  0:39:06  0:01:17  0:37:49 56673
+  3  139M    3 4722k    0     0  62014      0  0:39:16  0:01:17  0:37:59 51906
+  3  139M    3 4774k    0     0  61905      0  0:39:21  0:01:18  0:38:03 48246
+  3  139M    3 4830k    0     0  61833      0  0:39:23  0:01:19  0:38:04 45388
+  3  139M    3 4895k    0     0  61897      0  0:39:21  0:01:20  0:38:01 51239
+  3  139M    3 4967k    0     0  62029      0  0:39:16  0:01:22  0:37:54 58194
+  3  139M    3 5023k    0     0  61996      0  0:39:17  0:01:22  0:37:55 61712
+  3  139M    3 5055k    0     0  61635      0  0:39:31  0:01:23  0:38:08 57403
+  3  139M    3 5104k    0     0  61486      0  0:39:37  0:01:25  0:38:12 55978
+  3  139M    3 5168k    0     0  61556      0  0:39:34  0:01:25  0:38:09 56016
+  3  139M    3 5219k    0     0  61255      0  0:39:46  0:01:27  0:38:19 49155
+  3  139M    3 5242k    0     0  60957      0  0:39:57  0:01:28  0:38:29 44020
+  3  139M    3 5282k    0     0  60792      0  0:40:04  0:01:28  0:38:36 46563
+  3  139M    3 5308k    0     0  60407      0  0:40:19  0:01:29  0:38:50 41964
+  3  139M    3 5330k    0     0  59993      0  0:40:36  0:01:30  0:39:06 33062
+  3  139M    3 5339k    0     0  59444      0  0:40:58  0:01:31  0:39:27 25998
+  3  139M    3 5364k    0     0  59089      0  0:41:13  0:01:32  0:39:41 25581
+  3  139M    3 5385k    0     0  58591      0  0:41:34  0:01:34  0:40:00 20502
+  3  139M    3 5410k    0     0  58155      0  0:41:53  0:01:35  0:40:18 19677
+  3  139M    3 5418k    0     0  57761      0  0:42:10  0:01:36  0:40:34 17779
+  3  139M    3 5449k    0     0  57540      0  0:42:20  0:01:36  0:40:44 22483
+  3  139M    3 5487k    0     0  57246      0  0:42:33  0:01:38  0:40:55 24211
+  3  139M    3 5507k    0     0  56963      0  0:42:45  0:01:39  0:41:06 25655
+  3  139M    3 5536k    0     0  56711      0  0:42:57  0:01:39  0:41:18 27512
+  3  139M    3 5562k    0     0  56255      0  0:43:18  0:01:41  0:41:37 28416
+  3  139M    3 5579k    0     0  56030      0  0:43:28  0:01:41  0:41:47 26758
+  3  139M    3 5608k    0     0  55745      0  0:43:42  0:01:43  0:41:59 25491
+  3  139M    3 5630k    0     0  55400      0  0:43:58  0:01:44  0:42:14 24821
+  3  139M    3 5639k    0     0  55008      0  0:44:17  0:01:44  0:42:33 21039
+  3  139M    3 5660k    0     0  54696      0  0:44:32  0:01:45  0:42:47 21312
+  3  139M    3 5679k    0     0  54365      0  0:44:48  0:01:46  0:43:02 20428
+  4  139M    4 5710k    0     0  54115      0  0:45:00  0:01:48  0:43:12 20708
+  4  139M    4 5730k    0     0  53801      0  0:45:16  0:01:49  0:43:27 20473
+  4  139M    4 5751k    0     0  53483      0  0:45:32  0:01:50  0:43:42 22305
+  4  139M    4 5767k    0     0  53187      0  0:45:48  0:01:51  0:43:57 21616
+  4  139M    4 5773k    0     0  52450      0  0:46:26  0:01:52  0:44:34 16711
+  4  139M    4 5778k    0     0  52340      0  0:46:32  0:01:53  0:44:39 13872
+  4  139M    4 5800k    0     0  52064      0  0:46:47  0:01:54  0:44:53 14399
+  4  139M    4 5814k    0     0  51669      0  0:47:08  0:01:55  0:45:13 12566
+  4  139M    4 5842k    0     0  51515      0  0:47:17  0:01:56  0:45:21 14976
+  4  139M    4 5863k    0     0  51291      0  0:47:29  0:01:57  0:45:32 21276
+  4  139M    4 5887k    0     0  51073      0  0:47:41  0:01:58  0:45:43 22443
+  4  139M    4 5919k    0     0  50709      0  0:48:02  0:01:59  0:46:03 22309
+  4  139M    4 5928k    0     0  50599      0  0:48:08  0:01:59  0:46:09 24662
+  4  139M    4 5963k    0     0  50410      0  0:48:19  0:02:01  0:46:18 24842
+  4  139M    4 5972k    0     0  50127      0  0:48:35  0:02:02  0:46:33 22589
+  4  139M    4 5986k    0     0  49638      0  0:49:04  0:02:03  0:47:01 18523
+  4  139M    4 5995k    0     0  49507      0  0:49:12  0:02:04  0:47:08 17408
+  4  139M    4 6025k    0     0  49362      0  0:49:21  0:02:04  0:47:17 19700
+  4  139M    4 6042k    0     0  49074      0  0:49:38  0:02:06  0:47:32 16256
+  4  139M    4 6067k    0     0  48922      0  0:49:47  0:02:07  0:47:40 19456
+  4  139M    4 6091k    0     0  48727      0  0:49:59  0:02:08  0:47:51 23889
+  4  139M    4 6102k    0     0  48440      0  0:50:17  0:02:08  0:48:09 21884
+  4  139M    4 6130k    0     0  48293      0  0:50:26  0:02:09  0:48:17 21542
+  4  139M    4 6166k    0     0  48157      0  0:50:35  0:02:11  0:48:24 25202
+  4  139M    4 6191k    0     0  48029      0  0:50:43  0:02:12  0:48:31 25380
+  4  139M    4 6228k    0     0  47904      0  0:50:51  0:02:13  0:48:38 27353
+  4  139M    4 6266k    0     0  47882      0  0:50:52  0:02:14  0:48:38 33533
+  4  139M    4 6303k    0     0  47790      0  0:50:58  0:02:15  0:48:43 34935
+  4  139M    4 6319k    0     0  47586      0  0:51:11  0:02:15  0:48:56 32228
+  4  139M    4 6341k    0     0  47391      0  0:51:24  0:02:17  0:49:07 30567
+  4  139M    4 6364k    0     0  47232      0  0:51:34  0:02:17  0:49:17 28763
+  4  139M    4 6391k    0     0  47070      0  0:51:45  0:02:19  0:49:26 25482
+  4  139M    4 6422k    0     0  46966      0  0:51:52  0:02:20  0:49:32 24509
+  4  139M    4 6458k    0     0  46898      0  0:51:56  0:02:21  0:49:35 28296
+  4  139M    4 6484k    0     0  46764      0  0:52:05  0:02:21  0:49:44 29532
+  4  139M    4 6520k    0     0  46692      0  0:52:10  0:02:23  0:49:47 31843
+  4  139M    4 6575k    0     0  46720      0  0:52:08  0:02:24  0:49:44 37128
+  4  139M    4 6605k    0     0  46652      0  0:52:13  0:02:24  0:49:49 37769
+  4  139M    4 6659k    0     0  46706      0  0:52:09  0:02:26  0:49:43 41279
+  4  139M    4 6742k    0     0  46968      0  0:51:51  0:02:26  0:49:25 52748
+  4  139M    4 6808k    0     0  47116      0  0:51:42  0:02:27  0:49:15 59338
+  4  139M    4 6878k    0     0  47277      0  0:51:31  0:02:28  0:49:03 63796
+  4  139M    4 6954k    0     0  47479      0  0:51:18  0:02:29  0:48:49 71451
+  4  139M    4 7004k    0     0  47509      0  0:51:16  0:02:30  0:48:46 71078
+  4  139M    4 7064k    0     0  47597      0  0:51:10  0:02:31  0:48:39 66084
+  5  139M    5 7181k    0     0  48067      0  0:50:40  0:02:32  0:48:08 76189
+  5  139M    5 7255k    0     0  48208      0  0:50:31  0:02:34  0:47:57 75207
+  5  139M    5 7306k    0     0  48270      0  0:50:28  0:02:34  0:47:54 71962
+  5  139M    5 7339k    0     0  48144      0  0:50:35  0:02:36  0:47:59 66860
+  5  139M    5 7373k    0     0  48091      0  0:50:39  0:02:36  0:48:03 63100
+  5  139M    5 7425k    0     0  48074      0  0:50:40  0:02:38  0:48:02 48298
+  5  139M    5 7474k    0     0  48098      0  0:50:38  0:02:39  0:47:59 44730
+  5  139M    5 7519k    0     0  48120      0  0:50:37  0:02:40  0:47:57 43471
+  5  139M    5 7574k    0     0  48160      0  0:50:34  0:02:41  0:47:53 48643
+  5  139M    5 7621k    0     0  48134      0  0:50:36  0:02:42  0:47:54 49467
+  5  139M    5 7664k    0     0  48141      0  0:50:36  0:02:43  0:47:53 50284
+  5  139M    5 7716k    0     0  48172      0  0:50:34  0:02:44  0:47:50 50552
+  5  139M    5 7774k    0     0  48239      0  0:50:29  0:02:45  0:47:44 52038
+  5  139M    5 7795k    0     0  48085      0  0:50:39  0:02:46  0:47:53 45663
+  5  139M    5 7822k    0     0  47964      0  0:50:47  0:02:47  0:48:00 42304
+  5  139M    5 7856k    0     0  47896      0  0:50:51  0:02:47  0:48:04 39809
+  5  139M    5 7914k    0     0  47959      0  0:50:47  0:02:48  0:47:59 40893
+  5  139M    5 7974k    0     0  48038      0  0:50:42  0:02:49  0:47:53 41351
+  5  139M    5 8018k    0     0  48022      0  0:50:43  0:02:50  0:47:53 45902
+  5  139M    5 8079k    0     0  48099      0  0:50:38  0:02:52  0:47:46 52609
+  5  139M    5 8126k    0     0  48107      0  0:50:38  0:02:52  0:47:46 55221
+  5  139M    5 8164k    0     0  48056      0  0:50:41  0:02:53  0:47:48 51341
+  5  139M    5 8210k    0     0  48038      0  0:50:42  0:02:55  0:47:47 48054
+  5  139M    5 8259k    0     0  48060      0  0:50:41  0:02:55  0:47:46 49369
+  5  139M    5 8344k    0     0  48283      0  0:50:27  0:02:56  0:47:31 54639
+  5  139M    5 8424k    0     0  48472      0  0:50:15  0:02:57  0:47:18 61086
+  5  139M    5 8475k    0     0  48475      0  0:50:15  0:02:59  0:47:16 62904
+  5  139M    5 8528k    0     0  48517      0  0:50:12  0:03:00  0:47:12 65286
+  6  139M    6 8582k    0     0  48561      0  0:50:09  0:03:00  0:47:09 66206
+  6  139M    6 8606k    0     0  48379      0  0:50:21  0:03:02  0:47:19 51666
+  6  139M    6 8636k    0     0  48311      0  0:50:25  0:03:03  0:47:22 42692
+  6  139M    6 8680k    0     0  48295      0  0:50:26  0:03:04  0:47:22 41869
+  6  139M    6 8703k    0     0  48173      0  0:50:34  0:03:05  0:47:29 35806
+  6  139M    6 8727k    0     0  48044      0  0:50:42  0:03:06  0:47:36 29475
+  6  139M    6 8764k    0     0  48000      0  0:50:45  0:03:06  0:47:39 33676
+  6  139M    6 8816k    0     0  48030      0  0:50:43  0:03:07  0:47:36 37533
+  6  139M    6 8878k    0     0  48107      0  0:50:38  0:03:08  0:47:30 41078
+  6  139M    6 8944k    0     0  48209      0  0:50:31  0:03:09  0:47:22 49540
+  6  139M    6 8999k    0     0  48251      0  0:50:29  0:03:10  0:47:19 55998
+  6  139M    6 9016k    0     0  48086      0  0:50:39  0:03:12  0:47:27 51317
+  6  139M    6 9055k    0     0  48027      0  0:50:43  0:03:13  0:47:30 47913
+  6  139M    6 9086k    0     0  47966      0  0:50:47  0:03:13  0:47:34 42634
+  6  139M    6 9132k    0     0  47948      0  0:50:48  0:03:15  0:47:33 38109
+  6  139M    6 9190k    0     0  48011      0  0:50:44  0:03:16  0:47:28 38888
+  6  139M    6 9246k    0     0  48063      0  0:50:41  0:03:16  0:47:25 47147
+  6  139M    6 9303k    0     0  48112      0  0:50:37  0:03:18  0:47:19 51437
+  6  139M    6 9357k    0     0  48117      0  0:50:37  0:03:19  0:47:18 53815
+  6  139M    6 9409k    0     0  48172      0  0:50:34  0:03:20  0:47:14 57007
+  6  139M    6 9460k    0     0  48201      0  0:50:32  0:03:20  0:47:12 55657
+  6  139M    6 9511k    0     0  48222      0  0:50:31  0:03:21  0:47:10 54526
+  6  139M    6 9582k    0     0  48341      0  0:50:23  0:03:22  0:47:01 57482
+  6  139M    6 9635k    0     0  48372      0  0:50:21  0:03:23  0:46:58 58833
+  6  139M    6 9706k    0     0  48489      0  0:50:14  0:03:24  0:46:50 61204
+  6  139M    6 9783k    0     0  48609      0  0:50:06  0:03:26  0:46:40 64636
+  6  139M    6 9866k    0     0  48813      0  0:49:54  0:03:26  0:46:28 72672
+  6  139M    6 9958k    0     0  49026      0  0:49:41  0:03:27  0:46:14 76750
+  7  139M    7  9.8M    0     0  49355      0  0:49:21  0:03:29  0:45:52 88709
+  7  139M    7  9.8M    0     0  49428      0  0:49:17  0:03:29  0:45:48 87919
+  7  139M    7  9.9M    0     0  49510      0  0:49:12  0:03:31  0:45:41 86542
+  7  139M    7 10.0M    0     0  49469      0  0:49:14  0:03:32  0:45:42 76443
+  7  139M    7 10.0M    0     0  49485      0  0:49:13  0:03:33  0:45:40 68476
+  7  139M    7 10.1M    0     0  49510      0  0:49:12  0:03:33  0:45:39 56130
+  7  139M    7 10.1M    0     0  49582      0  0:49:07  0:03:35  0:45:32 56028
+  7  139M    7 10.2M    0     0  49671      0  0:49:02  0:03:35  0:45:27 56640
+  7  139M    7 10.3M    0     0  49749      0  0:48:58  0:03:37  0:45:21 61428
+  7  139M    7 10.3M    0     0  49803      0  0:48:54  0:03:37  0:45:17 63441
+  7  139M    7 10.4M    0     0  49913      0  0:48:48  0:03:38  0:45:10 67148
+  7  139M    7 10.4M    0     0  49949      0  0:48:46  0:03:39  0:45:07 65837
+  7  139M    7 10.5M    0     0  50013      0  0:48:42  0:03:40  0:45:02 64804
+  7  139M    7 10.6M    0     0  50229      0  0:48:29  0:03:41  0:44:48 71507
+  7  139M    7 10.6M    0     0  50258      0  0:48:28  0:03:43  0:44:45 70014
+  7  139M    7 10.7M    0     0  50311      0  0:48:25  0:03:43  0:44:42 67737
+  7  139M    7 10.8M    0     0  50468      0  0:48:16  0:03:44  0:44:32 73270
+  7  139M    7 10.8M    0     0  50568      0  0:48:10  0:03:45  0:44:25 75093
+  7  139M    7 10.9M    0     0  50567      0  0:48:10  0:03:46  0:44:24 65578
+  7  139M    7 11.0M    0     0  50599      0  0:48:08  0:03:47  0:44:21 65918
+  7  139M    7 11.0M    0     0  50503      0  0:48:14  0:03:48  0:44:26 59102
+  7  139M    7 11.0M    0     0  50415      0  0:48:19  0:03:50  0:44:29 48034
+  7  139M    7 11.0M    0     0  50343      0  0:48:23  0:03:51  0:44:32 40236
+  7  139M    7 11.1M    0     0  50359      0  0:48:22  0:03:52  0:44:30 40979
+  8  139M    8 11.2M    0     0  50465      0  0:48:16  0:03:52  0:44:24 44356
+  8  139M    8 11.2M    0     0  50536      0  0:48:12  0:03:53  0:44:19 52022
+  8  139M    8 11.3M    0     0  50461      0  0:48:16  0:03:55  0:44:21 52606
+  8  139M    8 11.3M    0     0  50399      0  0:48:20  0:03:56  0:44:24 52991
+  8  139M    8 11.3M    0     0  50398      0  0:48:20  0:03:56  0:44:24 52223
+  8  139M    8 11.4M    0     0  50469      0  0:48:16  0:03:57  0:44:19 50637
+  8  139M    8 11.5M    0     0  50524      0  0:48:12  0:03:59  0:44:13 49969
+  8  139M    8 11.5M    0     0  50531      0  0:48:12  0:04:00  0:44:12 53811
+  8  139M    8 11.6M    0     0  50510      0  0:48:13  0:04:01  0:44:12 55651
+  8  139M    8 11.6M    0     0  50419      0  0:48:18  0:04:02  0:44:16 51420
+  8  139M    8 11.6M    0     0  50330      0  0:48:24  0:04:02  0:44:22 43714
+  8  139M    8 11.7M    0     0  50364      0  0:48:22  0:04:03  0:44:19 42662
+  8  139M    8 11.7M    0     0  50352      0  0:48:22  0:04:05  0:44:17 41685
+  8  139M    8 11.8M    0     0  50321      0  0:48:24  0:04:05  0:44:19 40986
+  8  139M    8 11.8M    0     0  50364      0  0:48:22  0:04:06  0:44:16 47686
+  8  139M    8 11.9M    0     0  50542      0  0:48:11  0:04:07  0:44:04 60858
+  8  139M    8 12.0M    0     0  50656      0  0:48:05  0:04:08  0:43:57 64921
+  8  139M    8 12.0M    0     0  50686      0  0:48:03  0:04:10  0:43:53 67051
+  8  139M    8 12.1M    0     0  50674      0  0:48:04  0:04:11  0:43:53 67828
+  8  139M    8 12.1M    0     0  50577      0  0:48:09  0:04:12  0:43:57 60967
+  8  139M    8 12.1M    0     0  50528      0  0:48:12  0:04:13  0:43:59 49831
+  8  139M    8 12.2M    0     0  50605      0  0:48:08  0:04:14  0:43:54 48090
+  8  139M    8 12.3M    0     0  50593      0  0:48:09  0:04:15  0:43:54 46028
+  8  139M    8 12.3M    0     0  50528      0  0:48:12  0:04:16  0:43:56 43369
+  8  139M    8 12.3M    0     0  50473      0  0:48:15  0:04:16  0:43:59 45181
+  8  139M    8 12.3M    0     0  50364      0  0:48:22  0:04:17  0:44:05 42002
+  8  139M    8 12.4M    0     0  50314      0  0:48:25  0:04:19  0:44:06 35273
+  8  139M    8 12.4M    0     0  50232      0  0:48:29  0:04:20  0:44:09 31512
+  8  139M    8 12.4M    0     0  50094      0  0:48:37  0:04:21  0:44:16 27608
+  8  139M    8 12.4M    0     0  49978      0  0:48:44  0:04:22  0:44:22 25110
+  8  139M    8 12.5M    0     0  49886      0  0:48:49  0:04:22  0:44:27 25231
+  8  139M    8 12.5M    0     0  49794      0  0:48:55  0:04:23  0:44:32 22738
+  9  139M    9 12.5M    0     0  49720      0  0:48:59  0:04:24  0:44:35 22904
+  9  139M    9 12.6M    0     0  49657      0  0:49:03  0:04:26  0:44:37 27047
+  9  139M    9 12.6M    0     0  49657      0  0:49:03  0:04:27  0:44:36 32683
+  9  139M    9 12.6M    0     0  49596      0  0:49:07  0:04:28  0:44:39 34415
+  9  139M    9 12.7M    0     0  49509      0  0:49:12  0:04:28  0:44:44 34465
+  9  139M    9 12.7M    0     0  49357      0  0:49:21  0:04:30  0:44:51 30483
+  9  139M    9 12.7M    0     0  49233      0  0:49:28  0:04:30  0:44:58 26057
+  9  139M    9 12.7M    0     0  49140      0  0:49:34  0:04:31  0:45:03 20946
+  9  139M    9 12.7M    0     0  49141      0  0:49:34  0:04:33  0:45:01 25084
+  9  139M    9 12.8M    0     0  49164      0  0:49:32  0:04:33  0:44:59 30582
+  9  139M    9 12.8M    0     0  49105      0  0:49:36  0:04:34  0:45:02 35189
+  9  139M    9 12.9M    0     0  49014      0  0:49:42  0:04:35  0:45:07 37152
+  9  139M    9 12.9M    0     0  48987      0  0:49:43  0:04:36  0:45:07 40668
+  9  139M    9 13.0M    0     0  49110      0  0:49:36  0:04:37  0:44:59 47362
+  9  139M    9 13.0M    0     0  49119      0  0:49:35  0:04:38  0:44:57 46643
+  9  139M    9 13.1M    0     0  49134      0  0:49:34  0:04:39  0:44:55 50738
+  9  139M    9 13.1M    0     0  49164      0  0:49:32  0:04:41  0:44:51 57403
+  9  139M    9 13.2M    0     0  49173      0  0:49:32  0:04:42  0:44:50 59345
+  9  139M    9 13.2M    0     0  49153      0  0:49:33  0:04:42  0:44:51 51572
+  9  139M    9 13.3M    0     0  49165      0  0:49:32  0:04:44  0:44:48 51699
+  9  139M    9 13.3M    0     0  49118      0  0:49:35  0:04:44  0:44:51 48244
+  9  139M    9 13.4M    0     0  49134      0  0:49:34  0:04:45  0:44:49 47447
+  9  139M    9 13.4M    0     0  49172      0  0:49:32  0:04:46  0:44:46 49079
+  9  139M    9 13.4M    0     0  49148      0  0:49:33  0:04:48  0:44:45 48879
+  9  139M    9 13.5M    0     0  49059      0  0:49:39  0:04:49  0:44:50 43207
+  9  139M    9 13.5M    0     0  48981      0  0:49:44  0:04:50  0:44:54 41286
+  9  139M    9 13.5M    0     0  48941      0  0:49:46  0:04:51  0:44:55 37963
+  9  139M    9 13.6M    0     0  48950      0  0:49:45  0:04:52  0:44:53 36346
+  9  139M    9 13.6M    0     0  48944      0  0:49:46  0:04:52  0:44:54 37106
+  9  139M    9 13.7M    0     0  48899      0  0:49:49  0:04:53  0:44:56 39258
+  9  139M    9 13.7M    0     0  48889      0  0:49:49  0:04:55  0:44:54 43467
+  9  139M    9 13.7M    0     0  48868      0  0:49:50  0:04:56  0:44:54 44653
+  9  139M    9 13.8M    0     0  48836      0  0:49:52  0:04:56  0:44:56 42097
+  9  139M    9 13.8M    0     0  48884      0  0:49:50  0:04:57  0:44:53 45314
+ 10  139M   10 13.9M    0     0  49068      0  0:49:38  0:04:58  0:44:40 58982
+ 10  139M   10 14.0M    0     0  49083      0  0:49:37  0:04:59  0:44:38 60639
+ 10  139M   10 14.0M    0     0  49082      0  0:49:37  0:04:59  0:44:38 65059
+curl: (28) Operation timed out after 300000 milliseconds with 14724654 out of 146163887 bytes received
+EXIT_CODE=28
+END=2026-10-16T21:10:57.792745+08:00
+
+===== END julia_download_direct.log =====
+
+===== BEGIN julia_download_mirror.log SHA256=f3957559f52788bf98ff01fafd3c8c90c4ac0168369fa7073b55a505db07f8ac =====
+START=2026-10-16T21:07:21.704391+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy curl --fail --location --silent --show-error --connect-timeout 15 --max-time 300 --output /home/yg/.local/opt/julia-1.9.4-linux-x86_64.mirror.tar.gz https://mirrors.tuna.tsinghua.edu.cn/julia-releases/bin/linux/x64/1.9/julia-1.9.4-linux-x86_64.tar.gz
+EXIT_CODE=0
+END=2026-10-16T21:08:18.017788+08:00
+
+===== END julia_download_mirror.log =====
+
+===== BEGIN julia_download_retry.log SHA256=3fddecc26bda873060fc07da2fcc87f1fc42b997bba38d618c5a27b724a0e61b =====
+START=2026-10-16T21:05:49.166530+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=curl --fail --location --connect-timeout 20 --max-time 300 --output /home/yg/.local/opt/julia-1.9.4-linux-x86_64.tar.gz https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.4-linux-x86_64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 7899 after 0 ms: Connection refused
+EXIT_CODE=7
+END=2026-10-16T21:05:49.173087+08:00
+
+===== END julia_download_retry.log =====
+
+===== BEGIN julia_extract.log SHA256=5f461fc5d814988021faa21e146ba13446d7948a9254038dd91fec30ce50b9e2 =====
+START=2026-10-16T21:08:49.235815+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=tar --extract --gzip --file /home/yg/.local/opt/julia-1.9.4-linux-x86_64.mirror.tar.gz --directory /home/yg/.local/opt
+EXIT_CODE=0
+END=2026-10-16T21:08:52.140294+08:00
+
+===== END julia_extract.log =====
+
+===== BEGIN julia_verify.log SHA256=d3840e544b708bcdc4c47162ab4994eb117f90406955754d3b66d0f806cf3471 =====
+START=2026-10-16T21:08:49.020217+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=python -c 'import hashlib; from pathlib import Path; p=Path("/home/yg/.local/opt/julia-1.9.4-linux-x86_64.mirror.tar.gz"); actual=hashlib.file_digest(p.open("rb"),"sha256").hexdigest(); print("SHA256="+actual); assert actual=="07d20c4c2518833e2265ca0acee15b355463361aa4efdab858dad826cf94325c"; print("Official SHA-256 verified")'
+SHA256=07d20c4c2518833e2265ca0acee15b355463361aa4efdab858dad826cf94325c
+Official SHA-256 verified
+EXIT_CODE=0
+END=2026-10-16T21:08:49.155295+08:00
+
+===== END julia_verify.log =====
+
+===== BEGIN julia_version.log SHA256=c2f74c48aea4e067099f00ecf5aefb89e02a0130cd2eaac2c1889b79cb76f160 =====
+START=2026-10-16T21:09:50.125019+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --version
+julia version 1.9.4
+EXIT_CODE=0
+END=2026-10-16T21:09:50.138822+08:00
+
+===== END julia_version.log =====
+
+===== BEGIN julia_wrapper_version.log SHA256=96c2b49784a40a0a4bce3f45694ad9af54af545d61e0a900fe72c39e8c0ad6f2 =====
+START=2026-10-16T21:12:02.933839+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=environment/r0/julia.sh --version
+julia version 1.9.4
+EXIT_CODE=0
+END=2026-10-16T21:12:02.950303+08:00
+
+===== END julia_wrapper_version.log =====
+
+===== BEGIN python_create.log SHA256=4bc56496099e7b7f59d8fc63cd22e71a78cc0777c084653b416a05644bc2316f =====
+START=2026-10-16T21:06:29.431642+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=conda create --offline --prefix /home/yg/THIS-Lasso/.venv-r0 python=3.11 pip --yes
+2 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Solving environment: - done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.1.1
+    latest version: 26.7.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/yg/THIS-Lasso/.venv-r0
+
+  added / updated specs:
+    - pip
+    - python=3.11
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    packaging-26.1             |  py311h06a4308_0         276 KB
+    pip-26.1.2                 |     pyhc872135_0         1.1 MB
+    python-3.11.15             |       h17756b0_1        29.5 MB
+    setuptools-83.0.0          |  py311h06a4308_0         1.6 MB
+    wheel-0.47.0               |  py311h06a4308_0          75 KB
+    ------------------------------------------------------------
+                                           Total:        32.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-52_gnu 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2026.7.16-h06a4308_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.44-h9e0c5a2_3 
+  libexpat           pkgs/main/linux-64::libexpat-2.8.2-h7354ed3_1 
+  libffi             pkgs/main/linux-64::libffi-3.4.8-h06d3fd0_3 
+  libgcc             pkgs/main/linux-64::libgcc-15.2.0-h69a1729_8 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-15.2.0-h166f726_8 
+  libnsl             pkgs/main/linux-64::libnsl-2.0.0-h5eee18b_0 
+  libstdcxx          pkgs/main/linux-64::libstdcxx-15.2.0-h39759b7_8 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0 
+  libzlib            pkgs/main/linux-64::libzlib-1.3.2-h47b2149_0 
+  ncurses            pkgs/main/linux-64::ncurses-6.5-h7934f7d_0 
+  openssl            pkgs/main/linux-64::openssl-3.5.7-h1b28b03_0 
+  packaging          pkgs/main/linux-64::packaging-26.1-py311h06a4308_0 
+  pip                pkgs/main/noarch::pip-26.1.2-pyhc872135_0 
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h47b2149_2 
+  python             pkgs/main/linux-64::python-3.11.15-h17756b0_1 
+  readline           pkgs/main/linux-64::readline-8.3-hc2a1206_0 
+  setuptools         pkgs/main/linux-64::setuptools-83.0.0-py311h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.53.2-h795bf6d_0 
+  tk                 pkgs/main/linux-64::tk-8.6.15-h54e0aa7_0 
+  tzdata             pkgs/main/noarch::tzdata-2026c-he532380_0 
+  wheel              pkgs/main/linux-64::wheel-0.47.0-py311h06a4308_0 
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.12-h9b100fa_1 
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0 
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0 
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2024.1-h47b2149_2 
+  xz                 pkgs/main/linux-64::xz-5.8.2-h448239c_0 
+  zlib               pkgs/main/linux-64::zlib-1.3.2-h47b2149_0 
+
+
+
+Downloading and Extracting Packages: ...working...
+python-3.11.15       | 29.5 MB   |            |   0% 
+
+setuptools-83.0.0    | 1.6 MB    |            |   0% [A
+
+
+pip-26.1.2           | 1.1 MB    |            |   0% [A[A
+
+
+
+packaging-26.1       | 276 KB    |            |   0% [A[A[A
+
+
+
+
+wheel-0.47.0         | 75 KB     |            |   0% [A[A[A[A
+                                                     
+
+                                                     [A
+
+
+                                                     [A[A
+
+
+
+                                                     [A[A[A
+
+
+
+
+                                                     [A[A[A[A
+OfflineError: EnforceUnusedAdapter called with url https://repo.anaconda.com/pkgs/main/linux-64/wheel-0.47.0-py311h06a4308_0.conda.
+This command is using a remote connection in offline mode.
+OfflineError: EnforceUnusedAdapter called with url https://repo.anaconda.com/pkgs/main/linux-64/setuptools-83.0.0-py311h06a4308_0.conda.
+This command is using a remote connection in offline mode.
+OfflineError: EnforceUnusedAdapter called with url https://repo.anaconda.com/pkgs/main/linux-64/wheel-0.47.0-py311h06a4308_0.conda.
+This command is using a remote connection in offline mode.
+OfflineError: EnforceUnusedAdapter called with url https://repo.anaconda.com/pkgs/main/linux-64/packaging-26.1-py311h06a4308_0.conda.
+This command is using a remote connection in offline mode.
+OfflineError: EnforceUnusedAdapter called with url https://repo.anaconda.com/pkgs/main/linux-64/python-3.11.15-h17756b0_1.conda.
+This command is using a remote connection in offline mode.
+OfflineError: EnforceUnusedAdapter called with url https://repo.anaconda.com/pkgs/main/noarch/pip-26.1.2-pyhc872135_0.conda.
+This command is using a remote connection in offline mode.
+
+ done
+EXIT_CODE=1
+END=2026-10-16T21:06:37.984197+08:00
+
+===== END python_create.log =====
+
+===== BEGIN python_create_online.log SHA256=78c752ecf24862cfcdca36e23ab4ae2ce91495fd462b06a1e36cb3abab5b4f0b =====
+START=2026-10-16T21:07:06.316224+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy conda create --prefix /home/yg/THIS-Lasso/.venv-r0 python=3.11 pip --yes
+2 channel Terms of Service accepted
+Retrieving notices: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.1.1
+    latest version: 26.9.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/yg/THIS-Lasso/.venv-r0
+
+  added / updated specs:
+    - pip
+    - python=3.11
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2026.9.25  |       h06a4308_0         107 KB
+    libexpat-2.9.0             |       h7354ed3_0         131 KB
+    ncurses-6.6                |       hfaaeb4e_0         893 KB
+    openssl-3.5.9              |       h1b28b03_0         5.7 MB
+    packaging-26.3             |  py311h06a4308_0         380 KB
+    pip-26.2.1                 |     pyhc872135_0         1.1 MB
+    python-3.11.17             |       hd9cb797_0        29.6 MB
+    setuptools-84.0.0          |  py311h06a4308_0         1.2 MB
+    sqlite-3.53.4              |       h795bf6d_0         1.2 MB
+    wheel-0.48.0               |  py311h06a4308_0          79 KB
+    xorg-libx11-1.8.13         |       h65de747_0         817 KB
+    xorg-xorgproto-2025.1      |       h47b2149_0         555 KB
+    xz-5.8.4                   |       h140a991_0         652 KB
+    ------------------------------------------------------------
+                                           Total:        42.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-52_gnu 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2026.9.25-h06a4308_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.44-h9e0c5a2_3 
+  libexpat           pkgs/main/linux-64::libexpat-2.9.0-h7354ed3_0 
+  libffi             pkgs/main/linux-64::libffi-3.4.8-h06d3fd0_3 
+  libgcc             pkgs/main/linux-64::libgcc-15.2.0-h69a1729_8 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-15.2.0-h166f726_8 
+  libnsl             pkgs/main/linux-64::libnsl-2.0.0-h5eee18b_0 
+  libstdcxx          pkgs/main/linux-64::libstdcxx-15.2.0-h39759b7_8 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0 
+  libzlib            pkgs/main/linux-64::libzlib-1.3.2-h47b2149_0 
+  ncurses            pkgs/main/linux-64::ncurses-6.6-hfaaeb4e_0 
+  openssl            pkgs/main/linux-64::openssl-3.5.9-h1b28b03_0 
+  packaging          pkgs/main/linux-64::packaging-26.3-py311h06a4308_0 
+  pip                pkgs/main/noarch::pip-26.2.1-pyhc872135_0 
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h47b2149_2 
+  python             pkgs/main/linux-64::python-3.11.17-hd9cb797_0 
+  readline           pkgs/main/linux-64::readline-8.3-hc2a1206_0 
+  setuptools         pkgs/main/linux-64::setuptools-84.0.0-py311h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.53.4-h795bf6d_0 
+  tk                 pkgs/main/linux-64::tk-8.6.15-h54e0aa7_0 
+  tzdata             pkgs/main/noarch::tzdata-2026c-he532380_0 
+  wheel              pkgs/main/linux-64::wheel-0.48.0-py311h06a4308_0 
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.13-h65de747_0 
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0 
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0 
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2025.1-h47b2149_0 
+  xz                 pkgs/main/linux-64::xz-5.8.4-h140a991_0 
+  zlib               pkgs/main/linux-64::zlib-1.3.2-h47b2149_0 
+
+
+
+Downloading and Extracting Packages: ...working...
+python-3.11.17       | 29.6 MB   |            |   0% 
+
+openssl-3.5.9        | 5.7 MB    |            |   0% [A
+
+
+sqlite-3.53.4        | 1.2 MB    |            |   0% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    |            |   0% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    |            |   0% [A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 107 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 79 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   |            |   0% 
+python-3.11.17       | 29.6 MB   |            |   0% 
+python-3.11.17       | 29.6 MB   |            |   1% 
+python-3.11.17       | 29.6 MB   |            |   1% 
+python-3.11.17       | 29.6 MB   | 1          |   1% 
+
+
+sqlite-3.53.4        | 1.2 MB    | 1          |   1% [A[A
+python-3.11.17       | 29.6 MB   | 1          |   1% 
+python-3.11.17       | 29.6 MB   | 1          |   2% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | 1          |   1% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | 1          |   1% [A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | 2          |   3% [A[A[A
+python-3.11.17       | 29.6 MB   | 2          |   2% 
+
+
+sqlite-3.53.4        | 1.2 MB    | 6          |   6% [A[A
+python-3.11.17       | 29.6 MB   | 3          |   3% 
+python-3.11.17       | 29.6 MB   | 4          |   4% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | 3          |   4% [A[A[A
+python-3.11.17       | 29.6 MB   | 5          |   5% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #1         |  11% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | 5          |   5% [A[A[A
+python-3.11.17       | 29.6 MB   | 6          |   6% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #3         |  14% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | 7          |   8% [A[A[A
+python-3.11.17       | 29.6 MB   | 7          |   7% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #5         |  15% [A[A
+python-3.11.17       | 29.6 MB   | 9          |   9% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #7         |  18% [A[A
+python-3.11.17       | 29.6 MB   | #          |  11% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | 8          |   9% [A[A[A
+python-3.11.17       | 29.6 MB   | #1         |  12% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #8         |  19% [A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | ##3        |  24% [A[A
+python-3.11.17       | 29.6 MB   | #3         |  14% 
+
+
+sqlite-3.53.4        | 1.2 MB    | ##7        |  28% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #3         |  14% [A[A[A
+python-3.11.17       | 29.6 MB   | #4         |  14% 
+python-3.11.17       | 29.6 MB   | #5         |  16% 
+python-3.11.17       | 29.6 MB   | #6         |  17% 
+
+
+sqlite-3.53.4        | 1.2 MB    | ###2       |  33% [A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | 4          |   4% [A[A[A[A
+python-3.11.17       | 29.6 MB   | #7         |  18% 
+python-3.11.17       | 29.6 MB   | #8         |  18% 
+
+
+sqlite-3.53.4        | 1.2 MB    | ###5       |  35% [A[A
+
+openssl-3.5.9        | 5.7 MB    |            |   0% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #8         |  19% [A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | ####1      |  42% [A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | 8          |   8% [A[A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | ####6      |  47% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ##1        |  22% [A[A[A
+python-3.11.17       | 29.6 MB   | #8         |  19% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #####      |  50% [A[A
+python-3.11.17       | 29.6 MB   | ##         |  20% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #          |  11% [A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | 1          |   2% [A
+python-3.11.17       | 29.6 MB   | ##1        |  21% 
+
+
+sqlite-3.53.4        | 1.2 MB    | #####2     |  53% [A[A
+python-3.11.17       | 29.6 MB   | ##3        |  23% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ##4        |  24% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #3         |  14% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ##3        |  24% 
+
+openssl-3.5.9        | 5.7 MB    | 2          |   2% [A
+
+
+sqlite-3.53.4        | 1.2 MB    | #####5     |  55% [A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | #####9     |  59% [A[A
+
+openssl-3.5.9        | 5.7 MB    | 2          |   3% [A
+python-3.11.17       | 29.6 MB   | ##4        |  25% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ###        |  30% [A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | ######1    |  62% [A[A
+python-3.11.17       | 29.6 MB   | ##5        |  25% 
+
+
+sqlite-3.53.4        | 1.2 MB    | ######8    |  68% [A[A
+python-3.11.17       | 29.6 MB   | ##5        |  26% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ###4       |  34% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | 3          |   3% [A
+python-3.11.17       | 29.6 MB   | ##7        |  28% 
+python-3.11.17       | 29.6 MB   | ##8        |  29% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ###5       |  35% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #7         |  18% [A[A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | #######    |  71% [A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ##3        |  23% [A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ###9       |  39% [A[A[A
+python-3.11.17       | 29.6 MB   | ##9        |  30% 
+
+openssl-3.5.9        | 5.7 MB    | 3          |   4% [A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ###5       |  36% [A[A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | #######4   |  74% [A[A
+
+openssl-3.5.9        | 5.7 MB    | 4          |   5% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####       |  40% [A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | #######6   |  77% [A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | #######9   |  79% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####1      |  42% [A[A[A
+python-3.11.17       | 29.6 MB   | ###1       |  32% 
+
+
+sqlite-3.53.4        | 1.2 MB    | ########4  |  84% [A[A
+python-3.11.17       | 29.6 MB   | ###2       |  32% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####3      |  43% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ###9       |  40% [A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | 5          |   6% [A
+python-3.11.17       | 29.6 MB   | ###5       |  35% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####5      |  46% [A[A[A
+python-3.11.17       | 29.6 MB   | ###6       |  36% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ####3      |  44% [A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####6      |  47% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ####6      |  47% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ###7       |  37% 
+
+openssl-3.5.9        | 5.7 MB    | 6          |   7% [A
+
+
+sqlite-3.53.4        | 1.2 MB    | #########  |  91% [A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####8      |  48% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ####9      |  49% [A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | 8          |   8% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ####9      |  49% [A[A[A
+python-3.11.17       | 29.6 MB   | ###7       |  38% 
+python-3.11.17       | 29.6 MB   | ###8       |  39% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #####2     |  52% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ###9       |  39% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #####1     |  52% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #####3     |  54% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ####       |  41% 
+
+openssl-3.5.9        | 5.7 MB    | 8          |   9% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #####3     |  53% [A[A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | #########9 | 100% [A[A
+
+
+sqlite-3.53.4        | 1.2 MB    | ########## | 100% [A[A
+
+openssl-3.5.9        | 5.7 MB    | 9          |   9% [A
+
+
+sqlite-3.53.4        | 1.2 MB    | ########## | 100% [A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #####6     |  56% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ####1      |  41% 
+python-3.11.17       | 29.6 MB   | ####1      |  42% 
+python-3.11.17       | 29.6 MB   | ####2      |  43% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #####7     |  58% [A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #####4     |  54% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | 9          |  10% [A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ######3    |  63% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ####3      |  43% 
+python-3.11.17       | 29.6 MB   | ####3      |  44% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | 1          |   2% [A[A[A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ######4    |  64% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ####5      |  45% 
+
+openssl-3.5.9        | 5.7 MB    | #          |  10% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #####6     |  57% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ######7    |  67% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ####5      |  46% 
+
+openssl-3.5.9        | 5.7 MB    | #          |  11% [A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #          |  11% [A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #####8     |  58% [A[A[A
+python-3.11.17       | 29.6 MB   | ####6      |  46% 
+
+openssl-3.5.9        | 5.7 MB    | #1         |  11% [A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #4         |  14% [A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ######     |  61% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ######9    |  70% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ####7      |  48% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #######2   |  73% [A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #7         |  18% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ####8      |  49% 
+
+openssl-3.5.9        | 5.7 MB    | #1         |  12% [A
+
+openssl-3.5.9        | 5.7 MB    | #2         |  12% [A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #######5   |  75% [A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ######2    |  62% [A[A[A
+python-3.11.17       | 29.6 MB   | ####9      |  50% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ##1        |  21% [A[A[A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #######6   |  77% [A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #2         |  13% [A
+python-3.11.17       | 29.6 MB   | #####      |  51% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ######4    |  65% [A[A[A
+python-3.11.17       | 29.6 MB   | #####1     |  51% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ######8    |  68% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #3         |  13% [A
+python-3.11.17       | 29.6 MB   | #####2     |  52% 
+python-3.11.17       | 29.6 MB   | #####3     |  53% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ##5        |  25% [A[A[A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ########2  |  82% [A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ###7       |  38% [A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #3         |  14% [A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ########6  |  86% [A[A[A[A
+python-3.11.17       | 29.6 MB   | #####4     |  54% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ######9    |  70% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ########7  |  88% [A[A[A[A
+python-3.11.17       | 29.6 MB   | #####4     |  55% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ####1      |  41% [A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #######2   |  72% [A[A[A
+python-3.11.17       | 29.6 MB   | #####6     |  56% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ####4      |  45% [A[A[A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ########9  |  89% [A[A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #########1 |  92% [A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ####8      |  48% [A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #######4   |  75% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #3         |  14% [A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #########3 |  93% [A[A[A[A
+python-3.11.17       | 29.6 MB   | #####7     |  57% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #####1     |  52% [A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #######5   |  76% [A[A[A
+python-3.11.17       | 29.6 MB   | #####7     |  58% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #####5     |  56% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #####9     |  59% 
+
+openssl-3.5.9        | 5.7 MB    | #5         |  15% [A
+python-3.11.17       | 29.6 MB   | ######     |  60% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #########6 |  96% [A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ######     |  61% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ######1    |  61% 
+
+openssl-3.5.9        | 5.7 MB    | #5         |  16% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #######7   |  77% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #########7 |  97% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ######1    |  62% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########   |  81% [A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | #########8 |  99% [A[A[A[A
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ########## | 100% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ######2    |  62% 
+
+
+
+
+pip-26.2.1           | 1.1 MB    | ########## | 100% [A[A[A[A
+python-3.11.17       | 29.6 MB   | ######2    |  63% 
+
+openssl-3.5.9        | 5.7 MB    | #6         |  16% [A
+python-3.11.17       | 29.6 MB   | ######3    |  64% 
+python-3.11.17       | 29.6 MB   | ######4    |  64% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########3  |  84% [A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ######4    |  64% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ######4    |  65% 
+python-3.11.17       | 29.6 MB   | ######5    |  65% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ########2  |  82% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ######5    |  66% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########6  |  86% [A[A[A
+python-3.11.17       | 29.6 MB   | ######6    |  66% 
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ########7  |  88% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ######6    |  67% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########7  |  87% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #7         |  17% [A
+python-3.11.17       | 29.6 MB   | ######7    |  67% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | 1          |   2% [A[A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########8  |  89% [A[A[A
+python-3.11.17       | 29.6 MB   | ######7    |  68% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | 9          |  10% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #7         |  17% [A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #########3 |  93% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ######8    |  69% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########9  |  90% [A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | #########6 |  97% [A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #5         |  16% [A[A[A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ########## | 100% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ######9    |  70% 
+
+openssl-3.5.9        | 5.7 MB    | #8         |  18% [A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #9         |  20% [A[A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #########2 |  92% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #8         |  18% [A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+
+ncurses-6.6          | 893 KB    | ########## | 100% [A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #######1   |  71% 
+python-3.11.17       | 29.6 MB   | #######2   |  73% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ##3        |  24% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #9         |  19% [A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ##7        |  27% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #9         |  19% [A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | 2          |   2% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #######3   |  74% 
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | 4          |   5% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #######7   |  77% 
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #2         |  12% [A[A[A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ##9        |  29% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #7         |  17% [A[A[A[A[A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #########4 |  95% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | #9         |  20% [A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ###7       |  37% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ##9        |  29% [A[A[A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ####3      |  43% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##         |  21% [A
+python-3.11.17       | 29.6 MB   | #######8   |  78% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ####7      |  47% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ###4       |  34% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #######9   |  79% 
+
+openssl-3.5.9        | 5.7 MB    | ##1        |  21% [A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | #########7 |  97% [A[A[A
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########## | 100% [A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##1        |  22% [A
+python-3.11.17       | 29.6 MB   | ########   |  80% 
+
+
+
+setuptools-84.0.0    | 1.2 MB    | ########## | 100% [A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #####      |  51% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ###9       |  39% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########1  |  81% 
+python-3.11.17       | 29.6 MB   | ########1  |  82% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #####4     |  55% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ####6      |  47% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########2  |  82% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #####6     |  57% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##2        |  22% [A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #####6     |  56% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########2  |  83% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ######     |  61% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##3        |  23% [A
+
+openssl-3.5.9        | 5.7 MB    | ##4        |  24% [A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ######4    |  65% [A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########3  |  83% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ######6    |  67% [A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | 2          |   3% [A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########4  |  85% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ######8    |  69% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ######1    |  61% [A[A[A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #######4   |  74% [A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########5  |  86% 
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ######6    |  66% [A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##4        |  25% [A
+python-3.11.17       | 29.6 MB   | ########6  |  86% 
+python-3.11.17       | 29.6 MB   | ########8  |  88% 
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #######1   |  71% [A[A[A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #######6   |  76% [A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########8  |  89% 
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | #4         |  14% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##4        |  25% [A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #######6   |  76% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########  |  90% 
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ##         |  20% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########3  |  83% [A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##5        |  26% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ##3        |  23% [A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########1 |  91% 
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########8  |  88% [A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##6        |  26% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ##5        |  26% [A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########1 |  92% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ########   |  80% [A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########2 |  92% 
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ##8        |  29% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##6        |  26% [A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #########  |  90% [A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########2 |  93% 
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #########3 |  93% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########3 |  94% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #########5 |  96% [A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | #########8 |  98% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ###1       |  32% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##6        |  27% [A
+
+
+
+
+
+
+
+xz-5.8.4             | 652 KB    | ########## | 100% [A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########4 |  95% 
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ###4       |  35% [A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########5 |  96% 
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | #########9 | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+xorg-libx11-1.8.13   | 817 KB    | ########## | 100% [A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##7        |  27% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ###7       |  38% [A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########6 |  97% 
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ####       |  40% [A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########7 |  97% 
+
+openssl-3.5.9        | 5.7 MB    | ##7        |  28% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ####3      |  43% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##8        |  28% [A
+python-3.11.17       | 29.6 MB   | #########8 |  98% 
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    | #2         |  12% [A[A[A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | #########8 |  99% 
+
+openssl-3.5.9        | 5.7 MB    | ##8        |  29% [A
+python-3.11.17       | 29.6 MB   | ########## | 100% 
+python-3.11.17       | 29.6 MB   | ########## | 100% 
+
+openssl-3.5.9        | 5.7 MB    | ##9        |  29% [A
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    | ##4        |  24% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ####6      |  46% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | 4          |   4% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    | ####8      |  49% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 107 KB    | #4         |  15% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | ####2      |  42% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 107 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+ca-certificates-2026 | 107 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+python-3.11.17       | 29.6 MB   | ########## | 100% 
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | #####7     |  58% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 79 KB     | ##         |  20% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 79 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+wheel-0.48.0         | 79 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ##9        |  29% [A
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    | #######3   |  73% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libexpat-2.9.0       | 131 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###        |  30% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ######     |  61% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###        |  30% [A
+
+openssl-3.5.9        | 5.7 MB    | ###        |  31% [A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | ######7    |  67% [A[A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###1       |  31% [A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | ########4  |  84% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ######6    |  66% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | #######5   |  75% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | #######7   |  78% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###1       |  32% [A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | #########6 |  97% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+packaging-26.3       | 380 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###2       |  32% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ########   |  81% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###2       |  32% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ########6  |  87% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###2       |  33% [A
+
+openssl-3.5.9        | 5.7 MB    | ###3       |  33% [A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | #########8 |  98% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+xorg-xorgproto-2025. | 555 KB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+openssl-3.5.9        | 5.7 MB    | ###3       |  33% [A
+
+openssl-3.5.9        | 5.7 MB    | ###3       |  34% [A
+
+openssl-3.5.9        | 5.7 MB    | ###4       |  34% [A
+
+openssl-3.5.9        | 5.7 MB    | ###4       |  35% [A
+
+openssl-3.5.9        | 5.7 MB    | ###4       |  35% [A
+
+openssl-3.5.9        | 5.7 MB    | ###5       |  35% [A
+
+openssl-3.5.9        | 5.7 MB    | ###5       |  36% [A
+
+openssl-3.5.9        | 5.7 MB    | ###5       |  36% [A
+
+openssl-3.5.9        | 5.7 MB    | ###6       |  36% [A
+
+openssl-3.5.9        | 5.7 MB    | ###6       |  36% [A
+
+openssl-3.5.9        | 5.7 MB    | ###6       |  37% [A
+
+openssl-3.5.9        | 5.7 MB    | ###7       |  37% [A
+
+openssl-3.5.9        | 5.7 MB    | ###7       |  37% [A
+
+openssl-3.5.9        | 5.7 MB    | ###7       |  38% [A
+
+openssl-3.5.9        | 5.7 MB    | ###7       |  38% [A
+
+openssl-3.5.9        | 5.7 MB    | ###8       |  38% [A
+
+openssl-3.5.9        | 5.7 MB    | ###8       |  38% [A
+
+openssl-3.5.9        | 5.7 MB    | ###8       |  39% [A
+
+openssl-3.5.9        | 5.7 MB    | ###8       |  39% [A
+
+openssl-3.5.9        | 5.7 MB    | ###9       |  40% [A
+
+openssl-3.5.9        | 5.7 MB    | ####       |  40% [A
+
+openssl-3.5.9        | 5.7 MB    | ####       |  40% [A
+
+openssl-3.5.9        | 5.7 MB    | ####       |  41% [A
+
+openssl-3.5.9        | 5.7 MB    | ####1      |  41% [A
+
+openssl-3.5.9        | 5.7 MB    | ####1      |  42% [A
+
+openssl-3.5.9        | 5.7 MB    | ####2      |  42% [A
+
+openssl-3.5.9        | 5.7 MB    | ####2      |  43% [A
+
+openssl-3.5.9        | 5.7 MB    | ####2      |  43% [A
+
+openssl-3.5.9        | 5.7 MB    | ####3      |  43% [A
+
+openssl-3.5.9        | 5.7 MB    | ####4      |  45% [A
+
+openssl-3.5.9        | 5.7 MB    | ####5      |  45% [A
+
+openssl-3.5.9        | 5.7 MB    | ####5      |  46% [A
+
+openssl-3.5.9        | 5.7 MB    | ####5      |  46% [A
+
+openssl-3.5.9        | 5.7 MB    | ####6      |  46% [A
+
+openssl-3.5.9        | 5.7 MB    | ####6      |  47% [A
+
+openssl-3.5.9        | 5.7 MB    | ####6      |  47% [A
+
+openssl-3.5.9        | 5.7 MB    | ####7      |  47% [A
+
+openssl-3.5.9        | 5.7 MB    | ####7      |  48% [A
+
+openssl-3.5.9        | 5.7 MB    | ####8      |  48% [A
+
+openssl-3.5.9        | 5.7 MB    | ####8      |  48% [A
+
+openssl-3.5.9        | 5.7 MB    | ####8      |  49% [A
+
+openssl-3.5.9        | 5.7 MB    | ####9      |  49% [A
+
+openssl-3.5.9        | 5.7 MB    | ####9      |  49% [A
+
+openssl-3.5.9        | 5.7 MB    | ####9      |  50% [A
+
+openssl-3.5.9        | 5.7 MB    | #####      |  50% [A
+
+openssl-3.5.9        | 5.7 MB    | #####      |  51% [A
+
+openssl-3.5.9        | 5.7 MB    | #####1     |  51% [A
+
+openssl-3.5.9        | 5.7 MB    | #####1     |  51% [A
+
+openssl-3.5.9        | 5.7 MB    | #####1     |  52% [A
+
+openssl-3.5.9        | 5.7 MB    | #####2     |  52% [A
+
+openssl-3.5.9        | 5.7 MB    | #####2     |  52% [A
+
+openssl-3.5.9        | 5.7 MB    | #####2     |  53% [A
+
+openssl-3.5.9        | 5.7 MB    | #####3     |  53% [A
+
+openssl-3.5.9        | 5.7 MB    | #####3     |  53% [A
+
+openssl-3.5.9        | 5.7 MB    | #####4     |  54% [A
+
+openssl-3.5.9        | 5.7 MB    | #####4     |  55% [A
+
+openssl-3.5.9        | 5.7 MB    | #####4     |  55% [A
+
+openssl-3.5.9        | 5.7 MB    | #####5     |  55% [A
+
+openssl-3.5.9        | 5.7 MB    | #####5     |  56% [A
+
+openssl-3.5.9        | 5.7 MB    | #####5     |  56% [A
+
+openssl-3.5.9        | 5.7 MB    | #####6     |  56% [A
+
+openssl-3.5.9        | 5.7 MB    | #####6     |  57% [A
+
+openssl-3.5.9        | 5.7 MB    | #####6     |  57% [A
+
+openssl-3.5.9        | 5.7 MB    | #####7     |  57% [A
+
+openssl-3.5.9        | 5.7 MB    | #####7     |  58% [A
+
+openssl-3.5.9        | 5.7 MB    | #####8     |  58% [A
+
+openssl-3.5.9        | 5.7 MB    | #####8     |  59% [A
+
+openssl-3.5.9        | 5.7 MB    | #####9     |  59% [A
+
+openssl-3.5.9        | 5.7 MB    | #####9     |  60% [A
+
+openssl-3.5.9        | 5.7 MB    | #####9     |  60% [A
+
+openssl-3.5.9        | 5.7 MB    | ######     |  60% [A
+
+openssl-3.5.9        | 5.7 MB    | ######     |  61% [A
+
+openssl-3.5.9        | 5.7 MB    | ######     |  61% [A
+
+openssl-3.5.9        | 5.7 MB    | ######1    |  61% [A
+
+openssl-3.5.9        | 5.7 MB    | ######1    |  61% [A
+
+openssl-3.5.9        | 5.7 MB    | ######1    |  62% [A
+
+openssl-3.5.9        | 5.7 MB    | ######2    |  62% [A
+
+openssl-3.5.9        | 5.7 MB    | ######2    |  63% [A
+
+openssl-3.5.9        | 5.7 MB    | ######2    |  63% [A
+
+openssl-3.5.9        | 5.7 MB    | ######3    |  63% [A
+
+openssl-3.5.9        | 5.7 MB    | ######3    |  63% [A
+
+openssl-3.5.9        | 5.7 MB    | ######3    |  64% [A
+
+openssl-3.5.9        | 5.7 MB    | ######4    |  64% [A
+
+openssl-3.5.9        | 5.7 MB    | ######4    |  64% [A
+
+openssl-3.5.9        | 5.7 MB    | ######5    |  65% [A
+
+openssl-3.5.9        | 5.7 MB    | ######5    |  66% [A
+
+openssl-3.5.9        | 5.7 MB    | ######6    |  66% [A
+
+openssl-3.5.9        | 5.7 MB    | ######6    |  67% [A
+
+openssl-3.5.9        | 5.7 MB    | ######6    |  67% [A
+
+openssl-3.5.9        | 5.7 MB    | ######7    |  67% [A
+
+openssl-3.5.9        | 5.7 MB    | ######7    |  67% [A
+
+openssl-3.5.9        | 5.7 MB    | ######7    |  68% [A
+
+openssl-3.5.9        | 5.7 MB    | ######8    |  68% [A
+
+openssl-3.5.9        | 5.7 MB    | ######8    |  68% [A
+
+openssl-3.5.9        | 5.7 MB    | ######8    |  69% [A
+
+openssl-3.5.9        | 5.7 MB    | ######9    |  69% [A
+
+openssl-3.5.9        | 5.7 MB    | ######9    |  69% [A
+
+openssl-3.5.9        | 5.7 MB    | ######9    |  70% [A
+
+openssl-3.5.9        | 5.7 MB    | #######    |  70% [A
+
+openssl-3.5.9        | 5.7 MB    | #######    |  71% [A
+
+openssl-3.5.9        | 5.7 MB    | #######1   |  71% [A
+
+openssl-3.5.9        | 5.7 MB    | #######2   |  72% [A
+
+openssl-3.5.9        | 5.7 MB    | #######2   |  72% [A
+
+openssl-3.5.9        | 5.7 MB    | #######2   |  73% [A
+
+openssl-3.5.9        | 5.7 MB    | #######3   |  73% [A
+
+openssl-3.5.9        | 5.7 MB    | #######3   |  74% [A
+
+openssl-3.5.9        | 5.7 MB    | #######4   |  74% [A
+
+openssl-3.5.9        | 5.7 MB    | #######4   |  75% [A
+
+openssl-3.5.9        | 5.7 MB    | #######5   |  75% [A
+
+openssl-3.5.9        | 5.7 MB    | #######5   |  76% [A
+
+openssl-3.5.9        | 5.7 MB    | #######5   |  76% [A
+
+openssl-3.5.9        | 5.7 MB    | #######6   |  76% [A
+
+openssl-3.5.9        | 5.7 MB    | #######6   |  77% [A
+
+openssl-3.5.9        | 5.7 MB    | #######6   |  77% [A
+
+openssl-3.5.9        | 5.7 MB    | #######7   |  77% [A
+
+openssl-3.5.9        | 5.7 MB    | #######7   |  78% [A
+
+openssl-3.5.9        | 5.7 MB    | #######7   |  78% [A
+
+openssl-3.5.9        | 5.7 MB    | #######8   |  78% [A
+
+openssl-3.5.9        | 5.7 MB    | #######8   |  78% [A
+
+openssl-3.5.9        | 5.7 MB    | #######9   |  79% [A
+
+openssl-3.5.9        | 5.7 MB    | #######9   |  79% [A
+
+openssl-3.5.9        | 5.7 MB    | #######9   |  80% [A
+
+openssl-3.5.9        | 5.7 MB    | ########   |  81% [A
+
+openssl-3.5.9        | 5.7 MB    | ########   |  81% [A
+
+openssl-3.5.9        | 5.7 MB    | ########1  |  81% [A
+
+openssl-3.5.9        | 5.7 MB    | ########1  |  82% [A
+
+openssl-3.5.9        | 5.7 MB    | ########2  |  82% [A
+
+openssl-3.5.9        | 5.7 MB    | ########2  |  82% [A
+
+openssl-3.5.9        | 5.7 MB    | ########2  |  83% [A
+
+openssl-3.5.9        | 5.7 MB    | ########2  |  83% [A
+
+openssl-3.5.9        | 5.7 MB    | ########3  |  83% [A
+
+openssl-3.5.9        | 5.7 MB    | ########3  |  84% [A
+
+openssl-3.5.9        | 5.7 MB    | ########3  |  84% [A
+
+openssl-3.5.9        | 5.7 MB    | ########4  |  84% [A
+
+openssl-3.5.9        | 5.7 MB    | ########5  |  85% [A
+
+openssl-3.5.9        | 5.7 MB    | ########5  |  85% [A
+
+openssl-3.5.9        | 5.7 MB    | ########5  |  86% [A
+
+openssl-3.5.9        | 5.7 MB    | ########5  |  86% [A
+
+openssl-3.5.9        | 5.7 MB    | ########6  |  86% [A
+
+openssl-3.5.9        | 5.7 MB    | ########6  |  87% [A
+
+openssl-3.5.9        | 5.7 MB    | ########7  |  87% [A
+
+openssl-3.5.9        | 5.7 MB    | ########7  |  88% [A
+
+openssl-3.5.9        | 5.7 MB    | ########7  |  88% [A
+
+openssl-3.5.9        | 5.7 MB    | ########8  |  88% [A
+
+openssl-3.5.9        | 5.7 MB    | ########8  |  89% [A
+
+openssl-3.5.9        | 5.7 MB    | ########9  |  89% [A
+
+openssl-3.5.9        | 5.7 MB    | ########9  |  89% [A
+
+openssl-3.5.9        | 5.7 MB    | ########9  |  90% [A
+
+openssl-3.5.9        | 5.7 MB    | #########  |  91% [A
+
+openssl-3.5.9        | 5.7 MB    | #########1 |  91% [A
+
+openssl-3.5.9        | 5.7 MB    | #########1 |  91% [A
+
+openssl-3.5.9        | 5.7 MB    | #########1 |  92% [A
+
+openssl-3.5.9        | 5.7 MB    | #########2 |  92% [A
+
+openssl-3.5.9        | 5.7 MB    | #########2 |  93% [A
+
+openssl-3.5.9        | 5.7 MB    | #########3 |  93% [A
+
+openssl-3.5.9        | 5.7 MB    | #########3 |  94% [A
+
+openssl-3.5.9        | 5.7 MB    | #########3 |  94% [A
+
+openssl-3.5.9        | 5.7 MB    | #########4 |  94% [A
+
+openssl-3.5.9        | 5.7 MB    | #########4 |  95% [A
+
+openssl-3.5.9        | 5.7 MB    | #########4 |  95% [A
+
+openssl-3.5.9        | 5.7 MB    | #########5 |  95% [A
+
+openssl-3.5.9        | 5.7 MB    | #########5 |  96% [A
+
+openssl-3.5.9        | 5.7 MB    | #########6 |  96% [A
+
+openssl-3.5.9        | 5.7 MB    | #########6 |  97% [A
+
+openssl-3.5.9        | 5.7 MB    | #########6 |  97% [A
+
+openssl-3.5.9        | 5.7 MB    | #########7 |  97% [A
+
+openssl-3.5.9        | 5.7 MB    | #########7 |  97% [A
+
+openssl-3.5.9        | 5.7 MB    | #########7 |  98% [A
+
+openssl-3.5.9        | 5.7 MB    | #########7 |  98% [A
+
+openssl-3.5.9        | 5.7 MB    | #########8 |  98% [A
+
+openssl-3.5.9        | 5.7 MB    | #########9 |  99% [A
+
+openssl-3.5.9        | 5.7 MB    | #########9 |  99% [A
+
+openssl-3.5.9        | 5.7 MB    | #########9 | 100% [A
+
+openssl-3.5.9        | 5.7 MB    | #########9 | 100% [A
+
+openssl-3.5.9        | 5.7 MB    | ########## | 100% [A
+
+openssl-3.5.9        | 5.7 MB    | ########## | 100% [A
+                                                     
+
+                                                     [A
+
+
+                                                     [A[A
+
+
+
+                                                     [A[A[A
+
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A done
+Preparing transaction: / - \ | done
+Verifying transaction: - \ | / - \ | / - \ done
+Executing transaction: / - \ | / - \ | / - \ | / - \ | done
+#
+# To activate this environment, use
+#
+#     $ conda activate /home/yg/THIS-Lasso/.venv-r0
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+Channel "defaults" has the following notices:
+  [warning] -- Wed Sep 30 00:00:00 2026
+  Anaconda will stop building new Python 3.10 packages on the main channel after October 31, 2026. Existing Python 3.10 packages will stay available but will no longer get new builds or security fixes. We recommend upgrading to Python 3.11 or later. Details: https://www.anaconda.com/docs/reference/policies-practices/python-version-support?utm_source=channel_notices
+
+  [info] -- Thu Aug  6 00:00:00 2026
+  main-x (Anaconda's new authenticated channel) is now generally available, with thousands of additional packages from our secure supply chain. Get started at: https://anaconda.com/docs/getting-started/main-x?utm_source=channel_notices
+
+EXIT_CODE=0
+END=2026-10-16T21:09:10.102377+08:00
+
+===== END python_create_online.log =====
+
+===== BEGIN python_dependencies.log SHA256=bd42eb0818fbfc20edd1fe06450fa293bba40127167bf6702f9776989a8be3af =====
+START=2026-10-16T21:09:53.936273+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy /home/yg/THIS-Lasso/.venv-r0/bin/python -m pip install --disable-pip-version-check --progress-bar off --requirement environment/r0/requirements.in
+Collecting numpy==1.26.4 (from -r environment/r0/requirements.in (line 3))
+  Using cached numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting scipy==1.11.4 (from -r environment/r0/requirements.in (line 4))
+  Using cached scipy-1.11.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+Collecting statsmodels==0.14.0 (from -r environment/r0/requirements.in (line 5))
+  Using cached statsmodels-0.14.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.0 kB)
+Collecting pandas<3 (from -r environment/r0/requirements.in (line 6))
+  Downloading pandas-2.3.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting scikit-learn (from -r environment/r0/requirements.in (line 7))
+  Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting matplotlib (from -r environment/r0/requirements.in (line 8))
+  Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting skglm (from -r environment/r0/requirements.in (line 9))
+  Using cached skglm-0.5-py3-none-any.whl.metadata (7.4 kB)
+Collecting tabulate (from -r environment/r0/requirements.in (line 10))
+  Using cached tabulate-0.10.0-py3-none-any.whl.metadata (40 kB)
+Collecting patsy>=0.5.2 (from statsmodels==0.14.0->-r environment/r0/requirements.in (line 5))
+  Using cached patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: packaging>=21.3 in ./.venv-r0/lib/python3.11/site-packages (from statsmodels==0.14.0->-r environment/r0/requirements.in (line 5)) (26.3)
+Collecting python-dateutil>=2.8.2 (from pandas<3->-r environment/r0/requirements.in (line 6))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas<3->-r environment/r0/requirements.in (line 6))
+  Downloading pytz-2026.5-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3->-r environment/r0/requirements.in (line 6))
+  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting joblib>=1.4.0 (from scikit-learn->-r environment/r0/requirements.in (line 7))
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->-r environment/r0/requirements.in (line 7))
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->-r environment/r0/requirements.in (line 7))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->-r environment/r0/requirements.in (line 8))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r environment/r0/requirements.in (line 8))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->-r environment/r0/requirements.in (line 8))
+  Downloading fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (137 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r environment/r0/requirements.in (line 8))
+  Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting pillow>=9 (from matplotlib->-r environment/r0/requirements.in (line 8))
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib->-r environment/r0/requirements.in (line 8))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting numba (from skglm->-r environment/r0/requirements.in (line 9))
+  Downloading numba-0.68.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (2.8 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn->-r environment/r0/requirements.in (line 7))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3->-r environment/r0/requirements.in (line 6))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting llvmlite<0.51,>=0.50.0dev0 (from numba->skglm->-r environment/r0/requirements.in (line 9))
+  Downloading llvmlite-0.50.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Using cached numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+Using cached scipy-1.11.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.4 MB)
+Using cached statsmodels-0.14.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.1 MB)
+Downloading pandas-2.3.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+EXIT_CODE=-15
+END=2026-10-16T21:15:09.553367+08:00
+
+===== END python_dependencies.log =====
+
+===== BEGIN python_dependencies_mirror.log SHA256=70f3d104715921002b991b4289f767e5f8099d374b8e5ff814ff0380d6b6dbcb =====
+START=2026-10-16T21:15:12.204314+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy /home/yg/THIS-Lasso/.venv-r0/bin/python -m pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple --timeout 30 --disable-pip-version-check --progress-bar off --requirement environment/r0/requirements.in
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting numpy==1.26.4 (from -r environment/r0/requirements.in (line 3))
+  Using cached numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+Collecting scipy==1.11.4 (from -r environment/r0/requirements.in (line 4))
+  Using cached scipy-1.11.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.4 MB)
+Collecting statsmodels==0.14.0 (from -r environment/r0/requirements.in (line 5))
+  Downloading statsmodels-0.14.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.1 MB)
+Collecting pandas<3 (from -r environment/r0/requirements.in (line 6))
+  Downloading pandas-2.3.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+Collecting scikit-learn (from -r environment/r0/requirements.in (line 7))
+  Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+
+===== END python_dependencies_mirror.log =====
+
+===== BEGIN python_dependencies_resume.log SHA256=e4e152caf1239a164a7060667bee6323754ab8167161b2f61b2ea655d9b2bd56 =====
+START=2026-10-16T21:28:01.924099+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy /home/yg/THIS-Lasso/.venv-r0/bin/python -m pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple --timeout 30 --retries 2 --disable-pip-version-check --progress-bar off --requirement environment/r0/requirements.in
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting numpy==1.26.4 (from -r environment/r0/requirements.in (line 3))
+  Using cached numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+Collecting scipy==1.11.4 (from -r environment/r0/requirements.in (line 4))
+  Using cached scipy-1.11.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.4 MB)
+Collecting statsmodels==0.14.0 (from -r environment/r0/requirements.in (line 5))
+  Using cached statsmodels-0.14.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.1 MB)
+Collecting pandas==2.2.3 (from -r environment/r0/requirements.in (line 6))
+  Using cached pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+Collecting scikit-learn==1.6.1 (from -r environment/r0/requirements.in (line 7))
+  Downloading scikit_learn-1.6.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.5 MB)
+Collecting matplotlib==3.9.4 (from -r environment/r0/requirements.in (line 8))
+  Downloading matplotlib-3.9.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
+Collecting skglm==0.5 (from -r environment/r0/requirements.in (line 9))
+  Downloading skglm-0.5-py3-none-any.whl (114 kB)
+Collecting tabulate==0.9.0 (from -r environment/r0/requirements.in (line 10))
+  Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Collecting numba==0.61.2 (from -r environment/r0/requirements.in (line 12))
+  Downloading numba-0.61.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.8 MB)
+Collecting llvmlite==0.44.0 (from -r environment/r0/requirements.in (line 13))
+  Downloading llvmlite-0.44.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (42.4 MB)
+Collecting patsy>=0.5.2 (from statsmodels==0.14.0->-r environment/r0/requirements.in (line 5))
+  Downloading patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+Requirement already satisfied: packaging>=21.3 in ./.venv-r0/lib/python3.11/site-packages (from statsmodels==0.14.0->-r environment/r0/requirements.in (line 5)) (26.3)
+Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r environment/r0/requirements.in (line 6))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting pytz>=2020.1 (from pandas==2.2.3->-r environment/r0/requirements.in (line 6))
+  Downloading pytz-2026.5-py2.py3-none-any.whl (506 kB)
+Collecting tzdata>=2022.7 (from pandas==2.2.3->-r environment/r0/requirements.in (line 6))
+  Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Collecting joblib>=1.2.0 (from scikit-learn==1.6.1->-r environment/r0/requirements.in (line 7))
+  Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.6.1->-r environment/r0/requirements.in (line 7))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.9.4->-r environment/r0/requirements.in (line 8))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Collecting cycler>=0.10 (from matplotlib==3.9.4->-r environment/r0/requirements.in (line 8))
+  Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.9.4->-r environment/r0/requirements.in (line 8))
+  Downloading fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.9.4->-r environment/r0/requirements.in (line 8))
+  Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+Collecting pillow>=8 (from matplotlib==3.9.4->-r environment/r0/requirements.in (line 8))
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+Collecting pyparsing>=2.3.1 (from matplotlib==3.9.4->-r environment/r0/requirements.in (line 8))
+  Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.2.0->scikit-learn==1.6.1->-r environment/r0/requirements.in (line 7))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.2.3->-r environment/r0/requirements.in (line 6))
+  Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, threadpoolctl, tabulate, six, pyparsing, pillow, numpy, llvmlite, kiwisolver, fonttools, cycler, cloudpickle, scipy, python-dateutil, patsy, numba, joblib, contourpy, scikit-learn, pandas, matplotlib, statsmodels, skglm
+Successfully installed cloudpickle-3.1.2 contourpy-1.3.3 cycler-0.12.1 fonttools-4.67.0 joblib-1.6.0 kiwisolver-1.5.1 llvmlite-0.44.0 matplotlib-3.9.4 numba-0.61.2 numpy-1.26.4 pandas-2.2.3 patsy-1.0.3 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 pytz-2026.5 scikit-learn-1.6.1 scipy-1.11.4 six-1.17.0 skglm-0.5 statsmodels-0.14.0 tabulate-0.9.0 threadpoolctl-3.7.0 tzdata-2026.5
+EXIT_CODE=0
+END=2026-10-16T21:29:27.033623+08:00
+
+===== END python_dependencies_resume.log =====
+
+===== BEGIN python_download_switch.log SHA256=424b6372d1fb77ca6d1604596893263687726539ca782e83658bb769300c46d7 =====
+START=2026-10-16T21:15:09.546841+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=kill -TERM 2777469
+EXIT_CODE=0
+END=2026-10-16T21:15:09.548870+08:00
+
+===== END python_download_switch.log =====
+
+===== BEGIN upstream_provenance.log SHA256=9b5630c2ef29bdc465e991837c3b6ef93eea06a750244d4e28a25b27e44d10d4 =====
+START=2026-10-16T21:12:20.359855+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=python -c 'import subprocess,json,hashlib; from pathlib import Path; root=Path.cwd(); repos={"THIS": "THIS-main", "Su-AdaptiveLASSO": "Adaptive-LASSO-for-higher-order-oscillatory-systems-main"}; out={};
+for name, old in repos.items():
+ p=root/"upstream"/name
+ def git(*args): return subprocess.check_output(["git","-C",str(p),*args],text=True).strip()
+ tracked=git("ls-files").splitlines(); hashes={f:hashlib.sha256((p/f).read_bytes()).hexdigest() for f in tracked}; differences=[f for f in tracked if not (root/old/f).is_file() or hashlib.sha256((root/old/f).read_bytes()).hexdigest()!=hashes[f]]
+ assert not git("status","--porcelain"), name
+ out[name]={"remote":git("remote","get-url","origin"),"head":git("rev-parse","HEAD"),"commit_metadata":git("log","-1","--format=%cI %s"),"license_sha256":hashes["LICENSE"],"tracked_file_sha256":hashes,"original_copy_differences":differences,"clean":True}; print(name,out[name]["head"],"clean", "original copy differences:",differences)
+(root/"environment/r0/upstream_lock.json").write_text(json.dumps(out,indent=2)+"\n")'
+THIS 865efc43fe8ec21966659b482ca5756396974425 clean original copy differences: []
+Su-AdaptiveLASSO fa0d662f68b7b41a1c6c3401af9504929126dafd clean original copy differences: []
+EXIT_CODE=0
+END=2026-10-16T21:12:20.441614+08:00
+
+===== END upstream_provenance.log =====
+
+===== BEGIN vscode_extensions.log SHA256=2bad14d2389dfde24a938e0e480e1ff4dfb3987df208b899c4d1c7ea6bec58ee =====
+START=2026-10-16T21:07:57.663025+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=code --list-extensions --show-versions
+SSH: 10.201.90.109 上安装的扩展:
+anthropic.claude-code@2.1.301
+eamodio.gitlens@19.3.0
+github.vscode-pull-request-github@0.168.0
+google.gemini-cli-vscode-ide-companion@0.20.0
+ms-ceintl.vscode-language-pack-zh-hans@1.131.2026090407
+ms-python.debugpy@2026.6.0
+ms-python.python@2026.10.0
+ms-python.vscode-pylance@2026.4.1
+ms-python.vscode-python-envs@1.40.0
+openai.chatgpt@26.1002.51308
+EXIT_CODE=0
+END=2026-10-16T21:07:57.872699+08:00
+
+===== END vscode_extensions.log =====
+
+===== BEGIN vscode_install_julia.log SHA256=bc417275e8d89369e82ac5e20e3a7508c73334ec02901e5e7c1e46d7a0f2c79d =====
+START=2026-10-16T21:08:10.384627+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=env -u HTTPS_PROXY -u HTTP_PROXY -u ALL_PROXY -u https_proxy -u http_proxy -u all_proxy code --install-extension julialang.language-julia
+正在 SSH: 10.201.90.109 上安装扩展…
+正在安装扩展“julialang.language-julia”...
+已成功安装扩展“julialang.language-julia”v1.249.2。
+EXIT_CODE=0
+END=2026-10-16T21:08:29.109303+08:00
+
+===== END vscode_install_julia.log =====
+
+===== BEGIN R0_preflight_report.md SHA256=70b2be76393c92a7d19a965bba069b5a406840d4b298ee07f34fb39c919a6dc6 =====
+# R0 环境预检报告：未完成
+
+日期：2026-10-16（Asia/Shanghai）。研究根目录 `/home/yg/THIS-Lasso`；会话初始目录 `/home/yg`。
+
+## 结论与阻塞
+
+本次完成只读环境/文件检查与本地源码初读。Julia 当前不可调用，按 R0 的缺失软件停止规则停下。没有安装依赖、克隆仓库、运行 smoke test、生成动力学数据或实现回归器。没有宣称 THIS 或 Su 核心功能已经可调用。
+
+真实命令、输出与各命令退出码见 [r0_environment_check.log](r0_environment_check.log)。手动安装方案见 [r0_environment_setup.md](../docs/r0_environment_setup.md)。
+
+| 项目 | 实测结果 | 判定 |
+| --- | --- | --- |
+| 系统 | Linux x86_64，内核 6.8.0-147-generic | 已核查 |
+| Git | 2.34.1；退出码 0 | 可调用 |
+| Julia | `julia --version`：command not found，退出码 127 | 阻塞 |
+| Julia 路径补查 | 在 `/home/yg /opt /usr/local` 深度 5 内未找到名为 julia 的普通文件；部分 `/opt` 路径权限不足，find 退出码 1 | 有限搜索，不能断言整机未安装 |
+| 默认 Python | 3.13.12；退出码 0 | 不符合指定 3.11 |
+| 已有 Python 3.11 | `/home/yg/miniconda3/envs/nri_py311/bin/python`，3.11.15 | 可调用，未修改该环境 |
+| 该 3.11 环境依赖 | numpy 2.4.4；scipy、scikit-learn、matplotlib、pandas、statsmodels、skglm、tabulate 的发行元数据均未安装 | 尚不能执行所需回归 |
+| VS Code | 远程 CLI 位于 `.vscode-server/.../remote-cli/code`；`VSCODE_CWD=/home/yg` | 未验证图形界面工作区、Julia 扩展或 REPL |
+| 上游副本 | `THIS-main` 和 `Adaptive-LASSO-for-higher-order-oscillatory-systems-main` 均存在 | 现有源码未改动 |
+| HEAD | 两个目录执行 `git rev-parse --show-toplevel HEAD` 均退出 128 | 无 Git 元数据，commit 未知 |
+| 许可证 | 本地 THIS LICENSE 为 GPL v3；Su LICENSE 为 MIT，2025 Weiwei-Su112 | 已阅读本地文件 |
+
+官方仓库地址来自任务索引与本地 README：
+
+- https://github.com/TaylorBasedHypergraphInference/THIS
+- https://github.com/Weiwei-Su112/Adaptive-LASSO-for-higher-order-oscillatory-systems
+
+本次未连接 GitHub 核验远端 HEAD，也未将现有文件冒充某个 commit。`upstream/` 尚未创建。恢复 R0 后应重新克隆并锁定真实 HEAD。
+
+## 本地源码初读（静态检查，待固定 commit 后复核）
+
+THIS README 标注 Julia 1.9 与 Combinatorics、DelimitedFiles、EDF、FFTW、LinearAlgebra、Statistics。核心 `this-tools.jl` 顶部直接加载 LinearAlgebra、Combinatorics、Statistics；其余依赖仍须按 R0 在 Julia 环境内核查和记录版本。
+
+| 公式/作用 | 本地函数入口 | 输入 → 输出 |
+| --- | --- | --- |
+| 单项式库，包含常数项；完整库特征数 `P=binomial(N+dmax,dmax)` | `THIS-main/this-tools.jl:get_θd` | `X:[N,K]` → `θ:[P,K]`、`d:[P,dmax]` |
+| 岭初始化 `Ξ=Y θᵀ(θθᵀ+ρI)⁻¹`，小系数阈值置零，再在保留特征上进行带同一 ρ 的岭重拟合 | `THIS-main/this.jl:mySINDy` | `θ:[P,K]`、`Y:[N,K]` → `Ξ:[N,P]`、`err` |
+| 特征生成 → mySINDy → 交互解码 | `THIS-main/this.jl:this` | `X,Y,ooi,dmax,λ,ρ,niter` → `Ainf,coeff,relerr` |
+| 初始系数绝对值缩放特征，LARS 路径用 BIC 选模型，再将系数乘回同一尺度 | `GeneralInteraction.py:solve_ada_lasso`、`solve_ada_lasso_one_node` | 各节点特征库 `[P,K]`、响应 `[K]`、初始系数 → 转置为 `[K,P]` 回归并返回分组系数 |
+
+实际源码需注意：
+
+- `mySINDy` 的 `err=norm(Y-Ξ*θ,1)`，不是 README 某处所称的平方误差；`relerr=err/norm(Y,1)`。λ 为硬阈值，ρ 为岭正则；二者不能直接等同于 LASSO 的 α。
+- `this` 返回的 `Ainf` 实际为按阶次索引的 `Dict{Int64,Matrix{Float64}}`；每行依次为目标、源节点、系数。它构建 `1:dmax+1` 的项，当前函数体并未用 `ooi` 过滤阶次。后续只评 2/3 阶时必须显式筛选。
+- 解码剔除重复源节点及包含目标节点的源集合，另用 `abs(coeff)>1e-8` 判边。这与求解器的 λ 阈值是不同步骤。
+- Su 顶部第 16 行直接 `from skglm import GroupLasso`；与 README 中 skglm 为 optional 的表述存在差异。当前仅静态确认，没有进行模块导入测试。
+- Su 当前加权步骤是 `a_j=abs(beta_init_j)`，`X*_j=X_j*a_j`，回归后 `beta_j=a_j*theta_j`。这在初始系数非零时对应 γ=1、ε=0 的自适应变换；零初始系数会使该列归零。本阶段不实现 Ridge 初始化迁移。
+
+## 学习解释与维度预览
+
+例如某节点满足 `dx₁/dt=c₀+c₂*x₂+c₂₃*x₂*x₃`。状态乘积虽是非线性的，但当状态样本已知时，`1`、`x₂`、`x₂*x₃` 都是已知特征；未知量只有三个系数，因此可写成对系数线性的回归。Julia 同时保存所有节点时为 `Y≈Ξθ`，Python 对单节点则用 `y≈θ.T @ beta`。这只是代数例子，本次未生成或拟合数据。
+
+`d` 保存单项式中的 Julia 1-based 节点编号，0 是填充位：`[0,0]` 表示常数，`[0,2]` 表示 `x₂`，`[3,2]` 表示 `x₃*x₂`，`[2,2]` 表示 `x₂²`。必须保留实际行序，不能按期望顺序自行重排。`x₂²` 的两个重复索引不是两个不同源节点，所以不作为三体边。`d` 的示例是编码含义，不是已执行测试输出。
+
+解析导数来自已知动力学公式；估计导数由离散观测作数值微分而来，可能放大噪声。后续数据集需按独立轨迹/初始条件分割；归一化、Ridge 权重及模型选择只能使用训练集与规定的验证集。正式 `docs/data_contract.md` 将在解除环境阻塞、Julia 验证数组布局后形成。
+
+可思考：为何对状态非线性的方程仍能对系数作线性回归？
+
+## 本次实际新建文件与验证
+
+- `reports/R0_report.md`：本报告。
+- `reports/r0_environment_check.log`：真实环境命令输出与退出码。
+- `docs/r0_environment_setup.md`：手动安装与恢复 R0 的步骤，命令未执行。
+
+未修改原任务文件、人工进度表或任一上游文件。检查日志已写入并回读。没有运行 Julia/Python smoke test，不存在通过记录。
+
+## 研究进度（机器记录，不代替人工验收）
+
+- 环境检查：已完成；Julia 不可调用、项目 Python 依赖未就绪。
+- 官方源码及 HEAD 锁定：未完成；仅有无 Git 元数据的现有副本。
+- 许可证与关键函数：已初读，待固定 commit 复核。
+- Julia/Python smoke tests：未运行。
+- 正式数据契约与独立学习笔记：未完成。
+- 人工验收：未进行，原清单未勾选。
+
+R0 未完成；等待人工处理环境阻塞及后续验收；未执行下一阶段。
+
+===== END R0_preflight_report.md =====

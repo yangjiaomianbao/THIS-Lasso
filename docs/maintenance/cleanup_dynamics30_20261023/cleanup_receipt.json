@@ -1,0 +1,42 @@
+{
+  "authorized_by": "User request on 2026-10-23: 删除30个节点相关文件",
+  "status": "DELETED_AND_VERIFIED",
+  "targets": [
+    "results/dynamics30",
+    "data/real_hypergraphs",
+    "scripts/fetch_real_hypergraphs.py",
+    "configs/dynamics30_pearson_process_v1_1.toml",
+    "configs/dynamics30_pearson_v1.toml",
+    "configs/dynamics30_v1.toml",
+    "configs/dynamics30_v1_1.toml",
+    "docs/dynamics30_pearson_process_revision.md",
+    "docs/dynamics30_pearson_protocol.md",
+    "docs/dynamics30_protocol.md",
+    "reports/dynamics30_20261021.md",
+    "scripts/dynamics30_pearson.jl",
+    "scripts/dynamics30_pearson.py",
+    "scripts/dynamics30_pearson_process.py",
+    "scripts/dynamics30_prepare.jl",
+    "scripts/dynamics30_report.py",
+    "scripts/dynamics30_validate.py"
+  ],
+  "deleted_file_count": 11923,
+  "deleted_bytes": 5453578594,
+  "inventory_sha256": "a69d1973272f9fb7ed2122cc6f7416c146393612352387d74f767c1bfd58ac49",
+  "preserved_dynamics15_files": 5295,
+  "retained_shared_scripts": [
+    "scripts/dynamics30.py",
+    "scripts/dynamics30_native_decode.jl"
+  ],
+  "source_changes": {
+    "scripts/dynamics15.py": {
+      "before_sha256": "73b68ef5b56a51353c787c911534b83a60f6acfa619d2a7aa6f316b1c688587b",
+      "after_sha256": "03ce1c114694c0242ad01ed2f67ddb627e2aa743a45938666027f9ca17ddfbad"
+    },
+    "scripts/dynamics15_finish.py": {
+      "before_sha256": "d81e5bd5e5ec7d0bba4be6209822cd311203eb96154a4c06d3c5cdee7efb9112",
+      "after_sha256": "0e0b34a30a2db91cbacaba40d3bfe5974be3537602ea5e4258958f7bda8e4f08"
+    }
+  },
+  "deletion_scope_verified": true
+}

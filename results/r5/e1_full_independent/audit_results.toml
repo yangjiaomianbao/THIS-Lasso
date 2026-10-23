@@ -1,0 +1,12 @@
+"verified_at" = "2026-10-17T22:42:17.271248+08:00"
+"all_480_records_verified" = true
+"counts" = {"OK" = 420, "NA" = 60}
+"only_Y_changed" = true
+"original_sources_unchanged" = true
+"global_choice_lock_before_test" = true
+"bootstrap_10000_seed_clusters_verified" = true
+"pilot_noise_unit_max_difference" = 0.0
+"independent_trajectory_seed_count" = 4800
+"candidate_warning_count" = 979
+"selected_warning_count" = 0
+"E2_E3_executed" = false

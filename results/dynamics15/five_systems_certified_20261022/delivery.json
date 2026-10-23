@@ -1,0 +1,10 @@
+{
+  "status": "DELIVERED",
+  "report": "REPORT.md",
+  "index": "reports/dynamics15_five_systems_20261022.md",
+  "validation_sha256": "70af7153856d9015e6e74276c1467a85dbfe7f1d6a8f117cc82e507d5491266c",
+  "report_source_sha256": "d81e5bd5e5ec7d0bba4be6209822cd311203eb96154a4c06d3c5cdee7efb9112",
+  "report_sha256": "05efed0caaebe9d1498640e71c4bc1751c427c63fc624e79a951807217d8adb0",
+  "review_sha256": "477706db8a66264bf73d93e0c9a65031bb740bf84dd4d6957e1b74f2d985d96b",
+  "index_sha256": "ebc8caeb47f4b9d40abeb315f76b9cbd5f5de3f6989fa61c14eab4b2ef88ec08"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scientific_audit": "S6_work/final_20261020_verified/result.json",
+  "baseline_changes_limited_to_S2_README_and_approved_caches": true,
+  "original_README_snapshot_exact": true,
+  "S1_S2_audit_artifacts_unchanged": true,
+  "formal_R5_files_exact": 4113,
+  "original_missing_exactly_approved_caches": 6385,
+  "current_local_links_unresolved": 0,
+  "current_local_links_scanned": 552,
+  "delivery_manifest_excludes_only_itself": true,
+  "delivery_manifest_rows_verified": true
+}

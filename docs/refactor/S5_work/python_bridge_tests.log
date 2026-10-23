@@ -1,0 +1,32 @@
+START=2026-10-20T15:06:31.179368+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B -m unittest discover -s tests -p 'test_r3_*.py' -v
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S5_work/python_bridge_tests/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S5_work/python_bridge_tests/depot:/home/yg/THIS-Lasso/.julia-depot-r0"}
+test_adaptive_coefficients_keep_node_and_feature_axes (test_r3_bridge.BridgeTests.test_adaptive_coefficients_keep_node_and_feature_axes) ... ok
+test_changed_numeric_input_rejected (test_r3_bridge.BridgeTests.test_changed_numeric_input_rejected) ... ok
+test_echo_roundtrip_is_exact (test_r3_bridge.BridgeTests.test_echo_roundtrip_is_exact) ... ok
+test_fractional_node_id_rejected (test_r3_bridge.BridgeTests.test_fractional_node_id_rejected) ... ok
+test_one_coefficient_column_returns_a_matrix (test_r3_bridge.BridgeTests.test_one_coefficient_column_returns_a_matrix) ... ok
+test_one_row_one_column_reading (test_r3_bridge.BridgeTests.test_one_row_one_column_reading) ... ok
+test_one_target_keeps_one_row (test_r3_bridge.BridgeTests.test_one_target_keeps_one_row) ... ok
+test_plain_constant_response_is_analytic_without_warnings (test_r3_bridge.BridgeTests.test_plain_constant_response_is_analytic_without_warnings) ... ok
+test_plain_lasso_is_unweighted_and_has_free_constant (test_r3_bridge.BridgeTests.test_plain_lasso_is_unweighted_and_has_free_constant) ... ok
+test_plain_validation_uses_training_means_and_keeps_all_candidates (test_r3_bridge.BridgeTests.test_plain_validation_uses_training_means_and_keeps_all_candidates) ... ok
+test_reordered_indices_rejected_even_with_updated_file_hash (test_r3_bridge.BridgeTests.test_reordered_indices_rejected_even_with_updated_file_hash) ... ok
+test_stale_output_cannot_be_overwritten (test_r3_bridge.BridgeTests.test_stale_output_cannot_be_overwritten) ... ok
+test_validation_requires_nonoverlapping_trajectory_ids (test_r3_bridge.BridgeTests.test_validation_requires_nonoverlapping_trajectory_ids) ... ok
+test_wrong_declared_shape_rejected (test_r3_bridge.BridgeTests.test_wrong_declared_shape_rejected) ... ok
+test_wrong_index_base_and_feature_count_rejected (test_r3_bridge.BridgeTests.test_wrong_index_base_and_feature_count_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.043s
+
+OK
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=echo N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=1 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=1 P=3 K=80
+R3_BRIDGE_PASS solver=lasso mode=solve N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=3 K=80
+EXIT_CODE=0
+WALL_SECONDS=1.6624000200536102

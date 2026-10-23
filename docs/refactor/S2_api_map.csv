@@ -1,0 +1,15 @@
+old_path,new_path,symbol,signature,function_AST_identical,old_import_compatible
+src/data_bridge.py,src/bridge/numeric_io.py,file_hash,path,True,True
+src/data_bridge.py,src/bridge/numeric_io.py,_toml,value,True,True
+src/data_bridge.py,src/bridge/numeric_io.py,write_toml,"path, values",True,True
+src/data_bridge.py,src/bridge/numeric_io.py,read_matrix,"path, shape, *, integer=False",True,True
+scripts/r4_experiment.py,src/bridge/numeric_io.py,stamp,,True,True
+scripts/r4_experiment.py,src/bridge/numeric_io.py,write_rows,"path, rows, fields=None",True,True
+src/data_bridge.py,src/solvers/plain_lasso.py,fit_plain_lasso,"X, y, config, validation=None",True,True
+scripts/r4_methods.py,src/solvers/plain_lasso.py,fit_plain_bic,"X, y, config",True,True
+scripts/r4_methods.py,src/solvers/methods.py,fit_node,"method, X, y, config, validation=None",True,True
+scripts/r4_metrics.py,src/data/contracts.py,validate_splits,"groups, splits",True,True
+scripts/r4_experiment.py,src/data/contracts.py,load_dataset,"output, seed",True,True
+scripts/r4_metrics.py,src/preprocessing/taylor.py,restore_coefficients,"C, means, scales",True,True
+scripts/r4_metrics.py,src/metrics/structure.py,binary_metrics,"truth, scores, threshold=1e-08",True,True
+scripts/r4_metrics.py,src/metrics/structure.py,edge_scores,"coefficients, d, order",True,True

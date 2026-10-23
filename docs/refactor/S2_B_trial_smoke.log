@@ -1,0 +1,12 @@
+START=2026-10-19T21:41:40.534127+08:00
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no --history-file=no --compiled-modules=no --project=/home/yg/THIS-Lasso/environment/r0/julia /home/yg/THIS-Lasso/docs/refactor/S2_trial_smoke.jl /home/yg/THIS-Lasso/docs/refactor/S2_work/B
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/B_trial_smoke/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/B_trial_smoke/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=8 P=165 K=300
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=8 P=165 K=300
+S2_BRIDGE_VS_FROZEN_BRIDGE_EXACT=true DIRECT_BATCH_RAW_MAX_DIFF=1.3388595787588997e-14
+Test Summary:                                           | Pass  Total  Time
+S2 one-trial cross-language M2 BIC and frozen structure |   15     15  6.3s
+S2_ONE_TRIAL_SMOKE_PASS
+EXIT_CODE=0
+WALL_SECONDS=7.490820579929277

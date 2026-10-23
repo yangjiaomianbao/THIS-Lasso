@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "deleted_files": 6385,
+  "python_bridge_tests": 15,
+  "CLI_help_checks": 3,
+  "all_backup_members_verified_twice": true,
+  "restore_dry_run_missing": 6385,
+  "unresolved_documentation_links": 0,
+  "original_algorithm_or_experiment_files_deleted": 0,
+  "note": "Execution summary tests_pending field is historical; this file records completed follow-up checks."
+}

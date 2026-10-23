@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "dry_run_only": true,
+  "original_entries_seen": 31624,
+  "counts": {
+    "KEEP": 23443,
+    "DELETE_CANDIDATE": 6385,
+    "ARCHIVE": 1796
+  },
+  "logical_bytes_by_class": {
+    "KEEP": 1261064924,
+    "DELETE_CANDIDATE": 144095231,
+    "ARCHIVE": 154885417
+  },
+  "candidates": 6385,
+  "candidate_logical_bytes": 144095231,
+  "estimated_cache_blocks_released": 158478336,
+  "python_sources_compile_checked": 6385,
+  "compile_warning_records": [],
+  "shared_python_caches_retained": 1140,
+  "julia_native_cache_files_retained": 44,
+  "reference_edges": 65648,
+  "backup_path": "archive/caches/S5_python_cache_backup.tar.gz",
+  "backup_exists_at_proposal": false,
+  "dynamic_blind_spots": "Runtime import loaders may read optional pyc dynamically; source compilation and exact backup are the safety basis. Audit index/hash references are bookkeeping, not scientific/runtime dependency. Third-party dynamic paths are not claimed exhaustive.",
+  "protected_scope": "all upstream, source, configs, tests, reports, results, locks, trajectories, RNG, NA, weak-edge and warning evidence",
+  "deletion_performed": false
+}

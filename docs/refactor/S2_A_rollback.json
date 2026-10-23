@@ -1,0 +1,10 @@
+{
+  "original_files_restored": [
+    "src/data_bridge.py",
+    "scripts/r4_methods.py"
+  ],
+  "new_modules_retained_unused": "deletion is prohibited",
+  "trigger": "new gamma=0 validation MSE cross-path bitwise assertion, max difference 8.673617379884035e-18",
+  "original_85_tests_passed": true,
+  "next_action": "read-only comparison with frozen function implementations before any next module"
+}

@@ -1,0 +1,8 @@
+START=2026-10-19T21:10:23.474006+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python -B /home/yg/THIS-Lasso/docs/refactor/S1_audit.py golden
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S1_work/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S1_work/julia_depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+S1_EXISTING_GOLDEN_INDEX_PASS 111 files; no missing applicable fields
+EXIT_CODE=0
+END=2026-10-19T21:10:23.676451+08:00
+WALL_SECONDS=0.20255433791317046

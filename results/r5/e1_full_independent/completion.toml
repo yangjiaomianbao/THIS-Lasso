@@ -1,0 +1,13 @@
+"completed_at" = "2026-10-17T22:37:20.656256+08:00"
+"E1_full_completed" = true
+"seed_count" = 30
+"trial_count" = 480
+"counts" = {"OK" = 420, "NA" = 60, "FAILED" = 0}
+"excluded_seeds" = []
+"E2_executed" = false
+"E3_executed" = false
+"all_selected_models_converged" = true
+"wall_seconds" = 694.8755143269664
+"aggregate_fit_seconds" = 2488.199132136118
+"workers" = 4
+"protected_files_unchanged" = true

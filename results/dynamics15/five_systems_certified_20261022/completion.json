@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "models": 120,
+  "counts": {
+    "OK": 96,
+    "NA": 24,
+    "FAILED": 0
+  },
+  "systems": [
+    "kuramoto",
+    "lorenz",
+    "lotka_volterra",
+    "stuart_landau",
+    "sis"
+  ],
+  "physical_nodes": 15,
+  "pair_edges": 45,
+  "triple_edges": 15,
+  "wall_seconds": 1208.0367904801387,
+  "uniform_certified_backend": true
+}

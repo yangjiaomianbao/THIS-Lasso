@@ -1,0 +1,6 @@
+{
+  "status": "FROZEN_UNSCORED_PARTIAL_RUN",
+  "previous_run": "/home/yg/THIS-Lasso/results/dynamics15/five_systems_full_20261022",
+  "manifest_sha256": "ba6cb4dcc46c3d0c96cdd59e09b814bd0b19d1a80fd2368352b3e9c12c22e78b",
+  "test_or_truth_scores_read": false
+}

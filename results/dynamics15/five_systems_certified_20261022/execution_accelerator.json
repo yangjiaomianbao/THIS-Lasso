@@ -1,0 +1,15 @@
+{
+  "uniform_backend_for_all_validation_models": true,
+  "validation_models_refitted": 40,
+  "models_reused": 0,
+  "original_objective_grid_data_seeds_tolerances_unchanged": true,
+  "previous_unscored_run": "../five_systems_full_20261022",
+  "truth_or_test_used_for_acceleration": false,
+  "source_sha256": {
+    "scripts/dynamics15_accelerated.py": "57dc00a37ff989fe2c1287c7b7d94063e518f89b7ee82a7ef901ecb72624c153",
+    "src/solvers/lars_validation.py": "8bddce6fe173e645590d045e5987724e7c6743de4827538ba27336669be4d972",
+    "tests/test_lars_validation.py": "e5dcec860b88273028cd75ee5b0e1ac13bb603537574b1e1133db8e3202ce911"
+  },
+  "benchmark_file": "../five_systems_full_20261022/logs/lars_weighted_benchmark.json",
+  "numerical_endpoint_policy": "Uniform coordinate/alpha rescaling preserves objective; every actual alpha must pass original-unit global KKT; otherwise original working-set fallback"
+}

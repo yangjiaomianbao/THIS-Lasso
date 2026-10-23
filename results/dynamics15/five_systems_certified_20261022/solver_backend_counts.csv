@@ -1,0 +1,19 @@
+system,method,status,backend,nodes
+kuramoto,M1vC,OK,Full weighted LARS with independent all-grid KKT,58
+kuramoto,M1vC,OK,Original working-set fallback,2
+kuramoto,M3C,OK,Full weighted LARS with independent all-grid KKT,60
+lorenz,M1vC,OK,Full weighted LARS with independent all-grid KKT,171
+lorenz,M1vC,OK,Original working-set fallback,9
+lorenz,M3C,OK,Full weighted LARS with independent all-grid KKT,176
+lorenz,M3C,OK,Original working-set fallback,4
+lotka_volterra,M1vC,OK,Full weighted LARS with independent all-grid KKT,58
+lotka_volterra,M1vC,OK,Original working-set fallback,2
+lotka_volterra,M3C,OK,Full weighted LARS with independent all-grid KKT,60
+sis,M1vC,OK,Full weighted LARS with independent all-grid KKT,59
+sis,M1vC,OK,Original working-set fallback,1
+sis,M3C,OK,Full weighted LARS with independent all-grid KKT,59
+sis,M3C,OK,Original working-set fallback,1
+stuart_landau,M1vC,OK,Full weighted LARS with independent all-grid KKT,114
+stuart_landau,M1vC,OK,Original working-set fallback,6
+stuart_landau,M3C,OK,Full weighted LARS with independent all-grid KKT,111
+stuart_landau,M3C,OK,Original working-set fallback,9

@@ -1,0 +1,9 @@
+{
+  "current_bridge_equals_S1_frozen_bridge_bitwise": true,
+  "bridge_vs_direct_batch_max_abs_difference": 2.8384412875670506e-15,
+  "direct_batch_replay_exact": true,
+  "cause": "R3 uses loaded theta.T (Fortran-contiguous), direct batch uses Z[:, boolean_train].T (C-contiguous); old code paths have distinct floating evaluation orders.",
+  "algorithm_changed": false,
+  "tolerance_change_proposed": false,
+  "corrected_comparison": "current bridge bitwise versus frozen bridge, plus already specified S1 tolerance and strict support versus direct batch"
+}

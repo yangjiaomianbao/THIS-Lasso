@@ -1,0 +1,19 @@
+START=2026-10-17T22:26:05.194797+08:00
+COMMAND=/home/yg/THIS-Lasso/.venv-r0/bin/python /home/yg/THIS-Lasso/scripts/r5_batch_worker.py --config /home/yg/THIS-Lasso/configs/r5_e1_full_independent.toml --output /home/yg/THIS-Lasso/results/r5/e1_full_independent --seed 22261017
+ENV=BLAS=1 JULIA_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
+SEED_WORKER_START seed=22261017 at=2026-10-17T22:26:05.709815+08:00
+E1_FIT seed=22261017 ratio=0.00 method=M1 status=NA seconds=0.078
+E1_FIT seed=22261017 ratio=0.00 method=M2 status=NA seconds=0.129
+E1_FIT seed=22261017 ratio=0.00 method=M3 status=OK seconds=4.153
+E1_FIT seed=22261017 ratio=0.05 method=M1 status=OK seconds=0.691
+E1_FIT seed=22261017 ratio=0.05 method=M2 status=OK seconds=0.357
+E1_FIT seed=22261017 ratio=0.05 method=M3 status=OK seconds=19.788
+E1_FIT seed=22261017 ratio=0.10 method=M1 status=OK seconds=0.722
+E1_FIT seed=22261017 ratio=0.10 method=M2 status=OK seconds=0.425
+E1_FIT seed=22261017 ratio=0.10 method=M3 status=OK seconds=25.559
+E1_FIT seed=22261017 ratio=0.20 method=M1 status=OK seconds=0.741
+E1_FIT seed=22261017 ratio=0.20 method=M2 status=OK seconds=0.472
+E1_FIT seed=22261017 ratio=0.20 method=M3 status=OK seconds=32.849
+SEED_WORKER_DONE seed=22261017
+EXIT_CODE=0
+END=2026-10-17T22:27:31.858236+08:00

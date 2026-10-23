@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "locked_models": 120,
+  "scored_models": 96,
+  "native_decoded_edges_exact": 15734,
+  "independent_global_weighted_KKT_checks": 960,
+  "process_isolated_node_diagnostics": 1320,
+  "independent_rng_names": 15360,
+  "truth_or_channel_screening": false,
+  "all_true_equation_source_sets_retained": true,
+  "training_only_standardization_exact": true,
+  "response_noise_recomputed_exact": true,
+  "completed_files_reused_without_change": 0,
+  "certified_lars_nodes": 926,
+  "working_set_fallback_nodes": 34,
+  "original_result_integrity": {
+    "entries_checked": 25368,
+    "all_original_delivery_entries_exact": true,
+    "manifest_sha256": "e71eae7257bb4af486cf7a0042c2b1fb629ab8a5b7b3b5ab61fbd76e2ff78227",
+    "formal_R5_files_covered": 4113,
+    "small_dynamics_pilot_unchanged": true,
+    "prior_30_node_artifacts_unchanged": 6427
+  },
+  "postprocess_source_sha256": {
+    "scripts/dynamics15_finish.py": "d81e5bd5e5ec7d0bba4be6209822cd311203eb96154a4c06d3c5cdee7efb9112",
+    "scripts/dynamics30_native_decode.jl": "74d406fc9debcfe4b4472aff834842f301f785dde85cdab102d75ef388613b97"
+  }
+}

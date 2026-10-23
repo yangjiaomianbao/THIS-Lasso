@@ -1,0 +1,22 @@
+stage = "R5"
+experiment = "E1"
+phase = "smoke"
+seeds = [22261017, 22261018]
+source_root = "results/r4/dry_run"
+base_config = "configs/r4_dry_run.toml"
+noise_ratios = [0.0, 0.05, 0.10, 0.20]
+noise_ratio_definition = "standard deviation multiplier, not variance; sigma_i=population std of clean TRAIN Y for node i"
+noise_master_seed = 2026101705
+bit_generator = "PCG64"
+common_random_numbers_across_levels = true
+noise_stream_entropy = "[master_seed, clean_seed, split_code(1/2/3), node_Julia_ID]"
+method_order = ["M0", "M1", "M2", "M3"]
+full_30_seed_authorized = false
+E2_authorized = false
+E3_authorized = false
+R4_full_comparison_completed = false
+prior_stage_note = "User explicitly starts R5 smoke after R4 phase A; R4 30-seed phase B remains unexecuted"
+strength_weak_upper = 0.10
+strength_medium_upper = 0.17
+strength_definition = "absolute TRUE physical coupling coefficient; weak<=0.10, medium in (0.10,0.17], strong>0.17; same as Taylor coefficient in this R1 model"
+failure_policy = "retain BIC NA and selected-solver convergence failures with full reasons; no replacement, zero coefficient substitution, or seed exclusion"

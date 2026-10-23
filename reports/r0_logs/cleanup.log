@@ -1,0 +1,12 @@
+START=2026-10-16T21:30:38.823400+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=python -
+Verified: 118 tracked source files have identical pinned upstream copies; archive contains no unique research files.
+Consolidated 25 historical files into setup_history.log; original bytes and exit codes retained.
+Removed verified duplicate archive: /home/yg/THIS-Lasso/archive file_bytes= 7806111
+Removed completed/temporary installer: /home/yg/.local/opt/julia-1.9.4-linux-x86_64.tar.gz bytes= 14724654
+Removed completed/temporary installer: /home/yg/.local/opt/julia-1.9.4-linux-x86_64.mirror.tar.gz bytes= 146163887
+Removed completed/temporary installer: /home/yg/THIS-Lasso/environment/r0/install_julia.jl bytes= 200
+Kept: upstream repositories, installed runtimes/depots, version locks, smoke tests, data contract, learning notes and final evidence logs.
+EXIT_CODE=0
+END=2026-10-16T21:30:38.907008+08:00

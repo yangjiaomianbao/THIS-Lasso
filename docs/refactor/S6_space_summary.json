@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "baseline": "S3_preflight.json before S3-S6 additions and cleanup",
+  "regular_file_bytes_before": 1559185282,
+  "unique_inode_allocated_bytes_before": 1631223808,
+  "final": {
+    "entries": 25369,
+    "regular_file_bytes": 1513123689,
+    "symlink_text_bytes": 19653,
+    "unique_inode_allocated_bytes": 1571135488
+  },
+  "regular_file_bytes_net_reduction": 46061593,
+  "logical_net_reduction_MiB": 43.92775821685791,
+  "unique_inode_allocated_bytes_net_reduction": 60088320,
+  "allocated_net_reduction_MiB": 57.3046875,
+  "includes": "All current files, symlink text accounting and final manifest; optional cache backup and all audit outputs retained.",
+  "excludes": "Directory inode metadata, filesystem snapshots, compression/reflink effects and external files; allocated byte delta is not a claim about global disk free space.",
+  "manifest": "S6_delivery_manifest.csv excludes itself to avoid self-referential SHA256"
+}

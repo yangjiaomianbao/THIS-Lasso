@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "configurations": 60,
+  "seed_models": 120,
+  "OK": 96,
+  "model_NA": 24,
+  "FAILED": 0,
+  "configurations_with_OK": 48,
+  "configurations_all_NA": 12,
+  "metric_valid_seed_counts": {
+    "F1": 96,
+    "AP": 96,
+    "MCC": 72,
+    "Jaccard": 96
+  },
+  "undefined_MCC_in_OK": 24,
+  "original_files_unchanged": 3216,
+  "original_manifest_entries_verified": 3214,
+  "maximum_metric_recompute_difference": {
+    "F1": 0.0,
+    "AP": 0.0,
+    "MCC": 0.0
+  },
+  "candidate_score_rows_checked": 131040,
+  "highlighted_cells_per_table": 49,
+  "input_sha256": {
+    "trials.csv": "9a4870e90a2f46d2c032b46f3687f51d6584b0b05a3a9f053d8dd1f4e629f282",
+    "summary.csv": "d0ec96ebea614affac4f2fa75402f21f14c9016746076bc25f79e646b8444691",
+    "edge_scores.csv": "50074fcb893ce84e1216b18b8836aba8f0240d6b86a6de3bc8934c4f3b3a5bef",
+    "REPORT.md": "05efed0caaebe9d1498640e71c4bc1751c427c63fc624e79a951807217d8adb0",
+    "artifact_manifest.csv": "e05c1d63d37f43bfb2b261787b807053154cdefb16d16dc725eabc4961a1298b"
+  }
+}

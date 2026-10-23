@@ -1,0 +1,16 @@
+START=2026-10-16T21:31:15.439307+08:00
+CWD=/home/yg/THIS-Lasso
+COMMAND=.venv-r0/bin/python -c 'from pathlib import Path; import importlib.metadata as m; from packaging.requirements import Requirement; from packaging.utils import canonicalize_name; r=Path.cwd(); p=r/"environment/r0/requirements.lock.txt"; text=p.read_text(); lines=[]
+for line in text.splitlines():
+ req=Requirement(line)
+ if req.url:
+  assert canonicalize_name(req.name)=="pip" and req.url.startswith("file:"),line
+  line="pip=="+m.version("pip"); print("Normalized Conda pip build provenance to installed version:",line)
+ req=Requirement(line); assert not req.url and m.version(req.name) in req.specifier,line
+ lines.append(line)
+p.write_text("\n".join(lines)+"\n"); print("All",len(lines),"locked distributions match installed versions; no machine-local package URL remains."); native=(r/"environment/r0/conda-linux-64.lock.txt").read_text(); assert "@EXPLICIT" in native and "python-3.11.17-" in native; print("Conda native lock contains Python 3.11.17 and exact linux-64 artifact URLs.")'
+Normalized Conda pip build provenance to installed version: pip==26.2.1
+All 28 locked distributions match installed versions; no machine-local package URL remains.
+Conda native lock contains Python 3.11.17 and exact linux-64 artifact URLs.
+EXIT_CODE=0
+END=2026-10-16T21:31:15.569456+08:00

@@ -1,0 +1,5 @@
+system,method,status,reason,nodes
+lotka_volterra,M1B,NA,Full-model noise variance is zero or below its reliability floor.,30
+lotka_volterra,M2B,NA,Full-model noise variance is zero or below its reliability floor.,30
+sis,M1B,NA,Full-model noise variance is zero or below its reliability floor.,30
+sis,M2B,NA,Full-model noise variance is zero or below its reliability floor.,30

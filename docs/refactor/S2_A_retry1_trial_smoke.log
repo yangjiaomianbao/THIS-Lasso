@@ -1,0 +1,25 @@
+START=2026-10-19T21:37:56.708387+08:00
+COMMAND=/home/yg/.local/opt/julia-1.9.4/bin/julia --startup-file=no --history-file=no --compiled-modules=no --project=/home/yg/THIS-Lasso/environment/r0/julia /home/yg/THIS-Lasso/docs/refactor/S2_trial_smoke.jl /home/yg/THIS-Lasso/docs/refactor/S2_work/A_retry1
+CWD=/home/yg/THIS-Lasso
+ENV={"PYTHONDONTWRITEBYTECODE": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "JULIA_NUM_THREADS": "1", "GIT_OPTIONAL_LOCKS": "0", "TMPDIR": "/home/yg/THIS-Lasso/docs/refactor/S2_work/A_retry1_trial_smoke/tmp", "JULIA_DEPOT_PATH": "/home/yg/THIS-Lasso/docs/refactor/S2_work/A_retry1_trial_smoke/depot:/home/yg/THIS-Lasso/.julia-depot-r0", "JULIA_PKG_PRECOMPILE_AUTO": "0", "JULIA_PKG_OFFLINE": "true"}
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=8 P=165 K=300
+S2 one-trial cross-language M2 BIC and frozen structure: Test Failed at /home/yg/THIS-Lasso/docs/refactor/S2_trial_smoke.jl:41
+  Expression: Cz == read_matrix(joinpath(cell, "M2", "standardized_coefficients.csv"))
+   Evaluated: [-0.009334621298796135 -0.45689926257806923 … 0.0 0.0; 0.013779937787389437 0.11355098500983463 … 0.0 0.0; … ; -0.0372355435017144 0.0 … 0.0 0.0; -0.013267821589717328 0.0 … 0.0 0.0] == [-0.00933462129879613 -0.45689926257806907 … 0.0 0.0; 0.013779937787389446 0.11355098500983471 … 0.0 0.0; … ; -0.03723554350171442 0.0 … 0.0 0.0; -0.013267821589717331 0.0 … 0.0 0.0]
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.local/opt/julia-1.9.4/share/julia/stdlib/v1.9/Test/src/Test.jl:478 [inlined]
+ [2] macro expansion
+   @ ~/THIS-Lasso/docs/refactor/S2_trial_smoke.jl:41 [inlined]
+ [3] macro expansion
+   @ ~/.local/opt/julia-1.9.4/share/julia/stdlib/v1.9/Test/src/Test.jl:1498 [inlined]
+ [4] top-level scope
+   @ ~/THIS-Lasso/docs/refactor/S2_trial_smoke.jl:12
+S2_BRIDGE_STANDARDIZED_COEFFICIENTS_EXACT=true RAW_MAX_DIFF=1.3388595787588997e-14
+Test Summary:                                           | Pass  Fail  Total  Time
+S2 one-trial cross-language M2 BIC and frozen structure |   14     1     15  6.6s
+ERROR: LoadError: Some tests did not pass: 14 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/yg/THIS-Lasso/docs/refactor/S2_trial_smoke.jl:11
+EXIT_CODE=1
+WALL_SECONDS=8.006019371096045

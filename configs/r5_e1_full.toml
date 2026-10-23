@@ -1,0 +1,26 @@
+stage = "R5"
+experiment = "E1"
+phase = "full"
+seeds = [22261017, 22261018, 22261019, 22261020, 22261021, 22261022, 22261023, 22261024, 22261025, 22261026, 22261027, 22261028, 22261029, 22261030, 22261031, 22261032, 22261033, 22261034, 22261035, 22261036, 22261037, 22261038, 22261039, 22261040, 22261041, 22261042, 22261043, 22261044, 22261045, 22261046]
+pilot_seeds = [22261017, 22261018]
+base_config = "configs/r4_dry_run.toml"
+source_root = "results/r5/e1_full/clean"
+noise_ratios = [0.0, 0.05, 0.10, 0.20]
+noise_master_seed = 2026101705
+method_order = ["M0", "M1", "M2", "M3"]
+strength_weak_upper = 0.10
+strength_medium_upper = 0.17
+full_30_seed_authorized = true
+authorization = "User: 执行下一阶段; interpreted as the pending R5 E1 30-seed extension after smoke"
+E2_authorized = false
+E3_authorized = false
+R4_full_comparison_completed = false
+workers = 4
+threads_per_worker = 1
+bootstrap_replicates = 10000
+bootstrap_seed = 2026101706
+confidence_level = 0.95
+CI_type = "Pointwise percentile bootstrap over paired seed clusters; not simultaneous or multiplicity-adjusted"
+missing_policy = "Keep all 30 seeds and availability counts; finite-case conditional estimates, never replace NA/FAILED with zero"
+numerical_policy = "Same max_iter=100000/tol/grid as smoke, retained warnings; no outcome-dependent reruns or tuning"
+pilot_policy = "Rerun both pilots, verify existing coefficients, additionally report the other 28 seeds"

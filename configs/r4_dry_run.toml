@@ -1,0 +1,55 @@
+stage = "R4"
+phase = "A"
+seeds = [22261017, 22261018]
+nodes = 8
+dmax = 3
+train_trajectories = 100
+validation_trajectories = 30
+test_trajectories = 30
+integration_dt = 0.01
+integration_steps = 10
+save_every = 5
+train_K = 300
+evaluation_orders = [2, 3]
+decode_threshold = 1e-8
+truth_threshold = 1e-8
+pearson_enabled = false
+noise = "none; analytic derivatives; same fixed R1 polynomial network"
+method_order = ["M0", "M0s", "M1", "M2", "M3", "M1v"]
+common_preprocessing = "Training-only centering and population-RMS scaling of nonconstant Taylor columns; leading constant stays 1"
+coefficient_restore = "beta_raw=beta_standardized/s; bias_raw=bias_standardized-mu*beta_raw"
+score_rule = "max absolute restored coefficient for the exact eligible target/source set; zero if absent; AP from all candidates"
+threshold_scan = false
+full_phase_B_authorized = false
+
+[stlsq]
+lambda = 0.1
+rho = 1.0
+niter = 10
+basis = "Pinned upstream this.jl default arguments, not R1 validation-selected values"
+constant_policy = "Original mySINDy penalizes constant too; unchanged in M0/M0s"
+
+[lasso]
+max_iter = 100000
+tol = 1e-10
+kkt_tolerance = 1e-6
+validation_tolerance = 1e-12
+alpha_fractions = [1.0, 0.3, 0.1, 0.03, 0.01, 0.003, 0.001, 0.0003, 0.0001, 0.00001, 0.000001, 0.00000001]
+
+[adaptive]
+initialization = "ridge"
+standardize = false
+fit_intercept = true
+ridge_rho = 1.0
+gamma = 1.0
+eps = 1e-6
+bic_noise_floor = 1e-12
+bic_condition_limit = 100000000.0
+
+[methods]
+M0 = "Native THIS/STLSQ on raw Taylor features; official defaults"
+M0s = "Original mySINDy on common standardized features; same official defaults, restore raw units"
+M1 = "Ordinary LASSO + guarded BIC on common standardized features"
+M2 = "Ridge-initialized Adaptive LASSO + guarded BIC on common standardized features"
+M3 = "Ridge-initialized Adaptive LASSO + independent-trajectory validation"
+M1v = "Additional paired ordinary LASSO + the same validation rule; never relabeled M1"

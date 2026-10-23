@@ -1,0 +1,931 @@
+--- a/scripts/r4_experiment.py
++++ b/scripts/r4_experiment.py
+@@ -1,7 +1,6 @@
+ """R4 phase A: exactly two predeclared seeds, with locked choices before scoring."""
+ import argparse
+ import csv
+-import datetime
+ from pathlib import Path
+ import shutil
+ import subprocess
+@@ -16,12 +15,10 @@
+ sys.path.insert(0, str(ROOT))
+ from src.data_bridge import file_hash, read_matrix, write_toml
+ from src.solvers import BICNotApplicable
++from src.bridge.numeric_io import stamp, write_rows
++from src.data.contracts import load_dataset
+ from r4_methods import fit_node
+ from r4_metrics import binary_metrics, edge_scores, restore_coefficients, validate_phase, validate_splits
+-
+-
+-def stamp():
+-    return datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat()
+ 
+ 
+ def run_julia(script, config_path, output):
+@@ -29,12 +26,6 @@
+                '--project='+str(ROOT/'environment/r0/julia'), str(ROOT/'scripts'/script), str(config_path), str(output)]
+     print('COMMAND='+__import__('shlex').join(command), flush=True)
+     subprocess.run(command, cwd=ROOT, check=True)
+-
+-
+-def write_rows(path, rows, fields=None):
+-    fields = fields or list(rows[0])
+-    with Path(path).open('w', newline='') as f:
+-        writer = csv.DictWriter(f, fields);writer.writeheader();writer.writerows(rows)
+ 
+ 
+ def protect_previous(output):
+@@ -52,25 +43,6 @@
+     hashes = {str(p.relative_to(ROOT)):file_hash(p) for p in sorted(paths)}
+     write_toml(output/'preflight.toml', dict(created_at=stamp(), protected_sha256=hashes))
+     return hashes
+-
+-
+-def load_dataset(output, seed):
+-    directory = output/f'seed_{seed}'/'data'
+-    metadata = tomllib.loads((directory/'metadata.toml').read_text())
+-    for name, expected in metadata['file_sha256'].items():
+-        if file_hash(directory/name) != expected:
+-            raise ValueError('Dataset hash mismatch: '+name)
+-    n, p, k = metadata['N'], metadata['P'], metadata['K_total']
+-    rows = list(csv.DictReader((directory/'sample_manifest.csv').open()))
+-    groups = np.array([int(row['trajectory_id']) for row in rows])
+-    splits = np.array([row['split'] for row in rows])
+-    validate_splits(groups, splits)
+-    return dict(directory=directory, metadata=metadata, groups=groups, splits=splits,
+-        theta=read_matrix(directory/'theta.csv', (p, k)),
+-        Z=read_matrix(directory/'standardized_theta.csv', (p, k)),
+-        Y=read_matrix(directory/'Y.csv', (n, k)), d=read_matrix(directory/'monomial_indices.csv', (p, 3), integer=True),
+-        means=read_matrix(directory/'feature_means.csv', (p, 1))[:, 0],
+-        scales=read_matrix(directory/'feature_scales.csv', (p, 1))[:, 0])
+ 
+ 
+ def fit_python_trial(method, data, config, trial):
+--- a/scripts/r4_methods.py
++++ b/scripts/r4_methods.py
+@@ -1,48 +1,3 @@
+-"""Phase-A wrappers; import pinned R2/R3 code read-only, never rename a fallback."""
+-import warnings
+-
+-import numpy as np
+-from sklearn.exceptions import ConvergenceWarning
+-from sklearn.linear_model import LassoLarsIC
+-
+-from src.data_bridge import fit_plain_lasso
+-from src.solvers import AdaptiveLassoConfig, SolverConvergenceError, fit_adaptive_lasso
+-# Read-only reuse makes the ordinary-BIC gate match the accepted adaptive gate.
+-from src.solvers.adaptive_lasso import _prepare, _bic_variance
+-
+-
+-def fit_plain_bic(X, y, config):
+-    c = AdaptiveLassoConfig(**config)
+-    p = _prepare(X, y, c)
+-    U = p['z']  # common external scaling, standardize=False in this wrapper
+-    variance, info = _bic_variance(X, p, U, c)
+-    with warnings.catch_warnings(record=True) as caught:
+-        warnings.simplefilter('always')
+-        model = LassoLarsIC(criterion='bic', fit_intercept=False,
+-                            noise_variance=variance, max_iter=c.max_iter).fit(U, p['yc'])
+-    coef = np.zeros(X.shape[1]);coef[p['active']] = model.coef_
+-    coef[0] = p['response_mean']-p['means'][p['active']]@model.coef_
+-    gradient = U.T@(X@coef-y)/len(y)
+-    nonzero = model.coef_ != 0
+-    violations = np.maximum(np.abs(gradient)-model.alpha_, 0.)
+-    violations[nonzero] = np.abs(gradient[nonzero]+model.alpha_*np.sign(model.coef_[nonzero]))
+-    kkt = float(np.max(violations))/max(1., float(np.max(np.abs(U.T@p['yc']/len(y)))))
+-    if any(issubclass(w.category, ConvergenceWarning) for w in caught) or kkt > c.kkt_tolerance:
+-        raise SolverConvergenceError(f'Ordinary LARS/BIC convergence/KKT failure: {kkt}')
+-    return coef, dict(selection='bic', alpha=float(model.alpha_), noise_variance=variance,
+-        alpha_path=model.alphas_, bic_path=model.criterion_, kkt_scaled_violation=kkt,
+-        warnings=[f'{w.category.__name__}: {w.message}' for w in caught], **info)
+-
+-
+-def fit_node(method, X, y, config, validation=None):
+-    common = dict(config['lasso'])
+-    adaptive = dict(common, **config['adaptive'])
+-    if method == 'M1':
+-        return fit_plain_bic(X, y, dict(adaptive, selection='bic'))
+-    if method == 'M2':
+-        return fit_adaptive_lasso(X, y, dict(adaptive, selection='bic'))
+-    if method == 'M3':
+-        return fit_adaptive_lasso(X, y, dict(adaptive, selection='validation'), **validation)
+-    if method == 'M1v':
+-        return fit_plain_lasso(X, y, dict(common, selection='validation'), validation)
+-    raise ValueError('Unknown Python method')
++"""Compatibility exports for the original R4/R5 method entry points."""
++from src.solvers.plain_lasso import fit_plain_bic
++from src.solvers.methods import fit_node
+--- a/scripts/r4_metrics.py
++++ b/scripts/r4_metrics.py
+@@ -1,69 +1,7 @@
+-"""R4 evaluation in restored THIS coefficient units, without threshold selection."""
+-import itertools
+-import math
+-
+-import numpy as np
+-from sklearn.metrics import average_precision_score
+-
+-
+-def binary_metrics(truth, scores, threshold=1e-8):
+-    truth, scores = np.asarray(truth, bool), np.asarray(scores, float)
+-    if truth.ndim != 1 or scores.shape != truth.shape or not np.isfinite(scores).all():
+-        raise ValueError('Require equal finite 1D candidate arrays')
+-    predicted = scores > threshold
+-    tp = int(np.sum(truth & predicted));fp = int(np.sum(~truth & predicted))
+-    fn = int(np.sum(truth & ~predicted));tn = int(np.sum(~truth & ~predicted))
+-    denom = math.sqrt((tp+fp)*(tp+fn)*(tn+fp)*(tn+fn))
+-    both = bool(np.any(truth) and np.any(~truth))
+-    reason = '' if both else ('no_positive_truth' if not np.any(truth) else 'no_negative_truth')
+-    return dict(TP=tp, FP=fp, FN=fn, TN=tn, candidate_count=len(truth),
+-        positive_count=int(np.sum(truth)), negative_count=int(np.sum(~truth)),
+-        precision=tp/(tp+fp) if tp+fp else 0., recall=tp/(tp+fn) if tp+fn else float('nan'),
+-        F1=2*tp/(2*tp+fp+fn) if 2*tp+fp+fn else 0.,
+-        MCC=(tp*tn-fp*fn)/denom if denom else float('nan'),
+-        AUPRC_AP=float(average_precision_score(truth, scores)) if both else float('nan'),
+-        AUPRC_status='OK' if both else 'NA', AUPRC_reason=reason,
+-        MCC_status='OK' if denom else 'NA', threshold=float(threshold))
+-
+-
+-def edge_scores(coefficients, d, order):
+-    C, d = np.asarray(coefficients), np.asarray(d)
+-    n, p = C.shape
+-    if d.shape[0] != p or order not in (2, 3):
+-        raise ValueError('Invalid feature dimensions/order')
+-    keys = [(i, *sources) for i in range(1, n+1)
+-            for sources in itertools.combinations([j for j in range(1, n+1) if j != i], order-1)]
+-    scores = dict.fromkeys(keys, 0.)
+-    for feature, row in enumerate(d):
+-        sources = tuple(sorted(int(x) for x in row if x != 0))
+-        if len(sources) != order-1 or len(set(sources)) != len(sources):
+-            continue
+-        for target in range(1, n+1):
+-            if target not in sources:
+-                key = (target, *sources)
+-                scores[key] = max(scores[key], abs(float(C[target-1, feature])))
+-    return keys, np.array([scores[key] for key in keys])
+-
+-
+-def restore_coefficients(C, means, scales):
+-    C, means, scales = np.asarray(C, float), np.asarray(means, float), np.asarray(scales, float)
+-    if C.ndim != 2 or means.shape != (C.shape[1],) or scales.shape != means.shape or np.any(scales <= 0):
+-        raise ValueError('Invalid scale restoration shapes')
+-    raw = C/scales
+-    raw[:, 0] = C[:, 0]-raw[:, 1:]@means[1:]
+-    return raw
+-
+-
+-def validate_splits(groups, splits):
+-    groups, splits = np.asarray(groups), np.asarray(splits)
+-    if groups.shape != splits.shape or groups.ndim != 1:
+-        raise ValueError('Split/group shapes differ')
+-    sets = [set(groups[splits == name]) for name in ('train', 'validation', 'test')]
+-    if not all(sets) or set(splits) != {'train', 'validation', 'test'}:
+-        raise ValueError('All three nonempty splits required')
+-    if any(sets[a] & sets[b] for a, b in ((0, 1), (0, 2), (1, 2))):
+-        raise ValueError('A trajectory crosses data splits')
+-    return dict(zip(('train', 'validation', 'test'), map(len, sets)))
++"""Compatibility exports for R4/R5 metrics, scaling and split checks."""
++from src.metrics.structure import binary_metrics, edge_scores
++from src.preprocessing.taylor import restore_coefficients
++from src.data.contracts import validate_splits
+ 
+ 
+ def validate_phase(config):
+@@ -74,3 +12,4 @@
+     expected = config['train_trajectories']*(config['integration_steps']//config['save_every']+1)
+     if config['train_K'] != expected or expected not in (300, 1000):
+         raise ValueError('Smoke case must have K_train=300 or 1000')
++
+--- a/scripts/r4_prepare.jl
++++ b/scripts/r4_prepare.jl
+@@ -3,6 +3,8 @@
+ include(joinpath(@__DIR__, "..", "src", "this_adapter.jl"))
+ include("r1_common.jl")
+ using .THISAdapter
++include(joinpath(@__DIR__, "..", "src", "solvers", "stlsq.jl"))
++using .THISSTLSQ
+ 
+ function prepare(config_path, output)
+     c = TOML.parsefile(config_path)
+@@ -24,10 +26,8 @@
+         @assert data.maximum_state <= 1+1e-10
+         @assert isapprox(truth*theta, data.Y; atol=1e-14, rtol=1e-13)
+         train = findall(==("train"), data.splits)
+-        means = vec(mean(theta[:, train]; dims=2));means[1] = 0.
+-        scales = sqrt.(vec(mean(abs2, theta[:, train].-means; dims=2)));scales[1] = 1.
+-        all(>(0), scales) || error("Degenerate nonconstant feature; retain failure rather than redraw")
+-        z = (theta.-means)./scales
++        z, means, scales = standardize_taylor(theta, train;
++            degenerate_message="Degenerate nonconstant feature; retain failure rather than redraw")
+         for (name, matrix) in (("states", data.X), ("Y", data.Y), ("theta", theta),
+                 ("standardized_theta", z), ("monomial_indices", d), ("true_coefficients", truth),
+                 ("initial_conditions", data.initials), ("feature_means", reshape(means, :, 1)),
+@@ -50,17 +50,17 @@
+             coefficients = zeros(c["nodes"], size(theta, 1))
+             elapsed = if method == "M0"
+                 @elapsed begin
+-                    out = run_this_solver(data.X[:, train], data.Y[:, train], [2, 3], c["dmax"];
+-                        solver="stlsq", lambda=c["stlsq"]["lambda"], rho=c["stlsq"]["rho"], niter=c["stlsq"]["niter"])
++                    out = fit_stlsq_raw(data.X[:, train], data.Y[:, train], c["dmax"];
++                        lambda=c["stlsq"]["lambda"], rho=c["stlsq"]["rho"], niter=c["stlsq"]["niter"])
+                     coefficients = out.coeff
+                 end
+             else
+                 @elapsed begin
+-                    Cz, _ = THISAdapter.mySINDy(z[:, train], data.Y[:, train],
+-                        c["stlsq"]["lambda"], c["stlsq"]["rho"], c["stlsq"]["niter"])
++                    out = fit_stlsq_standardized(z[:, train], data.Y[:, train], means, scales;
++                        lambda=c["stlsq"]["lambda"], rho=c["stlsq"]["rho"], niter=c["stlsq"]["niter"])
++                    Cz = out.standardized_coefficients
+                     write_matrix(joinpath(trial, "standardized_coefficients.csv"), Cz)
+-                    coefficients = Cz./permutedims(scales)
+-                    coefficients[:, 1] = Cz[:, 1]-coefficients[:, 2:end]*means[2:end]
++                    coefficients = out.coefficients
+                     @assert isapprox(coefficients*theta, Cz*z; atol=1e-12, rtol=1e-12)
+                 end
+             end
+--- a/scripts/r5_batch_julia.jl
++++ b/scripts/r5_batch_julia.jl
+@@ -3,6 +3,8 @@
+ include(joinpath(@__DIR__, "..", "src", "this_adapter.jl"))
+ include("r1_common.jl")
+ using .THISAdapter
++include(joinpath(@__DIR__, "..", "src", "solvers", "stlsq.jl"))
++using .THISSTLSQ
+ 
+ function main(task, config_path, output)
+     c = TOML.parsefile(config_path);base = TOML.parsefile(joinpath(THISAdapter.ROOT, c["base_config"]))
+@@ -30,10 +32,8 @@
+             @assert d == read_matrix(joinpath(THISAdapter.ROOT, "data/r1/revision/monomial_indices.csv"), Int)
+             @assert data.maximum_state <= 1+1e-10 && isapprox(truth*theta, data.Y; atol=1e-14, rtol=1e-13)
+             train = findall(==("train"), data.splits)
+-            means = vec(mean(theta[:, train]; dims=2));means[1] = 0.
+-            scales = sqrt.(vec(mean(abs2, theta[:, train].-means; dims=2)));scales[1] = 1.
+-            all(>(0), scales) || error("Degenerate features: retain seed failure, do not redraw")
+-            z = (theta.-means)./scales
++            z, means, scales = standardize_taylor(theta, train;
++                degenerate_message="Degenerate features: retain seed failure, do not redraw")
+             for (name, matrix) in (("states", data.X), ("Y", data.Y), ("theta", theta), ("standardized_theta", z),
+                     ("monomial_indices", d), ("true_coefficients", truth), ("initial_conditions", data.initials),
+                     ("feature_means", reshape(means, :, 1)), ("feature_scales", reshape(scales, :, 1)))
+@@ -65,8 +65,8 @@
+             if task == "stlsq"
+                 trial = joinpath(cell, "M0");ispath(trial) && error("Trial already exists")
+                 mkpath(trial);response = joinpath(cell, "data", "Y_noisy.csv");Y = read_matrix(response)
+-                elapsed = @elapsed out = run_this_solver(X[:, train], Y[:, train], [2, 3], 3;
+-                    solver="stlsq", lambda=base["stlsq"]["lambda"], rho=base["stlsq"]["rho"], niter=base["stlsq"]["niter"])
++                elapsed = @elapsed out = fit_stlsq_raw(X[:, train], Y[:, train], 3;
++                    lambda=base["stlsq"]["lambda"], rho=base["stlsq"]["rho"], niter=base["stlsq"]["niter"])
+                 @assert out.theta == read_matrix(joinpath(data_dir, "theta.csv"))[:, train] && out.d == d
+                 write_matrix(joinpath(trial, "coefficients.csv"), out.coeff)
+                 R1Baseline.save_toml(joinpath(trial, "status.toml"), Dict("status" => "OK", "method" => "M0", "seed" => seed,
+--- /dev/null
++++ b/src/bridge/numeric_io.py
+@@ -0,0 +1,61 @@
++"""Shared numerical exchange and audit table helpers; original serialization retained."""
++from pathlib import Path
++import csv
++import datetime
++import hashlib
++import json
++
++import numpy as np
++
++
++def file_hash(path):
++    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
++
++
++
++def _toml(value):
++    if isinstance(value, np.ndarray):
++        value = value.tolist()
++    if isinstance(value, np.generic):
++        value = value.item()
++    if isinstance(value, dict):
++        return '{' + ', '.join(json.dumps(str(k))+' = '+_toml(v) for k, v in value.items() if v is not None) + '}'
++    if isinstance(value, (tuple, list)):
++        return '[' + ', '.join(_toml(v) for v in value) + ']'
++    if isinstance(value, bool):
++        return str(value).lower()
++    if isinstance(value, (int, float)):
++        return repr(value)
++    if isinstance(value, str):
++        return json.dumps(value, ensure_ascii=False)
++    raise TypeError(f'Unsupported TOML value {type(value)}')
++
++
++
++def write_toml(path, values):
++    Path(path).write_text('\n'.join(json.dumps(k)+' = '+_toml(v) for k, v in values.items() if v is not None)+'\n')
++
++
++
++def read_matrix(path, shape, *, integer=False):
++    a = np.loadtxt(path, delimiter=',', ndmin=2)
++    if a.shape != tuple(shape) or not np.isfinite(a).all():
++        raise ValueError(f'{Path(path).name}: expected finite matrix {tuple(shape)}, got {a.shape}')
++    if integer:
++        if np.any(a != np.floor(a)) or np.any(np.abs(a) > 2**53):
++            raise ValueError(f'{Path(path).name}: invalid integer IDs')
++        a = a.astype(np.int64)
++    return a
++
++
++
++def stamp():
++    return datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat()
++
++
++
++def write_rows(path, rows, fields=None):
++    fields = fields or list(rows[0])
++    with Path(path).open('w', newline='') as f:
++        writer = csv.DictWriter(f, fields);writer.writeheader();writer.writerows(rows)
++
+--- /dev/null
++++ b/src/data/contracts.py
+@@ -0,0 +1,38 @@
++"""Hash-checked Taylor data loading and whole-trajectory split contract."""
++import csv
++import tomllib
++import numpy as np
++from src.bridge.numeric_io import file_hash, read_matrix
++
++
++def validate_splits(groups, splits):
++    groups, splits = np.asarray(groups), np.asarray(splits)
++    if groups.shape != splits.shape or groups.ndim != 1:
++        raise ValueError('Split/group shapes differ')
++    sets = [set(groups[splits == name]) for name in ('train', 'validation', 'test')]
++    if not all(sets) or set(splits) != {'train', 'validation', 'test'}:
++        raise ValueError('All three nonempty splits required')
++    if any(sets[a] & sets[b] for a, b in ((0, 1), (0, 2), (1, 2))):
++        raise ValueError('A trajectory crosses data splits')
++    return dict(zip(('train', 'validation', 'test'), map(len, sets)))
++
++
++
++def load_dataset(output, seed):
++    directory = output/f'seed_{seed}'/'data'
++    metadata = tomllib.loads((directory/'metadata.toml').read_text())
++    for name, expected in metadata['file_sha256'].items():
++        if file_hash(directory/name) != expected:
++            raise ValueError('Dataset hash mismatch: '+name)
++    n, p, k = metadata['N'], metadata['P'], metadata['K_total']
++    rows = list(csv.DictReader((directory/'sample_manifest.csv').open()))
++    groups = np.array([int(row['trajectory_id']) for row in rows])
++    splits = np.array([row['split'] for row in rows])
++    validate_splits(groups, splits)
++    return dict(directory=directory, metadata=metadata, groups=groups, splits=splits,
++        theta=read_matrix(directory/'theta.csv', (p, k)),
++        Z=read_matrix(directory/'standardized_theta.csv', (p, k)),
++        Y=read_matrix(directory/'Y.csv', (n, k)), d=read_matrix(directory/'monomial_indices.csv', (p, 3), integer=True),
++        means=read_matrix(directory/'feature_means.csv', (p, 1))[:, 0],
++        scales=read_matrix(directory/'feature_scales.csv', (p, 1))[:, 0])
++
+--- a/src/data_bridge.py
++++ b/src/data_bridge.py
+@@ -1,57 +1,17 @@
+ """R3 file bridge. Node IDs in d remain Julia 1-based IDs, with zero padding."""
+ from pathlib import Path
+ import argparse
+-import hashlib
+-import json
+-import warnings
+ import tomllib
+-from types import SimpleNamespace
+ 
+ import numpy as np
+ import sklearn
+-from sklearn.linear_model import Lasso
+-from sklearn.exceptions import ConvergenceWarning
+ 
+ from src.solvers import AdaptiveLassoConfig, fit_adaptive_lasso, SolverConvergenceError
+ 
++from src.bridge.numeric_io import file_hash, _toml, write_toml, read_matrix
++from src.solvers.plain_lasso import fit_plain_lasso
++
+ BRIDGE_VERSION = 'r3-csv-toml-1'
+-
+-
+-def file_hash(path):
+-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+-
+-
+-def _toml(value):
+-    if isinstance(value, np.ndarray):
+-        value = value.tolist()
+-    if isinstance(value, np.generic):
+-        value = value.item()
+-    if isinstance(value, dict):
+-        return '{' + ', '.join(json.dumps(str(k))+' = '+_toml(v) for k, v in value.items() if v is not None) + '}'
+-    if isinstance(value, (tuple, list)):
+-        return '[' + ', '.join(_toml(v) for v in value) + ']'
+-    if isinstance(value, bool):
+-        return str(value).lower()
+-    if isinstance(value, (int, float)):
+-        return repr(value)
+-    if isinstance(value, str):
+-        return json.dumps(value, ensure_ascii=False)
+-    raise TypeError(f'Unsupported TOML value {type(value)}')
+-
+-
+-def write_toml(path, values):
+-    Path(path).write_text('\n'.join(json.dumps(k)+' = '+_toml(v) for k, v in values.items() if v is not None)+'\n')
+-
+-
+-def read_matrix(path, shape, *, integer=False):
+-    a = np.loadtxt(path, delimiter=',', ndmin=2)
+-    if a.shape != tuple(shape) or not np.isfinite(a).all():
+-        raise ValueError(f'{Path(path).name}: expected finite matrix {tuple(shape)}, got {a.shape}')
+-    if integer:
+-        if np.any(a != np.floor(a)) or np.any(np.abs(a) > 2**53):
+-            raise ValueError(f'{Path(path).name}: invalid integer IDs')
+-        a = a.astype(np.int64)
+-    return a
+ 
+ 
+ def load_request(directory):
+@@ -93,78 +53,6 @@
+             raise ValueError('Training and validation trajectories overlap')
+         request['validation'] = dict(X_validation=tv.T, Y_validation=yv, train_groups=tg, validation_groups=vg)
+     return request
+-
+-
+-def fit_plain_lasso(X, y, config, validation=None):
+-    """Ordinary original-unit LASSO, with the leading constant left unpenalized."""
+-    c = AdaptiveLassoConfig(**config)
+-    allowed = {'selection', 'alpha', 'validation_alphas', 'alpha_fractions',
+-               'validation_tolerance', 'max_iter', 'tol', 'kkt_tolerance'}
+-    if set(config)-allowed:
+-        raise ValueError('Plain LASSO accepts only L1 selection/convergence options')
+-    if c.selection not in ('fixed', 'validation'):
+-        raise ValueError('Plain LASSO requires explicit fixed or validation selection')
+-    active = np.flatnonzero(np.ptp(X, axis=0) != 0)
+-    constant = np.flatnonzero(np.ptp(X, axis=0) == 0)
+-    if any(X[0, j] != 0 for j in constant if j != 0):
+-        raise ValueError('Multiple nonzero constants are unidentifiable')
+-    means, ym = X.mean(axis=0), float(y.mean())
+-    U, yc = X[:, active]-means[active], y-ym
+-    if not len(active):
+-        coef = np.zeros(X.shape[1]);coef[0] = ym
+-        return coef, dict(selection='constant_only', alpha=0., intercept=0., warnings=[], converged=True)
+-    if c.selection == 'validation':
+-        if validation is None:
+-            raise ValueError('Independent validation required')
+-        Xv, yv = validation['X_validation'], validation['y_validation']
+-        if not np.all(Xv[:, constant] == X[0, constant]):
+-            raise ValueError('A training-constant column changes in validation')
+-        base = max(float(np.max(np.abs(U.T@yc))/len(y)), np.finfo(float).eps)
+-        grid = c.validation_alphas if c.validation_alphas is not None else base*np.asarray(c.alpha_fractions)
+-    else:
+-        grid = [c.alpha]
+-    if any(a is None or not np.isfinite(a) or a <= 0 for a in grid):
+-        raise ValueError('Positive finite alpha required')
+-    models, rows = [], []
+-    for alpha in sorted(set(grid), reverse=True):
+-        with warnings.catch_warnings(record=True) as caught:
+-            warnings.simplefilter('always')
+-            if np.all(yc == 0):
+-                model = SimpleNamespace(coef_=np.zeros(len(active)), n_iter_=0, dual_gap_=0.)
+-            else:
+-                model = Lasso(alpha=alpha, fit_intercept=False, max_iter=c.max_iter, tol=c.tol,
+-                              selection='cyclic').fit(U, yc)
+-        coef = np.zeros(X.shape[1]);coef[active] = model.coef_
+-        coef[0] = ym-means[active]@model.coef_
+-        score = float(np.mean((Xv@coef-yv)**2)) if c.selection == 'validation' else 0.
+-        if not np.isfinite(score):
+-            raise SolverConvergenceError('Nonfinite LASSO validation score')
+-        rows.append(dict(alpha=float(alpha), MSE=score, nonzero=int(np.count_nonzero(model.coef_)),
+-            n_iter=int(model.n_iter_), dual_gap=float(model.dual_gap_),
+-            warnings=[f'{w.category.__name__}: {w.message}' for w in caught],
+-            convergence_warning=any(issubclass(w.category, ConvergenceWarning) for w in caught)))
+-        models.append(coef)
+-    if c.selection == 'validation':
+-        floor = c.validation_tolerance*max(float(np.mean((yv-ym)**2)), np.finfo(float).tiny)
+-        best = min(row['MSE'] for row in rows)
+-        selected = next(i for i, row in enumerate(rows) if row['MSE'] <= best+floor)
+-    else:
+-        selected = 0
+-    coef, chosen = models[selected], rows[selected]
+-    gradient = U.T@(X@coef-y)/len(y)
+-    nonzero = coef[active] != 0
+-    violation = np.maximum(np.abs(gradient)-chosen['alpha'], 0.)
+-    violation[nonzero] = np.abs(gradient[nonzero]+chosen['alpha']*np.sign(coef[active][nonzero]))
+-    kkt = float(np.max(violation))/max(1., float(np.max(np.abs(U.T@yc/len(y)))))
+-    if chosen['convergence_warning'] or kkt > c.kkt_tolerance:
+-        raise SolverConvergenceError(f'Plain LASSO convergence/KKT failure: {chosen}, {kkt}')
+-    return coef, dict(selection=c.selection, alpha=chosen['alpha'], intercept=0., converged=True,
+-        algorithm_version='r3-plain-lasso-1.0.0',
+-        config={name:getattr(c, name) for name in sorted(allowed)},
+-        validation_path=rows, selected_path_index=selected, kkt_scaled_violation=kkt,
+-        objective=float(np.mean((X@coef-y)**2)/2+chosen['alpha']*np.sum(np.abs(coef[active]))),
+-        feature_means=means, response_mean=ym,
+-        warnings=[w for row in rows for w in row['warnings']])
+ 
+ 
+ def process_directory(directory, *, echo=False):
+--- /dev/null
++++ b/src/metrics/structure.py
+@@ -0,0 +1,46 @@
++"""Exact directed hyperedge scores and original AP/strict-threshold metrics."""
++import itertools
++import math
++import numpy as np
++from sklearn.metrics import average_precision_score
++
++
++def binary_metrics(truth, scores, threshold=1e-8):
++    truth, scores = np.asarray(truth, bool), np.asarray(scores, float)
++    if truth.ndim != 1 or scores.shape != truth.shape or not np.isfinite(scores).all():
++        raise ValueError('Require equal finite 1D candidate arrays')
++    predicted = scores > threshold
++    tp = int(np.sum(truth & predicted));fp = int(np.sum(~truth & predicted))
++    fn = int(np.sum(truth & ~predicted));tn = int(np.sum(~truth & ~predicted))
++    denom = math.sqrt((tp+fp)*(tp+fn)*(tn+fp)*(tn+fn))
++    both = bool(np.any(truth) and np.any(~truth))
++    reason = '' if both else ('no_positive_truth' if not np.any(truth) else 'no_negative_truth')
++    return dict(TP=tp, FP=fp, FN=fn, TN=tn, candidate_count=len(truth),
++        positive_count=int(np.sum(truth)), negative_count=int(np.sum(~truth)),
++        precision=tp/(tp+fp) if tp+fp else 0., recall=tp/(tp+fn) if tp+fn else float('nan'),
++        F1=2*tp/(2*tp+fp+fn) if 2*tp+fp+fn else 0.,
++        MCC=(tp*tn-fp*fn)/denom if denom else float('nan'),
++        AUPRC_AP=float(average_precision_score(truth, scores)) if both else float('nan'),
++        AUPRC_status='OK' if both else 'NA', AUPRC_reason=reason,
++        MCC_status='OK' if denom else 'NA', threshold=float(threshold))
++
++
++
++def edge_scores(coefficients, d, order):
++    C, d = np.asarray(coefficients), np.asarray(d)
++    n, p = C.shape
++    if d.shape[0] != p or order not in (2, 3):
++        raise ValueError('Invalid feature dimensions/order')
++    keys = [(i, *sources) for i in range(1, n+1)
++            for sources in itertools.combinations([j for j in range(1, n+1) if j != i], order-1)]
++    scores = dict.fromkeys(keys, 0.)
++    for feature, row in enumerate(d):
++        sources = tuple(sorted(int(x) for x in row if x != 0))
++        if len(sources) != order-1 or len(set(sources)) != len(sources):
++            continue
++        for target in range(1, n+1):
++            if target not in sources:
++                key = (target, *sources)
++                scores[key] = max(scores[key], abs(float(C[target-1, feature])))
++    return keys, np.array([scores[key] for key in keys])
++
+--- /dev/null
++++ b/src/preprocessing/taylor.py
+@@ -0,0 +1,12 @@
++"""Restore coefficients to original THIS units without changing bias semantics."""
++import numpy as np
++
++
++def restore_coefficients(C, means, scales):
++    C, means, scales = np.asarray(C, float), np.asarray(means, float), np.asarray(scales, float)
++    if C.ndim != 2 or means.shape != (C.shape[1],) or scales.shape != means.shape or np.any(scales <= 0):
++        raise ValueError('Invalid scale restoration shapes')
++    raw = C/scales
++    raw[:, 0] = C[:, 0]-raw[:, 1:]@means[1:]
++    return raw
++
+--- /dev/null
++++ b/src/preprocessing/taylor_scaling.jl
+@@ -0,0 +1,22 @@
++module TaylorScaling
++using Statistics
++
++export standardize_taylor, restore_coefficients
++
++"""Original R4/R5 train-only centering/RMS operations, leading constant unchanged."""
++function standardize_taylor(theta, train; degenerate_message="Degenerate nonconstant feature; retain failure rather than redraw")
++    means = vec(mean(theta[:, train]; dims=2));means[1] = 0.
++    scales = sqrt.(vec(mean(abs2, theta[:, train].-means; dims=2)));scales[1] = 1.
++    all(>(0), scales) || error(degenerate_message)
++    z = (theta.-means)./scales
++    z, means, scales
++end
++
++"""Original Julia M0s inverse scaling, with the same multiplication order."""
++function restore_coefficients(Cz, means, scales)
++    coefficients = Cz./permutedims(scales)
++    coefficients[:, 1] = Cz[:, 1]-coefficients[:, 2:end]*means[2:end]
++    coefficients
++end
++
++end # module
+--- /dev/null
++++ b/src/solvers/methods.py
+@@ -0,0 +1,18 @@
++"""Stable Python method identities; preserve ordinary/adaptive selection paths."""
++from .plain_lasso import fit_plain_lasso, fit_plain_bic
++from .adaptive_lasso import fit_adaptive_lasso
++
++
++def fit_node(method, X, y, config, validation=None):
++    common = dict(config['lasso'])
++    adaptive = dict(common, **config['adaptive'])
++    if method == 'M1':
++        return fit_plain_bic(X, y, dict(adaptive, selection='bic'))
++    if method == 'M2':
++        return fit_adaptive_lasso(X, y, dict(adaptive, selection='bic'))
++    if method == 'M3':
++        return fit_adaptive_lasso(X, y, dict(adaptive, selection='validation'), **validation)
++    if method == 'M1v':
++        return fit_plain_lasso(X, y, dict(common, selection='validation'), validation)
++    raise ValueError('Unknown Python method')
++
+--- /dev/null
++++ b/src/solvers/plain_lasso.py
+@@ -0,0 +1,106 @@
++"""Ordinary LASSO paths extracted unchanged from the R3 bridge and R4 wrapper."""
++from types import SimpleNamespace
++import warnings
++
++import numpy as np
++from sklearn.exceptions import ConvergenceWarning
++from sklearn.linear_model import Lasso, LassoLarsIC
++
++from .adaptive_lasso import AdaptiveLassoConfig, SolverConvergenceError, _prepare, _bic_variance
++
++
++def fit_plain_lasso(X, y, config, validation=None):
++    """Ordinary original-unit LASSO, with the leading constant left unpenalized."""
++    c = AdaptiveLassoConfig(**config)
++    allowed = {'selection', 'alpha', 'validation_alphas', 'alpha_fractions',
++               'validation_tolerance', 'max_iter', 'tol', 'kkt_tolerance'}
++    if set(config)-allowed:
++        raise ValueError('Plain LASSO accepts only L1 selection/convergence options')
++    if c.selection not in ('fixed', 'validation'):
++        raise ValueError('Plain LASSO requires explicit fixed or validation selection')
++    active = np.flatnonzero(np.ptp(X, axis=0) != 0)
++    constant = np.flatnonzero(np.ptp(X, axis=0) == 0)
++    if any(X[0, j] != 0 for j in constant if j != 0):
++        raise ValueError('Multiple nonzero constants are unidentifiable')
++    means, ym = X.mean(axis=0), float(y.mean())
++    U, yc = X[:, active]-means[active], y-ym
++    if not len(active):
++        coef = np.zeros(X.shape[1]);coef[0] = ym
++        return coef, dict(selection='constant_only', alpha=0., intercept=0., warnings=[], converged=True)
++    if c.selection == 'validation':
++        if validation is None:
++            raise ValueError('Independent validation required')
++        Xv, yv = validation['X_validation'], validation['y_validation']
++        if not np.all(Xv[:, constant] == X[0, constant]):
++            raise ValueError('A training-constant column changes in validation')
++        base = max(float(np.max(np.abs(U.T@yc))/len(y)), np.finfo(float).eps)
++        grid = c.validation_alphas if c.validation_alphas is not None else base*np.asarray(c.alpha_fractions)
++    else:
++        grid = [c.alpha]
++    if any(a is None or not np.isfinite(a) or a <= 0 for a in grid):
++        raise ValueError('Positive finite alpha required')
++    models, rows = [], []
++    for alpha in sorted(set(grid), reverse=True):
++        with warnings.catch_warnings(record=True) as caught:
++            warnings.simplefilter('always')
++            if np.all(yc == 0):
++                model = SimpleNamespace(coef_=np.zeros(len(active)), n_iter_=0, dual_gap_=0.)
++            else:
++                model = Lasso(alpha=alpha, fit_intercept=False, max_iter=c.max_iter, tol=c.tol,
++                              selection='cyclic').fit(U, yc)
++        coef = np.zeros(X.shape[1]);coef[active] = model.coef_
++        coef[0] = ym-means[active]@model.coef_
++        score = float(np.mean((Xv@coef-yv)**2)) if c.selection == 'validation' else 0.
++        if not np.isfinite(score):
++            raise SolverConvergenceError('Nonfinite LASSO validation score')
++        rows.append(dict(alpha=float(alpha), MSE=score, nonzero=int(np.count_nonzero(model.coef_)),
++            n_iter=int(model.n_iter_), dual_gap=float(model.dual_gap_),
++            warnings=[f'{w.category.__name__}: {w.message}' for w in caught],
++            convergence_warning=any(issubclass(w.category, ConvergenceWarning) for w in caught)))
++        models.append(coef)
++    if c.selection == 'validation':
++        floor = c.validation_tolerance*max(float(np.mean((yv-ym)**2)), np.finfo(float).tiny)
++        best = min(row['MSE'] for row in rows)
++        selected = next(i for i, row in enumerate(rows) if row['MSE'] <= best+floor)
++    else:
++        selected = 0
++    coef, chosen = models[selected], rows[selected]
++    gradient = U.T@(X@coef-y)/len(y)
++    nonzero = coef[active] != 0
++    violation = np.maximum(np.abs(gradient)-chosen['alpha'], 0.)
++    violation[nonzero] = np.abs(gradient[nonzero]+chosen['alpha']*np.sign(coef[active][nonzero]))
++    kkt = float(np.max(violation))/max(1., float(np.max(np.abs(U.T@yc/len(y)))))
++    if chosen['convergence_warning'] or kkt > c.kkt_tolerance:
++        raise SolverConvergenceError(f'Plain LASSO convergence/KKT failure: {chosen}, {kkt}')
++    return coef, dict(selection=c.selection, alpha=chosen['alpha'], intercept=0., converged=True,
++        algorithm_version='r3-plain-lasso-1.0.0',
++        config={name:getattr(c, name) for name in sorted(allowed)},
++        validation_path=rows, selected_path_index=selected, kkt_scaled_violation=kkt,
++        objective=float(np.mean((X@coef-y)**2)/2+chosen['alpha']*np.sum(np.abs(coef[active]))),
++        feature_means=means, response_mean=ym,
++        warnings=[w for row in rows for w in row['warnings']])
++
++
++
++def fit_plain_bic(X, y, config):
++    c = AdaptiveLassoConfig(**config)
++    p = _prepare(X, y, c)
++    U = p['z']  # common external scaling, standardize=False in this wrapper
++    variance, info = _bic_variance(X, p, U, c)
++    with warnings.catch_warnings(record=True) as caught:
++        warnings.simplefilter('always')
++        model = LassoLarsIC(criterion='bic', fit_intercept=False,
++                            noise_variance=variance, max_iter=c.max_iter).fit(U, p['yc'])
++    coef = np.zeros(X.shape[1]);coef[p['active']] = model.coef_
++    coef[0] = p['response_mean']-p['means'][p['active']]@model.coef_
++    gradient = U.T@(X@coef-y)/len(y)
++    nonzero = model.coef_ != 0
++    violations = np.maximum(np.abs(gradient)-model.alpha_, 0.)
++    violations[nonzero] = np.abs(gradient[nonzero]+model.alpha_*np.sign(model.coef_[nonzero]))
++    kkt = float(np.max(violations))/max(1., float(np.max(np.abs(U.T@p['yc']/len(y)))))
++    if any(issubclass(w.category, ConvergenceWarning) for w in caught) or kkt > c.kkt_tolerance:
++        raise SolverConvergenceError(f'Ordinary LARS/BIC convergence/KKT failure: {kkt}')
++    return coef, dict(selection='bic', alpha=float(model.alpha_), noise_variance=variance,
++        alpha_path=model.alphas_, bic_path=model.criterion_, kkt_scaled_violation=kkt,
++        warnings=[f'{w.category.__name__}: {w.message}' for w in caught], **info)
++
+--- /dev/null
++++ b/src/solvers/stlsq.jl
+@@ -0,0 +1,21 @@
++module THISSTLSQ
++using ..THISAdapter
++include(joinpath(@__DIR__, "..", "preprocessing", "taylor_scaling.jl"))
++using .TaylorScaling
++
++export fit_stlsq_raw, fit_stlsq_standardized, standardize_taylor, restore_coefficients
++
++"""M0: native THIS on raw states and derivatives, with its existing decoding parity guard."""
++function fit_stlsq_raw(X, Y, dmax; lambda=0.1, rho=1.0, niter=10)
++    THISAdapter.run_this_solver(X, Y, [2, 3], dmax;
++        solver="stlsq", lambda, rho, niter)
++end
++
++"""M0s: native mySINDy on the common standardized library; same constant penalty."""
++function fit_stlsq_standardized(Z, Y, means, scales; lambda=0.1, rho=1.0, niter=10)
++    Cz, _ = THISAdapter.mySINDy(Z, Y, lambda, rho, niter)
++    coefficients = restore_coefficients(Cz, means, scales)
++    (; coefficients, standardized_coefficients=Cz)
++end
++
++end # module
+--- /dev/null
++++ b/tests/test_refactor_s2.py
+@@ -0,0 +1,156 @@
++"""Behavioral invariants for S2; frozen source and original algorithms stay unchanged."""
++import ast
++from dataclasses import asdict
++from pathlib import Path
++import tarfile
++import tempfile
++import unittest
++
++import numpy as np
++
++from src.solvers import AdaptiveLassoConfig, fit_adaptive_lasso
++from src.solvers.adaptive_lasso import _prepare, _select, _validation
++
++ROOT=Path(__file__).resolve().parents[1]
++
++
++class SolverExtractionTests(unittest.TestCase):
++    def fixture(self):
++        rng=np.random.default_rng(20261019)
++        X=np.column_stack([np.ones(320),rng.normal(size=(320,6))])
++        y=X@np.array([.3,1.2,-.4,0.,.15,0.,0.])+rng.normal(0.,.05,320)
++        return X,y
++
++    def zero_exponent(self,selection):
++        from src.solvers.plain_lasso import fit_plain_lasso,fit_plain_bic
++        X,y=self.fixture();Xv,yv=X[240:],y[240:];X,y=X[:240],y[:240]
++        c=AdaptiveLassoConfig(gamma=0.,standardize=False,selection=selection,alpha=.002)
++        p=_prepare(X,y,c)
++        initial=np.linspace(-.7,.9,len(p['active']))
++        a=(np.abs(initial)+c.eps)**c.gamma;weights=1./a
++        np.testing.assert_array_equal(weights,np.ones_like(weights))
++        U=p['z']*(p['scales'][p['active']]*a)
++        validation=None
++        if selection=='validation':
++            validation=_validation(Xv,yv,X,p,np.arange(240),np.arange(240,320),c)
++        theta,alpha,diag=_select(X,p,U,a,c,validation)
++        coef=np.zeros(X.shape[1]);coef[p['active']]=a*theta
++        coef[0]=p['response_mean']-p['means'][p['active']]@coef[p['active']]
++        if selection=='bic':other,ordinary=fit_plain_bic(X,y,asdict(c))
++        else:
++            options=dict(selection=selection,alpha=.002)
++            kwargs=dict(X_validation=Xv,y_validation=yv) if selection=='validation' else None
++            other,ordinary=fit_plain_lasso(X,y,options,kwargs)
++        np.testing.assert_array_equal(coef,other)
++        self.assertEqual(alpha,ordinary['alpha'])
++        if selection=='bic':
++            np.testing.assert_array_equal(diag['alpha_path'],ordinary['alpha_path'])
++            np.testing.assert_array_equal(diag['bic_path'],ordinary['bic_path'])
++        if selection=='validation':
++            self.assertEqual(diag['selected_path_index'],ordinary['selected_path_index'])
++            self.assertEqual([r['alpha'] for r in diag['validation_path']],
++                             [r['alpha'] for r in ordinary['validation_path']])
++            # The frozen paths evaluate predictions in different floating-point orders.
++            # Compare ordinary-path MSEs to that same frozen path, not to a different
++            # formula's bit pattern. Coefficients, alpha path and selected index above
++            # must still be exactly equal across the gamma=0 and ordinary problems.
++            with tarfile.open(ROOT/'docs/refactor/S1_source_snapshot.tar.gz','r:gz') as frozen:
++                reference={'__name__':'frozen_r3_bridge'}
++                exec(compile(frozen.extractfile('src/data_bridge.py').read(),
++                             'S1_snapshot/src/data_bridge.py','exec'),reference)
++            old_coef,old=reference['fit_plain_lasso'](X,y,dict(selection=selection,alpha=.002),kwargs)
++            np.testing.assert_array_equal(coef,old_coef)
++            np.testing.assert_array_equal([r['MSE'] for r in ordinary['validation_path']],
++                                          [r['MSE'] for r in old['validation_path']])
++            self.assertEqual(float(np.mean((Xv@coef-yv)**2)),old['validation_path'][old['selected_path_index']]['MSE'])
++
++    def test_zero_exponent_fixed_is_ordinary_lasso(self):self.zero_exponent('fixed')
++    def test_zero_exponent_bic_path_is_ordinary_lasso(self):self.zero_exponent('bic')
++    def test_zero_exponent_validation_path_is_ordinary_lasso(self):self.zero_exponent('validation')
++
++    def test_public_gamma_validation_is_preserved(self):
++        X,y=self.fixture()
++        with self.assertRaisesRegex(ValueError,'gamma'):
++            fit_adaptive_lasso(X,y,dict(gamma=0.,selection='fixed',alpha=.01))
++
++    def test_legacy_imports_use_the_same_functions(self):
++        import sys
++        sys.path.insert(0,str(ROOT/'scripts'))
++        from src import data_bridge
++        from src.bridge.numeric_io import read_matrix,write_toml
++        from src.solvers.plain_lasso import fit_plain_lasso,fit_plain_bic
++        from src.solvers.methods import fit_node
++        import r4_methods
++        self.assertIs(data_bridge.fit_plain_lasso,fit_plain_lasso)
++        self.assertIs(data_bridge.read_matrix,read_matrix)
++        self.assertIs(data_bridge.write_toml,write_toml)
++        self.assertIs(r4_methods.fit_plain_bic,fit_plain_bic)
++        self.assertIs(r4_methods.fit_node,fit_node)
++
++    def test_extracted_functions_match_frozen_ast(self):
++        mapping={
++            'src/bridge/numeric_io.py':{'src/data_bridge.py':['file_hash','_toml','write_toml','read_matrix'],
++                                      'scripts/r4_experiment.py':['stamp','write_rows']},
++            'src/solvers/plain_lasso.py':{'src/data_bridge.py':['fit_plain_lasso'],'scripts/r4_methods.py':['fit_plain_bic']},
++            'src/solvers/methods.py':{'scripts/r4_methods.py':['fit_node']},
++            'src/data/contracts.py':{'scripts/r4_metrics.py':['validate_splits'],
++                                     'scripts/r4_experiment.py':['load_dataset']},
++            'src/preprocessing/taylor.py':{'scripts/r4_metrics.py':['restore_coefficients']},
++            'src/metrics/structure.py':{'scripts/r4_metrics.py':['binary_metrics','edge_scores']},
++        }
++        def functions(text):
++            return {n.name:ast.dump(n,include_attributes=False) for n in ast.parse(text).body if isinstance(n,ast.FunctionDef)}
++        with tarfile.open(ROOT/'docs/refactor/S1_source_snapshot.tar.gz','r:gz') as frozen:
++            for current,sources in mapping.items():
++                new=functions((ROOT/current).read_text())
++                for old,names in sources.items():
++                    reference=functions(frozen.extractfile(old).read().decode())
++                    for name in names:self.assertEqual(new[name],reference[name],(current,name))
++
++
++class DataAndScoreExtractionTests(unittest.TestCase):
++    def test_legacy_metric_and_data_exports_are_identical(self):
++        import sys
++        sys.path.insert(0,str(ROOT/'scripts'))
++        import r4_metrics,r4_experiment
++        from src.data.contracts import validate_splits,load_dataset
++        from src.preprocessing.taylor import restore_coefficients
++        from src.metrics.structure import binary_metrics,edge_scores
++        from src.bridge.numeric_io import stamp,write_rows
++        for old,new in [(r4_metrics.validate_splits,validate_splits),(r4_experiment.load_dataset,load_dataset),
++                        (r4_metrics.restore_coefficients,restore_coefficients),(r4_metrics.binary_metrics,binary_metrics),
++                        (r4_metrics.edge_scores,edge_scores),(r4_experiment.stamp,stamp),(r4_experiment.write_rows,write_rows)]:
++            self.assertIs(old,new)
++
++    def test_full_taylor_contract_and_whole_trajectory_splits(self):
++        from src.data.contracts import load_dataset,validate_splits
++        data=load_dataset(ROOT/'results/r5/e1_full_independent/clean',22261035)
++        self.assertEqual(data['theta'].shape,(165,480))
++        self.assertEqual(data['Y'].shape,(8,480));self.assertEqual(data['d'].shape,(165,3))
++        np.testing.assert_array_equal(data['theta'][0],np.ones(480))
++        self.assertEqual(validate_splits(data['groups'],data['splits']),dict(train=100,validation=30,test=30))
++        with self.assertRaisesRegex(ValueError,'crosses'):
++            validate_splits([1,1,2],['train','validation','test'])
++
++    def test_one_target_exclusions_max_aggregation_and_boundary(self):
++        from src.metrics.structure import edge_scores,binary_metrics
++        d=np.array([[0,0,0],[0,0,1],[0,1,2],[0,1,1],[0,2,1]])
++        C=np.zeros((4,5));C[2,2]=-.2;C[2,4]=.7;C[2,3]=9.;C[0,2]=8.;C[3,1]=1e-8
++        keys,scores=edge_scores(C,d,3)
++        self.assertEqual(dict(zip(keys,scores))[(3,1,2)],.7)
++        self.assertEqual(np.count_nonzero(scores),1)
++        pk,ps=edge_scores(C,d,2)
++        boundary=dict(zip(pk,ps))[(4,1)]
++        m=binary_metrics([True],[boundary]);self.assertEqual((m['TP'],m['FN']),(0,1))
++
++    def test_prediction_restore_and_free_bias(self):
++        from src.preprocessing.taylor import restore_coefficients
++        rng=np.random.default_rng(19)
++        raw=np.column_stack([np.ones(120),rng.normal(size=(120,4))*[.01,100.,3.,8.]+[7.,-3.,20.,1.]])
++        mu=raw[:80].mean(axis=0);mu[0]=0.
++        s=np.sqrt(np.mean((raw[:80]-mu)**2,axis=0));s[0]=1.
++        z=(raw-mu)/s;C=rng.normal(size=(3,5));restored=restore_coefficients(C,mu,s)
++        np.testing.assert_allclose(restored@raw.T,C@z.T,atol=1e-11,rtol=1e-11)
++
++
++if __name__=='__main__':unittest.main()
