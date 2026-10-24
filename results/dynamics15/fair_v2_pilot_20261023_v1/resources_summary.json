@@ -1,0 +1,7 @@
+{
+  "peak_process_tree_rss_mib": 1667.5546875,
+  "peak_process_count": 18,
+  "samples": 150,
+  "interval_seconds": 0.25,
+  "shared_pages_may_be_counted_multiple_times": true
+}

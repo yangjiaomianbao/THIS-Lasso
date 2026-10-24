@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "shared_train_validation_inputs": true,
+  "original_decoder_preserved": true,
+  "selection_locked_before_evaluation": true,
+  "preprocessing_prediction_parity": true,
+  "native_decoded_edges_exact": 4745,
+  "unique_sample_rng_names": 7680,
+  "unique_sample_vectors": 7680,
+  "candidate_universe_verified": true
+}

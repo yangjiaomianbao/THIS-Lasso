@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "S1_entries": 31479,
+  "unchanged_original_entries": 25087,
+  "S2_source_edits": [
+    "scripts/r4_experiment.py",
+    "scripts/r4_methods.py",
+    "scripts/r4_metrics.py",
+    "scripts/r4_prepare.jl",
+    "scripts/r5_batch_julia.jl",
+    "src/data_bridge.py"
+  ],
+  "README_original_backed_up": true,
+  "approved_cache_deletions": 6385,
+  "approved_caches_currently_absent": 6385,
+  "regenerated_optional_caches": [],
+  "formal_R5_files_unchanged": 4113,
+  "S0_S1_S2_artifacts_unchanged": true,
+  "backup_every_member_verified": true,
+  "upstream_heads": {
+    "THIS": "865efc43fe8ec21966659b482ca5756396974425",
+    "Su-AdaptiveLASSO": "fa0d662f68b7b41a1c6c3401af9504929126dafd"
+  },
+  "rule": "Optional caches may regenerate; scientific input/output and source rules remain strict."
+}

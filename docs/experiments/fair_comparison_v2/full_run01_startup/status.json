@@ -1,0 +1,34 @@
+{
+  "authorization": "User: 启动正式的实验",
+  "supervisor_pid": 2364348,
+  "started_at": "2026-10-23T14:14:34.041624+00:00",
+  "result_directory": "/home/yg/THIS-Lasso/results/dynamics15/fair_comparison_v2_full_run01",
+  "planned_models": 900,
+  "workers": 8,
+  "stage": "COMPLETE_WITH_MODEL_FAILURES",
+  "updated_at": "2026-10-24T00:23:55.507535+00:00",
+  "child_pid": null,
+  "current_log": "/home/yg/THIS-Lasso/docs/experiments/fair_comparison_v2/full_run01_startup/POST_RUN_AUDIT.log",
+  "completion": {
+    "status": "COMPLETE_WITH_FAILURES",
+    "mode": "full",
+    "models": 900,
+    "counts": {
+      "OK": 889,
+      "NA": 0,
+      "FAILED": 11
+    },
+    "wall_seconds": 36534.32681652205,
+    "resources": {
+      "peak_process_tree_rss_mib": 6403.4609375,
+      "peak_process_count": 18,
+      "samples": 145195,
+      "interval_seconds": 0.25,
+      "shared_pages_may_be_counted_multiple_times": true
+    },
+    "full_experiment_run": true,
+    "independent_networks": 10,
+    "independent_data_repetitions": 30,
+    "selection": "validation MSE, not structure F1"
+  }
+}

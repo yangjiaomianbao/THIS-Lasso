@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "repeated_complete_models": 12,
+  "coefficients_exact": true,
+  "selected_parameters_exact": true,
+  "metrics_exact": true,
+  "shared_input_fingerprints_exact": true,
+  "independent_repetitions_added": 0
+}

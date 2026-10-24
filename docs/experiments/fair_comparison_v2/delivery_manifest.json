@@ -1,0 +1,167 @@
+{
+  "status": "IMPLEMENTED / TESTED / PILOT VERIFIED / FULL EXPERIMENT NOT RUN",
+  "scope": "New V2 source, tests, locked configuration and audit documentation; excludes caches and self. Experiment outputs have their own verified provenance and selection locks.",
+  "existing_files_modified": 0,
+  "files": {
+    "configs/fair_comparison_v2/config_locked.toml": {
+      "bytes": 11964,
+      "sha256": "bae7f21418e065e8e64296a5b394539afc16fe49518b2b63870f193db9386d8e"
+    },
+    "configs/fair_comparison_v2/network_manifest.csv": {
+      "bytes": 42076,
+      "sha256": "b9e11edf6a747bf49e617a911168d357fde81bd64103208b300309e2fdd76d37"
+    },
+    "configs/fair_comparison_v2/plan_lock.json": {
+      "bytes": 471,
+      "sha256": "244ba0f159f7fd3b9450f6474695291c17611d3f810c32db4cfd76abdbfb49bd"
+    },
+    "configs/fair_comparison_v2/seed_manifest.csv": {
+      "bytes": 2097,
+      "sha256": "80d38ece68a1a3554c703c7d29f1452557b9e5feb3bede6b8fd14cf8308297f3"
+    },
+    "docs/experiments/fair_comparison_v2/README.md": {
+      "bytes": 8601,
+      "sha256": "b8025c48f88af248dccaae6e4dfebd8a1de7ff13abd851973e6167eaa6927f8b"
+    },
+    "docs/experiments/fair_comparison_v2/S1_audit.md": {
+      "bytes": 5379,
+      "sha256": "e449721ce303dd40331d0b59ec816ae41af987cca97e987d5cfb7ae4784ff7a5"
+    },
+    "docs/experiments/fair_comparison_v2/S2_S4_implementation.md": {
+      "bytes": 5154,
+      "sha256": "c959fc0998a792896d6ef01361b750ff2d8359a8a21c598faef76799106cad2d"
+    },
+    "docs/experiments/fair_comparison_v2/S6_S7_runbook.md": {
+      "bytes": 4900,
+      "sha256": "2f55cca71192cad2d3577379e547463d495b852e09fac8a9dc9a9cf4cd883720"
+    },
+    "docs/experiments/fair_comparison_v2/S6_readiness.json": {
+      "bytes": 985,
+      "sha256": "11824547da6f06b52657448dfbac44df89d29c7e3b4e3538d616f99e79c70369"
+    },
+    "docs/experiments/fair_comparison_v2/all_python_tests.log": {
+      "bytes": 1091,
+      "sha256": "88f21623d0d2f6cf3b8dbba34008d7ace63f2a6a4f3d76a02078e0306cfe2b54"
+    },
+    "docs/experiments/fair_comparison_v2/baseline_python_tests.log": {
+      "bytes": 1067,
+      "sha256": "5c0cca3e14a16a47d018c96abe568895e627bf7a0814ad02a1699d59007aa6a5"
+    },
+    "docs/experiments/fair_comparison_v2/baseline_sha256.json": {
+      "bytes": 2484497,
+      "sha256": "ed974cc81d8a239700300a20f3004788e89000e0e20e0c9f940052ed36caeee4"
+    },
+    "docs/experiments/fair_comparison_v2/data_test_config_0.toml": {
+      "bytes": 21275,
+      "sha256": "24695c81606964267e571a5c0778e877418f49650e433d5c59ea27e285395668"
+    },
+    "docs/experiments/fair_comparison_v2/data_test_config_1.toml": {
+      "bytes": 21275,
+      "sha256": "09f11fd4105ad909fe5a40b1bab4cf948c6178699e473e9c8d4c54a83b8eff61"
+    },
+    "docs/experiments/fair_comparison_v2/data_test_config_3.toml": {
+      "bytes": 21290,
+      "sha256": "3477a013f5f70872987f274728970870b76d720282a07dc3760a9c1fd6ee9ac2"
+    },
+    "docs/experiments/fair_comparison_v2/final_audit_console.log": {
+      "bytes": 237,
+      "sha256": "e3f9f287443e3c5072332042080469954698c9f940990aa582cc24e41e246db3"
+    },
+    "docs/experiments/fair_comparison_v2/final_integrity.json": {
+      "bytes": 259,
+      "sha256": "2bb6b896540204dd71b457add5ec902c80a64b2dd58f76cc7b3c7a1ab861d42e"
+    },
+    "docs/experiments/fair_comparison_v2/five_systems_console.log": {
+      "bytes": 38083,
+      "sha256": "ed28e1068dae6dbb6597b55c10822b312309fb4d372e16859375f611afecb9a9"
+    },
+    "docs/experiments/fair_comparison_v2/five_systems_independent_validation.json": {
+      "bytes": 275,
+      "sha256": "5ff3d6ea8e13799463c4e5819b02f9d71ded6f23af1ab30676fa349acabf0708"
+    },
+    "docs/experiments/fair_comparison_v2/grid_boundary_diagnostics.csv": {
+      "bytes": 2703,
+      "sha256": "52d38dbed3f251afcec855f409be60391612ae309425a60b7d674aed3c6b0ade"
+    },
+    "docs/experiments/fair_comparison_v2/integrity.json": {
+      "bytes": 809,
+      "sha256": "3f678682667d1a8f2fd3f6c35100678e955514d5ed75c2dfe67dabb01b449d47"
+    },
+    "docs/experiments/fair_comparison_v2/julia_data_tests.log": {
+      "bytes": 176,
+      "sha256": "70b8296da9a24d0fec25c93d00113170e75cc47cad7b8b226b12330dafcb3bb2"
+    },
+    "docs/experiments/fair_comparison_v2/legacy_julia_dynamics_tests.log": {
+      "bytes": 122,
+      "sha256": "c01f7c6b00b384fd5f6560f479f86223db37cd001fc8e06f519f79ddea5d5c1f"
+    },
+    "docs/experiments/fair_comparison_v2/lorenz_probe_console.log": {
+      "bytes": 645,
+      "sha256": "0209ffd33a3fd2de41a14bddbbc85cda9f456f40a5a0271828695b04b804e92c"
+    },
+    "docs/experiments/fair_comparison_v2/pilot_console.log": {
+      "bytes": 9235,
+      "sha256": "d907d30609f1d98d4c54eca6544240c3553dbf24d8a17cf4de4a7802107ab46a"
+    },
+    "docs/experiments/fair_comparison_v2/pilot_independent_validation.json": {
+      "bytes": 275,
+      "sha256": "b7e9754e96781b314641a26907c35163aa0745c5ccb9306f3580cbda1cbef984"
+    },
+    "docs/experiments/fair_comparison_v2/pre_run_plan_metadata_revision.json": {
+      "bytes": 607,
+      "sha256": "7ce8aa3ba7e3a1f36f9b4a5c4ffe923b2b418358699896737cad96c52ef1bb06"
+    },
+    "docs/experiments/fair_comparison_v2/replay_validation.json": {
+      "bytes": 230,
+      "sha256": "cd339f97191b075bf6eab07a31a348035638a18b9d00a4fe0790d60fe396afad"
+    },
+    "docs/experiments/fair_comparison_v2/s7_pilot_analysis.log": {
+      "bytes": 90,
+      "sha256": "0923f66a1de9326627996ecd38637ac886871c674c99ec9b8c82544b8c6e632c"
+    },
+    "docs/experiments/fair_comparison_v2/v2_unit_tests.log": {
+      "bytes": 119,
+      "sha256": "6565f9ea12813af03c33657ded9b546fb656f1cb6e4e28f72d6008e0760b387e"
+    },
+    "scripts/fair_v2.py": {
+      "bytes": 27844,
+      "sha256": "76ed975add3d1184ef0fc0a35aac7aa17665815faaffa90feff605e02d8299af"
+    },
+    "scripts/fair_v2_analyse.py": {
+      "bytes": 8552,
+      "sha256": "dec1ea1279e8a93b2f5888acdf42cfdb851a18a8703440f3d4f6db95e1cc7452"
+    },
+    "scripts/fair_v2_preflight.py": {
+      "bytes": 4178,
+      "sha256": "7f0211e1218f0a3a13e4351cd3becf1c0ea45c048c035f047f1f8fa4d7d3b27b"
+    },
+    "scripts/fair_v2_prepare.jl": {
+      "bytes": 2640,
+      "sha256": "947892afe1687ec8ceda1e8f227649b07459ddc7d0bfbb86958845748d65d20d"
+    },
+    "scripts/fair_v2_verify.py": {
+      "bytes": 5028,
+      "sha256": "0fc63a80bd13e23d8def8e4f45a43d2844096080050e2ffc0910a068270cdbb2"
+    },
+    "src/experiments/fair_v2.py": {
+      "bytes": 8909,
+      "sha256": "6afc89b8f2cde598c428466d7fe93430a7b88dcdf04df7c047e6aeaa51884a1c"
+    },
+    "src/experiments/fair_v2_statistics.py": {
+      "bytes": 7852,
+      "sha256": "3e3572b658a2fcd08574a9256e515634d06e5569181cf2c9e707e3863d918c58"
+    },
+    "src/solvers/stlsq_validation.py": {
+      "bytes": 3867,
+      "sha256": "313c750ea4e5da256a942dbcb7797f058d1fb329f7dc4886c180a796466019c6"
+    },
+    "tests/test_fair_v2.py": {
+      "bytes": 13925,
+      "sha256": "890e5347d1700f24116efc669f6f83b7dba1c1a8e1f55e112911db58c178f7f1"
+    },
+    "tests/test_fair_v2_data.jl": {
+      "bytes": 1279,
+      "sha256": "a44c3a4d0ee173c0ac0bc1848f3ab88fde14939a5424bf3acfe3e7ca30c4db15"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "mode": "pilot",
+  "models": 12,
+  "counts": {
+    "OK": 12,
+    "NA": 0,
+    "FAILED": 0
+  },
+  "wall_seconds": 37.39427342102863,
+  "resources": {
+    "peak_process_tree_rss_mib": 1667.5546875,
+    "peak_process_count": 18,
+    "samples": 150,
+    "interval_seconds": 0.25,
+    "shared_pages_may_be_counted_multiple_times": true
+  },
+  "full_experiment_run": false,
+  "independent_networks": 1,
+  "independent_data_repetitions": 1,
+  "selection": "validation MSE, not structure F1"
+}

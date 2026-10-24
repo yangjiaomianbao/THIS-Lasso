@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "models": 30,
+  "network_metric_records": 60,
+  "undefined_MCC": 2,
+  "selection_checks": 720,
+  "scores_recomputed_independently": true,
+  "summary_sample_sd_verified": true,
+  "all_original_run_source_snapshots_and_selection_locks_verified": true
+}

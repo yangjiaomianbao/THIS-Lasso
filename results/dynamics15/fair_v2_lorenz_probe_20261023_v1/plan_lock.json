@@ -1,0 +1,11 @@
+{
+  "files": {
+    "network_manifest.csv": "b9e11edf6a747bf49e617a911168d357fde81bd64103208b300309e2fdd76d37",
+    "seed_manifest.csv": "80d38ece68a1a3554c703c7d29f1452557b9e5feb3bede6b8fd14cf8308297f3",
+    "config_locked.toml": "bae7f21418e065e8e64296a5b394539afc16fe49518b2b63870f193db9386d8e"
+  },
+  "formal_experiment_run": false,
+  "independent_network_realizations": 10,
+  "data_replicates_per_network": 3,
+  "network_effect_includes_topology_and_weights": true
+}

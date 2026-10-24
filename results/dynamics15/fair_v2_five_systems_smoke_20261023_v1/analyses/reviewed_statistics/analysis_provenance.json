@@ -1,0 +1,24 @@
+{
+  "source_run": "results/dynamics15/fair_v2_five_systems_smoke_20261023_v1",
+  "source_trials_sha256": "12bf87490fc05e22e2a84bfe4e858fba29b731ea4ffd97e49fead6cd01198964",
+  "source_lock_sha256": "5a1a687912e76fe71964e0787b6297cbf611b91abe504dee0e6b8746e50797ad",
+  "verification": {
+    "status": "PASS",
+    "models": 30,
+    "network_metric_records": 60,
+    "undefined_MCC": 2,
+    "selection_checks": 720,
+    "scores_recomputed_independently": true,
+    "summary_sample_sd_verified": true,
+    "all_original_run_source_snapshots_and_selection_locks_verified": true
+  },
+  "analysis_source_sha256": {
+    "scripts/fair_v2_analyse.py": "dec1ea1279e8a93b2f5888acdf42cfdb851a18a8703440f3d4f6db95e1cc7452",
+    "src/experiments/fair_v2_statistics.py": "3e3572b658a2fcd08574a9256e515634d06e5569181cf2c9e707e3863d918c58",
+    "scripts/fair_v2_verify.py": "0fc63a80bd13e23d8def8e4f45a43d2844096080050e2ffc0910a068270cdbb2"
+  },
+  "independent_networks": 1,
+  "full_experiment_run": false,
+  "bootstrap_seed": 2026102302,
+  "bootstrap_resamples": 2000
+}

@@ -1,0 +1,9 @@
+{
+  "before_sha256": "9d1455f6da31ad056ebbaf5f6021be628ff1f8941bf34039db16f8698f39b93e",
+  "after_sha256": "bae7f21418e065e8e64296a5b394539afc16fe49518b2b63870f193db9386d8e",
+  "old_descriptions": {
+    "scope": "Two-seed five-system engineering benchmark; changes node count, sampling and screening jointly, not a controlled node-count-only ablation",
+    "numerical_backend": "All validation models: uniform full weighted LARS + independent all-grid KKT; original working-set fallback"
+  },
+  "reason": "Replace inherited V1 descriptive metadata before any fit; seeds, parameters, algorithms unchanged"
+}

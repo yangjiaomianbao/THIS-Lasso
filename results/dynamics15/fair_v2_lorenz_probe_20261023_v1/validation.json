@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "shared_train_validation_inputs": true,
+  "original_decoder_preserved": true,
+  "selection_locked_before_evaluation": true,
+  "preprocessing_prediction_parity": true,
+  "scope": "single Lorenz equation, 5% noise; no network performance reported"
+}

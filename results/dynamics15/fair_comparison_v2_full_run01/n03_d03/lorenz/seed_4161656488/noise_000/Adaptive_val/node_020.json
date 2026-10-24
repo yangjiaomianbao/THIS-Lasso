@@ -1,0 +1,18 @@
+{
+  "status": "FAILED",
+  "method": "Adaptive_val",
+  "reason": "",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/yg/THIS-Lasso/scripts/fair_v2.py\", line 100, in worker\n    assert np.isclose(np.mean((vp-yv)**2),selected['MSE'],rtol=1e-10,atol=1e-20)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "diagnostics": {},
+  "node": 20,
+  "input_fingerprint": "c89151644b9eb0cab57359835c9c3a64c0e5387923ee6f7b52bf11a0a4e72588",
+  "wall_seconds": 7.266026698984206,
+  "process_cpu_seconds": 7.265799209999997,
+  "worker_pid": 2452237,
+  "worker_lifetime_peak_rss_mib": 797.62109375,
+  "blas_threads": [
+    1,
+    1,
+    1
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_WITH_FAILURES",
+  "mode": "full",
+  "models": 900,
+  "counts": {
+    "OK": 889,
+    "NA": 0,
+    "FAILED": 11
+  },
+  "wall_seconds": 36534.32681652205,
+  "resources": {
+    "peak_process_tree_rss_mib": 6403.4609375,
+    "peak_process_count": 18,
+    "samples": 145195,
+    "interval_seconds": 0.25,
+    "shared_pages_may_be_counted_multiple_times": true
+  },
+  "full_experiment_run": true,
+  "independent_networks": 10,
+  "independent_data_repetitions": 30,
+  "selection": "validation MSE, not structure F1"
+}

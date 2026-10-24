@@ -1,0 +1,16 @@
+....................................................................................................................R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=echo N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=1 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=1 P=3 K=80
+R3_BRIDGE_PASS solver=lasso mode=solve N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=3 K=80
+E1_FIT seed=1 ratio=0.10 method=M1 status=NA seconds=0.000
+..........E1_FIT seed=1 ratio=0.10 method=M3 status=FAILED seconds=0.001
+..../home/yg/THIS-Lasso/src/data/contracts.py:28: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/yg/THIS-Lasso/results/r5/e1_full_independent/clean/seed_22261035/data/sample_manifest.csv' mode='r' encoding='UTF-8'>
+  rows = list(csv.DictReader((directory/'sample_manifest.csv').open()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..........
+----------------------------------------------------------------------
+Ran 140 tests in 2.881s
+
+OK

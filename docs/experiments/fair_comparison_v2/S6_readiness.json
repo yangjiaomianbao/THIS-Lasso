@@ -1,0 +1,23 @@
+{
+  "status": "READY_FOR_USER_CONFIRMATION",
+  "planned_models": 900,
+  "network_realizations": 10,
+  "data_repetitions": 30,
+  "source_and_plan_match_tested_coverage": true,
+  "coverage_models": 30,
+  "coverage_independent_networks": 1,
+  "full_experiment_run": false,
+  "coverage_wall_seconds": 1086.5827467460185,
+  "coverage_resources": {
+    "peak_process_tree_rss_mib": 6216.47265625,
+    "peak_process_count": 16,
+    "samples": 4318,
+    "interval_seconds": 0.25,
+    "shared_pages_may_be_counted_multiple_times": true
+  },
+  "rough_30x_coverage_hours": 9.054856222883489,
+  "timing_limitation": "Single network extrapolation only; difficult paths/fallback can substantially increase duration.",
+  "grid_policy": "Record boundary selections; do not retune grid using structure metrics.",
+  "selection_warning": "Validation MSE selects predictive models, not structure-F1-optimal models.",
+  "config_sha256": "bae7f21418e065e8e64296a5b394539afc16fe49518b2b63870f193db9386d8e"
+}

@@ -1,0 +1,15 @@
+instance_id,network_id,network_seed,data_seed,noise_seed,system,noise_ratio,method,node,input_fingerprint,status,reason,diagnostic
+n01_d02,1,3493338177,1865170633,565031362,lorenz,0.0,Adaptive_val,41,e005f03f5320c359a3c6bcf844b2f2ec71b7bf4551e5ac918b78d3f28284a639,FAILED,,n01_d02/lorenz/seed_1865170633/noise_000/Adaptive_val/node_041.json
+n01_d03,1,3493338177,799233936,1306897256,lorenz,0.0,Adaptive_val,23,a3a4549cac0ae821938aca1bc95c3bda1db9c6eff42e50a1bcd4f9ae49f0c94f,FAILED,,n01_d03/lorenz/seed_799233936/noise_000/Adaptive_val/node_023.json
+n02_d01,2,2199362647,3956215772,1056695761,lorenz,0.0,Adaptive_val,5,f939a6f4e1f1c6de5817e652a83bafadbfcf5dc864d4eacaeb6cc4080574ce49,FAILED,,n02_d01/lorenz/seed_3956215772/noise_000/Adaptive_val/node_005.json
+n03_d02,3,1978175223,2875726644,790142485,lorenz,0.0,Adaptive_val,2,6f0bf266e373976a6e4af9fca045a71bf41d5953009b5afc7dddb268e3b85b14,FAILED,,n03_d02/lorenz/seed_2875726644/noise_000/Adaptive_val/node_002.json
+n03_d03,3,1978175223,4161656488,3256988422,lorenz,0.0,Adaptive_val,20,c89151644b9eb0cab57359835c9c3a64c0e5387923ee6f7b52bf11a0a4e72588,FAILED,,n03_d03/lorenz/seed_4161656488/noise_000/Adaptive_val/node_020.json
+n06_d03,6,1552033099,535398675,615851430,lorenz,0.0,Adaptive_val,20,99f156156ab267830a9969c4862873b8356bada9436776d235eeb3327cc4c64d,FAILED,,n06_d03/lorenz/seed_535398675/noise_000/Adaptive_val/node_020.json
+n07_d01,7,3208920032,672246538,2769254557,lorenz,0.0,Adaptive_val,8,734c6c2dd4d744c450fe4a40bbc0827b329a6dfd262ca806104d6ecba6d22255,FAILED,,n07_d01/lorenz/seed_672246538/noise_000/Adaptive_val/node_008.json
+n07_d01,7,3208920032,672246538,2769254557,lorenz,0.0,Adaptive_val,20,734c6c2dd4d744c450fe4a40bbc0827b329a6dfd262ca806104d6ecba6d22255,FAILED,,n07_d01/lorenz/seed_672246538/noise_000/Adaptive_val/node_020.json
+n08_d01,8,3655831935,347758804,2269343707,lorenz,0.0,Adaptive_val,20,05294a4ff87a5284053e15d479533228b4e1325f26af3bacf4f1e70db192f5d9,FAILED,,n08_d01/lorenz/seed_347758804/noise_000/Adaptive_val/node_020.json
+n08_d02,8,3655831935,2615116191,2889523172,lorenz,0.0,Adaptive_val,23,d1bbb8dc4125fcc296d2ca64921e4a29de828563e9235f457469d3e85162f12a,FAILED,,n08_d02/lorenz/seed_2615116191/noise_000/Adaptive_val/node_023.json
+n08_d02,8,3655831935,2615116191,2889523172,lorenz,0.0,Adaptive_val,31,d1bbb8dc4125fcc296d2ca64921e4a29de828563e9235f457469d3e85162f12a,FAILED,,n08_d02/lorenz/seed_2615116191/noise_000/Adaptive_val/node_031.json
+n10_d01,10,1986002715,1619481291,3837702821,lorenz,0.0,Adaptive_val,1,4df5be68384b74359db2aaae80876006e0ae7f08709aea3529d4d9cfb15e762b,FAILED,,n10_d01/lorenz/seed_1619481291/noise_000/Adaptive_val/node_001.json
+n10_d02,10,1986002715,2697165592,3344069868,lorenz,0.0,Adaptive_val,17,4d4e6912206d477a6103d1a49fecdbfac7dedd13347974dc82bc156cb82c953a,FAILED,,n10_d02/lorenz/seed_2697165592/noise_000/Adaptive_val/node_017.json
+n10_d02,10,1986002715,2697165592,3344069868,lorenz,0.0,Adaptive_val,23,4d4e6912206d477a6103d1a49fecdbfac7dedd13347974dc82bc156cb82c953a,FAILED,,n10_d02/lorenz/seed_2697165592/noise_000/Adaptive_val/node_023.json

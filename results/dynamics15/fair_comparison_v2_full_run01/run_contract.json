@@ -1,0 +1,343 @@
+{
+  "mode": "full",
+  "systems": [
+    "kuramoto",
+    "lorenz",
+    "lotka_volterra",
+    "stuart_landau",
+    "sis"
+  ],
+  "repetitions": [
+    {
+      "network_id": 1,
+      "sample_id": 1,
+      "network_seed": 3493338177,
+      "topology_seed": 457234608,
+      "weight_seed": 116013558,
+      "data_seed": 3248196616,
+      "noise_seed": 3503491275,
+      "instance_id": "n01_d01"
+    },
+    {
+      "network_id": 1,
+      "sample_id": 2,
+      "network_seed": 3493338177,
+      "topology_seed": 457234608,
+      "weight_seed": 116013558,
+      "data_seed": 1865170633,
+      "noise_seed": 565031362,
+      "instance_id": "n01_d02"
+    },
+    {
+      "network_id": 1,
+      "sample_id": 3,
+      "network_seed": 3493338177,
+      "topology_seed": 457234608,
+      "weight_seed": 116013558,
+      "data_seed": 799233936,
+      "noise_seed": 1306897256,
+      "instance_id": "n01_d03"
+    },
+    {
+      "network_id": 2,
+      "sample_id": 1,
+      "network_seed": 2199362647,
+      "topology_seed": 3629257166,
+      "weight_seed": 847938490,
+      "data_seed": 3956215772,
+      "noise_seed": 1056695761,
+      "instance_id": "n02_d01"
+    },
+    {
+      "network_id": 2,
+      "sample_id": 2,
+      "network_seed": 2199362647,
+      "topology_seed": 3629257166,
+      "weight_seed": 847938490,
+      "data_seed": 272924116,
+      "noise_seed": 1184102065,
+      "instance_id": "n02_d02"
+    },
+    {
+      "network_id": 2,
+      "sample_id": 3,
+      "network_seed": 2199362647,
+      "topology_seed": 3629257166,
+      "weight_seed": 847938490,
+      "data_seed": 3179150579,
+      "noise_seed": 1214986107,
+      "instance_id": "n02_d03"
+    },
+    {
+      "network_id": 3,
+      "sample_id": 1,
+      "network_seed": 1978175223,
+      "topology_seed": 2164167985,
+      "weight_seed": 3088656903,
+      "data_seed": 208093321,
+      "noise_seed": 4080635904,
+      "instance_id": "n03_d01"
+    },
+    {
+      "network_id": 3,
+      "sample_id": 2,
+      "network_seed": 1978175223,
+      "topology_seed": 2164167985,
+      "weight_seed": 3088656903,
+      "data_seed": 2875726644,
+      "noise_seed": 790142485,
+      "instance_id": "n03_d02"
+    },
+    {
+      "network_id": 3,
+      "sample_id": 3,
+      "network_seed": 1978175223,
+      "topology_seed": 2164167985,
+      "weight_seed": 3088656903,
+      "data_seed": 4161656488,
+      "noise_seed": 3256988422,
+      "instance_id": "n03_d03"
+    },
+    {
+      "network_id": 4,
+      "sample_id": 1,
+      "network_seed": 1953436749,
+      "topology_seed": 871457024,
+      "weight_seed": 545967483,
+      "data_seed": 840257107,
+      "noise_seed": 395142390,
+      "instance_id": "n04_d01"
+    },
+    {
+      "network_id": 4,
+      "sample_id": 2,
+      "network_seed": 1953436749,
+      "topology_seed": 871457024,
+      "weight_seed": 545967483,
+      "data_seed": 2634550627,
+      "noise_seed": 3129247830,
+      "instance_id": "n04_d02"
+    },
+    {
+      "network_id": 4,
+      "sample_id": 3,
+      "network_seed": 1953436749,
+      "topology_seed": 871457024,
+      "weight_seed": 545967483,
+      "data_seed": 2956282706,
+      "noise_seed": 2451028849,
+      "instance_id": "n04_d03"
+    },
+    {
+      "network_id": 5,
+      "sample_id": 1,
+      "network_seed": 1019936458,
+      "topology_seed": 655624993,
+      "weight_seed": 1630205024,
+      "data_seed": 3004086175,
+      "noise_seed": 2836532176,
+      "instance_id": "n05_d01"
+    },
+    {
+      "network_id": 5,
+      "sample_id": 2,
+      "network_seed": 1019936458,
+      "topology_seed": 655624993,
+      "weight_seed": 1630205024,
+      "data_seed": 3953293665,
+      "noise_seed": 3801400253,
+      "instance_id": "n05_d02"
+    },
+    {
+      "network_id": 5,
+      "sample_id": 3,
+      "network_seed": 1019936458,
+      "topology_seed": 655624993,
+      "weight_seed": 1630205024,
+      "data_seed": 2353166085,
+      "noise_seed": 2351415515,
+      "instance_id": "n05_d03"
+    },
+    {
+      "network_id": 6,
+      "sample_id": 1,
+      "network_seed": 1552033099,
+      "topology_seed": 3624225483,
+      "weight_seed": 3667394977,
+      "data_seed": 4040555661,
+      "noise_seed": 368155507,
+      "instance_id": "n06_d01"
+    },
+    {
+      "network_id": 6,
+      "sample_id": 2,
+      "network_seed": 1552033099,
+      "topology_seed": 3624225483,
+      "weight_seed": 3667394977,
+      "data_seed": 1284738062,
+      "noise_seed": 2492796235,
+      "instance_id": "n06_d02"
+    },
+    {
+      "network_id": 6,
+      "sample_id": 3,
+      "network_seed": 1552033099,
+      "topology_seed": 3624225483,
+      "weight_seed": 3667394977,
+      "data_seed": 535398675,
+      "noise_seed": 615851430,
+      "instance_id": "n06_d03"
+    },
+    {
+      "network_id": 7,
+      "sample_id": 1,
+      "network_seed": 3208920032,
+      "topology_seed": 714976674,
+      "weight_seed": 133561579,
+      "data_seed": 672246538,
+      "noise_seed": 2769254557,
+      "instance_id": "n07_d01"
+    },
+    {
+      "network_id": 7,
+      "sample_id": 2,
+      "network_seed": 3208920032,
+      "topology_seed": 714976674,
+      "weight_seed": 133561579,
+      "data_seed": 3504634598,
+      "noise_seed": 2749159445,
+      "instance_id": "n07_d02"
+    },
+    {
+      "network_id": 7,
+      "sample_id": 3,
+      "network_seed": 3208920032,
+      "topology_seed": 714976674,
+      "weight_seed": 133561579,
+      "data_seed": 524504312,
+      "noise_seed": 2440766451,
+      "instance_id": "n07_d03"
+    },
+    {
+      "network_id": 8,
+      "sample_id": 1,
+      "network_seed": 3655831935,
+      "topology_seed": 1946453833,
+      "weight_seed": 2831650808,
+      "data_seed": 347758804,
+      "noise_seed": 2269343707,
+      "instance_id": "n08_d01"
+    },
+    {
+      "network_id": 8,
+      "sample_id": 2,
+      "network_seed": 3655831935,
+      "topology_seed": 1946453833,
+      "weight_seed": 2831650808,
+      "data_seed": 2615116191,
+      "noise_seed": 2889523172,
+      "instance_id": "n08_d02"
+    },
+    {
+      "network_id": 8,
+      "sample_id": 3,
+      "network_seed": 3655831935,
+      "topology_seed": 1946453833,
+      "weight_seed": 2831650808,
+      "data_seed": 2723102302,
+      "noise_seed": 1861810665,
+      "instance_id": "n08_d03"
+    },
+    {
+      "network_id": 9,
+      "sample_id": 1,
+      "network_seed": 3665097047,
+      "topology_seed": 4278062033,
+      "weight_seed": 1538877684,
+      "data_seed": 3735420947,
+      "noise_seed": 3479548915,
+      "instance_id": "n09_d01"
+    },
+    {
+      "network_id": 9,
+      "sample_id": 2,
+      "network_seed": 3665097047,
+      "topology_seed": 4278062033,
+      "weight_seed": 1538877684,
+      "data_seed": 2141706295,
+      "noise_seed": 2422854865,
+      "instance_id": "n09_d02"
+    },
+    {
+      "network_id": 9,
+      "sample_id": 3,
+      "network_seed": 3665097047,
+      "topology_seed": 4278062033,
+      "weight_seed": 1538877684,
+      "data_seed": 3996134207,
+      "noise_seed": 1779357712,
+      "instance_id": "n09_d03"
+    },
+    {
+      "network_id": 10,
+      "sample_id": 1,
+      "network_seed": 1986002715,
+      "topology_seed": 1094935433,
+      "weight_seed": 459072700,
+      "data_seed": 1619481291,
+      "noise_seed": 3837702821,
+      "instance_id": "n10_d01"
+    },
+    {
+      "network_id": 10,
+      "sample_id": 2,
+      "network_seed": 1986002715,
+      "topology_seed": 1094935433,
+      "weight_seed": 459072700,
+      "data_seed": 2697165592,
+      "noise_seed": 3344069868,
+      "instance_id": "n10_d02"
+    },
+    {
+      "network_id": 10,
+      "sample_id": 3,
+      "network_seed": 1986002715,
+      "topology_seed": 1094935433,
+      "weight_seed": 459072700,
+      "data_seed": 2771032737,
+      "noise_seed": 4277193324,
+      "instance_id": "n10_d03"
+    }
+  ],
+  "source_sha256": {
+    "scripts/dynamics30.py": "64b34a9fec537151080a8f05525b59b525a383c69b712faa02194ffa314a28e5",
+    "scripts/dynamics30_native_decode.jl": "74d406fc9debcfe4b4472aff834842f301f785dde85cdab102d75ef388613b97",
+    "scripts/dynamics_pilot.py": "222a742d5cd36ef7f3896ac1eb3fd186bebf0c2f681de97abfb45bdb32f7ed8e",
+    "scripts/fair_v2.py": "76ed975add3d1184ef0fc0a35aac7aa17665815faaffa90feff605e02d8299af",
+    "scripts/fair_v2_prepare.jl": "947892afe1687ec8ceda1e8f227649b07459ddc7d0bfbb86958845748d65d20d",
+    "src/bridge/numeric_io.py": "b86e8d8e6175613171d917d10a74eb6a6b0f1c524c6621fef4b2b65119a91fd4",
+    "src/bridge/physical_decode.jl": "edb37fc071e82d09fee080db4701a76ffaa5394ad9e3bdc27442371d49fe703b",
+    "src/data/contracts.py": "53804f127d5cb3a07b8cb121dc9aedcd631ad5a0ca8728a7bf0f2320f2eb5e0a",
+    "src/data/multisystem_dynamics.jl": "69d5ed052bbab24a45b37012e5c3c5eebf09c2c5fc6b108b002db34b8c505620",
+    "src/data/paper_dynamics.jl": "563595a09015c5de026cdbf42e90eae0fb76bdb152e10b3c9d92dd0660c7b0e9",
+    "src/data_bridge.py": "70774ec1e4df7cf9b5a264549d57a2890ebefc3b4d76b4cf153f5da29f515fa3",
+    "src/experiments/fair_v2.py": "6afc89b8f2cde598c428466d7fe93430a7b88dcdf04df7c047e6aeaa51884a1c",
+    "src/experiments/fair_v2_statistics.py": "3e3572b658a2fcd08574a9256e515634d06e5569181cf2c9e707e3863d918c58",
+    "src/metrics/structure.py": "04241461dc7dd3a7af26d58e8d82e1b239c25f4ad3c0242828868b2eccaeeb3e",
+    "src/preprocessing/pearson_filter.jl": "334252e2f7163087b9344137422add13efc353c53519db6fc26bf742954c673d",
+    "src/preprocessing/taylor.py": "4d9f42cd27dedaa296a74348af9b04835573cf38ed55c3b711c824e5f7390f9c",
+    "src/preprocessing/taylor_scaling.jl": "7e7d7ea2daaf2a503d5093b56f2bb04efc460fb7f8f5cec274f8ed995e305849",
+    "src/solvers/__init__.py": "6c5c416eb14575477ee69c8220930fd58ae569f37b9075f2f3729ffca5a46f9d",
+    "src/solvers/adaptive_lasso.py": "30aab9751a1981c2c2901b760ac16bc686bc1f77c81f2103eaffb2ee64e70a23",
+    "src/solvers/large_library.py": "f953df0da304474ebebb9b635cbfe1fe3780dc02f9c5196b6a7cd2856a5504cc",
+    "src/solvers/lars_validation.py": "8bddce6fe173e645590d045e5987724e7c6743de4827538ba27336669be4d972",
+    "src/solvers/methods.py": "bf8ffe60b5a2a8de2dd722c28643318d6475c4337fb10dde71dba5c666079ccd",
+    "src/solvers/plain_lasso.py": "110cdf06c7e35e8faeaca257261319f7b8c2eaedc6af789d8c47e9a127daed30",
+    "src/solvers/stlsq.jl": "b27efdf650cf467c9c2d644108048058f6bd0a4ca96245528f4a0b18aab3f489",
+    "src/solvers/stlsq_validation.py": "313c750ea4e5da256a942dbcb7797f058d1fb329f7dc4886c180a796466019c6",
+    "src/this_adapter.jl": "d542449d32ca005a945db8e1f620b4559eb872b613de52e7aa5774b20d9272dc"
+  },
+  "plan_sha256": "bae7f21418e065e8e64296a5b394539afc16fe49518b2b63870f193db9386d8e",
+  "workers": 8,
+  "blas_threads": 1
+}
