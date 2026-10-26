@@ -1,0 +1,103 @@
+{
+  "estimate_date": "2026-10-26 Asia/Shanghai",
+  "scope": "Review and runtime estimation only; no new fitting or data generation.",
+  "evidence": {
+    "old_models": 120,
+    "old_wall_h": 0.3355657751333719,
+    "fair_models": 900,
+    "fair_wall_h": 10.14842411570057,
+    "fair_equation_cpu_h": 54.11107345746167,
+    "fair_effective_cpu_throughput": 5.3319680810094185,
+    "fair_validation_zero_cpu_h": 4.883218969970001,
+    "fair_validation_five_cpu_h": 41.42413384030112,
+    "old_node_wall_h_by_noise_method": {
+      "noise_050/M1vC": 2.7914572876393664,
+      "noise_050/M1B": 0.15470018366759175,
+      "noise_050/M3C": 2.0921794732643253,
+      "noise_050/M2B": 0.08326563979667197,
+      "noise_000/M1vC": 0.0749389053345011,
+      "noise_000/M1B": 0.05644258016416442,
+      "noise_000/M3C": 0.5694367464062006,
+      "noise_000/M2B": 0.05668637185558005
+    }
+  },
+  "assumptions": {
+    "workers": 8,
+    "blas_threads": 1,
+    "same_hardware_and_solver": true,
+    "new_ten_percent_noise_is_not_yet_benchmarked": true,
+    "fitting_paths_exported_during_new_fits": true,
+    "no_five_fold_CV_or_full_group_deletion_search": true
+  },
+  "sizes": {
+    "A_model_records": 2700,
+    "A_expected_BIC_NA": 480,
+    "A_potentially_usable_models_before_failures": 2220,
+    "old_records_reusable_if_hash_and_semantics_match": 120,
+    "old_OK_final_coefficients_reusable": 96,
+    "A_new_configuration_records": 2580,
+    "A_validation_equation_paths": 21600,
+    "A_validation_grid_points": 259200,
+    "B_additional_model_records": 4500,
+    "total_model_records": 7200,
+    "A_dense_validation_grid_coefficients_GiB": 15.750789642333984
+  },
+  "validation_only_scenarios": [
+    {
+      "ten_percent_cost_relative_to_five_percent": 1.0,
+      "A_validation_cpu_h": 87.73148665057224,
+      "A_validation_wall_h_at_historical_throughput": 16.45386568667594,
+      "B_validation_wall_h_at_historical_throughput": 27.423109477793233
+    },
+    {
+      "ten_percent_cost_relative_to_five_percent": 1.5,
+      "A_validation_cpu_h": 108.4435535707228,
+      "A_validation_wall_h_at_historical_throughput": 20.338372608973472,
+      "B_validation_wall_h_at_historical_throughput": 33.89728768162245
+    },
+    {
+      "ten_percent_cost_relative_to_five_percent": 2.0,
+      "A_validation_cpu_h": 129.15562049087333,
+      "A_validation_wall_h_at_historical_throughput": 24.222879531270994,
+      "B_validation_wall_h_at_historical_throughput": 40.37146588545166
+    }
+  ],
+  "budget_wall_hours": {
+    "existing_support_audit": [
+      0.25,
+      0.75
+    ],
+    "A_incremental_data_and_fits": [
+      18,
+      36
+    ],
+    "A_path_decode_statistics": [
+      3,
+      8
+    ],
+    "conditional_bounded_Q4": [
+      2,
+      6
+    ],
+    "B_additional_data_and_fits": [
+      30,
+      60
+    ],
+    "B_path_statistics": [
+      5,
+      12
+    ]
+  },
+  "limitations": [
+    "Budget ranges are planning estimates, not statistical confidence intervals.",
+    "New code implementation and validation effort is excluded.",
+    "10% noise, tails, IO, source compatibility and Q4 refitting remain unbenchmarked.",
+    "Per-node wall-time sums overlap under concurrency and are not batch wall time.",
+    "Q4 has no finite estimate unless group count, competitor size and refit policy are bounded."
+  ],
+  "evidence_files_sha256": {
+    "results/dynamics15/fair_comparison_v2_full_run01/resources.csv": "e6486ee0a6517815f7c797ca88be8a98ff8649cb2ac1593e6212c4927e568f68",
+    "results/dynamics15/fair_comparison_v2_full_run01/completion.json": "c9099bd79b90a04119a6da81e3875172326798f3d1eb5fd911069462fa6e9a04",
+    "results/dynamics15/five_systems_certified_20261022/completion.json": "079cfce59ea317455abd76169bd0e250251258bb0e1e9ac7142144e8b41f96eb"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE",
+  "models": 3240,
+  "counts": {
+    "OK": 3000,
+    "NA": 240,
+    "FAILED": 0
+  },
+  "stages": {
+    "A": {
+      "status": "PASS",
+      "models": 540,
+      "counts": {
+        "OK": 500,
+        "NA": 40
+      },
+      "native_candidate_checks": 787500,
+      "red_groups": 100,
+      "finished": "2026-10-26T19:40:17.103785+08:00",
+      "raw_candidate_scores_exact": true,
+      "native_thresholded_structure_exact": true,
+      "native_strict_threshold": 1e-08,
+      "nonzero_subthreshold_raw_scores_preserved": 0
+    },
+    "B": {
+      "status": "PASS",
+      "models": 2700,
+      "counts": {
+        "OK": 2500,
+        "NA": 200
+      },
+      "native_candidate_checks": 3937500,
+      "red_groups": 0,
+      "finished": "2026-10-26T19:40:58.387597+08:00",
+      "raw_candidate_scores_exact": true,
+      "native_thresholded_structure_exact": true,
+      "native_strict_threshold": 1e-08,
+      "nonzero_subthreshold_raw_scores_preserved": 6
+    }
+  },
+  "wall_seconds": 15593.801857,
+  "finished": "2026-10-26T19:41:00.005783+08:00",
+  "old_files_verified": 1730,
+  "source_hashes_verified": 13,
+  "systems": [
+    "kuramoto",
+    "lotka_volterra",
+    "sis"
+  ],
+  "noise_ratios": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "seeds_per_network": 10,
+  "original_fixed_networks": 1,
+  "additional_networks": 5,
+  "independent_decode": "PASS",
+  "last_resume_wall_seconds": 64.85700155305676,
+  "wall_seconds_includes_interruptions": true,
+  "fit_windows": {
+    "A": {
+      "first_model_committed": "2026-10-26T15:21:32.188577+08:00",
+      "last_model_committed": "2026-10-26T15:41:08.813043+08:00",
+      "elapsed_seconds_between_first_and_last_commit": 1176.624466
+    },
+    "B": {
+      "first_model_committed": "2026-10-26T17:26:22.317144+08:00",
+      "last_model_committed": "2026-10-26T19:01:52.884210+08:00",
+      "elapsed_seconds_between_first_and_last_commit": 5730.567066
+    }
+  }
+}

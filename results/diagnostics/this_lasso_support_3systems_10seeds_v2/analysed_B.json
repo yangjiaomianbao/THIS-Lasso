@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "models": 2700,
+  "counts": {
+    "OK": 2500,
+    "NA": 200
+  },
+  "native_candidate_checks": 3937500,
+  "red_groups": 0,
+  "finished": "2026-10-26T19:40:58.387597+08:00",
+  "raw_candidate_scores_exact": true,
+  "native_thresholded_structure_exact": true,
+  "native_strict_threshold": 1e-08,
+  "nonzero_subthreshold_raw_scores_preserved": 6
+}

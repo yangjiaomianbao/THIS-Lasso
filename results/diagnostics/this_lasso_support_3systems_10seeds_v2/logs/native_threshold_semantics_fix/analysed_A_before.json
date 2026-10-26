@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "models": 540,
+  "counts": {
+    "OK": 500,
+    "NA": 40
+  },
+  "native_candidate_checks": 787500,
+  "red_groups": 100,
+  "finished": "2026-10-26T17:26:21.555159+08:00"
+}

@@ -1,0 +1,56 @@
+ERROR: LoadError: at row 1, column 1 : ErrorException("file entry \"node\" cannot be converted to Float64")
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] dlm_fill(T::DataType, offarr::Vector{Vector{Int64}}, dims::Tuple{Int64, Int64}, has_header::Bool, sbuff::String, auto::Bool, eol::Char)
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:520
+  [3] readdlm_string(sbuff::String, dlm::Char, T::Type, eol::Char, auto::Bool, optsd::Dict{Symbol, Union{Char, Integer, Tuple{Integer, Integer}}})
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:476
+  [4] readdlm_auto(input::String, dlm::Char, T::Type, eol::Char, auto::Bool; opts::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:247
+  [5] readdlm_auto
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:233 [inlined]
+  [6] #readdlm#6
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:226 [inlined]
+  [7] readdlm
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:226 [inlined]
+  [8] #readdlm#2
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:86 [inlined]
+  [9] readdlm
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:86 [inlined]
+ [10] read_matrix(path::String, T::Type)
+    @ Main.THISAdapter ~/THIS-Lasso/src/this_adapter.jl:13
+ [11] read_matrix(path::String)
+    @ Main.THISAdapter ~/THIS-Lasso/src/this_adapter.jl:13
+ [12] top-level scope
+    @ ~/THIS-Lasso/scripts/dynamics30_native_decode.jl:14
+in expression starting at /home/yg/THIS-Lasso/scripts/dynamics30_native_decode.jl:10
+
+caused by: file entry "node" cannot be converted to Float64
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] store_cell(dlmstore::DelimitedFiles.DLMStore{Float64}, row::Int64, col::Int64, quoted::Bool, startpos::Int64, endpos::Int64)
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:393
+  [3] dlm_fill(T::DataType, offarr::Vector{Vector{Int64}}, dims::Tuple{Int64, Int64}, has_header::Bool, sbuff::String, auto::Bool, eol::Char)
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:515
+  [4] readdlm_string(sbuff::String, dlm::Char, T::Type, eol::Char, auto::Bool, optsd::Dict{Symbol, Union{Char, Integer, Tuple{Integer, Integer}}})
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:476
+  [5] readdlm_auto(input::String, dlm::Char, T::Type, eol::Char, auto::Bool; opts::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+    @ DelimitedFiles ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:247
+  [6] readdlm_auto
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:233 [inlined]
+  [7] #readdlm#6
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:226 [inlined]
+  [8] readdlm
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:226 [inlined]
+  [9] #readdlm#2
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:86 [inlined]
+ [10] readdlm
+    @ ~/THIS-Lasso/.julia-depot-r0/packages/DelimitedFiles/aGcsu/src/DelimitedFiles.jl:86 [inlined]
+ [11] read_matrix(path::String, T::Type)
+    @ Main.THISAdapter ~/THIS-Lasso/src/this_adapter.jl:13
+ [12] read_matrix(path::String)
+    @ Main.THISAdapter ~/THIS-Lasso/src/this_adapter.jl:13
+ [13] top-level scope
+    @ ~/THIS-Lasso/scripts/dynamics30_native_decode.jl:14

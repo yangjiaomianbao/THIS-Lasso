@@ -1,0 +1,11 @@
+{
+  "status": "FIXED",
+  "created": "2026-10-26T17:25:57.747900+08:00",
+  "before_source_sha256": "beca2881c076020264355ccfc491fb5dc88470a01461a5ca0b7e5dfd9a97365a",
+  "after_source_sha256": "843dc3475a1c2f6ea9e2c7313496255e08995310148638973f9ceece423c0b8a",
+  "cause": "Julia native read_matrix requires numeric CSV without a header; the diagnostic export had a header",
+  "changed_coordinate_exports": 500,
+  "all_coordinate_replays_exact": true,
+  "model_coefficients_or_parameters_changed": false,
+  "tests_passed": 7
+}

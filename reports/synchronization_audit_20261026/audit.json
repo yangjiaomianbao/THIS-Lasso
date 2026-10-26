@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "datasets": 160,
+  "snapshots": 245760,
+  "conclusion": "Both audited batches use independent t=0 preparations, without integration or burn-in before sampling.",
+  "limitation": "This does not test future synchronization, phase locking, attractors, or dynamical stability.",
+  "correlation_definition": "Pearson correlations of state fluctuations across independent preparations, not temporal correlations.",
+  "source_checks": [
+    {
+      "batch": "five_systems_certified_20261022",
+      "source": "src/data/multisystem_dynamics.jl",
+      "expected": "69d5ed052bbab24a45b37012e5c3c5eebf09c2c5fc6b108b002db34b8c505620",
+      "current_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "batch": "five_systems_certified_20261022",
+      "source": "src/data/paper_dynamics.jl",
+      "expected": "563595a09015c5de026cdbf42e90eae0fb76bdb152e10b3c9d92dd0660c7b0e9",
+      "current_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "batch": "five_systems_certified_20261022",
+      "source": "scripts/dynamics15_prepare.jl",
+      "expected": "9b5d37cbf67b3ce4bb32f83311173bfa59a2ce98271f86b69d7605b0d864ca9a",
+      "current_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "batch": "fair_comparison_v2_full_run01",
+      "source": "src/data/multisystem_dynamics.jl",
+      "expected": "69d5ed052bbab24a45b37012e5c3c5eebf09c2c5fc6b108b002db34b8c505620",
+      "current_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "batch": "fair_comparison_v2_full_run01",
+      "source": "src/data/paper_dynamics.jl",
+      "expected": "563595a09015c5de026cdbf42e90eae0fb76bdb152e10b3c9d92dd0660c7b0e9",
+      "current_matches": true,
+      "snapshot_matches": true
+    },
+    {
+      "batch": "fair_comparison_v2_full_run01",
+      "source": "scripts/fair_v2_prepare.jl",
+      "expected": "947892afe1687ec8ceda1e8f227649b07459ddc7d0bfbb86958845748d65d20d",
+      "current_matches": true,
+      "snapshot_matches": true
+    }
+  ]
+}

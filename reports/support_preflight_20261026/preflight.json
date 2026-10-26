@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "new_tests": 5,
+  "lars_tests": 5,
+  "smoke_models_OK": 6,
+  "noise": 0.1,
+  "old_suite_passed": 144,
+  "old_suite_missing_historical_fixture": 1,
+  "matrix_contract": "PASS"
+}

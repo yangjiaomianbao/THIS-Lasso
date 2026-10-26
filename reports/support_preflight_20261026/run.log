@@ -1,0 +1,3884 @@
+MODELMODEL  A_fixed/d01A_fixed/d02  lotka_volterralotka_volterra  0.00.0  M0DM0D  OKOK
+
+MODEL A_fixed/d01 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d01 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d02 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d01 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d02 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d02 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d02 kuramoto 0.0 M0D OK
+MODEL A_fixed/d01 kuramoto 0.0 M0D OK
+MODEL A_fixed/d01 sis 0.0 M0D OK
+MODEL A_fixed/d02 sis 0.0 M0D OK
+MODEL A_fixed/d02 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d01 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d01 sis 0.0 M0sD OK
+MODEL A_fixed/d02 sis 0.0 M0sD OK
+MODEL A_fixed/d01 sis 0.0 M1B NA
+MODEL A_fixed/d02 sis 0.0 M1B NA
+MODEL A_fixed/d01 sis 0.0 M2B NA
+MODEL A_fixed/d02 sis 0.0 M2B NA
+FEATURES_READY kuramoto seed=2026102203 P=816
+FEATURES_READY lotka_volterra seed=2026102203 P=816
+MODEL A_fixed/d01 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d02 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d03 kuramoto 0.0 M0D OK
+MODEL A_fixed/d02 sis 0.0 M1vC OK
+MODEL A_fixed/d03 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d01 sis 0.0 M1vC OK
+MODEL A_fixed/d03 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d03 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d02 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d02 sis 0.0 M3C OK
+MODEL A_fixed/d02 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d02 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d01 sis 0.0 M3C OK
+MODEL A_fixed/d02 sis 0.05 M0D OK
+MODEL A_fixed/d02 sis 0.05 M0sD OK
+MODEL A_fixed/d01 sis 0.05 M0D OK
+MODEL A_fixed/d01 sis 0.05 M0sD OK
+MODEL A_fixed/d01 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d01 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d01 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d03 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d03 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d03 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d03 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d03 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d03 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d01 kuramoto 0.0 M1B OK
+MODEL A_fixed/d02 kuramoto 0.0 M1B OK
+MODEL A_fixed/d03 kuramoto 0.0 M1B OK
+MODEL A_fixed/d02 sis 0.05 M1B OK
+MODEL A_fixed/d02 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d01 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d01 sis 0.05 M1B OK
+MODEL A_fixed/d01 kuramoto 0.0 M2B OK
+MODEL A_fixed/d02 kuramoto 0.0 M2B OK
+MODEL A_fixed/d03 kuramoto 0.0 M2B OK
+MODEL A_fixed/d02 sis 0.05 M2B OK
+MODEL A_fixed/d01 sis 0.05 M2B OK
+MODEL A_fixed/d02 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d01 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d03 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d01 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d02 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d03 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d03 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d02 kuramoto 0.0 M3C OK
+MODEL A_fixed/d02 kuramoto 0.05 M0D OK
+MODEL A_fixed/d02 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d01 kuramoto 0.0 M3C OK
+MODEL A_fixed/d01 kuramoto 0.05 M0D OK
+MODEL A_fixed/d01 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d02 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d01 sis 0.05 M1vC OK
+MODEL A_fixed/d02 sis 0.05 M1vC OK
+MODEL A_fixed/d03 kuramoto 0.0 M3C OK
+MODEL A_fixed/d03 kuramoto 0.05 M0D OK
+MODEL A_fixed/d03 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d01 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d02 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d02 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d02 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d01 sis 0.05 M3C OK
+MODEL A_fixed/d01 sis 0.1 M0D OK
+MODEL A_fixed/d01 sis 0.1 M0sD OK
+MODEL A_fixed/d02 sis 0.05 M3C OK
+MODEL A_fixed/d02 sis 0.1 M0D OK
+MODEL A_fixed/d02 sis 0.1 M0sD OK
+MODEL A_fixed/d01 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d01 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d01 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d03 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d02 kuramoto 0.05 M1B OK
+MODEL A_fixed/d01 kuramoto 0.05 M1B OK
+MODEL A_fixed/d03 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d03 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d03 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d03 kuramoto 0.05 M1B OK
+MODEL A_fixed/d02 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d01 sis 0.1 M1B OK
+MODEL A_fixed/d02 kuramoto 0.05 M2B OK
+MODEL A_fixed/d02 sis 0.1 M1B OK
+MODEL A_fixed/d01 kuramoto 0.05 M2B OK
+MODEL A_fixed/d03 kuramoto 0.05 M2B OK
+MODEL A_fixed/d01 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d01 sis 0.1 M2B OK
+MODEL A_fixed/d02 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d02 sis 0.1 M2B OK
+MODEL A_fixed/d01 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d03 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d03 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d01 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d02 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d01 kuramoto 0.05 M3C OK
+MODEL A_fixed/d01 kuramoto 0.1 M0D OK
+MODEL A_fixed/d01 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d02 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d01 sis 0.1 M1vC OK
+MODEL A_fixed/d02 kuramoto 0.05 M3C OK
+MODEL A_fixed/d02 kuramoto 0.1 M0D OK
+MODEL A_fixed/d03 kuramoto 0.05 M3C OK
+MODEL A_fixed/d02 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d03 kuramoto 0.1 M0D OK
+MODEL A_fixed/d03 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d02 sis 0.1 M1vC OK
+MODEL A_fixed/d03 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d01 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d02 lotka_volterra 0.1 M3C OK
+DATASET_DONE 1 30 {'instance': 'A_fixed/d02', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY sis seed=2026102203 P=816
+MODEL A_fixed/d03 sis 0.0 M0D OK
+MODEL A_fixed/d03 sis 0.0 M0sD OK
+MODEL A_fixed/d02 sis 0.1 M3C OK
+DATASET_DONE 2 30 {'instance': 'A_fixed/d02', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY kuramoto seed=2026102204 P=816
+MODEL A_fixed/d04 kuramoto 0.0 M0D OK
+MODEL A_fixed/d04 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d01 sis 0.1 M3C OK
+DATASET_DONE 3 30 {'instance': 'A_fixed/d01', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY lotka_volterra seed=2026102204 P=816
+MODEL A_fixed/d04 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d04 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d01 lotka_volterra 0.1 M3C OK
+DATASET_DONE 4 30 {'instance': 'A_fixed/d01', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY sis seed=2026102204 P=816
+MODEL A_fixed/d04 sis 0.0 M0D OK
+MODEL A_fixed/d04 sis 0.0 M0sD OK
+MODEL A_fixed/d03 sis 0.0 M1B NA
+MODEL A_fixed/d03 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d04 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d01 kuramoto 0.1 M1B OK
+MODEL A_fixed/d04 sis 0.0 M1B NA
+MODEL A_fixed/d03 kuramoto 0.1 M1B OK
+MODEL A_fixed/d03 sis 0.0 M2B NA
+MODEL A_fixed/d03 sis 0.0 M1vC OK
+MODEL A_fixed/d02 kuramoto 0.1 M1B OK
+MODEL A_fixed/d03 sis 0.0 M3C OK
+MODEL A_fixed/d03 lotka_volterra 0.1 M3C OK
+DATASET_DONE 5 30 {'instance': 'A_fixed/d03', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d03 sis 0.05 M0D OK
+MODEL A_fixed/d03 sis 0.05 M0sD OK
+FEATURES_READY kuramoto seed=2026102205 P=816
+MODEL A_fixed/d05 kuramoto 0.0 M0D OK
+MODEL A_fixed/d05 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d04 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d04 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d04 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d04 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d04 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d04 sis 0.0 M2B NA
+MODEL A_fixed/d04 sis 0.0 M1vC OK
+MODEL A_fixed/d04 sis 0.0 M3C OK
+MODEL A_fixed/d04 sis 0.05 M0D OK
+MODEL A_fixed/d04 sis 0.05 M0sD OK
+MODEL A_fixed/d04 kuramoto 0.0 M1B OK
+MODEL A_fixed/d01 kuramoto 0.1 M2B OK
+MODEL A_fixed/d03 kuramoto 0.1 M2B OK
+MODEL A_fixed/d02 kuramoto 0.1 M2B OK
+MODEL A_fixed/d04 kuramoto 0.0 M2B OK
+MODEL A_fixed/d05 kuramoto 0.0 M1B OK
+MODEL A_fixed/d03 sis 0.05 M1B OK
+MODEL A_fixed/d01 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d04 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d03 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d02 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d04 sis 0.05 M1B OK
+MODEL A_fixed/d05 kuramoto 0.0 M2B OK
+MODEL A_fixed/d04 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d03 sis 0.05 M2B OK
+MODEL A_fixed/d01 kuramoto 0.1 M3C OK
+DATASET_DONE 6 30 {'instance': 'A_fixed/d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2026102205 P=816
+MODEL A_fixed/d05 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d05 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d03 kuramoto 0.1 M3C OK
+DATASET_DONE 7 30 {'instance': 'A_fixed/d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=2026102205 P=816
+MODEL A_fixed/d05 sis 0.0 M0D OK
+MODEL A_fixed/d05 sis 0.0 M0sD OK
+MODEL A_fixed/d02 kuramoto 0.1 M3C OK
+DATASET_DONE 8 30 {'instance': 'A_fixed/d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=2026102206 P=816
+MODEL A_fixed/d06 kuramoto 0.0 M0D OK
+MODEL A_fixed/d06 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d04 kuramoto 0.0 M3C OK
+MODEL A_fixed/d04 kuramoto 0.05 M0D OK
+MODEL A_fixed/d04 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d04 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d04 sis 0.05 M2B OK
+MODEL A_fixed/d05 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d05 sis 0.0 M1B NA
+MODEL A_fixed/d05 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d05 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d05 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d05 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d05 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d05 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d05 sis 0.0 M2B NA
+MODEL A_fixed/d05 sis 0.0 M1vC OK
+MODEL A_fixed/d05 sis 0.0 M3C OK
+MODEL A_fixed/d05 sis 0.05 M0D OK
+MODEL A_fixed/d05 sis 0.05 M0sD OK
+MODEL A_fixed/d05 kuramoto 0.0 M3C OK
+MODEL A_fixed/d05 kuramoto 0.05 M0D OK
+MODEL A_fixed/d05 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d04 sis 0.05 M1vC OK
+MODEL A_fixed/d04 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d03 sis 0.05 M1vC OK
+MODEL A_fixed/d06 kuramoto 0.0 M1B OK
+MODEL A_fixed/d04 kuramoto 0.05 M1B OK
+MODEL A_fixed/d04 sis 0.05 M3C OK
+MODEL A_fixed/d04 sis 0.1 M0D OK
+MODEL A_fixed/d04 sis 0.1 M0sD OK
+MODEL A_fixed/d04 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d04 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d04 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d03 sis 0.05 M3C OK
+MODEL A_fixed/d03 sis 0.1 M0D OK
+MODEL A_fixed/d03 sis 0.1 M0sD OK
+MODEL A_fixed/d06 kuramoto 0.0 M2B OK
+MODEL A_fixed/d04 kuramoto 0.05 M2B OK
+MODEL A_fixed/d05 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d05 sis 0.05 M1B OK
+MODEL A_fixed/d05 kuramoto 0.05 M1B OK
+MODEL A_fixed/d06 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d05 kuramoto 0.05 M2B OK
+MODEL A_fixed/d05 sis 0.05 M2B OK
+MODEL A_fixed/d05 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d04 sis 0.1 M1B OK
+MODEL A_fixed/d06 kuramoto 0.0 M3C OK
+MODEL A_fixed/d06 kuramoto 0.05 M0D OK
+MODEL A_fixed/d06 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d04 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d03 sis 0.1 M1B OK
+MODEL A_fixed/d04 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d04 kuramoto 0.05 M3C OK
+MODEL A_fixed/d04 kuramoto 0.1 M0D OK
+MODEL A_fixed/d04 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d04 sis 0.1 M2B OK
+MODEL A_fixed/d05 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d03 sis 0.1 M2B OK
+MODEL A_fixed/d04 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d05 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d05 sis 0.05 M1vC OK
+MODEL A_fixed/d06 kuramoto 0.05 M1B OK
+MODEL A_fixed/d05 kuramoto 0.05 M3C OK
+MODEL A_fixed/d05 kuramoto 0.1 M0D OK
+MODEL A_fixed/d05 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d05 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d05 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d05 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d05 sis 0.05 M3C OK
+MODEL A_fixed/d05 sis 0.1 M0D OK
+MODEL A_fixed/d05 sis 0.1 M0sD OK
+MODEL A_fixed/d03 sis 0.1 M1vC OK
+MODEL A_fixed/d04 sis 0.1 M1vC OK
+MODEL A_fixed/d06 kuramoto 0.05 M2B OK
+MODEL A_fixed/d04 kuramoto 0.1 M1B OK
+MODEL A_fixed/d03 sis 0.1 M3C OK
+DATASET_DONE 9 30 {'instance': 'A_fixed/d03', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY lotka_volterra seed=2026102206 P=816
+MODEL A_fixed/d06 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d06 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d04 sis 0.1 M3C OK
+DATASET_DONE 10 30 {'instance': 'A_fixed/d04', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY sis seed=2026102206 P=816
+MODEL A_fixed/d06 sis 0.0 M0D OK
+MODEL A_fixed/d06 sis 0.0 M0sD OK
+MODEL A_fixed/d04 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d06 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d06 sis 0.0 M1B NA
+MODEL A_fixed/d05 kuramoto 0.1 M1B OK
+MODEL A_fixed/d04 kuramoto 0.1 M2B OK
+MODEL A_fixed/d05 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d04 lotka_volterra 0.1 M3C OK
+DATASET_DONE 11 30 {'instance': 'A_fixed/d04', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY kuramoto seed=2026102207 P=816
+MODEL A_fixed/d07 kuramoto 0.0 M0D OK
+MODEL A_fixed/d07 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d05 sis 0.1 M1B OK
+MODEL A_fixed/d06 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d06 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d06 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d06 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d06 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d06 sis 0.0 M2B NA
+MODEL A_fixed/d06 sis 0.0 M1vC OK
+MODEL A_fixed/d06 sis 0.0 M3C OK
+MODEL A_fixed/d06 sis 0.05 M0D OK
+MODEL A_fixed/d06 sis 0.05 M0sD OK
+MODEL A_fixed/d06 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d05 kuramoto 0.1 M2B OK
+MODEL A_fixed/d04 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d06 kuramoto 0.05 M3C OK
+MODEL A_fixed/d06 kuramoto 0.1 M0D OK
+MODEL A_fixed/d06 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d05 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d05 sis 0.1 M2B OK
+MODEL A_fixed/d07 kuramoto 0.0 M1B OK
+MODEL A_fixed/d04 kuramoto 0.1 M3C OK
+DATASET_DONE 12 30 {'instance': 'A_fixed/d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2026102207 P=816
+MODEL A_fixed/d07 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d07 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d06 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d06 sis 0.05 M1B OK
+MODEL A_fixed/d05 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d07 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d05 sis 0.1 M1vC OK
+MODEL A_fixed/d07 kuramoto 0.0 M2B OK
+MODEL A_fixed/d05 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d07 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d05 kuramoto 0.1 M3C OK
+DATASET_DONE 13 30 {'instance': 'A_fixed/d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL A_fixed/d07 lotka_volterra 0.0 M1vC OK
+FEATURES_READY sis seed=2026102207 P=816
+MODEL A_fixed/d07 sis 0.0 M0D OK
+MODEL A_fixed/d07 sis 0.0 M0sD OK
+MODEL A_fixed/d07 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d07 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d07 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d06 kuramoto 0.1 M1B OK
+MODEL A_fixed/d06 sis 0.05 M2B OK
+MODEL A_fixed/d06 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d05 sis 0.1 M3C OK
+DATASET_DONE 14 30 {'instance': 'A_fixed/d05', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY kuramoto seed=2026102208 P=816
+MODEL A_fixed/d05 lotka_volterra 0.1 M3C OK
+DATASET_DONE 15 30 {'instance': 'A_fixed/d05', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d08 kuramoto 0.0 M0D OK
+MODEL A_fixed/d08 kuramoto 0.0 M0sD OK
+FEATURES_READY lotka_volterra seed=2026102208 P=816
+MODEL A_fixed/d08 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d08 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d07 sis 0.0 M1B NA
+MODEL A_fixed/d07 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d08 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d06 kuramoto 0.1 M2B OK
+MODEL A_fixed/d07 kuramoto 0.0 M3C OK
+MODEL A_fixed/d07 kuramoto 0.05 M0D OK
+MODEL A_fixed/d07 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d07 sis 0.0 M2B NA
+MODEL A_fixed/d07 sis 0.0 M1vC OK
+MODEL A_fixed/d07 sis 0.0 M3C OK
+MODEL A_fixed/d07 sis 0.05 M0D OK
+MODEL A_fixed/d07 sis 0.05 M0sD OK
+MODEL A_fixed/d06 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d06 sis 0.05 M1vC OK
+MODEL A_fixed/d08 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d08 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d08 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d08 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d08 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d07 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d08 kuramoto 0.0 M1B OK
+MODEL A_fixed/d06 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d06 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d06 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d06 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d06 sis 0.05 M3C OK
+MODEL A_fixed/d06 sis 0.1 M0D OK
+MODEL A_fixed/d06 sis 0.1 M0sD OK
+MODEL A_fixed/d08 kuramoto 0.0 M2B OK
+MODEL A_fixed/d07 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d06 kuramoto 0.1 M3C OK
+DATASET_DONE 16 30 {'instance': 'A_fixed/d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=2026102208 P=816
+MODEL A_fixed/d08 sis 0.0 M0D OK
+MODEL A_fixed/d08 sis 0.0 M0sD OK
+MODEL A_fixed/d07 sis 0.05 M1B OK
+MODEL A_fixed/d07 kuramoto 0.05 M1B OK
+MODEL A_fixed/d08 sis 0.0 M1B NA
+MODEL A_fixed/d08 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d07 kuramoto 0.05 M2B OK
+MODEL A_fixed/d08 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d07 sis 0.05 M2B OK
+MODEL A_fixed/d06 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d08 sis 0.0 M2B NA
+MODEL A_fixed/d08 sis 0.0 M1vC OK
+MODEL A_fixed/d08 sis 0.0 M3C OK
+MODEL A_fixed/d08 sis 0.05 M0D OK
+MODEL A_fixed/d08 sis 0.05 M0sD OK
+MODEL A_fixed/d06 sis 0.1 M1B OK
+MODEL A_fixed/d08 kuramoto 0.0 M3C OK
+MODEL A_fixed/d08 kuramoto 0.05 M0D OK
+MODEL A_fixed/d08 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d07 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d08 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d06 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d07 sis 0.05 M1vC OK
+MODEL A_fixed/d07 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d07 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d07 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d06 sis 0.1 M2B OK
+MODEL A_fixed/d07 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d08 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d07 sis 0.05 M3C OK
+MODEL A_fixed/d07 sis 0.1 M0D OK
+MODEL A_fixed/d07 sis 0.1 M0sD OK
+MODEL A_fixed/d08 sis 0.05 M1B OK
+MODEL A_fixed/d08 kuramoto 0.05 M1B OK
+MODEL A_fixed/d07 kuramoto 0.05 M3C OK
+MODEL A_fixed/d07 kuramoto 0.1 M0D OK
+MODEL A_fixed/d07 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d06 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d06 sis 0.1 M1vC OK
+MODEL A_fixed/d08 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d08 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d08 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d08 kuramoto 0.05 M2B OK
+MODEL A_fixed/d08 sis 0.05 M2B OK
+MODEL A_fixed/d07 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d06 sis 0.1 M3C OK
+DATASET_DONE 17 30 {'instance': 'A_fixed/d06', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY kuramoto seed=2026102209 P=816
+MODEL A_fixed/d09 kuramoto 0.0 M0D OK
+MODEL A_fixed/d09 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d06 lotka_volterra 0.1 M3C OK
+DATASET_DONE 18 30 {'instance': 'A_fixed/d06', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY lotka_volterra seed=2026102209 P=816
+MODEL A_fixed/d09 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d09 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d07 sis 0.1 M1B OK
+MODEL A_fixed/d09 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d07 kuramoto 0.1 M1B OK
+MODEL A_fixed/d08 sis 0.05 M1vC OK
+MODEL A_fixed/d07 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d08 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d09 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d08 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d09 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d09 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d09 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d09 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d07 sis 0.1 M2B OK
+MODEL A_fixed/d08 sis 0.05 M3C OK
+MODEL A_fixed/d08 sis 0.1 M0D OK
+MODEL A_fixed/d08 sis 0.1 M0sD OK
+MODEL A_fixed/d09 kuramoto 0.0 M1B OK
+MODEL A_fixed/d07 kuramoto 0.1 M2B OK
+MODEL A_fixed/d08 kuramoto 0.05 M3C OK
+MODEL A_fixed/d08 kuramoto 0.1 M0D OK
+MODEL A_fixed/d08 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d09 kuramoto 0.0 M2B OK
+MODEL A_fixed/d08 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d07 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d07 sis 0.1 M1vC OK
+MODEL A_fixed/d07 lotka_volterra 0.1 M3C OK
+DATASET_DONE 19 30 {'instance': 'A_fixed/d07', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY sis seed=2026102209 P=816
+MODEL A_fixed/d09 sis 0.0 M0D OK
+MODEL A_fixed/d09 sis 0.0 M0sD OK
+MODEL A_fixed/d09 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d07 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d08 sis 0.1 M1B OK
+MODEL A_fixed/d09 sis 0.0 M1B NA
+MODEL A_fixed/d09 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d07 sis 0.1 M3C OK
+DATASET_DONE 20 30 {'instance': 'A_fixed/d07', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY kuramoto seed=2026102210 P=816
+MODEL A_fixed/d10 kuramoto 0.0 M0D OK
+MODEL A_fixed/d10 kuramoto 0.0 M0sD OK
+MODEL A_fixed/d08 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d08 kuramoto 0.1 M1B OK
+MODEL A_fixed/d09 kuramoto 0.0 M3C OK
+MODEL A_fixed/d09 kuramoto 0.05 M0D OK
+MODEL A_fixed/d09 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d07 kuramoto 0.1 M3C OK
+DATASET_DONE 21 30 {'instance': 'A_fixed/d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2026102210 P=816
+MODEL A_fixed/d10 lotka_volterra 0.0 M0D OK
+MODEL A_fixed/d10 lotka_volterra 0.0 M0sD OK
+MODEL A_fixed/d09 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d09 sis 0.0 M2B NA
+MODEL A_fixed/d09 sis 0.0 M1vC OK
+MODEL A_fixed/d09 sis 0.0 M3C OK
+MODEL A_fixed/d09 sis 0.05 M0D OK
+MODEL A_fixed/d09 sis 0.05 M0sD OK
+MODEL A_fixed/d08 lotka_volterra 0.1 M3C OK
+DATASET_DONE 22 30 {'instance': 'A_fixed/d08', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+FEATURES_READY sis seed=2026102210 P=816
+MODEL A_fixed/d10 sis 0.0 M0D OK
+MODEL A_fixed/d10 sis 0.0 M0sD OK
+MODEL A_fixed/d08 sis 0.1 M2B OK
+MODEL A_fixed/d10 lotka_volterra 0.0 M1B NA
+MODEL A_fixed/d08 kuramoto 0.1 M2B OK
+MODEL A_fixed/d10 sis 0.0 M1B NA
+MODEL A_fixed/d10 kuramoto 0.0 M1B OK
+MODEL A_fixed/d09 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d10 lotka_volterra 0.0 M2B NA
+MODEL A_fixed/d10 lotka_volterra 0.0 M1vC OK
+MODEL A_fixed/d10 lotka_volterra 0.0 M3C OK
+MODEL A_fixed/d10 lotka_volterra 0.05 M0D OK
+MODEL A_fixed/d10 lotka_volterra 0.05 M0sD OK
+MODEL A_fixed/d10 sis 0.0 M2B NA
+MODEL A_fixed/d10 sis 0.0 M1vC OK
+MODEL A_fixed/d10 sis 0.0 M3C OK
+MODEL A_fixed/d10 sis 0.05 M0D OK
+MODEL A_fixed/d10 sis 0.05 M0sD OK
+MODEL A_fixed/d09 kuramoto 0.05 M1B OK
+MODEL A_fixed/d08 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d10 kuramoto 0.0 M2B OK
+MODEL A_fixed/d09 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d09 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d09 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d09 sis 0.05 M1B OK
+MODEL A_fixed/d08 sis 0.1 M1vC OK
+MODEL A_fixed/d09 kuramoto 0.05 M2B OK
+MODEL A_fixed/d08 kuramoto 0.1 M3C OK
+DATASET_DONE 23 30 {'instance': 'A_fixed/d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL A_fixed/d09 sis 0.05 M2B OK
+MODEL A_fixed/d08 sis 0.1 M3C OK
+DATASET_DONE 24 30 {'instance': 'A_fixed/d08', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d10 kuramoto 0.0 M1vC OK
+MODEL A_fixed/d10 lotka_volterra 0.05 M1B OK
+MODEL A_fixed/d10 sis 0.05 M1B OK
+MODEL A_fixed/d10 kuramoto 0.0 M3C OK
+MODEL A_fixed/d10 kuramoto 0.05 M0D OK
+MODEL A_fixed/d10 kuramoto 0.05 M0sD OK
+MODEL A_fixed/d09 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d09 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d09 sis 0.05 M1vC OK
+MODEL A_fixed/d10 lotka_volterra 0.05 M2B OK
+MODEL A_fixed/d10 sis 0.05 M2B OK
+MODEL A_fixed/d09 kuramoto 0.05 M3C OK
+MODEL A_fixed/d09 kuramoto 0.1 M0D OK
+MODEL A_fixed/d09 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d09 sis 0.05 M3C OK
+MODEL A_fixed/d09 sis 0.1 M0D OK
+MODEL A_fixed/d09 sis 0.1 M0sD OK
+MODEL A_fixed/d09 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d10 kuramoto 0.05 M1B OK
+MODEL A_fixed/d10 sis 0.05 M1vC OK
+MODEL A_fixed/d10 lotka_volterra 0.05 M1vC OK
+MODEL A_fixed/d10 sis 0.05 M3C OK
+MODEL A_fixed/d10 sis 0.1 M0D OK
+MODEL A_fixed/d10 sis 0.1 M0sD OK
+MODEL A_fixed/d10 kuramoto 0.05 M2B OK
+MODEL A_fixed/d10 lotka_volterra 0.05 M3C OK
+MODEL A_fixed/d10 lotka_volterra 0.1 M0D OK
+MODEL A_fixed/d10 lotka_volterra 0.1 M0sD OK
+MODEL A_fixed/d09 kuramoto 0.1 M1B OK
+MODEL A_fixed/d09 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d09 sis 0.1 M1B OK
+MODEL A_fixed/d10 kuramoto 0.05 M1vC OK
+MODEL A_fixed/d09 lotka_volterra 0.1 M3C OK
+DATASET_DONE 25 30 {'instance': 'A_fixed/d09', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d09 kuramoto 0.1 M2B OK
+MODEL A_fixed/d09 sis 0.1 M2B OK
+MODEL A_fixed/d10 kuramoto 0.05 M3C OK
+MODEL A_fixed/d10 kuramoto 0.1 M0D OK
+MODEL A_fixed/d10 kuramoto 0.1 M0sD OK
+MODEL A_fixed/d10 sis 0.1 M1B OK
+MODEL A_fixed/d10 lotka_volterra 0.1 M1B OK
+MODEL A_fixed/d09 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d09 sis 0.1 M1vC OK
+MODEL A_fixed/d10 sis 0.1 M2B OK
+MODEL A_fixed/d09 kuramoto 0.1 M3C OK
+DATASET_DONE 26 30 {'instance': 'A_fixed/d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL A_fixed/d10 lotka_volterra 0.1 M2B OK
+MODEL A_fixed/d10 kuramoto 0.1 M1B OK
+MODEL A_fixed/d09 sis 0.1 M3C OK
+DATASET_DONE 27 30 {'instance': 'A_fixed/d09', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d10 sis 0.1 M1vC OK
+MODEL A_fixed/d10 lotka_volterra 0.1 M1vC OK
+MODEL A_fixed/d10 sis 0.1 M3C OK
+DATASET_DONE 28 30 {'instance': 'A_fixed/d10', 'system': 'sis', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d10 kuramoto 0.1 M2B OK
+MODEL A_fixed/d10 lotka_volterra 0.1 M3C OK
+DATASET_DONE 29 30 {'instance': 'A_fixed/d10', 'system': 'lotka_volterra', 'counts': {'OK': 16, 'NA': 2}}
+MODEL A_fixed/d10 kuramoto 0.1 M1vC OK
+MODEL A_fixed/d10 kuramoto 0.1 M3C OK
+DATASET_DONE 30 30 {'instance': 'A_fixed/d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 1 30 {'instance': 'A_fixed/d03', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 2 30 {'instance': 'A_fixed/d01', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 3 30 {'instance': 'A_fixed/d02', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 4 30 {'instance': 'A_fixed/d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 5 30 {'instance': 'A_fixed/d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 6 30 {'instance': 'A_fixed/d01', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 7 30 {'instance': 'A_fixed/d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 8 30 {'instance': 'A_fixed/d02', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 9 30 {'instance': 'A_fixed/d05', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 10 30 {'instance': 'A_fixed/d03', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 11 30 {'instance': 'A_fixed/d04', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 12 30 {'instance': 'A_fixed/d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 13 30 {'instance': 'A_fixed/d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 14 30 {'instance': 'A_fixed/d04', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 15 30 {'instance': 'A_fixed/d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 16 30 {'instance': 'A_fixed/d05', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 17 30 {'instance': 'A_fixed/d07', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 18 30 {'instance': 'A_fixed/d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 19 30 {'instance': 'A_fixed/d06', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 20 30 {'instance': 'A_fixed/d06', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 21 30 {'instance': 'A_fixed/d08', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 22 30 {'instance': 'A_fixed/d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 23 30 {'instance': 'A_fixed/d08', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 24 30 {'instance': 'A_fixed/d07', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 25 30 {'instance': 'A_fixed/d09', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 26 30 {'instance': 'A_fixed/d10', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 27 30 {'instance': 'A_fixed/d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 28 30 {'instance': 'A_fixed/d09', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+DATASET_DONE 29 30 {'instance': 'A_fixed/d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+DATASET_DONE 30 30 {'instance': 'A_fixed/d10', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+ANALYSED A A_fixed/d01 kuramoto
+ANALYSED A A_fixed/d01 lotka_volterra
+ANALYSED A A_fixed/d01 sis
+ANALYSED A A_fixed/d02 kuramoto
+ANALYSED A A_fixed/d02 lotka_volterra
+ANALYSED A A_fixed/d02 sis
+ANALYSED A A_fixed/d03 kuramoto
+ANALYSED A A_fixed/d03 lotka_volterra
+ANALYSED A A_fixed/d03 sis
+ANALYSED A A_fixed/d04 kuramoto
+ANALYSED A A_fixed/d04 lotka_volterra
+ANALYSED A A_fixed/d04 sis
+ANALYSED A A_fixed/d05 kuramoto
+ANALYSED A A_fixed/d05 lotka_volterra
+ANALYSED A A_fixed/d05 sis
+ANALYSED A A_fixed/d06 kuramoto
+ANALYSED A A_fixed/d06 lotka_volterra
+ANALYSED A A_fixed/d06 sis
+ANALYSED A A_fixed/d07 kuramoto
+ANALYSED A A_fixed/d07 lotka_volterra
+ANALYSED A A_fixed/d07 sis
+ANALYSED A A_fixed/d08 kuramoto
+ANALYSED A A_fixed/d08 lotka_volterra
+ANALYSED A A_fixed/d08 sis
+ANALYSED A A_fixed/d09 kuramoto
+ANALYSED A A_fixed/d09 lotka_volterra
+ANALYSED A A_fixed/d09 sis
+ANALYSED A A_fixed/d10 kuramoto
+ANALYSED A A_fixed/d10 lotka_volterra
+ANALYSED A A_fixed/d10 sis
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 270, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 264, in main
+    analyse_stage(out,plan,stage)
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 307, in analyse_stage
+    subprocess.run(runtime+[str(ROOT/'scripts/dynamics30_native_decode.jl'),str(out)],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+  File "/home/yg/THIS-Lasso/.venv-r0/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yg/.local/opt/julia-1.9.4/bin/julia', '--startup-file=no', '--project=/home/yg/THIS-Lasso/environment/r0/julia', '/home/yg/THIS-Lasso/scripts/dynamics30_native_decode.jl', '/home/yg/THIS-Lasso/results/diagnostics/this_lasso_support_3systems_10seeds_v2']' returned non-zero exit status 1.
+
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 270, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 264, in main
+    analyse_stage(out,plan,stage)
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 307, in analyse_stage
+    subprocess.run(runtime+[str(ROOT/'scripts/dynamics30_native_decode.jl'),str(out)],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+  File "/home/yg/THIS-Lasso/.venv-r0/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yg/.local/opt/julia-1.9.4/bin/julia', '--startup-file=no', '--project=/home/yg/THIS-Lasso/environment/r0/julia', '/home/yg/THIS-Lasso/scripts/dynamics30_native_decode.jl', '/home/yg/THIS-Lasso/results/diagnostics/this_lasso_support_3systems_10seeds_v2']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 275, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 257, in main
+    analyse_stage(out,plan,stage)
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 229, in analyse_stage
+    return finalise_stage(out,plan,stage)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 350, in finalise_stage
+    subprocess.run(runtime+[str(ROOT/'scripts/dynamics30_native_decode.jl'),str(out)],cwd=ROOT,env=env,
+  File "/home/yg/THIS-Lasso/.venv-r0/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yg/.local/opt/julia-1.9.4/bin/julia', '--startup-file=no', '--project=/home/yg/THIS-Lasso/environment/r0/julia', '/home/yg/THIS-Lasso/scripts/dynamics30_native_decode.jl', '/home/yg/THIS-Lasso/results/diagnostics/this_lasso_support_3systems_10seeds_v2']' returned non-zero exit status 1.
+
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 275, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 257, in main
+    analyse_stage(out,plan,stage)
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 229, in analyse_stage
+    return finalise_stage(out,plan,stage)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 350, in finalise_stage
+    subprocess.run(runtime+[str(ROOT/'scripts/dynamics30_native_decode.jl'),str(out)],cwd=ROOT,env=env,
+  File "/home/yg/THIS-Lasso/.venv-r0/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yg/.local/opt/julia-1.9.4/bin/julia', '--startup-file=no', '--project=/home/yg/THIS-Lasso/environment/r0/julia', '/home/yg/THIS-Lasso/scripts/dynamics30_native_decode.jl', '/home/yg/THIS-Lasso/results/diagnostics/this_lasso_support_3systems_10seeds_v2']' returned non-zero exit status 1.
+FEATURES_READY kuramoto seed=353554912 P=816
+FEATURES_READY lotka_volterra seed=2028905628 P=816
+FEATURES_READY kuramoto seed=3473996283 P=816
+FEATURES_READY lotka_volterra seed=353554912 P=816
+FEATURES_READY sis seed=3473996283 P=816
+FEATURES_READY lotka_volterra seed=3473996283 P=816
+FEATURES_READY sis seed=353554912 P=816
+FEATURES_READY kuramoto seed=2028905628 P=816
+MODEL B_networks/n01_d02 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d03 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d01 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d02 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d03 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d01 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d02 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d02 sis 0.0 M0D OK
+MODEL B_networks/n01_d02 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d02 sis 0.0 M0sD OK
+MODELMODEL  B_networks/n01_d03B_networks/n01_d01  kuramotosis  0.00.0  M0DM0D  OKOK
+
+MODEL B_networks/n01_d01 lotka_volterra 0.0 M0D OK
+MODELMODEL  B_networks/n01_d01B_networks/n01_d03  MODELsiskuramoto   B_networks/n01_d010.00.0   lotka_volterraM0sDM0sD   0.0OKOK 
+
+M0sD OK
+MODEL B_networks/n01_d03 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d01 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d02 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d01 sis 0.0 M1B NA
+MODEL B_networks/n01_d02 sis 0.0 M1B NA
+MODEL B_networks/n01_d02 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d01 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d01 sis 0.0 M2B NA
+MODEL B_networks/n01_d03 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d02 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d01 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d01 sis 0.0 M1vC OK
+MODEL B_networks/n01_d03 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d02 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d01 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d02 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d01 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d02 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d01 sis 0.0 M3C OK
+MODEL B_networks/n01_d01 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d01 sis 0.05 M0D OK
+MODEL B_networks/n01_d01 sis 0.05 M0sD OK
+MODEL B_networks/n01_d03 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d02 sis 0.0 M2B NA
+MODEL B_networks/n01_d03 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d03 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d02 sis 0.0 M1vC OK
+MODEL B_networks/n01_d02 sis 0.0 M3C OK
+MODEL B_networks/n01_d02 sis 0.05 M0D OK
+MODEL B_networks/n01_d02 sis 0.05 M0sD OK
+MODEL B_networks/n01_d03 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d02 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d01 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d03 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d01 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d02 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d01 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d02 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d01 sis 0.05 M1B OK
+MODEL B_networks/n01_d02 sis 0.05 M1B OK
+MODEL B_networks/n01_d03 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d02 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d01 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d02 sis 0.05 M2B OK
+MODEL B_networks/n01_d01 sis 0.05 M2B OK
+MODEL B_networks/n01_d01 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d02 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d03 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d03 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d03 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d02 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d02 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d02 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d01 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d01 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d01 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d01 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d03 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d01 sis 0.05 M1vC OK
+MODEL B_networks/n01_d02 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d02 sis 0.05 M1vC OK
+MODEL B_networks/n01_d03 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d01 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d01 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d01 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d02 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d02 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d02 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d01 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d03 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d02 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d01 sis 0.05 M3C OK
+MODEL B_networks/n01_d02 sis 0.05 M3C OK
+MODEL B_networks/n01_d01 sis 0.1 M0D OK
+MODEL B_networks/n01_d01 sis 0.1 M0sD OK
+MODEL B_networks/n01_d02 sis 0.1 M0D OK
+MODEL B_networks/n01_d02 sis 0.1 M0sD OK
+MODEL B_networks/n01_d03 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d01 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d02 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d01 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d02 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d01 sis 0.1 M1B OK
+MODEL B_networks/n01_d02 sis 0.1 M1B OK
+MODEL B_networks/n01_d03 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d01 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d02 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d03 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d03 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d03 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d01 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d01 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d01 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d02 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d02 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d02 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d01 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d01 sis 0.1 M2B OK
+MODEL B_networks/n01_d02 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d02 sis 0.1 M2B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d02 sis 0.1 M1vC OK
+MODEL B_networks/n01_d02 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d03 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d03 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d01 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d01 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d01 sis 0.1 M1vC OK
+MODEL B_networks/n01_d02 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d02 sis 0.1 M3C OK
+DATASET_DONE 1 150 {'instance': 'B_networks/n01_d02', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2028905628 P=816
+MODEL B_networks/n01_d03 sis 0.0 M0D OK
+MODEL B_networks/n01_d03 sis 0.0 M0sD OK
+MODEL B_networks/n01_d03 lotka_volterra 0.1 M3C OK
+DATASET_DONE 2 150 {'instance': 'B_networks/n01_d03', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n01_d02 lotka_volterra 0.1 M3C OK
+DATASET_DONE 3 150 {'instance': 'B_networks/n01_d02', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=1775170167 P=816
+FEATURES_READY lotka_volterra seed=1775170167 P=816
+MODEL B_networks/n01_d04 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d04 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d04 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d04 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d01 lotka_volterra 0.1 M3C OK
+DATASET_DONE 4 150 {'instance': 'B_networks/n01_d01', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1775170167 P=816
+MODEL B_networks/n01_d04 sis 0.0 M0D OK
+MODEL B_networks/n01_d04 sis 0.0 M0sD OK
+MODEL B_networks/n01_d03 sis 0.0 M1B NA
+MODEL B_networks/n01_d03 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d01 sis 0.1 M3C OK
+DATASET_DONE 5 150 {'instance': 'B_networks/n01_d01', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=1824191664 P=816
+MODEL B_networks/n01_d05 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d05 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d01 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d02 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d04 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d04 sis 0.0 M1B NA
+MODEL B_networks/n01_d03 sis 0.0 M2B NA
+MODEL B_networks/n01_d03 sis 0.0 M1vC OK
+MODEL B_networks/n01_d03 sis 0.0 M3C OK
+MODEL B_networks/n01_d03 sis 0.05 M0D OK
+MODEL B_networks/n01_d03 sis 0.05 M0sD OK
+MODEL B_networks/n01_d04 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d04 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d04 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d04 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d04 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d04 sis 0.0 M2B NA
+MODEL B_networks/n01_d04 sis 0.0 M1vC OK
+MODEL B_networks/n01_d04 sis 0.0 M3C OK
+MODEL B_networks/n01_d04 sis 0.05 M0D OK
+MODEL B_networks/n01_d04 sis 0.05 M0sD OK
+MODEL B_networks/n01_d03 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d04 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d01 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d02 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d05 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d03 kuramoto 0.1 M3C OK
+DATASET_DONE 6 150 {'instance': 'B_networks/n01_d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=1824191664 P=816
+MODEL B_networks/n01_d05 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d05 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d01 kuramoto 0.1 M3C OK
+DATASET_DONE 7 150 {'instance': 'B_networks/n01_d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n01_d04 kuramoto 0.0 M2B OK
+FEATURES_READY sis seed=1824191664 P=816
+MODEL B_networks/n01_d05 sis 0.0 M0D OK
+MODEL B_networks/n01_d05 sis 0.0 M0sD OK
+MODEL B_networks/n01_d02 kuramoto 0.1 M3C OK
+DATASET_DONE 8 150 {'instance': 'B_networks/n01_d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=429171858 P=816
+MODEL B_networks/n01_d06 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d06 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d05 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d05 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d03 sis 0.05 M1B OK
+MODEL B_networks/n01_d05 sis 0.0 M1B NA
+MODEL B_networks/n01_d04 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d04 sis 0.05 M1B OK
+MODEL B_networks/n01_d05 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d05 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d05 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d05 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d05 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d04 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d05 sis 0.0 M2B NA
+MODEL B_networks/n01_d05 sis 0.0 M1vC OK
+MODEL B_networks/n01_d05 sis 0.0 M3C OK
+MODEL B_networks/n01_d05 sis 0.05 M0D OK
+MODEL B_networks/n01_d05 sis 0.05 M0sD OK
+MODEL B_networks/n01_d03 sis 0.05 M2B OK
+MODEL B_networks/n01_d05 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d04 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d04 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d04 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d04 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d04 sis 0.05 M2B OK
+MODEL B_networks/n01_d06 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d05 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d05 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d05 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d06 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d03 sis 0.05 M1vC OK
+MODEL B_networks/n01_d05 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d04 sis 0.05 M1vC OK
+MODEL B_networks/n01_d04 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d05 sis 0.05 M1B OK
+MODEL B_networks/n01_d03 sis 0.05 M3C OK
+MODEL B_networks/n01_d03 sis 0.1 M0D OK
+MODEL B_networks/n01_d03 sis 0.1 M0sD OK
+MODEL B_networks/n01_d04 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d04 sis 0.05 M3C OK
+MODEL B_networks/n01_d04 sis 0.1 M0D OK
+MODEL B_networks/n01_d04 sis 0.1 M0sD OK
+MODEL B_networks/n01_d05 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d06 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d05 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d04 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d04 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d04 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d05 sis 0.05 M2B OK
+MODEL B_networks/n01_d06 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d06 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d06 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d04 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d05 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d05 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d05 sis 0.05 M1vC OK
+MODEL B_networks/n01_d03 sis 0.1 M1B OK
+MODEL B_networks/n01_d04 sis 0.1 M1B OK
+MODEL B_networks/n01_d04 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d04 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d05 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d05 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d05 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d05 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d06 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d05 sis 0.05 M3C OK
+MODEL B_networks/n01_d05 sis 0.1 M0D OK
+MODEL B_networks/n01_d05 sis 0.1 M0sD OK
+MODEL B_networks/n01_d03 sis 0.1 M2B OK
+MODEL B_networks/n01_d04 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d04 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d04 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d04 sis 0.1 M2B OK
+MODEL B_networks/n01_d05 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d05 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d05 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d04 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d06 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d05 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d04 sis 0.1 M1vC OK
+MODEL B_networks/n01_d05 sis 0.1 M1B OK
+MODEL B_networks/n01_d06 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d04 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d03 sis 0.1 M1vC OK
+MODEL B_networks/n01_d04 sis 0.1 M3C OK
+DATASET_DONE 9 150 {'instance': 'B_networks/n01_d04', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=429171858 P=816
+MODEL B_networks/n01_d06 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d06 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d05 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d04 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d05 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d06 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d06 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d06 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d06 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d03 sis 0.1 M3C OK
+DATASET_DONE 10 150 {'instance': 'B_networks/n01_d03', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=429171858 P=816
+MODEL B_networks/n01_d06 sis 0.0 M0D OK
+MODEL B_networks/n01_d06 sis 0.0 M0sD OK
+MODEL B_networks/n01_d05 sis 0.1 M2B OK
+MODEL B_networks/n01_d04 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d04 lotka_volterra 0.1 M3C OK
+DATASET_DONE 11 150 {'instance': 'B_networks/n01_d04', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=3552354216 P=816
+MODEL B_networks/n01_d07 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d07 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d05 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d06 sis 0.0 M1B NA
+MODEL B_networks/n01_d06 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d06 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d06 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d06 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d06 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d06 sis 0.0 M2B NA
+MODEL B_networks/n01_d06 sis 0.0 M1vC OK
+MODEL B_networks/n01_d06 sis 0.0 M3C OK
+MODEL B_networks/n01_d06 sis 0.05 M0D OK
+MODEL B_networks/n01_d06 sis 0.05 M0sD OK
+MODEL B_networks/n01_d05 sis 0.1 M1vC OK
+MODEL B_networks/n01_d04 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d05 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d06 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d05 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d07 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d05 sis 0.1 M3C OK
+DATASET_DONE 12 150 {'instance': 'B_networks/n01_d05', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3552354216 P=816
+MODEL B_networks/n01_d07 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d07 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d05 lotka_volterra 0.1 M3C OK
+DATASET_DONE 13 150 {'instance': 'B_networks/n01_d05', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=3552354216 P=816
+MODEL B_networks/n01_d07 sis 0.0 M0D OK
+MODEL B_networks/n01_d07 sis 0.0 M0sD OK
+MODEL B_networks/n01_d04 kuramoto 0.1 M3C OK
+DATASET_DONE 14 150 {'instance': 'B_networks/n01_d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=3405291587 P=816
+MODEL B_networks/n01_d08 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d08 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d06 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d07 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d07 sis 0.0 M1B NA
+MODEL B_networks/n01_d07 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d06 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d05 kuramoto 0.1 M3C OK
+DATASET_DONE 15 150 {'instance': 'B_networks/n01_d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=3405291587 P=816
+MODEL B_networks/n01_d08 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d08 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d06 sis 0.05 M1B OK
+MODEL B_networks/n01_d07 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d07 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d07 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d07 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d07 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d07 sis 0.0 M2B NA
+MODEL B_networks/n01_d07 sis 0.0 M1vC OK
+MODEL B_networks/n01_d08 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d07 sis 0.0 M3C OK
+MODEL B_networks/n01_d07 sis 0.05 M0D OK
+MODEL B_networks/n01_d07 sis 0.05 M0sD OK
+MODEL B_networks/n01_d06 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d07 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d08 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d08 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d08 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d08 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d08 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d08 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d06 sis 0.05 M2B OK
+MODEL B_networks/n01_d06 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d07 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d07 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d07 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d08 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d06 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d06 kuramoto 0.1 M3C OK
+DATASET_DONE 16 150 {'instance': 'B_networks/n01_d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=3405291587 P=816
+MODEL B_networks/n01_d08 sis 0.0 M0D OK
+MODEL B_networks/n01_d08 sis 0.0 M0sD OK
+MODEL B_networks/n01_d07 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d07 sis 0.05 M1B OK
+MODEL B_networks/n01_d06 sis 0.05 M1vC OK
+MODEL B_networks/n01_d08 sis 0.0 M1B NA
+MODEL B_networks/n01_d06 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d06 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d06 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d08 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d08 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d07 sis 0.05 M2B OK
+MODEL B_networks/n01_d07 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d06 sis 0.05 M3C OK
+MODEL B_networks/n01_d06 sis 0.1 M0D OK
+MODEL B_networks/n01_d06 sis 0.1 M0sD OK
+MODEL B_networks/n01_d08 sis 0.0 M2B NA
+MODEL B_networks/n01_d07 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d08 sis 0.0 M1vC OK
+MODEL B_networks/n01_d08 sis 0.0 M3C OK
+MODEL B_networks/n01_d08 sis 0.05 M0D OK
+MODEL B_networks/n01_d08 sis 0.05 M0sD OK
+MODEL B_networks/n01_d08 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d08 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d08 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d08 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d07 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d06 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d07 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d07 sis 0.05 M1vC OK
+MODEL B_networks/n01_d06 sis 0.1 M1B OK
+MODEL B_networks/n01_d08 sis 0.05 M1B OK
+MODEL B_networks/n01_d08 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d08 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d07 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d07 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d07 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d07 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d07 sis 0.05 M3C OK
+MODEL B_networks/n01_d07 sis 0.1 M0D OK
+MODEL B_networks/n01_d07 sis 0.1 M0sD OK
+MODEL B_networks/n01_d06 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d08 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d08 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d08 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d07 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d07 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d07 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d08 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d08 sis 0.05 M2B OK
+MODEL B_networks/n01_d06 sis 0.1 M2B OK
+MODEL B_networks/n01_d06 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d08 sis 0.05 M1vC OK
+MODEL B_networks/n01_d08 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d07 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d07 sis 0.1 M1B OK
+MODEL B_networks/n01_d06 lotka_volterra 0.1 M3C OK
+DATASET_DONE 17 150 {'instance': 'B_networks/n01_d06', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=3362225544 P=816
+MODEL B_networks/n01_d06 sis 0.1 M1vC OK
+MODEL B_networks/n01_d09 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d09 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d08 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d07 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d08 sis 0.05 M3C OK
+MODEL B_networks/n01_d08 sis 0.1 M0D OK
+MODEL B_networks/n01_d08 sis 0.1 M0sD OK
+MODEL B_networks/n01_d08 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d08 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d08 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d06 sis 0.1 M3C OK
+DATASET_DONE 18 150 {'instance': 'B_networks/n01_d06', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3362225544 P=816
+MODEL B_networks/n01_d09 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d09 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d07 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d07 sis 0.1 M2B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d07 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d08 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d09 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d09 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d09 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d09 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d09 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d08 sis 0.1 M1B OK
+MODEL B_networks/n01_d08 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d09 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d07 sis 0.1 M1vC OK
+MODEL B_networks/n01_d07 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d08 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d07 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d07 sis 0.1 M3C OK
+DATASET_DONE 19 150 {'instance': 'B_networks/n01_d07', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=3362225544 P=816
+MODEL B_networks/n01_d09 sis 0.0 M0D OK
+MODEL B_networks/n01_d09 sis 0.0 M0sD OK
+MODEL B_networks/n01_d08 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d07 lotka_volterra 0.1 M3C OK
+DATASET_DONE 20 150 {'instance': 'B_networks/n01_d07', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=199285214 P=816
+MODEL B_networks/n01_d10 kuramoto 0.0 M0D OK
+MODEL B_networks/n01_d10 kuramoto 0.0 M0sD OK
+MODEL B_networks/n01_d08 sis 0.1 M2B OK
+MODEL B_networks/n01_d09 sis 0.0 M1B NA
+MODEL B_networks/n01_d08 lotka_volterra 0.1 M3C OK
+DATASET_DONE 21 150 {'instance': 'B_networks/n01_d08', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n01_d07 kuramoto 0.1 M3C OK
+DATASET_DONE 22 150 {'instance': 'B_networks/n01_d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=199285214 P=816
+FEATURES_READY sis seed=199285214 P=816
+MODEL B_networks/n01_d10 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n01_d10 sis 0.0 M0D OK
+MODEL B_networks/n01_d10 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d10 sis 0.0 M0sD OK
+MODEL B_networks/n01_d09 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d09 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d10 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d10 sis 0.0 M1B NA
+MODEL B_networks/n01_d09 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d09 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d09 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d09 sis 0.0 M2B NA
+MODEL B_networks/n01_d09 sis 0.0 M1vC OK
+MODEL B_networks/n01_d09 sis 0.0 M3C OK
+MODEL B_networks/n01_d09 sis 0.05 M0D OK
+MODEL B_networks/n01_d09 sis 0.05 M0sD OK
+MODEL B_networks/n01_d08 kuramoto 0.1 M1vC OK
+MODEL B_networks/n01_d08 sis 0.1 M1vC OK
+MODEL B_networks/n01_d10 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n01_d10 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n01_d10 sis 0.0 M2B NA
+MODEL B_networks/n01_d10 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n01_d10 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n01_d10 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d10 sis 0.0 M1vC OK
+MODEL B_networks/n01_d10 sis 0.0 M3C OK
+MODEL B_networks/n01_d10 sis 0.05 M0D OK
+MODEL B_networks/n01_d10 sis 0.05 M0sD OK
+MODEL B_networks/n01_d09 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d08 kuramoto 0.1 M3C OK
+DATASET_DONE 23 150 {'instance': 'B_networks/n01_d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=2558587755 P=816
+MODEL B_networks/n01_d08 sis 0.1 M3C OK
+DATASET_DONE 24 150 {'instance': 'B_networks/n01_d08', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n02_d01 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d01 kuramoto 0.0 M0sD OK
+FEATURES_READY lotka_volterra seed=2558587755 P=816
+MODEL B_networks/n02_d01 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d01 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d01 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d10 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d09 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d09 sis 0.05 M1B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d01 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d01 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d01 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n01_d10 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d10 sis 0.05 M1B OK
+MODEL B_networks/n01_d09 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d01 kuramoto 0.0 M1B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d09 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d09 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d09 sis 0.05 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.0 M3C OK
+MODEL B_networks/n01_d10 kuramoto 0.05 M0D OK
+MODEL B_networks/n01_d10 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d10 sis 0.05 M2B OK
+MODEL B_networks/n01_d10 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d09 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d09 sis 0.05 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d01 kuramoto 0.0 M1vC OK
+MODEL B_networks/n01_d09 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d09 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d09 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d09 sis 0.05 M3C OK
+MODEL B_networks/n01_d09 sis 0.1 M0D OK
+MODEL B_networks/n01_d09 sis 0.1 M0sD OK
+MODEL B_networks/n01_d10 sis 0.05 M1vC OK
+MODEL B_networks/n01_d10 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d01 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d01 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d01 kuramoto 0.05 M0sD OK
+MODEL B_networks/n01_d10 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d01 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n01_d10 sis 0.05 M3C OK
+MODEL B_networks/n01_d10 sis 0.1 M0D OK
+MODEL B_networks/n01_d10 sis 0.1 M0sD OK
+MODEL B_networks/n01_d10 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n01_d10 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n01_d10 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d09 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d01 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n01_d09 kuramoto 0.1 M1B OK
+MODEL B_networks/n01_d09 sis 0.1 M1B OK
+MODEL B_networks/n02_d01 kuramoto 0.05 M1B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d10 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d01 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d01 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n01_d10 sis 0.1 M1B OK
+MODEL B_networks/n01_d10 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d09 kuramoto 0.1 M2B OK
+MODEL B_networks/n01_d09 lotka_volterra 0.1 M3C OK
+DATASET_DONE 25 150 {'instance': 'B_networks/n01_d09', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2558587755 P=816
+MODEL B_networks/n02_d01 sis 0.0 M0D OK
+MODEL B_networks/n02_d01 sis 0.0 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.05 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.05 M3C OK
+MODEL B_networks/n01_d10 kuramoto 0.1 M0D OK
+MODEL B_networks/n01_d10 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d09 sis 0.1 M2B OK
+MODEL B_networks/n02_d01 sis 0.0 M1B NA
+MODEL B_networks/n01_d10 sis 0.1 M2B OK
+MODEL B_networks/n01_d10 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d01 sis 0.0 M2B NA
+MODEL B_networks/n02_d01 sis 0.0 M1vC OK
+MODEL B_networks/n02_d01 sis 0.0 M3C OK
+MODEL B_networks/n02_d01 sis 0.05 M0D OK
+MODEL B_networks/n02_d01 sis 0.05 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.05 M1vC OK
+MODEL B_networks/n01_d09 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n01_d09 sis 0.1 M1vC OK
+MODEL B_networks/n01_d09 kuramoto 0.1 M3C OK
+DATASET_DONE 26 150 {'instance': 'B_networks/n01_d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n01_d10 kuramoto 0.1 M1B OK
+FEATURES_READY kuramoto seed=1133845148 P=816
+MODEL B_networks/n02_d02 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d02 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d01 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d01 kuramoto 0.1 M0sD OK
+MODEL B_networks/n01_d10 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n01_d09 sis 0.1 M3C OK
+DATASET_DONE 27 150 {'instance': 'B_networks/n01_d09', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=1133845148 P=816
+MODEL B_networks/n02_d02 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d02 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n01_d10 sis 0.1 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d02 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n01_d10 lotka_volterra 0.1 M3C OK
+DATASET_DONE 28 150 {'instance': 'B_networks/n01_d10', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1133845148 P=816
+MODEL B_networks/n02_d02 sis 0.0 M0D OK
+MODEL B_networks/n02_d02 sis 0.0 M0sD OK
+MODEL B_networks/n02_d01 sis 0.05 M1B OK
+MODEL B_networks/n01_d10 sis 0.1 M3C OK
+DATASET_DONE 29 150 {'instance': 'B_networks/n01_d10', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=2202513495 P=816
+MODEL B_networks/n02_d03 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d03 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d02 sis 0.0 M1B NA
+MODEL B_networks/n02_d02 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d02 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d02 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d02 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d02 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d02 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d01 sis 0.05 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d01 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d02 sis 0.0 M2B NA
+MODEL B_networks/n02_d02 sis 0.0 M1vC OK
+MODEL B_networks/n02_d02 sis 0.0 M3C OK
+MODEL B_networks/n02_d02 sis 0.05 M0D OK
+MODEL B_networks/n02_d02 sis 0.05 M0sD OK
+MODEL B_networks/n02_d02 kuramoto 0.0 M2B OK
+MODEL B_networks/n01_d10 kuramoto 0.1 M3C OK
+DATASET_DONE 30 150 {'instance': 'B_networks/n01_d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2202513495 P=816
+MODEL B_networks/n02_d03 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d03 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d01 lotka_volterra 0.1 M3C OK
+DATASET_DONE 31 150 {'instance': 'B_networks/n02_d01', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2202513495 P=816
+MODEL B_networks/n02_d03 sis 0.0 M0D OK
+MODEL B_networks/n02_d03 sis 0.0 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d03 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d03 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d03 sis 0.0 M1B NA
+MODEL B_networks/n02_d01 sis 0.05 M1vC OK
+MODEL B_networks/n02_d02 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d02 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d03 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d03 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d03 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d03 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d03 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d03 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d03 sis 0.0 M2B NA
+MODEL B_networks/n02_d03 sis 0.0 M1vC OK
+MODEL B_networks/n02_d02 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d02 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d02 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d03 sis 0.0 M3C OK
+MODEL B_networks/n02_d03 sis 0.05 M0D OK
+MODEL B_networks/n02_d03 sis 0.05 M0sD OK
+MODEL B_networks/n02_d02 sis 0.05 M1B OK
+MODEL B_networks/n02_d01 sis 0.05 M3C OK
+MODEL B_networks/n02_d01 sis 0.1 M0D OK
+MODEL B_networks/n02_d01 sis 0.1 M0sD OK
+MODEL B_networks/n02_d01 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d02 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d03 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d01 kuramoto 0.1 M3C OK
+DATASET_DONE 32 150 {'instance': 'B_networks/n02_d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=2011436078 P=816
+MODEL B_networks/n02_d04 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d04 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d02 sis 0.05 M2B OK
+MODEL B_networks/n02_d03 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d03 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d03 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d03 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d02 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d03 sis 0.05 M1B OK
+MODEL B_networks/n02_d02 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d01 sis 0.1 M1B OK
+MODEL B_networks/n02_d02 sis 0.05 M1vC OK
+MODEL B_networks/n02_d02 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d02 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d02 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d04 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d02 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d03 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d03 sis 0.05 M2B OK
+MODEL B_networks/n02_d02 sis 0.05 M3C OK
+MODEL B_networks/n02_d02 sis 0.1 M0D OK
+MODEL B_networks/n02_d02 sis 0.1 M0sD OK
+MODEL B_networks/n02_d03 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d01 sis 0.1 M2B OK
+MODEL B_networks/n02_d04 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d03 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d03 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d02 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d03 sis 0.05 M1vC OK
+MODEL B_networks/n02_d02 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d04 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d01 sis 0.1 M1vC OK
+MODEL B_networks/n02_d02 sis 0.1 M1B OK
+MODEL B_networks/n02_d03 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d03 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d03 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d04 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d04 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d04 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d03 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d02 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d02 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d02 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d03 sis 0.05 M3C OK
+MODEL B_networks/n02_d03 sis 0.1 M0D OK
+MODEL B_networks/n02_d03 sis 0.1 M0sD OK
+MODEL B_networks/n02_d01 sis 0.1 M3C OK
+DATASET_DONE 33 150 {'instance': 'B_networks/n02_d01', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=2011436078 P=816
+MODEL B_networks/n02_d04 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d04 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d02 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d03 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d03 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d03 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d02 sis 0.1 M2B OK
+MODEL B_networks/n02_d04 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d04 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d04 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d04 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d04 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d04 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d02 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d03 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d04 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d02 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d03 sis 0.1 M1B OK
+MODEL B_networks/n02_d02 sis 0.1 M1vC OK
+MODEL B_networks/n02_d02 lotka_volterra 0.1 M3C OK
+DATASET_DONE 34 150 {'instance': 'B_networks/n02_d02', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2011436078 P=816
+MODEL B_networks/n02_d04 sis 0.0 M0D OK
+MODEL B_networks/n02_d04 sis 0.0 M0sD OK
+MODEL B_networks/n02_d03 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d04 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d03 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d02 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d04 sis 0.0 M1B NA
+MODEL B_networks/n02_d02 sis 0.1 M3C OK
+DATASET_DONE 35 150 {'instance': 'B_networks/n02_d02', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=2770296596 P=816
+MODEL B_networks/n02_d05 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d05 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d03 sis 0.1 M2B OK
+MODEL B_networks/n02_d04 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d03 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d04 sis 0.0 M2B NA
+MODEL B_networks/n02_d04 sis 0.0 M1vC OK
+MODEL B_networks/n02_d04 sis 0.0 M3C OK
+MODEL B_networks/n02_d04 sis 0.05 M0D OK
+MODEL B_networks/n02_d04 sis 0.05 M0sD OK
+MODEL B_networks/n02_d02 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d04 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d03 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d04 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d03 sis 0.1 M1vC OK
+MODEL B_networks/n02_d05 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d02 kuramoto 0.1 M3C OK
+DATASET_DONE 36 150 {'instance': 'B_networks/n02_d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2770296596 P=816
+MODEL B_networks/n02_d05 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d05 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d03 lotka_volterra 0.1 M3C OK
+DATASET_DONE 37 150 {'instance': 'B_networks/n02_d03', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2770296596 P=816
+MODEL B_networks/n02_d05 sis 0.0 M0D OK
+MODEL B_networks/n02_d05 sis 0.0 M0sD OK
+MODEL B_networks/n02_d03 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d04 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d04 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d04 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d05 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d05 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d05 sis 0.0 M1B NA
+MODEL B_networks/n02_d03 sis 0.1 M3C OK
+DATASET_DONE 38 150 {'instance': 'B_networks/n02_d03', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=597937395 P=816
+MODEL B_networks/n02_d06 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d06 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d04 sis 0.05 M1B OK
+MODEL B_networks/n02_d04 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d03 kuramoto 0.1 M3C OK
+DATASET_DONE 39 150 {'instance': 'B_networks/n02_d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=597937395 P=816
+MODEL B_networks/n02_d06 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d06 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d05 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d05 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d05 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d05 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d05 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d05 sis 0.0 M2B NA
+MODEL B_networks/n02_d05 sis 0.0 M1vC OK
+MODEL B_networks/n02_d05 sis 0.0 M3C OK
+MODEL B_networks/n02_d05 sis 0.05 M0D OK
+MODEL B_networks/n02_d05 sis 0.05 M0sD OK
+MODEL B_networks/n02_d06 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d04 sis 0.05 M2B OK
+MODEL B_networks/n02_d05 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d04 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d04 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d04 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d06 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d06 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d06 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d06 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d06 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d04 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d05 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d05 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d05 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d06 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d04 sis 0.05 M1vC OK
+MODEL B_networks/n02_d06 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d05 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d05 sis 0.05 M1B OK
+MODEL B_networks/n02_d04 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d04 sis 0.05 M3C OK
+MODEL B_networks/n02_d04 sis 0.1 M0D OK
+MODEL B_networks/n02_d04 sis 0.1 M0sD OK
+MODEL B_networks/n02_d04 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d05 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d06 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d05 sis 0.05 M2B OK
+MODEL B_networks/n02_d05 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d06 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d06 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d06 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d06 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d04 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d05 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d06 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d04 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d05 sis 0.05 M1vC OK
+MODEL B_networks/n02_d05 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d04 sis 0.1 M1B OK
+MODEL B_networks/n02_d04 kuramoto 0.1 M3C OK
+DATASET_DONE 40 150 {'instance': 'B_networks/n02_d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=597937395 P=816
+MODEL B_networks/n02_d06 sis 0.0 M0D OK
+MODEL B_networks/n02_d06 sis 0.0 M0sD OK
+MODEL B_networks/n02_d05 sis 0.05 M3C OK
+MODEL B_networks/n02_d05 sis 0.1 M0D OK
+MODEL B_networks/n02_d05 sis 0.1 M0sD OK
+MODEL B_networks/n02_d05 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d05 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d05 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d05 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d06 sis 0.0 M1B NA
+MODEL B_networks/n02_d04 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d06 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d06 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d04 sis 0.1 M2B OK
+MODEL B_networks/n02_d06 sis 0.0 M2B NA
+MODEL B_networks/n02_d06 sis 0.0 M1vC OK
+MODEL B_networks/n02_d05 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d05 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d06 sis 0.0 M3C OK
+MODEL B_networks/n02_d05 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d06 sis 0.05 M0D OK
+MODEL B_networks/n02_d06 sis 0.05 M0sD OK
+MODEL B_networks/n02_d04 lotka_volterra 0.1 M3C OK
+DATASET_DONE 41 150 {'instance': 'B_networks/n02_d04', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=3633201294 P=816
+MODEL B_networks/n02_d07 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d07 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d06 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d06 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d06 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d06 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d04 sis 0.1 M1vC OK
+MODEL B_networks/n02_d05 sis 0.1 M1B OK
+MODEL B_networks/n02_d05 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d04 sis 0.1 M3C OK
+DATASET_DONE 42 150 {'instance': 'B_networks/n02_d04', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3633201294 P=816
+MODEL B_networks/n02_d07 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d07 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d06 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d07 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d05 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d07 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d06 sis 0.05 M1B OK
+MODEL B_networks/n02_d05 sis 0.1 M2B OK
+MODEL B_networks/n02_d06 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d05 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d07 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d07 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d07 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d07 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d07 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d07 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d06 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d06 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d06 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d06 sis 0.05 M2B OK
+MODEL B_networks/n02_d05 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d06 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d05 sis 0.1 M1vC OK
+MODEL B_networks/n02_d07 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d05 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d05 sis 0.1 M3C OK
+DATASET_DONE 43 150 {'instance': 'B_networks/n02_d05', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=3633201294 P=816
+MODEL B_networks/n02_d07 sis 0.0 M0D OK
+MODEL B_networks/n02_d07 sis 0.0 M0sD OK
+MODEL B_networks/n02_d07 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d07 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d07 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d06 sis 0.05 M1vC OK
+MODEL B_networks/n02_d06 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d07 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d07 sis 0.0 M1B NA
+MODEL B_networks/n02_d05 lotka_volterra 0.1 M3C OK
+DATASET_DONE 44 150 {'instance': 'B_networks/n02_d05', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=3310332923 P=816
+MODEL B_networks/n02_d08 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d08 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d06 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d06 sis 0.05 M3C OK
+MODEL B_networks/n02_d06 sis 0.1 M0D OK
+MODEL B_networks/n02_d06 sis 0.1 M0sD OK
+MODEL B_networks/n02_d06 lotka_volterra 0.1 M3C OK
+DATASET_DONE 45 150 {'instance': 'B_networks/n02_d06', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3310332923 P=816
+MODEL B_networks/n02_d08 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d08 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d05 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d07 sis 0.0 M2B NA
+MODEL B_networks/n02_d07 sis 0.0 M1vC OK
+MODEL B_networks/n02_d07 sis 0.0 M3C OK
+MODEL B_networks/n02_d07 sis 0.05 M0D OK
+MODEL B_networks/n02_d07 sis 0.05 M0sD OK
+MODEL B_networks/n02_d07 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d06 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d08 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d05 kuramoto 0.1 M3C OK
+DATASET_DONE 46 150 {'instance': 'B_networks/n02_d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=3310332923 P=816
+MODEL B_networks/n02_d08 sis 0.0 M0D OK
+MODEL B_networks/n02_d08 sis 0.0 M0sD OK
+MODEL B_networks/n02_d07 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d08 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d08 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d08 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d08 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d08 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d08 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d08 sis 0.0 M1B NA
+MODEL B_networks/n02_d06 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d06 sis 0.1 M1B OK
+MODEL B_networks/n02_d08 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d07 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d08 sis 0.0 M2B NA
+MODEL B_networks/n02_d07 sis 0.05 M1B OK
+MODEL B_networks/n02_d08 sis 0.0 M1vC OK
+MODEL B_networks/n02_d08 sis 0.0 M3C OK
+MODEL B_networks/n02_d08 sis 0.05 M0D OK
+MODEL B_networks/n02_d08 sis 0.05 M0sD OK
+MODEL B_networks/n02_d07 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d06 kuramoto 0.1 M3C OK
+DATASET_DONE 47 150 {'instance': 'B_networks/n02_d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=4074786779 P=816
+MODEL B_networks/n02_d09 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d09 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d06 sis 0.1 M2B OK
+MODEL B_networks/n02_d07 sis 0.05 M2B OK
+MODEL B_networks/n02_d07 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d07 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d07 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d08 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d08 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d07 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d08 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d08 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d08 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d08 sis 0.05 M1B OK
+MODEL B_networks/n02_d09 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d08 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d07 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d07 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d07 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d07 sis 0.05 M1vC OK
+MODEL B_networks/n02_d06 sis 0.1 M1vC OK
+MODEL B_networks/n02_d09 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d08 sis 0.05 M2B OK
+MODEL B_networks/n02_d07 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d07 sis 0.05 M3C OK
+MODEL B_networks/n02_d07 sis 0.1 M0D OK
+MODEL B_networks/n02_d07 sis 0.1 M0sD OK
+MODEL B_networks/n02_d06 sis 0.1 M3C OK
+DATASET_DONE 48 150 {'instance': 'B_networks/n02_d06', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=4074786779 P=816
+MODEL B_networks/n02_d08 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d09 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d09 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d08 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d09 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d07 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d08 sis 0.05 M1vC OK
+MODEL B_networks/n02_d09 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d07 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d08 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d08 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d08 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d08 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d09 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d09 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d09 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d09 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d09 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d09 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d09 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d09 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d08 sis 0.05 M3C OK
+MODEL B_networks/n02_d08 sis 0.1 M0D OK
+MODEL B_networks/n02_d08 sis 0.1 M0sD OK
+MODEL B_networks/n02_d07 sis 0.1 M1B OK
+MODEL B_networks/n02_d07 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d07 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d08 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d07 lotka_volterra 0.1 M3C OK
+DATASET_DONE 49 150 {'instance': 'B_networks/n02_d07', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=4074786779 P=816
+MODEL B_networks/n02_d09 sis 0.0 M0D OK
+MODEL B_networks/n02_d09 sis 0.0 M0sD OK
+MODEL B_networks/n02_d07 sis 0.1 M2B OK
+MODEL B_networks/n02_d08 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d08 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d08 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d08 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d09 sis 0.0 M1B NA
+MODEL B_networks/n02_d09 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d09 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d07 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d08 sis 0.1 M1B OK
+MODEL B_networks/n02_d09 sis 0.0 M2B NA
+MODEL B_networks/n02_d09 sis 0.0 M1vC OK
+MODEL B_networks/n02_d09 sis 0.0 M3C OK
+MODEL B_networks/n02_d09 sis 0.05 M0D OK
+MODEL B_networks/n02_d09 sis 0.05 M0sD OK
+MODEL B_networks/n02_d09 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d07 sis 0.1 M1vC OK
+MODEL B_networks/n02_d07 kuramoto 0.1 M3C OK
+DATASET_DONE 50 150 {'instance': 'B_networks/n02_d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=1773378790 P=816
+MODEL B_networks/n02_d10 kuramoto 0.0 M0D OK
+MODEL B_networks/n02_d10 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d08 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n02_d09 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d08 sis 0.1 M2B OK
+MODEL B_networks/n02_d07 sis 0.1 M3C OK
+DATASET_DONE 51 150 {'instance': 'B_networks/n02_d07', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=1773378790 P=816
+MODEL B_networks/n02_d10 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n02_d10 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d08 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d10 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n02_d08 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d09 kuramoto 0.05 M1vC OK
+MODEL B_networks/n02_d09 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d09 sis 0.05 M1B OK
+MODEL B_networks/n02_d10 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d08 sis 0.1 M1vC OK
+MODEL B_networks/n02_d10 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n02_d10 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d10 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n02_d10 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n02_d10 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d08 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d08 lotka_volterra 0.1 M3C OK
+DATASET_DONE 52 150 {'instance': 'B_networks/n02_d08', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1773378790 P=816
+MODEL B_networks/n02_d10 sis 0.0 M0D OK
+MODEL B_networks/n02_d10 sis 0.0 M0sD OK
+MODEL B_networks/n02_d09 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d09 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d09 kuramoto 0.1 M0sD OK
+MODEL B_networks/n02_d09 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d09 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d09 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d10 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d08 sis 0.1 M3C OK
+DATASET_DONE 53 150 {'instance': 'B_networks/n02_d08', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=2579173938 P=816
+MODEL B_networks/n03_d01 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d01 kuramoto 0.0 M0sD OK
+MODEL B_networks/n02_d09 sis 0.05 M2B OK
+MODEL B_networks/n02_d10 sis 0.0 M1B NA
+MODEL B_networks/n02_d10 sis 0.0 M2B NA
+MODEL B_networks/n02_d10 sis 0.0 M1vC OK
+MODEL B_networks/n02_d10 sis 0.0 M3C OK
+MODEL B_networks/n02_d10 sis 0.05 M0D OK
+MODEL B_networks/n02_d10 sis 0.05 M0sD OK
+MODEL B_networks/n02_d08 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d10 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d10 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d09 sis 0.05 M1vC OK
+MODEL B_networks/n02_d09 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d01 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d10 kuramoto 0.0 M3C OK
+MODEL B_networks/n02_d10 kuramoto 0.05 M0D OK
+MODEL B_networks/n02_d10 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d08 kuramoto 0.1 M3C OK
+DATASET_DONE 54 150 {'instance': 'B_networks/n02_d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2579173938 P=816
+MODEL B_networks/n02_d09 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d01 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d01 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n02_d09 sis 0.05 M3C OK
+MODEL B_networks/n02_d09 sis 0.1 M0D OK
+MODEL B_networks/n02_d09 sis 0.1 M0sD OK
+MODEL B_networks/n02_d10 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d01 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d01 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d09 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d10 sis 0.05 M1B OK
+MODEL B_networks/n03_d01 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d01 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n02_d09 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d01 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d01 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d01 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d10 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d10 sis 0.05 M2B OK
+MODEL B_networks/n02_d10 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d01 kuramoto 0.0 M1vC OK
+MODEL B_networks/n02_d09 kuramoto 0.1 M1vC OK
+MODEL B_networks/n02_d09 sis 0.1 M1B OK
+MODEL B_networks/n03_d01 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d01 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d01 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d10 kuramoto 0.05 M2B OK
+MODEL B_networks/n02_d09 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n02_d10 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n02_d10 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n02_d10 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n02_d09 kuramoto 0.1 M3C OK
+DATASET_DONE 55 150 {'instance': 'B_networks/n02_d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=2579173938 P=816
+MODEL B_networks/n03_d01 sis 0.0 M0D OK
+MODEL B_networks/n03_d01 sis 0.0 M0sD OK
+MODEL B_networks/n03_d01 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n02_d10 sis 0.05 M1vC OK
+MODEL B_networks/n02_d09 sis 0.1 M2B OK
+MODEL B_networks/n02_d09 lotka_volterra 0.1 M3C OK
+DATASET_DONE 56 150 {'instance': 'B_networks/n02_d09', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=3190314562 P=816
+MODEL B_networks/n03_d02 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d02 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d01 sis 0.0 M1B NA
+MODEL B_networks/n02_d10 sis 0.05 M3C OK
+MODEL B_networks/n02_d10 sis 0.1 M0D OK
+MODEL B_networks/n02_d10 sis 0.1 M0sD OK
+MODEL B_networks/n03_d01 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d10 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d01 sis 0.0 M2B NA
+MODEL B_networks/n03_d01 sis 0.0 M1vC OK
+MODEL B_networks/n03_d01 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d01 sis 0.0 M3C OK
+MODEL B_networks/n03_d01 sis 0.05 M0D OK
+MODEL B_networks/n03_d01 sis 0.05 M0sD OK
+MODEL B_networks/n02_d09 sis 0.1 M1vC OK
+MODEL B_networks/n02_d10 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n02_d10 kuramoto 0.05 M3C OK
+MODEL B_networks/n02_d10 kuramoto 0.1 M0D OK
+MODEL B_networks/n02_d10 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d01 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d02 kuramoto 0.0 M1B OK
+MODEL B_networks/n02_d09 sis 0.1 M3C OK
+DATASET_DONE 57 150 {'instance': 'B_networks/n02_d09', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3190314562 P=816
+MODEL B_networks/n03_d02 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d02 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d01 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n02_d10 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d02 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d02 kuramoto 0.0 M2B OK
+MODEL B_networks/n02_d10 sis 0.1 M1B OK
+MODEL B_networks/n03_d01 sis 0.05 M1B OK
+MODEL B_networks/n03_d01 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d01 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d01 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d01 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d02 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d02 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d02 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d02 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n02_d10 kuramoto 0.1 M1B OK
+MODEL B_networks/n02_d10 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d01 sis 0.05 M2B OK
+MODEL B_networks/n02_d10 sis 0.1 M2B OK
+MODEL B_networks/n03_d02 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d01 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d01 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d01 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d02 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d02 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d02 kuramoto 0.05 M0sD OK
+MODEL B_networks/n02_d10 lotka_volterra 0.1 M3C OK
+DATASET_DONE 58 150 {'instance': 'B_networks/n02_d10', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=3190314562 P=816
+MODEL B_networks/n03_d02 sis 0.0 M0D OK
+MODEL B_networks/n03_d02 sis 0.0 M0sD OK
+MODEL B_networks/n02_d10 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d02 sis 0.0 M1B NA
+MODEL B_networks/n03_d01 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d01 sis 0.05 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d02 sis 0.0 M2B NA
+MODEL B_networks/n03_d02 sis 0.0 M1vC OK
+MODEL B_networks/n03_d02 sis 0.0 M3C OK
+MODEL B_networks/n02_d10 sis 0.1 M1vC OK
+MODEL B_networks/n03_d02 sis 0.05 M0D OK
+MODEL B_networks/n03_d02 sis 0.05 M0sD OK
+MODEL B_networks/n03_d01 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d01 sis 0.05 M3C OK
+MODEL B_networks/n03_d01 sis 0.1 M0D OK
+MODEL B_networks/n03_d01 sis 0.1 M0sD OK
+MODEL B_networks/n03_d01 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d02 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n02_d10 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d02 kuramoto 0.05 M1B OK
+MODEL B_networks/n02_d10 sis 0.1 M3C OK
+DATASET_DONE 59 150 {'instance': 'B_networks/n02_d10', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=157784185 P=816
+MODEL B_networks/n03_d03 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d03 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d01 kuramoto 0.1 M2B OK
+MODEL B_networks/n02_d10 kuramoto 0.1 M3C OK
+DATASET_DONE 60 150 {'instance': 'B_networks/n02_d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=157784185 P=816
+MODEL B_networks/n03_d03 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d03 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d02 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d03 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d02 sis 0.05 M1B OK
+MODEL B_networks/n03_d01 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d01 sis 0.1 M1B OK
+MODEL B_networks/n03_d03 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d03 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d03 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d03 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d03 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d03 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d01 lotka_volterra 0.1 M3C OK
+DATASET_DONE 61 150 {'instance': 'B_networks/n03_d01', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=157784185 P=816
+MODEL B_networks/n03_d03 sis 0.0 M0D OK
+MODEL B_networks/n03_d03 sis 0.0 M0sD OK
+MODEL B_networks/n03_d01 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d02 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d02 sis 0.05 M2B OK
+MODEL B_networks/n03_d02 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d02 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d03 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d03 sis 0.0 M1B NA
+MODEL B_networks/n03_d01 sis 0.1 M2B OK
+MODEL B_networks/n03_d01 kuramoto 0.1 M3C OK
+DATASET_DONE 62 150 {'instance': 'B_networks/n03_d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=735398935 P=816
+MODEL B_networks/n03_d04 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d04 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d02 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d02 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d02 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d03 sis 0.0 M2B NA
+MODEL B_networks/n03_d03 sis 0.0 M1vC OK
+MODEL B_networks/n03_d03 sis 0.0 M3C OK
+MODEL B_networks/n03_d03 sis 0.05 M0D OK
+MODEL B_networks/n03_d03 sis 0.05 M0sD OK
+MODEL B_networks/n03_d02 sis 0.05 M1vC OK
+MODEL B_networks/n03_d03 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d03 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d01 sis 0.1 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d03 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d03 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d03 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d02 sis 0.05 M3C OK
+MODEL B_networks/n03_d02 sis 0.1 M0D OK
+MODEL B_networks/n03_d02 sis 0.1 M0sD OK
+MODEL B_networks/n03_d04 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d01 sis 0.1 M3C OK
+DATASET_DONE 63 150 {'instance': 'B_networks/n03_d01', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=735398935 P=816
+MODEL B_networks/n03_d04 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d04 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d02 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d03 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d03 sis 0.05 M1B OK
+MODEL B_networks/n03_d04 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d04 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d02 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d02 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d03 sis 0.05 M2B OK
+MODEL B_networks/n03_d04 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d04 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d04 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d04 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d04 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d02 sis 0.1 M1B OK
+MODEL B_networks/n03_d03 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d03 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d04 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d03 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d04 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d04 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d04 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d02 sis 0.1 M2B OK
+MODEL B_networks/n03_d03 sis 0.05 M1vC OK
+MODEL B_networks/n03_d02 lotka_volterra 0.1 M3C OK
+DATASET_DONE 64 150 {'instance': 'B_networks/n03_d02', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=735398935 P=816
+MODEL B_networks/n03_d04 sis 0.0 M0D OK
+MODEL B_networks/n03_d04 sis 0.0 M0sD OK
+MODEL B_networks/n03_d03 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d03 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d03 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d02 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d04 sis 0.0 M1B NA
+MODEL B_networks/n03_d04 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d02 kuramoto 0.1 M3C OK
+DATASET_DONE 65 150 {'instance': 'B_networks/n03_d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=3046744402 P=816
+MODEL B_networks/n03_d05 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d05 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d03 sis 0.05 M3C OK
+MODEL B_networks/n03_d03 sis 0.1 M0D OK
+MODEL B_networks/n03_d03 sis 0.1 M0sD OK
+MODEL B_networks/n03_d03 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d04 sis 0.0 M2B NA
+MODEL B_networks/n03_d04 sis 0.0 M1vC OK
+MODEL B_networks/n03_d04 sis 0.0 M3C OK
+MODEL B_networks/n03_d04 sis 0.05 M0D OK
+MODEL B_networks/n03_d04 sis 0.05 M0sD OK
+MODEL B_networks/n03_d04 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d02 sis 0.1 M1vC OK
+MODEL B_networks/n03_d04 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d03 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d03 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d03 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d03 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d02 sis 0.1 M3C OK
+DATASET_DONE 66 150 {'instance': 'B_networks/n03_d02', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3046744402 P=816
+MODEL B_networks/n03_d05 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d05 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d04 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d05 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d03 sis 0.1 M1B OK
+MODEL B_networks/n03_d05 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d04 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d03 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d04 sis 0.05 M1B OK
+MODEL B_networks/n03_d05 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d05 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d05 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d05 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d05 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d05 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d04 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d04 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d04 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d03 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d03 sis 0.1 M2B OK
+MODEL B_networks/n03_d04 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d04 sis 0.05 M2B OK
+MODEL B_networks/n03_d03 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d05 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d03 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d04 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d04 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d04 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d05 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d03 sis 0.1 M1vC OK
+MODEL B_networks/n03_d05 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d05 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d03 lotka_volterra 0.1 M3C OK
+DATASET_DONE 67 150 {'instance': 'B_networks/n03_d03', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=3046744402 P=816
+MODEL B_networks/n03_d05 sis 0.0 M0D OK
+MODEL B_networks/n03_d05 sis 0.0 M0sD OK
+MODEL B_networks/n03_d04 sis 0.05 M1vC OK
+MODEL B_networks/n03_d05 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d04 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d03 sis 0.1 M3C OK
+DATASET_DONE 68 150 {'instance': 'B_networks/n03_d03', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=2571244016 P=816
+MODEL B_networks/n03_d06 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d06 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d05 sis 0.0 M1B NA
+MODEL B_networks/n03_d03 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d04 sis 0.05 M3C OK
+MODEL B_networks/n03_d04 sis 0.1 M0D OK
+MODEL B_networks/n03_d04 sis 0.1 M0sD OK
+MODEL B_networks/n03_d05 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d05 sis 0.0 M2B NA
+MODEL B_networks/n03_d05 sis 0.0 M1vC OK
+MODEL B_networks/n03_d05 sis 0.0 M3C OK
+MODEL B_networks/n03_d05 sis 0.05 M0D OK
+MODEL B_networks/n03_d05 sis 0.05 M0sD OK
+MODEL B_networks/n03_d04 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d04 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d03 kuramoto 0.1 M3C OK
+DATASET_DONE 69 150 {'instance': 'B_networks/n03_d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2571244016 P=816
+MODEL B_networks/n03_d06 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d06 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d05 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d06 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d06 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d04 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d05 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d05 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d06 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d06 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d06 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d06 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d06 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d04 sis 0.1 M1B OK
+MODEL B_networks/n03_d06 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d04 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d05 sis 0.05 M1B OK
+MODEL B_networks/n03_d05 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d05 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d05 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d04 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d04 lotka_volterra 0.1 M3C OK
+DATASET_DONE 70 150 {'instance': 'B_networks/n03_d04', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2571244016 P=816
+MODEL B_networks/n03_d04 sis 0.1 M2B OK
+MODEL B_networks/n03_d06 sis 0.0 M0D OK
+MODEL B_networks/n03_d06 sis 0.0 M0sD OK
+MODEL B_networks/n03_d05 sis 0.05 M2B OK
+MODEL B_networks/n03_d05 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d06 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d06 sis 0.0 M1B NA
+MODEL B_networks/n03_d04 kuramoto 0.1 M3C OK
+DATASET_DONE 71 150 {'instance': 'B_networks/n03_d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=252676229 P=816
+MODEL B_networks/n03_d07 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d07 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d06 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d06 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d06 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d06 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d05 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d05 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d05 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d06 sis 0.0 M2B NA
+MODEL B_networks/n03_d06 sis 0.0 M1vC OK
+MODEL B_networks/n03_d06 sis 0.0 M3C OK
+MODEL B_networks/n03_d06 sis 0.05 M0D OK
+MODEL B_networks/n03_d06 sis 0.05 M0sD OK
+MODEL B_networks/n03_d04 sis 0.1 M1vC OK
+MODEL B_networks/n03_d05 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d05 sis 0.05 M1vC OK
+MODEL B_networks/n03_d06 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d04 sis 0.1 M3C OK
+DATASET_DONE 72 150 {'instance': 'B_networks/n03_d04', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=252676229 P=816
+MODEL B_networks/n03_d07 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d07 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d07 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d05 sis 0.05 M3C OK
+MODEL B_networks/n03_d05 sis 0.1 M0D OK
+MODEL B_networks/n03_d05 sis 0.1 M0sD OK
+MODEL B_networks/n03_d07 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d05 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d06 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d05 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d07 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d06 sis 0.05 M1B OK
+MODEL B_networks/n03_d07 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d07 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d07 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d07 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d07 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d06 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d06 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d05 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d05 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d06 sis 0.05 M2B OK
+MODEL B_networks/n03_d06 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d06 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d06 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d07 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d05 sis 0.1 M1B OK
+MODEL B_networks/n03_d07 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d05 lotka_volterra 0.1 M3C OK
+DATASET_DONE 73 150 {'instance': 'B_networks/n03_d05', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n03_d07 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d07 kuramoto 0.05 M0sD OK
+FEATURES_READY sis seed=252676229 P=816
+MODEL B_networks/n03_d07 sis 0.0 M0D OK
+MODEL B_networks/n03_d07 sis 0.0 M0sD OK
+MODEL B_networks/n03_d07 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d06 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d07 sis 0.0 M1B NA
+MODEL B_networks/n03_d05 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d05 sis 0.1 M2B OK
+MODEL B_networks/n03_d06 sis 0.05 M1vC OK
+MODEL B_networks/n03_d07 sis 0.0 M2B NA
+MODEL B_networks/n03_d07 sis 0.0 M1vC OK
+MODEL B_networks/n03_d07 sis 0.0 M3C OK
+MODEL B_networks/n03_d07 sis 0.05 M0D OK
+MODEL B_networks/n03_d07 sis 0.05 M0sD OK
+MODEL B_networks/n03_d06 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d06 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d06 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d06 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d05 kuramoto 0.1 M3C OK
+DATASET_DONE 74 150 {'instance': 'B_networks/n03_d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=738403348 P=816
+MODEL B_networks/n03_d08 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d08 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d07 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d06 sis 0.05 M3C OK
+MODEL B_networks/n03_d06 sis 0.1 M0D OK
+MODEL B_networks/n03_d06 sis 0.1 M0sD OK
+MODEL B_networks/n03_d07 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d05 sis 0.1 M1vC OK
+MODEL B_networks/n03_d06 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d07 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d07 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d05 sis 0.1 M3C OK
+DATASET_DONE 75 150 {'instance': 'B_networks/n03_d05', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=738403348 P=816
+MODEL B_networks/n03_d08 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d08 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d08 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d07 sis 0.05 M1B OK
+MODEL B_networks/n03_d06 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d08 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d07 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d07 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d07 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d06 sis 0.1 M1B OK
+MODEL B_networks/n03_d08 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d06 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d07 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d08 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d08 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d08 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d08 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d08 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d07 sis 0.05 M2B OK
+MODEL B_networks/n03_d06 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d06 sis 0.1 M2B OK
+MODEL B_networks/n03_d06 lotka_volterra 0.1 M3C OK
+DATASET_DONE 76 150 {'instance': 'B_networks/n03_d06', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=738403348 P=816
+MODEL B_networks/n03_d08 sis 0.0 M0D OK
+MODEL B_networks/n03_d08 sis 0.0 M0sD OK
+MODEL B_networks/n03_d07 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d07 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d07 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d08 sis 0.0 M1B NA
+MODEL B_networks/n03_d08 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d07 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d07 sis 0.05 M1vC OK
+MODEL B_networks/n03_d08 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d08 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d08 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d08 sis 0.0 M2B NA
+MODEL B_networks/n03_d08 sis 0.0 M1vC OK
+MODEL B_networks/n03_d08 sis 0.0 M3C OK
+MODEL B_networks/n03_d08 sis 0.05 M0D OK
+MODEL B_networks/n03_d08 sis 0.05 M0sD OK
+MODEL B_networks/n03_d06 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d08 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d06 sis 0.1 M1vC OK
+MODEL B_networks/n03_d07 sis 0.05 M3C OK
+MODEL B_networks/n03_d07 sis 0.1 M0D OK
+MODEL B_networks/n03_d07 sis 0.1 M0sD OK
+MODEL B_networks/n03_d07 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d06 kuramoto 0.1 M3C OK
+DATASET_DONE 77 150 {'instance': 'B_networks/n03_d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=4049557301 P=816
+MODEL B_networks/n03_d09 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d09 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d07 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d06 sis 0.1 M3C OK
+DATASET_DONE 78 150 {'instance': 'B_networks/n03_d06', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=4049557301 P=816
+MODEL B_networks/n03_d09 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d09 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d08 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d09 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d08 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d07 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d08 sis 0.05 M1B OK
+MODEL B_networks/n03_d07 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d09 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d09 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d09 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d09 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d09 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d08 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d07 sis 0.1 M1B OK
+MODEL B_networks/n03_d09 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d08 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d08 sis 0.05 M2B OK
+MODEL B_networks/n03_d07 lotka_volterra 0.1 M3C OK
+DATASET_DONE 79 150 {'instance': 'B_networks/n03_d07', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=4049557301 P=816
+MODEL B_networks/n03_d09 sis 0.0 M0D OK
+MODEL B_networks/n03_d09 sis 0.0 M0sD OK
+MODEL B_networks/n03_d09 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d07 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d09 sis 0.0 M1B NA
+MODEL B_networks/n03_d08 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d08 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d08 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d07 sis 0.1 M2B OK
+MODEL B_networks/n03_d08 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d07 kuramoto 0.1 M3C OK
+DATASET_DONE 80 150 {'instance': 'B_networks/n03_d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=2953113309 P=816
+MODEL B_networks/n03_d10 kuramoto 0.0 M0D OK
+MODEL B_networks/n03_d10 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d09 sis 0.0 M2B NA
+MODEL B_networks/n03_d09 sis 0.0 M1vC OK
+MODEL B_networks/n03_d09 sis 0.0 M3C OK
+MODEL B_networks/n03_d09 sis 0.05 M0D OK
+MODEL B_networks/n03_d09 sis 0.05 M0sD OK
+MODEL B_networks/n03_d08 sis 0.05 M1vC OK
+MODEL B_networks/n03_d09 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d09 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d08 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d08 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d08 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d08 sis 0.05 M3C OK
+MODEL B_networks/n03_d08 sis 0.1 M0D OK
+MODEL B_networks/n03_d08 sis 0.1 M0sD OK
+MODEL B_networks/n03_d09 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d09 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d09 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d07 sis 0.1 M1vC OK
+MODEL B_networks/n03_d08 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d09 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d10 kuramoto 0.0 M1B OK
+MODEL B_networks/n03_d07 sis 0.1 M3C OK
+DATASET_DONE 81 150 {'instance': 'B_networks/n03_d07', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=2953113309 P=816
+MODEL B_networks/n03_d10 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n03_d10 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d09 sis 0.05 M1B OK
+MODEL B_networks/n03_d10 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d10 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d08 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d08 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d09 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d09 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d08 sis 0.1 M1B OK
+MODEL B_networks/n03_d09 sis 0.05 M2B OK
+MODEL B_networks/n03_d10 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d10 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n03_d10 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n03_d10 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n03_d10 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d09 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d09 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d09 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d08 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d09 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d10 kuramoto 0.0 M1vC OK
+MODEL B_networks/n03_d08 sis 0.1 M2B OK
+MODEL B_networks/n03_d08 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n03_d10 kuramoto 0.0 M3C OK
+MODEL B_networks/n03_d10 kuramoto 0.05 M0D OK
+MODEL B_networks/n03_d10 kuramoto 0.05 M0sD OK
+MODEL B_networks/n03_d09 sis 0.05 M1vC OK
+MODEL B_networks/n03_d09 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d08 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d08 lotka_volterra 0.1 M3C OK
+DATASET_DONE 82 150 {'instance': 'B_networks/n03_d08', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2953113309 P=816
+MODEL B_networks/n03_d10 sis 0.0 M0D OK
+MODEL B_networks/n03_d10 sis 0.0 M0sD OK
+MODEL B_networks/n03_d10 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n03_d09 sis 0.05 M3C OK
+MODEL B_networks/n03_d09 sis 0.1 M0D OK
+MODEL B_networks/n03_d09 sis 0.1 M0sD OK
+MODEL B_networks/n03_d09 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n03_d10 sis 0.0 M1B NA
+MODEL B_networks/n03_d08 sis 0.1 M1vC OK
+MODEL B_networks/n03_d08 kuramoto 0.1 M3C OK
+DATASET_DONE 83 150 {'instance': 'B_networks/n03_d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=946906870 P=816
+MODEL B_networks/n04_d01 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d01 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d09 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d09 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d09 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d10 kuramoto 0.05 M1B OK
+MODEL B_networks/n03_d10 sis 0.0 M2B NA
+MODEL B_networks/n03_d10 sis 0.0 M1vC OK
+MODEL B_networks/n03_d10 sis 0.0 M3C OK
+MODEL B_networks/n03_d10 sis 0.05 M0D OK
+MODEL B_networks/n03_d10 sis 0.05 M0sD OK
+MODEL B_networks/n03_d10 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d08 sis 0.1 M3C OK
+DATASET_DONE 84 150 {'instance': 'B_networks/n03_d08', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=946906870 P=816
+MODEL B_networks/n04_d01 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d01 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d09 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n03_d10 kuramoto 0.05 M2B OK
+MODEL B_networks/n03_d09 sis 0.1 M1B OK
+MODEL B_networks/n04_d01 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n03_d10 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d01 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d01 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d01 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d01 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d09 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d10 kuramoto 0.05 M1vC OK
+MODEL B_networks/n03_d09 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d01 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d10 sis 0.05 M1B OK
+MODEL B_networks/n03_d10 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n03_d10 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n03_d10 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n03_d09 sis 0.1 M2B OK
+MODEL B_networks/n03_d09 kuramoto 0.1 M2B OK
+MODEL B_networks/n03_d09 lotka_volterra 0.1 M3C OK
+DATASET_DONE 85 150 {'instance': 'B_networks/n03_d09', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=946906870 P=816
+MODEL B_networks/n04_d01 sis 0.0 M0D OK
+MODEL B_networks/n04_d01 sis 0.0 M0sD OK
+MODEL B_networks/n03_d10 kuramoto 0.05 M3C OK
+MODEL B_networks/n03_d10 kuramoto 0.1 M0D OK
+MODEL B_networks/n03_d10 kuramoto 0.1 M0sD OK
+MODEL B_networks/n03_d10 sis 0.05 M2B OK
+MODEL B_networks/n04_d01 sis 0.0 M1B NA
+MODEL B_networks/n04_d01 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d01 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d01 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d01 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d01 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d01 sis 0.0 M2B NA
+MODEL B_networks/n03_d09 sis 0.1 M1vC OK
+MODEL B_networks/n04_d01 sis 0.0 M1vC OK
+MODEL B_networks/n04_d01 sis 0.0 M3C OK
+MODEL B_networks/n04_d01 sis 0.05 M0D OK
+MODEL B_networks/n04_d01 sis 0.05 M0sD OK
+MODEL B_networks/n03_d09 kuramoto 0.1 M1vC OK
+MODEL B_networks/n03_d10 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n03_d10 sis 0.05 M1vC OK
+MODEL B_networks/n03_d09 sis 0.1 M3C OK
+DATASET_DONE 86 150 {'instance': 'B_networks/n03_d09', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=660116511 P=816
+MODEL B_networks/n04_d02 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d02 kuramoto 0.0 M0sD OK
+MODEL B_networks/n03_d10 kuramoto 0.1 M1B OK
+MODEL B_networks/n03_d10 sis 0.05 M3C OK
+MODEL B_networks/n03_d10 sis 0.1 M0D OK
+MODEL B_networks/n03_d10 sis 0.1 M0sD OK
+MODEL B_networks/n03_d09 kuramoto 0.1 M3C OK
+DATASET_DONE 87 150 {'instance': 'B_networks/n03_d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=660116511 P=816
+MODEL B_networks/n04_d02 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d02 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n03_d10 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d01 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n03_d10 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d02 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d01 sis 0.05 M1B OK
+MODEL B_networks/n04_d02 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d01 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d01 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d02 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d02 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d01 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d02 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d02 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d02 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n03_d10 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d01 sis 0.05 M2B OK
+MODEL B_networks/n03_d10 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d02 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d10 sis 0.1 M1B OK
+MODEL B_networks/n03_d10 lotka_volterra 0.1 M3C OK
+DATASET_DONE 88 150 {'instance': 'B_networks/n03_d10', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=660116511 P=816
+MODEL B_networks/n04_d02 sis 0.0 M0D OK
+MODEL B_networks/n04_d02 sis 0.0 M0sD OK
+MODEL B_networks/n03_d10 kuramoto 0.1 M3C OK
+DATASET_DONE 89 150 {'instance': 'B_networks/n03_d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=825623140 P=816
+MODEL B_networks/n04_d03 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d03 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d01 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d02 sis 0.0 M1B NA
+MODEL B_networks/n04_d01 sis 0.05 M1vC OK
+MODEL B_networks/n03_d10 sis 0.1 M2B OK
+MODEL B_networks/n04_d02 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d01 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d02 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d01 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d01 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d01 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d02 sis 0.0 M2B NA
+MODEL B_networks/n04_d02 sis 0.0 M1vC OK
+MODEL B_networks/n04_d02 sis 0.0 M3C OK
+MODEL B_networks/n04_d02 sis 0.05 M0D OK
+MODEL B_networks/n04_d02 sis 0.05 M0sD OK
+MODEL B_networks/n04_d02 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d02 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d02 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d01 sis 0.05 M3C OK
+MODEL B_networks/n04_d01 sis 0.1 M0D OK
+MODEL B_networks/n04_d01 sis 0.1 M0sD OK
+MODEL B_networks/n04_d03 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d02 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n03_d10 sis 0.1 M1vC OK
+MODEL B_networks/n04_d03 kuramoto 0.0 M2B OK
+MODEL B_networks/n03_d10 sis 0.1 M3C OK
+DATASET_DONE 90 150 {'instance': 'B_networks/n03_d10', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=825623140 P=816
+MODEL B_networks/n04_d03 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d03 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d01 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d02 sis 0.05 M1B OK
+MODEL B_networks/n04_d02 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d02 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d01 sis 0.1 M1B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d03 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d01 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d03 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d02 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d03 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d03 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d02 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d02 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d02 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d02 sis 0.05 M2B OK
+MODEL B_networks/n04_d01 lotka_volterra 0.1 M3C OK
+DATASET_DONE 91 150 {'instance': 'B_networks/n04_d01', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=825623140 P=816
+MODEL B_networks/n04_d03 sis 0.0 M0D OK
+MODEL B_networks/n04_d03 sis 0.0 M0sD OK
+MODEL B_networks/n04_d03 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d03 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d03 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d01 sis 0.1 M2B OK
+MODEL B_networks/n04_d03 sis 0.0 M1B NA
+MODEL B_networks/n04_d02 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d03 sis 0.0 M2B NA
+MODEL B_networks/n04_d03 sis 0.0 M1vC OK
+MODEL B_networks/n04_d03 sis 0.0 M3C OK
+MODEL B_networks/n04_d03 sis 0.05 M0D OK
+MODEL B_networks/n04_d03 sis 0.05 M0sD OK
+MODEL B_networks/n04_d01 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d02 sis 0.05 M1vC OK
+MODEL B_networks/n04_d01 sis 0.1 M1vC OK
+MODEL B_networks/n04_d02 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d02 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d02 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d02 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d03 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d01 kuramoto 0.1 M3C OK
+DATASET_DONE 92 150 {'instance': 'B_networks/n04_d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=4034675658 P=816
+MODEL B_networks/n04_d04 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d03 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d04 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d02 sis 0.05 M3C OK
+MODEL B_networks/n04_d02 sis 0.1 M0D OK
+MODEL B_networks/n04_d02 sis 0.1 M0sD OK
+MODEL B_networks/n04_d01 sis 0.1 M3C OK
+DATASET_DONE 93 150 {'instance': 'B_networks/n04_d01', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=4034675658 P=816
+MODEL B_networks/n04_d04 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d04 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d03 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d02 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d03 sis 0.05 M1B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d04 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d04 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d04 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d04 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d02 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d03 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d02 sis 0.1 M1B OK
+MODEL B_networks/n04_d03 sis 0.05 M2B OK
+MODEL B_networks/n04_d02 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d04 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d02 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d03 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d03 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d03 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d02 lotka_volterra 0.1 M3C OK
+DATASET_DONE 94 150 {'instance': 'B_networks/n04_d02', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=4034675658 P=816
+MODEL B_networks/n04_d04 sis 0.0 M0D OK
+MODEL B_networks/n04_d04 sis 0.0 M0sD OK
+MODEL B_networks/n04_d02 sis 0.1 M2B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d03 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d03 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d03 sis 0.05 M1vC OK
+MODEL B_networks/n04_d04 sis 0.0 M1B NA
+MODEL B_networks/n04_d04 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d04 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d04 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d04 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d04 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d02 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d04 sis 0.0 M2B NA
+MODEL B_networks/n04_d04 sis 0.0 M1vC OK
+MODEL B_networks/n04_d04 sis 0.0 M3C OK
+MODEL B_networks/n04_d04 sis 0.05 M0D OK
+MODEL B_networks/n04_d04 sis 0.05 M0sD OK
+MODEL B_networks/n04_d03 sis 0.05 M3C OK
+MODEL B_networks/n04_d03 sis 0.1 M0D OK
+MODEL B_networks/n04_d03 sis 0.1 M0sD OK
+MODEL B_networks/n04_d02 sis 0.1 M1vC OK
+MODEL B_networks/n04_d04 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d02 kuramoto 0.1 M3C OK
+DATASET_DONE 95 150 {'instance': 'B_networks/n04_d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=2627374342 P=816
+MODEL B_networks/n04_d05 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d05 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d03 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d02 sis 0.1 M3C OK
+DATASET_DONE 96 150 {'instance': 'B_networks/n04_d02', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=2627374342 P=816
+MODEL B_networks/n04_d05 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d05 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d03 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d05 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d03 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d04 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d03 sis 0.1 M1B OK
+MODEL B_networks/n04_d04 sis 0.05 M1B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d04 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d04 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d05 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d05 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d05 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d05 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d05 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d03 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d05 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d04 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d04 sis 0.05 M2B OK
+MODEL B_networks/n04_d03 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d05 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d03 sis 0.1 M2B OK
+MODEL B_networks/n04_d03 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d03 kuramoto 0.1 M3C OK
+DATASET_DONE 97 150 {'instance': 'B_networks/n04_d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY sis seed=2627374342 P=816
+MODEL B_networks/n04_d05 sis 0.0 M0D OK
+MODEL B_networks/n04_d05 sis 0.0 M0sD OK
+MODEL B_networks/n04_d04 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d04 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d05 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d04 sis 0.05 M1vC OK
+MODEL B_networks/n04_d05 sis 0.0 M1B NA
+MODEL B_networks/n04_d05 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d03 lotka_volterra 0.1 M3C OK
+DATASET_DONE 98 150 {'instance': 'B_networks/n04_d03', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=1050907665 P=816
+MODEL B_networks/n04_d06 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d06 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d03 sis 0.1 M1vC OK
+MODEL B_networks/n04_d05 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d05 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d05 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d04 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d04 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d04 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d05 sis 0.0 M2B NA
+MODEL B_networks/n04_d05 sis 0.0 M1vC OK
+MODEL B_networks/n04_d05 sis 0.0 M3C OK
+MODEL B_networks/n04_d05 sis 0.05 M0D OK
+MODEL B_networks/n04_d05 sis 0.05 M0sD OK
+MODEL B_networks/n04_d04 sis 0.05 M3C OK
+MODEL B_networks/n04_d04 sis 0.1 M0D OK
+MODEL B_networks/n04_d04 sis 0.1 M0sD OK
+MODEL B_networks/n04_d04 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d05 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d03 sis 0.1 M3C OK
+DATASET_DONE 99 150 {'instance': 'B_networks/n04_d03', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=1050907665 P=816
+MODEL B_networks/n04_d06 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d06 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d06 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d06 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d06 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d06 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d06 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d06 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d06 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d05 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d04 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d05 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d06 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d05 sis 0.05 M1B OK
+MODEL B_networks/n04_d04 sis 0.1 M1B OK
+MODEL B_networks/n04_d04 lotka_volterra 0.1 M3C OK
+DATASET_DONE 100 150 {'instance': 'B_networks/n04_d04', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1050907665 P=816
+MODEL B_networks/n04_d06 sis 0.0 M0D OK
+MODEL B_networks/n04_d06 sis 0.0 M0sD OK
+MODEL B_networks/n04_d05 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d05 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d05 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d05 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d04 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d06 sis 0.0 M1B NA
+MODEL B_networks/n04_d05 sis 0.05 M2B OK
+MODEL B_networks/n04_d06 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d04 sis 0.1 M2B OK
+MODEL B_networks/n04_d06 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d06 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d06 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d06 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d06 sis 0.0 M2B NA
+MODEL B_networks/n04_d06 sis 0.0 M1vC OK
+MODEL B_networks/n04_d06 sis 0.0 M3C OK
+MODEL B_networks/n04_d06 sis 0.05 M0D OK
+MODEL B_networks/n04_d06 sis 0.05 M0sD OK
+MODEL B_networks/n04_d05 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d05 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d04 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d06 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d05 sis 0.05 M1vC OK
+MODEL B_networks/n04_d05 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d05 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d05 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d04 sis 0.1 M1vC OK
+MODEL B_networks/n04_d04 kuramoto 0.1 M3C OK
+DATASET_DONE 101 150 {'instance': 'B_networks/n04_d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=593291733 P=816
+MODEL B_networks/n04_d07 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d07 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d06 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d05 sis 0.05 M3C OK
+MODEL B_networks/n04_d05 sis 0.1 M0D OK
+MODEL B_networks/n04_d05 sis 0.1 M0sD OK
+MODEL B_networks/n04_d04 sis 0.1 M3C OK
+DATASET_DONE 102 150 {'instance': 'B_networks/n04_d04', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=593291733 P=816
+MODEL B_networks/n04_d07 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d07 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d06 sis 0.05 M1B OK
+MODEL B_networks/n04_d05 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d06 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d07 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d06 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d06 sis 0.05 M2B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d05 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d07 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d07 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d07 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d06 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d06 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d06 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d07 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d05 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d05 sis 0.1 M1B OK
+MODEL B_networks/n04_d05 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d07 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d06 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d06 sis 0.05 M1vC OK
+MODEL B_networks/n04_d05 lotka_volterra 0.1 M3C OK
+DATASET_DONE 103 150 {'instance': 'B_networks/n04_d05', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=593291733 P=816
+MODEL B_networks/n04_d07 sis 0.0 M0D OK
+MODEL B_networks/n04_d07 sis 0.0 M0sD OK
+MODEL B_networks/n04_d05 sis 0.1 M2B OK
+MODEL B_networks/n04_d06 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d06 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d06 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d07 sis 0.0 M1B NA
+MODEL B_networks/n04_d06 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d06 sis 0.05 M3C OK
+MODEL B_networks/n04_d06 sis 0.1 M0D OK
+MODEL B_networks/n04_d06 sis 0.1 M0sD OK
+MODEL B_networks/n04_d05 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d07 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d07 sis 0.0 M2B NA
+MODEL B_networks/n04_d07 sis 0.0 M1vC OK
+MODEL B_networks/n04_d07 sis 0.0 M3C OK
+MODEL B_networks/n04_d07 sis 0.05 M0D OK
+MODEL B_networks/n04_d07 sis 0.05 M0sD OK
+MODEL B_networks/n04_d07 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d07 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d07 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d05 kuramoto 0.1 M3C OK
+DATASET_DONE 104 150 {'instance': 'B_networks/n04_d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=3579987865 P=816
+MODEL B_networks/n04_d08 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d08 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d07 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d06 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d05 sis 0.1 M1vC OK
+MODEL B_networks/n04_d06 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d06 sis 0.1 M1B OK
+MODEL B_networks/n04_d05 sis 0.1 M3C OK
+DATASET_DONE 105 150 {'instance': 'B_networks/n04_d05', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=3579987865 P=816
+MODEL B_networks/n04_d08 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d08 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d06 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d08 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d07 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d07 sis 0.05 M1B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d06 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d06 lotka_volterra 0.1 M3C OK
+DATASET_DONE 106 150 {'instance': 'B_networks/n04_d06', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n04_d06 sis 0.1 M2B OK
+FEATURES_READY sis seed=3579987865 P=816
+MODEL B_networks/n04_d08 sis 0.0 M0D OK
+MODEL B_networks/n04_d08 sis 0.0 M0sD OK
+MODEL B_networks/n04_d08 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d07 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d07 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d08 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d07 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d08 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d08 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d08 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d07 sis 0.05 M2B OK
+MODEL B_networks/n04_d08 sis 0.0 M1B NA
+MODEL B_networks/n04_d06 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d08 sis 0.0 M2B NA
+MODEL B_networks/n04_d08 sis 0.0 M1vC OK
+MODEL B_networks/n04_d08 sis 0.0 M3C OK
+MODEL B_networks/n04_d08 sis 0.05 M0D OK
+MODEL B_networks/n04_d08 sis 0.05 M0sD OK
+MODEL B_networks/n04_d06 sis 0.1 M1vC OK
+MODEL B_networks/n04_d08 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d07 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d06 kuramoto 0.1 M3C OK
+DATASET_DONE 107 150 {'instance': 'B_networks/n04_d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=1668956550 P=816
+MODEL B_networks/n04_d09 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d09 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d07 sis 0.05 M1vC OK
+MODEL B_networks/n04_d06 sis 0.1 M3C OK
+DATASET_DONE 108 150 {'instance': 'B_networks/n04_d06', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=1668956550 P=816
+MODEL B_networks/n04_d09 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d09 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d08 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d08 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d08 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d07 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d07 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d07 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d07 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d07 sis 0.05 M3C OK
+MODEL B_networks/n04_d07 sis 0.1 M0D OK
+MODEL B_networks/n04_d07 sis 0.1 M0sD OK
+MODEL B_networks/n04_d09 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d08 sis 0.05 M1B OK
+MODEL B_networks/n04_d09 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d09 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d09 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d09 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d09 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d09 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d08 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d09 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d08 sis 0.05 M2B OK
+MODEL B_networks/n04_d07 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d07 sis 0.1 M1B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d08 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d07 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d07 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d09 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d09 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d08 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d08 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d08 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d07 sis 0.1 M2B OK
+MODEL B_networks/n04_d08 sis 0.05 M1vC OK
+MODEL B_networks/n04_d07 lotka_volterra 0.1 M3C OK
+DATASET_DONE 109 150 {'instance': 'B_networks/n04_d07', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1668956550 P=816
+MODEL B_networks/n04_d09 sis 0.0 M0D OK
+MODEL B_networks/n04_d09 sis 0.0 M0sD OK
+MODEL B_networks/n04_d09 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d09 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d09 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d09 sis 0.0 M1B NA
+MODEL B_networks/n04_d09 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d08 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d08 sis 0.05 M3C OK
+MODEL B_networks/n04_d08 sis 0.1 M0D OK
+MODEL B_networks/n04_d08 sis 0.1 M0sD OK
+MODEL B_networks/n04_d07 sis 0.1 M1vC OK
+MODEL B_networks/n04_d09 sis 0.0 M2B NA
+MODEL B_networks/n04_d09 sis 0.0 M1vC OK
+MODEL B_networks/n04_d09 sis 0.0 M3C OK
+MODEL B_networks/n04_d09 sis 0.05 M0D OK
+MODEL B_networks/n04_d09 sis 0.05 M0sD OK
+MODEL B_networks/n04_d07 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d08 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d08 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d08 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d08 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d07 sis 0.1 M3C OK
+DATASET_DONE 110 150 {'instance': 'B_networks/n04_d07', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=4103132238 P=816
+MODEL B_networks/n04_d10 kuramoto 0.0 M0D OK
+MODEL B_networks/n04_d10 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d09 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d07 kuramoto 0.1 M3C OK
+DATASET_DONE 111 150 {'instance': 'B_networks/n04_d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=4103132238 P=816
+MODEL B_networks/n04_d10 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n04_d10 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n04_d09 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d10 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d09 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d09 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d09 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d08 sis 0.1 M1B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d09 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d09 sis 0.05 M1B OK
+MODEL B_networks/n04_d10 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n04_d10 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n04_d10 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n04_d10 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n04_d10 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d08 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d10 kuramoto 0.0 M1B OK
+MODEL B_networks/n04_d08 sis 0.1 M2B OK
+MODEL B_networks/n04_d09 sis 0.05 M2B OK
+MODEL B_networks/n04_d08 kuramoto 0.1 M2B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d09 kuramoto 0.05 M1vC OK
+MODEL B_networks/n04_d10 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d09 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d08 lotka_volterra 0.1 M3C OK
+DATASET_DONE 112 150 {'instance': 'B_networks/n04_d08', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=4103132238 P=816
+MODEL B_networks/n04_d10 sis 0.0 M0D OK
+MODEL B_networks/n04_d10 sis 0.0 M0sD OK
+MODEL B_networks/n04_d10 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d08 sis 0.1 M1vC OK
+MODEL B_networks/n04_d09 sis 0.05 M1vC OK
+MODEL B_networks/n04_d10 sis 0.0 M1B NA
+MODEL B_networks/n04_d09 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d09 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d09 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d10 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d09 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d08 kuramoto 0.1 M1vC OK
+MODEL B_networks/n04_d10 kuramoto 0.0 M3C OK
+MODEL B_networks/n04_d10 kuramoto 0.05 M0D OK
+MODEL B_networks/n04_d10 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d08 sis 0.1 M3C OK
+DATASET_DONE 113 150 {'instance': 'B_networks/n04_d08', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=4288837412 P=816
+MODEL B_networks/n05_d01 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d01 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d09 sis 0.05 M3C OK
+MODEL B_networks/n04_d09 sis 0.1 M0D OK
+MODEL B_networks/n04_d09 sis 0.1 M0sD OK
+MODEL B_networks/n04_d10 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d10 sis 0.0 M2B NA
+MODEL B_networks/n04_d10 sis 0.0 M1vC OK
+MODEL B_networks/n04_d10 sis 0.0 M3C OK
+MODEL B_networks/n04_d10 sis 0.05 M0D OK
+MODEL B_networks/n04_d10 sis 0.05 M0sD OK
+MODEL B_networks/n04_d08 kuramoto 0.1 M3C OK
+DATASET_DONE 114 150 {'instance': 'B_networks/n04_d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=4288837412 P=816
+MODEL B_networks/n05_d01 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d01 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d01 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n04_d10 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d09 kuramoto 0.1 M1B OK
+MODEL B_networks/n04_d09 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d01 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d01 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d01 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d01 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d01 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d01 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n04_d10 kuramoto 0.05 M1B OK
+MODEL B_networks/n04_d10 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n04_d10 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n04_d10 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n04_d09 sis 0.1 M1B OK
+MODEL B_networks/n04_d10 sis 0.05 M1B OK
+MODEL B_networks/n04_d09 lotka_volterra 0.1 M3C OK
+DATASET_DONE 115 150 {'instance': 'B_networks/n04_d09', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=4288837412 P=816
+MODEL B_networks/n05_d01 sis 0.0 M0D OK
+MODEL B_networks/n05_d01 sis 0.0 M0sD OK
+MODEL B_networks/n04_d09 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d01 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d01 sis 0.0 M1B NA
+MODEL B_networks/n04_d10 kuramoto 0.05 M2B OK
+MODEL B_networks/n04_d10 sis 0.05 M2B OK
+MODEL B_networks/n04_d09 sis 0.1 M2B OK
+MODEL B_networks/n05_d01 sis 0.0 M2B NA
+MODEL B_networks/n05_d01 sis 0.0 M1vC OK
+MODEL B_networks/n05_d01 sis 0.0 M3C OK
+MODEL B_networks/n05_d01 sis 0.05 M0D OK
+MODEL B_networks/n05_d01 sis 0.05 M0sD OK
+MODEL B_networks/n05_d01 kuramoto 0.0 M1vC OK
+MODEL B_networks/n04_d09 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d01 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n04_d10 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d10 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d01 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d01 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d01 kuramoto 0.05 M0sD OK
+MODEL B_networks/n04_d10 sis 0.05 M1vC OK
+MODEL B_networks/n04_d09 sis 0.1 M1vC OK
+MODEL B_networks/n04_d09 kuramoto 0.1 M3C OK
+DATASET_DONE 116 150 {'instance': 'B_networks/n04_d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=1174572194 P=816
+MODEL B_networks/n05_d02 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d02 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d01 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d10 kuramoto 0.05 M3C OK
+MODEL B_networks/n04_d10 kuramoto 0.1 M0D OK
+MODEL B_networks/n04_d10 kuramoto 0.1 M0sD OK
+MODEL B_networks/n04_d10 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n04_d09 sis 0.1 M3C OK
+DATASET_DONE 117 150 {'instance': 'B_networks/n04_d09', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=1174572194 P=816
+MODEL B_networks/n05_d02 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d02 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d01 sis 0.05 M1B OK
+MODEL B_networks/n04_d10 sis 0.05 M3C OK
+MODEL B_networks/n04_d10 sis 0.1 M0D OK
+MODEL B_networks/n04_d10 sis 0.1 M0sD OK
+MODEL B_networks/n05_d02 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d01 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d01 sis 0.05 M2B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d02 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d02 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d02 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d02 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d01 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n04_d10 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n04_d10 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d01 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d02 kuramoto 0.0 M2B OK
+MODEL B_networks/n04_d10 lotka_volterra 0.1 M3C OK
+DATASET_DONE 118 150 {'instance': 'B_networks/n04_d10', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1174572194 P=816
+MODEL B_networks/n05_d02 sis 0.0 M0D OK
+MODEL B_networks/n05_d02 sis 0.0 M0sD OK
+MODEL B_networks/n04_d10 sis 0.1 M1B OK
+MODEL B_networks/n05_d01 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d01 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d01 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d02 sis 0.0 M1B NA
+MODEL B_networks/n05_d01 sis 0.05 M1vC OK
+MODEL B_networks/n04_d10 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d02 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d02 sis 0.0 M2B NA
+MODEL B_networks/n05_d01 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d02 sis 0.0 M1vC OK
+MODEL B_networks/n05_d02 sis 0.0 M3C OK
+MODEL B_networks/n05_d02 sis 0.05 M0D OK
+MODEL B_networks/n05_d02 sis 0.05 M0sD OK
+MODEL B_networks/n05_d01 sis 0.05 M3C OK
+MODEL B_networks/n05_d01 sis 0.1 M0D OK
+MODEL B_networks/n05_d01 sis 0.1 M0sD OK
+MODEL B_networks/n04_d10 sis 0.1 M2B OK
+MODEL B_networks/n05_d02 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d02 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d02 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d01 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d01 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d01 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d02 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n04_d10 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d01 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n04_d10 sis 0.1 M1vC OK
+MODEL B_networks/n05_d02 sis 0.05 M1B OK
+MODEL B_networks/n05_d01 sis 0.1 M1B OK
+MODEL B_networks/n04_d10 kuramoto 0.1 M3C OK
+DATASET_DONE 119 150 {'instance': 'B_networks/n04_d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY kuramoto seed=4194083397 P=816
+MODEL B_networks/n05_d03 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d03 kuramoto 0.0 M0sD OK
+MODEL B_networks/n04_d10 sis 0.1 M3C OK
+DATASET_DONE 120 150 {'instance': 'B_networks/n04_d10', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=4194083397 P=816
+MODEL B_networks/n05_d03 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d03 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d02 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d01 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d03 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d01 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d02 sis 0.05 M2B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d02 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d01 sis 0.1 M2B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d02 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d03 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d03 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d03 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d03 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d03 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d01 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d01 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d03 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d02 sis 0.05 M1vC OK
+MODEL B_networks/n05_d01 lotka_volterra 0.1 M3C OK
+DATASET_DONE 121 150 {'instance': 'B_networks/n05_d01', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=4194083397 P=816
+MODEL B_networks/n05_d03 sis 0.0 M0D OK
+MODEL B_networks/n05_d03 sis 0.0 M0sD OK
+MODEL B_networks/n05_d02 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d03 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d01 sis 0.1 M1vC OK
+MODEL B_networks/n05_d03 sis 0.0 M1B NA
+MODEL B_networks/n05_d01 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d02 sis 0.05 M3C OK
+MODEL B_networks/n05_d02 sis 0.1 M0D OK
+MODEL B_networks/n05_d02 sis 0.1 M0sD OK
+MODEL B_networks/n05_d02 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d02 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d02 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d02 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d03 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d03 sis 0.0 M2B NA
+MODEL B_networks/n05_d03 sis 0.0 M1vC OK
+MODEL B_networks/n05_d03 sis 0.0 M3C OK
+MODEL B_networks/n05_d03 sis 0.05 M0D OK
+MODEL B_networks/n05_d03 sis 0.05 M0sD OK
+MODEL B_networks/n05_d01 sis 0.1 M3C OK
+DATASET_DONE 122 150 {'instance': 'B_networks/n05_d01', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=2096652575 P=816
+MODEL B_networks/n05_d04 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d04 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d01 kuramoto 0.1 M3C OK
+DATASET_DONE 123 150 {'instance': 'B_networks/n05_d01', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n05_d03 kuramoto 0.0 M1vC OK
+FEATURES_READY lotka_volterra seed=2096652575 P=816
+MODEL B_networks/n05_d04 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d04 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d03 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d03 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d03 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d02 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d04 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d03 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d04 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d02 sis 0.1 M1B OK
+MODEL B_networks/n05_d04 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d04 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d04 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d04 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d02 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d04 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d03 sis 0.05 M1B OK
+MODEL B_networks/n05_d03 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d02 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d04 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d02 sis 0.1 M2B OK
+MODEL B_networks/n05_d02 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d03 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d02 lotka_volterra 0.1 M3C OK
+DATASET_DONE 124 150 {'instance': 'B_networks/n05_d02', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2096652575 P=816
+MODEL B_networks/n05_d04 sis 0.0 M0D OK
+MODEL B_networks/n05_d04 sis 0.0 M0sD OK
+MODEL B_networks/n05_d03 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d03 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d03 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d03 sis 0.05 M2B OK
+MODEL B_networks/n05_d04 sis 0.0 M1B NA
+MODEL B_networks/n05_d03 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d04 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d04 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d02 sis 0.1 M1vC OK
+MODEL B_networks/n05_d04 sis 0.0 M2B NA
+MODEL B_networks/n05_d04 sis 0.0 M1vC OK
+MODEL B_networks/n05_d04 sis 0.0 M3C OK
+MODEL B_networks/n05_d04 sis 0.05 M0D OK
+MODEL B_networks/n05_d04 sis 0.05 M0sD OK
+MODEL B_networks/n05_d02 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d03 sis 0.05 M1vC OK
+MODEL B_networks/n05_d04 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d04 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d04 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d04 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d02 sis 0.1 M3C OK
+DATASET_DONE 125 150 {'instance': 'B_networks/n05_d02', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=413237015 P=816
+MODEL B_networks/n05_d05 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d05 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d02 kuramoto 0.1 M3C OK
+DATASET_DONE 126 150 {'instance': 'B_networks/n05_d02', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=413237015 P=816
+MODEL B_networks/n05_d05 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d05 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d03 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d03 sis 0.05 M3C OK
+MODEL B_networks/n05_d03 sis 0.1 M0D OK
+MODEL B_networks/n05_d03 sis 0.1 M0sD OK
+MODEL B_networks/n05_d03 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d05 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d03 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d03 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d03 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d04 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d04 sis 0.05 M1B OK
+MODEL B_networks/n05_d05 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d05 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d05 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d05 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d05 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d03 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d04 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d04 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d04 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d04 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d05 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d04 sis 0.05 M2B OK
+MODEL B_networks/n05_d03 sis 0.1 M1B OK
+MODEL B_networks/n05_d04 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d05 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d03 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d03 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d03 sis 0.1 M2B OK
+MODEL B_networks/n05_d05 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d04 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d04 sis 0.05 M1vC OK
+MODEL B_networks/n05_d03 lotka_volterra 0.1 M3C OK
+DATASET_DONE 127 150 {'instance': 'B_networks/n05_d03', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=413237015 P=816
+MODEL B_networks/n05_d05 sis 0.0 M0D OK
+MODEL B_networks/n05_d05 sis 0.0 M0sD OK
+MODEL B_networks/n05_d04 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d05 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d03 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d05 sis 0.0 M1B NA
+MODEL B_networks/n05_d05 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d05 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d05 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d05 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d04 sis 0.05 M3C OK
+MODEL B_networks/n05_d04 sis 0.1 M0D OK
+MODEL B_networks/n05_d04 sis 0.1 M0sD OK
+MODEL B_networks/n05_d04 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d04 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d04 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d03 sis 0.1 M1vC OK
+MODEL B_networks/n05_d04 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d05 sis 0.0 M2B NA
+MODEL B_networks/n05_d05 sis 0.0 M1vC OK
+MODEL B_networks/n05_d05 sis 0.0 M3C OK
+MODEL B_networks/n05_d05 sis 0.05 M0D OK
+MODEL B_networks/n05_d05 sis 0.05 M0sD OK
+MODEL B_networks/n05_d03 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d03 sis 0.1 M3C OK
+DATASET_DONE 128 150 {'instance': 'B_networks/n05_d03', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=95460876 P=816
+MODEL B_networks/n05_d06 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d06 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d05 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d03 kuramoto 0.1 M3C OK
+DATASET_DONE 129 150 {'instance': 'B_networks/n05_d03', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=95460876 P=816
+MODEL B_networks/n05_d06 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d06 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d05 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d06 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d05 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d05 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d05 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d04 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d04 sis 0.1 M1B OK
+MODEL B_networks/n05_d04 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d05 sis 0.05 M1B OK
+MODEL B_networks/n05_d05 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d06 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d06 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d06 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d06 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d06 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d04 lotka_volterra 0.1 M3C OK
+DATASET_DONE 130 150 {'instance': 'B_networks/n05_d04', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=95460876 P=816
+MODEL B_networks/n05_d06 sis 0.0 M0D OK
+MODEL B_networks/n05_d06 sis 0.0 M0sD OK
+MODEL B_networks/n05_d06 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d04 sis 0.1 M2B OK
+MODEL B_networks/n05_d04 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d06 sis 0.0 M1B NA
+MODEL B_networks/n05_d05 sis 0.05 M2B OK
+MODEL B_networks/n05_d06 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d05 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d05 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d06 sis 0.0 M2B NA
+MODEL B_networks/n05_d06 sis 0.0 M1vC OK
+MODEL B_networks/n05_d06 sis 0.0 M3C OK
+MODEL B_networks/n05_d06 sis 0.05 M0D OK
+MODEL B_networks/n05_d06 sis 0.05 M0sD OK
+MODEL B_networks/n05_d04 sis 0.1 M1vC OK
+MODEL B_networks/n05_d05 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d05 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d05 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d06 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d04 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d06 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d04 sis 0.1 M3C OK
+DATASET_DONE 131 150 {'instance': 'B_networks/n05_d04', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=2287726555 P=816
+MODEL B_networks/n05_d07 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d07 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d05 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d05 sis 0.05 M1vC OK
+MODEL B_networks/n05_d06 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d06 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d06 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d04 kuramoto 0.1 M3C OK
+DATASET_DONE 132 150 {'instance': 'B_networks/n05_d04', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=2287726555 P=816
+MODEL B_networks/n05_d07 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d07 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d06 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d05 sis 0.05 M3C OK
+MODEL B_networks/n05_d05 sis 0.1 M0D OK
+MODEL B_networks/n05_d05 sis 0.1 M0sD OK
+MODEL B_networks/n05_d06 sis 0.05 M1B OK
+MODEL B_networks/n05_d07 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d05 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d05 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d07 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d07 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d07 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d07 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d07 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d07 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d06 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d06 sis 0.05 M2B OK
+MODEL B_networks/n05_d05 lotka_volterra 0.1 M3C OK
+DATASET_DONE 133 150 {'instance': 'B_networks/n05_d05', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=2287726555 P=816
+MODEL B_networks/n05_d07 sis 0.0 M0D OK
+MODEL B_networks/n05_d07 sis 0.0 M0sD OK
+MODEL B_networks/n05_d05 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d06 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d07 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d06 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d06 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d06 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d07 sis 0.0 M1B NA
+MODEL B_networks/n05_d05 sis 0.1 M1B OK
+MODEL B_networks/n05_d06 sis 0.05 M1vC OK
+MODEL B_networks/n05_d06 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d07 sis 0.0 M2B NA
+MODEL B_networks/n05_d07 sis 0.0 M1vC OK
+MODEL B_networks/n05_d07 sis 0.0 M3C OK
+MODEL B_networks/n05_d07 sis 0.05 M0D OK
+MODEL B_networks/n05_d07 sis 0.05 M0sD OK
+MODEL B_networks/n05_d05 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d07 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d07 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d05 sis 0.1 M2B OK
+MODEL B_networks/n05_d06 sis 0.05 M3C OK
+MODEL B_networks/n05_d06 sis 0.1 M0D OK
+MODEL B_networks/n05_d06 sis 0.1 M0sD OK
+MODEL B_networks/n05_d07 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d05 kuramoto 0.1 M3C OK
+DATASET_DONE 134 150 {'instance': 'B_networks/n05_d05', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n05_d07 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d07 kuramoto 0.05 M0sD OK
+FEATURES_READY kuramoto seed=1396351760 P=816
+MODEL B_networks/n05_d08 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d08 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d06 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d06 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d07 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d06 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d06 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d06 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d05 sis 0.1 M1vC OK
+MODEL B_networks/n05_d07 sis 0.05 M1B OK
+MODEL B_networks/n05_d06 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d06 sis 0.1 M1B OK
+MODEL B_networks/n05_d08 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d05 sis 0.1 M3C OK
+DATASET_DONE 135 150 {'instance': 'B_networks/n05_d05', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY lotka_volterra seed=1396351760 P=816
+MODEL B_networks/n05_d08 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d08 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d07 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d07 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d07 sis 0.05 M2B OK
+MODEL B_networks/n05_d08 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d08 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d06 sis 0.1 M2B OK
+MODEL B_networks/n05_d07 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d07 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d07 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d07 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d06 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d06 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d08 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d08 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d08 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d08 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d08 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d07 sis 0.05 M1vC OK
+MODEL B_networks/n05_d06 lotka_volterra 0.1 M3C OK
+DATASET_DONE 136 150 {'instance': 'B_networks/n05_d06', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=1396351760 P=816
+MODEL B_networks/n05_d08 sis 0.0 M0D OK
+MODEL B_networks/n05_d08 sis 0.0 M0sD OK
+MODEL B_networks/n05_d06 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d06 sis 0.1 M1vC OK
+MODEL B_networks/n05_d08 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d07 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d08 sis 0.0 M1B NA
+MODEL B_networks/n05_d07 sis 0.05 M3C OK
+MODEL B_networks/n05_d07 sis 0.1 M0D OK
+MODEL B_networks/n05_d07 sis 0.1 M0sD OK
+MODEL B_networks/n05_d08 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d08 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d08 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d06 sis 0.1 M3C OK
+DATASET_DONE 137 150 {'instance': 'B_networks/n05_d06', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=652955532 P=816
+MODEL B_networks/n05_d09 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d09 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d07 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d07 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d07 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d07 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d08 sis 0.0 M2B NA
+MODEL B_networks/n05_d08 sis 0.0 M1vC OK
+MODEL B_networks/n05_d08 sis 0.0 M3C OK
+MODEL B_networks/n05_d08 sis 0.05 M0D OK
+MODEL B_networks/n05_d08 sis 0.05 M0sD OK
+MODEL B_networks/n05_d08 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d06 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d06 kuramoto 0.1 M3C OK
+DATASET_DONE 138 150 {'instance': 'B_networks/n05_d06', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=652955532 P=816
+MODEL B_networks/n05_d09 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d09 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d07 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d08 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d07 sis 0.1 M1B OK
+MODEL B_networks/n05_d09 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d09 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d08 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d07 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d08 sis 0.05 M1B OK
+MODEL B_networks/n05_d09 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d09 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d09 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d09 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d09 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d07 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d09 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d08 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d07 sis 0.1 M2B OK
+MODEL B_networks/n05_d08 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d07 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d07 lotka_volterra 0.1 M3C OK
+DATASET_DONE 139 150 {'instance': 'B_networks/n05_d07', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=652955532 P=816
+MODEL B_networks/n05_d09 sis 0.0 M0D OK
+MODEL B_networks/n05_d09 sis 0.0 M0sD OK
+MODEL B_networks/n05_d08 sis 0.05 M2B OK
+MODEL B_networks/n05_d08 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d08 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d08 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d09 sis 0.0 M1B NA
+MODEL B_networks/n05_d09 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d08 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d09 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d09 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d09 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d09 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d09 sis 0.0 M2B NA
+MODEL B_networks/n05_d09 sis 0.0 M1vC OK
+MODEL B_networks/n05_d09 sis 0.0 M3C OK
+MODEL B_networks/n05_d07 sis 0.1 M1vC OK
+MODEL B_networks/n05_d09 sis 0.05 M0D OK
+MODEL B_networks/n05_d09 sis 0.05 M0sD OK
+MODEL B_networks/n05_d08 sis 0.05 M1vC OK
+MODEL B_networks/n05_d08 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d08 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d08 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d07 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d07 sis 0.1 M3C OK
+DATASET_DONE 140 150 {'instance': 'B_networks/n05_d07', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY kuramoto seed=3781922082 P=816
+MODEL B_networks/n05_d10 kuramoto 0.0 M0D OK
+MODEL B_networks/n05_d10 kuramoto 0.0 M0sD OK
+MODEL B_networks/n05_d08 sis 0.05 M3C OK
+MODEL B_networks/n05_d08 sis 0.1 M0D OK
+MODEL B_networks/n05_d08 sis 0.1 M0sD OK
+MODEL B_networks/n05_d09 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d07 kuramoto 0.1 M3C OK
+DATASET_DONE 141 150 {'instance': 'B_networks/n05_d07', 'system': 'kuramoto', 'counts': {'OK': 18}}
+FEATURES_READY lotka_volterra seed=3781922082 P=816
+MODEL B_networks/n05_d08 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.0 M0D OK
+MODEL B_networks/n05_d10 lotka_volterra 0.0 M0sD OK
+MODEL B_networks/n05_d10 lotka_volterra 0.0 M1B NA
+MODEL B_networks/n05_d09 sis 0.05 M1B OK
+MODEL B_networks/n05_d09 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d09 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d08 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.0 M2B NA
+MODEL B_networks/n05_d08 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.0 M1vC OK
+MODEL B_networks/n05_d10 lotka_volterra 0.0 M3C OK
+MODEL B_networks/n05_d10 lotka_volterra 0.05 M0D OK
+MODEL B_networks/n05_d10 lotka_volterra 0.05 M0sD OK
+MODEL B_networks/n05_d10 kuramoto 0.0 M1B OK
+MODEL B_networks/n05_d09 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d09 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d09 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d09 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d08 sis 0.1 M1B OK
+MODEL B_networks/n05_d09 sis 0.05 M2B OK
+MODEL B_networks/n05_d08 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d10 kuramoto 0.0 M2B OK
+MODEL B_networks/n05_d08 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d08 sis 0.1 M2B OK
+MODEL B_networks/n05_d09 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d08 lotka_volterra 0.1 M3C OK
+DATASET_DONE 142 150 {'instance': 'B_networks/n05_d08', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+FEATURES_READY sis seed=3781922082 P=816
+MODEL B_networks/n05_d10 sis 0.0 M0D OK
+MODEL B_networks/n05_d10 sis 0.0 M0sD OK
+MODEL B_networks/n05_d10 lotka_volterra 0.05 M1B OK
+MODEL B_networks/n05_d09 sis 0.05 M1vC OK
+MODEL B_networks/n05_d08 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d10 kuramoto 0.0 M1vC OK
+MODEL B_networks/n05_d10 sis 0.0 M1B NA
+MODEL B_networks/n05_d09 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d10 kuramoto 0.0 M3C OK
+MODEL B_networks/n05_d10 kuramoto 0.05 M0D OK
+MODEL B_networks/n05_d10 kuramoto 0.05 M0sD OK
+MODEL B_networks/n05_d08 kuramoto 0.1 M3C OK
+DATASET_DONE 143 150 {'instance': 'B_networks/n05_d08', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n05_d09 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d09 sis 0.05 M3C OK
+MODEL B_networks/n05_d09 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d09 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d09 sis 0.1 M0D OK
+MODEL B_networks/n05_d09 sis 0.1 M0sD OK
+MODEL B_networks/n05_d08 sis 0.1 M1vC OK
+MODEL B_networks/n05_d10 lotka_volterra 0.05 M2B OK
+MODEL B_networks/n05_d10 sis 0.0 M2B NA
+MODEL B_networks/n05_d10 sis 0.0 M1vC OK
+MODEL B_networks/n05_d10 sis 0.0 M3C OK
+MODEL B_networks/n05_d10 sis 0.05 M0D OK
+MODEL B_networks/n05_d10 sis 0.05 M0sD OK
+MODEL B_networks/n05_d08 sis 0.1 M3C OK
+DATASET_DONE 144 150 {'instance': 'B_networks/n05_d08', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n05_d09 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.05 M1vC OK
+MODEL B_networks/n05_d10 kuramoto 0.05 M1B OK
+MODEL B_networks/n05_d09 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d09 sis 0.1 M1B OK
+MODEL B_networks/n05_d09 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d10 sis 0.05 M1B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.05 M3C OK
+MODEL B_networks/n05_d10 lotka_volterra 0.1 M0D OK
+MODEL B_networks/n05_d10 lotka_volterra 0.1 M0sD OK
+MODEL B_networks/n05_d09 lotka_volterra 0.1 M3C OK
+DATASET_DONE 145 150 {'instance': 'B_networks/n05_d09', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n05_d10 kuramoto 0.05 M2B OK
+MODEL B_networks/n05_d09 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d09 sis 0.1 M2B OK
+MODEL B_networks/n05_d10 sis 0.05 M2B OK
+MODEL B_networks/n05_d10 kuramoto 0.05 M1vC OK
+MODEL B_networks/n05_d10 lotka_volterra 0.1 M1B OK
+MODEL B_networks/n05_d09 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d10 kuramoto 0.05 M3C OK
+MODEL B_networks/n05_d10 kuramoto 0.1 M0D OK
+MODEL B_networks/n05_d10 kuramoto 0.1 M0sD OK
+MODEL B_networks/n05_d10 sis 0.05 M1vC OK
+MODEL B_networks/n05_d09 sis 0.1 M1vC OK
+MODEL B_networks/n05_d09 kuramoto 0.1 M3C OK
+DATASET_DONE 146 150 {'instance': 'B_networks/n05_d09', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n05_d10 sis 0.05 M3C OK
+MODEL B_networks/n05_d10 sis 0.1 M0D OK
+MODEL B_networks/n05_d10 sis 0.1 M0sD OK
+MODEL B_networks/n05_d10 lotka_volterra 0.1 M2B OK
+MODEL B_networks/n05_d09 sis 0.1 M3C OK
+DATASET_DONE 147 150 {'instance': 'B_networks/n05_d09', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n05_d10 kuramoto 0.1 M1B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.1 M1vC OK
+MODEL B_networks/n05_d10 sis 0.1 M1B OK
+MODEL B_networks/n05_d10 lotka_volterra 0.1 M3C OK
+DATASET_DONE 148 150 {'instance': 'B_networks/n05_d10', 'system': 'lotka_volterra', 'counts': {'NA': 2, 'OK': 16}}
+MODEL B_networks/n05_d10 kuramoto 0.1 M2B OK
+MODEL B_networks/n05_d10 kuramoto 0.1 M1vC OK
+MODEL B_networks/n05_d10 sis 0.1 M2B OK
+MODEL B_networks/n05_d10 kuramoto 0.1 M3C OK
+DATASET_DONE 149 150 {'instance': 'B_networks/n05_d10', 'system': 'kuramoto', 'counts': {'OK': 18}}
+MODEL B_networks/n05_d10 sis 0.1 M1vC OK
+MODEL B_networks/n05_d10 sis 0.1 M3C OK
+DATASET_DONE 150 150 {'instance': 'B_networks/n05_d10', 'system': 'sis', 'counts': {'NA': 2, 'OK': 16}}
+ANALYSED B B_networks/n01_d01 kuramoto
+ANALYSED B B_networks/n01_d01 lotka_volterra
+ANALYSED B B_networks/n01_d01 sis
+ANALYSED B B_networks/n01_d02 kuramoto
+ANALYSED B B_networks/n01_d02 lotka_volterra
+ANALYSED B B_networks/n01_d02 sis
+ANALYSED B B_networks/n01_d03 kuramoto
+ANALYSED B B_networks/n01_d03 lotka_volterra
+ANALYSED B B_networks/n01_d03 sis
+ANALYSED B B_networks/n01_d04 kuramoto
+ANALYSED B B_networks/n01_d04 lotka_volterra
+ANALYSED B B_networks/n01_d04 sis
+ANALYSED B B_networks/n01_d05 kuramoto
+ANALYSED B B_networks/n01_d05 lotka_volterra
+ANALYSED B B_networks/n01_d05 sis
+ANALYSED B B_networks/n01_d06 kuramoto
+ANALYSED B B_networks/n01_d06 lotka_volterra
+ANALYSED B B_networks/n01_d06 sis
+ANALYSED B B_networks/n01_d07 kuramoto
+ANALYSED B B_networks/n01_d07 lotka_volterra
+ANALYSED B B_networks/n01_d07 sis
+ANALYSED B B_networks/n01_d08 kuramoto
+ANALYSED B B_networks/n01_d08 lotka_volterra
+ANALYSED B B_networks/n01_d08 sis
+ANALYSED B B_networks/n01_d09 kuramoto
+ANALYSED B B_networks/n01_d09 lotka_volterra
+ANALYSED B B_networks/n01_d09 sis
+ANALYSED B B_networks/n01_d10 kuramoto
+ANALYSED B B_networks/n01_d10 lotka_volterra
+ANALYSED B B_networks/n01_d10 sis
+ANALYSED B B_networks/n02_d01 kuramoto
+ANALYSED B B_networks/n02_d01 lotka_volterra
+ANALYSED B B_networks/n02_d01 sis
+ANALYSED B B_networks/n02_d02 kuramoto
+ANALYSED B B_networks/n02_d02 lotka_volterra
+ANALYSED B B_networks/n02_d02 sis
+ANALYSED B B_networks/n02_d03 kuramoto
+ANALYSED B B_networks/n02_d03 lotka_volterra
+ANALYSED B B_networks/n02_d03 sis
+ANALYSED B B_networks/n02_d04 kuramoto
+ANALYSED B B_networks/n02_d04 lotka_volterra
+ANALYSED B B_networks/n02_d04 sis
+ANALYSED B B_networks/n02_d05 kuramoto
+ANALYSED B B_networks/n02_d05 lotka_volterra
+ANALYSED B B_networks/n02_d05 sis
+ANALYSED B B_networks/n02_d06 kuramoto
+ANALYSED B B_networks/n02_d06 lotka_volterra
+ANALYSED B B_networks/n02_d06 sis
+ANALYSED B B_networks/n02_d07 kuramoto
+ANALYSED B B_networks/n02_d07 lotka_volterra
+ANALYSED B B_networks/n02_d07 sis
+ANALYSED B B_networks/n02_d08 kuramoto
+ANALYSED B B_networks/n02_d08 lotka_volterra
+ANALYSED B B_networks/n02_d08 sis
+ANALYSED B B_networks/n02_d09 kuramoto
+ANALYSED B B_networks/n02_d09 lotka_volterra
+ANALYSED B B_networks/n02_d09 sis
+ANALYSED B B_networks/n02_d10 kuramoto
+ANALYSED B B_networks/n02_d10 lotka_volterra
+ANALYSED B B_networks/n02_d10 sis
+ANALYSED B B_networks/n03_d01 kuramoto
+ANALYSED B B_networks/n03_d01 lotka_volterra
+ANALYSED B B_networks/n03_d01 sis
+ANALYSED B B_networks/n03_d02 kuramoto
+ANALYSED B B_networks/n03_d02 lotka_volterra
+ANALYSED B B_networks/n03_d02 sis
+ANALYSED B B_networks/n03_d03 kuramoto
+ANALYSED B B_networks/n03_d03 lotka_volterra
+ANALYSED B B_networks/n03_d03 sis
+ANALYSED B B_networks/n03_d04 kuramoto
+ANALYSED B B_networks/n03_d04 lotka_volterra
+ANALYSED B B_networks/n03_d04 sis
+ANALYSED B B_networks/n03_d05 kuramoto
+ANALYSED B B_networks/n03_d05 lotka_volterra
+ANALYSED B B_networks/n03_d05 sis
+ANALYSED B B_networks/n03_d06 kuramoto
+ANALYSED B B_networks/n03_d06 lotka_volterra
+ANALYSED B B_networks/n03_d06 sis
+ANALYSED B B_networks/n03_d07 kuramoto
+ANALYSED B B_networks/n03_d07 lotka_volterra
+ANALYSED B B_networks/n03_d07 sis
+ANALYSED B B_networks/n03_d08 kuramoto
+ANALYSED B B_networks/n03_d08 lotka_volterra
+ANALYSED B B_networks/n03_d08 sis
+ANALYSED B B_networks/n03_d09 kuramoto
+ANALYSED B B_networks/n03_d09 lotka_volterra
+ANALYSED B B_networks/n03_d09 sis
+ANALYSED B B_networks/n03_d10 kuramoto
+ANALYSED B B_networks/n03_d10 lotka_volterra
+ANALYSED B B_networks/n03_d10 sis
+ANALYSED B B_networks/n04_d01 kuramoto
+ANALYSED B B_networks/n04_d01 lotka_volterra
+ANALYSED B B_networks/n04_d01 sis
+ANALYSED B B_networks/n04_d02 kuramoto
+ANALYSED B B_networks/n04_d02 lotka_volterra
+ANALYSED B B_networks/n04_d02 sis
+ANALYSED B B_networks/n04_d03 kuramoto
+ANALYSED B B_networks/n04_d03 lotka_volterra
+ANALYSED B B_networks/n04_d03 sis
+ANALYSED B B_networks/n04_d04 kuramoto
+ANALYSED B B_networks/n04_d04 lotka_volterra
+ANALYSED B B_networks/n04_d04 sis
+ANALYSED B B_networks/n04_d05 kuramoto
+ANALYSED B B_networks/n04_d05 lotka_volterra
+ANALYSED B B_networks/n04_d05 sis
+ANALYSED B B_networks/n04_d06 kuramoto
+ANALYSED B B_networks/n04_d06 lotka_volterra
+ANALYSED B B_networks/n04_d06 sis
+ANALYSED B B_networks/n04_d07 kuramoto
+ANALYSED B B_networks/n04_d07 lotka_volterra
+ANALYSED B B_networks/n04_d07 sis
+ANALYSED B B_networks/n04_d08 kuramoto
+ANALYSED B B_networks/n04_d08 lotka_volterra
+ANALYSED B B_networks/n04_d08 sis
+ANALYSED B B_networks/n04_d09 kuramoto
+ANALYSED B B_networks/n04_d09 lotka_volterra
+ANALYSED B B_networks/n04_d09 sis
+ANALYSED B B_networks/n04_d10 kuramoto
+ANALYSED B B_networks/n04_d10 lotka_volterra
+ANALYSED B B_networks/n04_d10 sis
+ANALYSED B B_networks/n05_d01 kuramoto
+ANALYSED B B_networks/n05_d01 lotka_volterra
+ANALYSED B B_networks/n05_d01 sis
+ANALYSED B B_networks/n05_d02 kuramoto
+ANALYSED B B_networks/n05_d02 lotka_volterra
+ANALYSED B B_networks/n05_d02 sis
+ANALYSED B B_networks/n05_d03 kuramoto
+ANALYSED B B_networks/n05_d03 lotka_volterra
+ANALYSED B B_networks/n05_d03 sis
+ANALYSED B B_networks/n05_d04 kuramoto
+ANALYSED B B_networks/n05_d04 lotka_volterra
+ANALYSED B B_networks/n05_d04 sis
+ANALYSED B B_networks/n05_d05 kuramoto
+ANALYSED B B_networks/n05_d05 lotka_volterra
+ANALYSED B B_networks/n05_d05 sis
+ANALYSED B B_networks/n05_d06 kuramoto
+ANALYSED B B_networks/n05_d06 lotka_volterra
+ANALYSED B B_networks/n05_d06 sis
+ANALYSED B B_networks/n05_d07 kuramoto
+ANALYSED B B_networks/n05_d07 lotka_volterra
+ANALYSED B B_networks/n05_d07 sis
+ANALYSED B B_networks/n05_d08 kuramoto
+ANALYSED B B_networks/n05_d08 lotka_volterra
+ANALYSED B B_networks/n05_d08 sis
+ANALYSED B B_networks/n05_d09 kuramoto
+ANALYSED B B_networks/n05_d09 lotka_volterra
+ANALYSED B B_networks/n05_d09 sis
+ANALYSED B B_networks/n05_d10 kuramoto
+ANALYSED B B_networks/n05_d10 lotka_volterra
+ANALYSED B B_networks/n05_d10 sis
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 275, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 269, in main
+    analyse_stage(out,plan,stage)
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 332, in analyse_stage
+    return finalise_stage(out,plan,stage)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 368, in finalise_stage
+    assert native.get(k,0.)==float(v),(name,k,v,native.get(k))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('B_networks/n01_d05/lotka_volterra/seed_1824191664/noise_000/M3C', (2, 11, 8, 0), 9.339027795928624e-09, None)
+
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 275, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_run.py", line 269, in main
+    analyse_stage(out,plan,stage)
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 332, in analyse_stage
+    return finalise_stage(out,plan,stage)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/scripts/support_analyse.py", line 368, in finalise_stage
+    assert native.get(k,0.)==float(v),(name,k,v,native.get(k))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('B_networks/n01_d05/lotka_volterra/seed_1824191664/noise_000/M3C', (2, 11, 8, 0), 9.339027795928624e-09, None)
+COMPLETE {"status": "COMPLETE", "models": 3240, "counts": {"OK": 3000, "NA": 240}, "stages": {"A": {"status": "PASS", "models": 540, "counts": {"OK": 500, "NA": 40}, "native_candidate_checks": 787500, "red_groups": 100, "finished": "2026-10-26T19:40:17.103785+08:00", "raw_candidate_scores_exact": true, "native_thresholded_structure_exact": true, "native_strict_threshold": 1e-08, "nonzero_subthreshold_raw_scores_preserved": 0}, "B": {"status": "PASS", "models": 2700, "counts": {"OK": 2500, "NA": 200}, "native_candidate_checks": 3937500, "red_groups": 0, "finished": "2026-10-26T19:40:58.387597+08:00", "raw_candidate_scores_exact": true, "native_thresholded_structure_exact": true, "native_strict_threshold": 1e-08, "nonzero_subthreshold_raw_scores_preserved": 6}}, "wall_seconds": 64.85700155305676, "finished": "2026-10-26T19:41:00.005783+08:00", "old_files_verified": 1730, "source_hashes_verified": 13, "systems": ["kuramoto", "lotka_volterra", "sis"], "noise_ratios": [0.0, 0.05, 0.1], "seeds_per_network": 10, "original_fixed_networks": 1, "additional_networks": 5, "independent_decode": "PASS"}

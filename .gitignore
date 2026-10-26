@@ -3,3 +3,9 @@
 /.julia-depot-r0/
 __pycache__/
 *.py[cod]
+
+# Generated full diagnostic runs are published through an explicit file list.
+/results/diagnostics/
+/reports/support_preflight_20261026/smoke/
+/exports/
+*.pid

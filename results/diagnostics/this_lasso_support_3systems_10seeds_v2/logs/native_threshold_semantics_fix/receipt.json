@@ -1,0 +1,28 @@
+{
+  "status": "FIXED_AND_VERIFIED",
+  "created": "2026-10-26T19:39:52.942172+08:00",
+  "changes": {
+    "scripts/support_analyse.py": {
+      "before": "843dc3475a1c2f6ea9e2c7313496255e08995310148638973f9ceece423c0b8a",
+      "after": "51a0b36614b6db977904a626b4a90d4d59245c7c3608ad7e0894ac51c6d2c912"
+    },
+    "src/experiments/support_diagnostics.py": {
+      "before": "9030c32b3d30de498bb088be66762c3d4e2b585f1e0b10e9030e78b80c20516e",
+      "after": "c946b220cea4714ddb9e97ef697af5400c7a032981e0a6b1619eff03af4706bb"
+    },
+    "scripts/support_native_decode.jl": {
+      "before": null,
+      "after": "38e3196d447ab50f6cea5ec15c0386ecfc1b6737e22b10bea65f15423c02a73a"
+    }
+  },
+  "cause": "Original native decoder uses strict abs(coef)>1e-8, while AP scores are unthresholded",
+  "solution": "Compare native structures after identical cutoff AND independently export/check all continuous scores in Julia",
+  "raw_scores_or_metrics_changed": false,
+  "coefficients_changed": false,
+  "cutoff_changed": false,
+  "tests_passed": 8,
+  "A_and_B_tables_reused": true,
+  "validation_time": "2026-10-26T19:43:11.398232+08:00",
+  "raw_and_native_candidate_checks": 4725000,
+  "raw_subthreshold_scores_preserved": 6
+}

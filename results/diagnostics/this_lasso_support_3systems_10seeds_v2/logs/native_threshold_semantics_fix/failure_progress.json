@@ -1,0 +1,8 @@
+{
+  "status": "ERROR",
+  "stage": "B",
+  "completed_datasets": 150,
+  "planned_datasets": 150,
+  "updated": "2026-10-26T19:19:12.815296+08:00",
+  "error": "Traceback (most recent call last):\n  File \"/home/yg/THIS-Lasso/scripts/support_run.py\", line 275, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/yg/THIS-Lasso/scripts/support_run.py\", line 269, in main\n    analyse_stage(out,plan,stage)\n  File \"/home/yg/THIS-Lasso/scripts/support_analyse.py\", line 332, in analyse_stage\n    return finalise_stage(out,plan,stage)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yg/THIS-Lasso/scripts/support_analyse.py\", line 368, in finalise_stage\n    assert native.get(k,0.)==float(v),(name,k,v,native.get(k))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('B_networks/n01_d05/lotka_volterra/seed_1824191664/noise_000/M3C', (2, 11, 8, 0), 9.339027795928624e-09, None)\n"
+}

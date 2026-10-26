@@ -1,0 +1,21 @@
+{
+  "status": "FIXED_AND_RESUMING",
+  "created": "2026-10-26T17:24:43.668575+08:00",
+  "changes": {
+    "scripts/support_analyse.py": {
+      "before": "a3e3253de2f0eee7cb5957f694ca5884bd7d52c4ecc0329f810b22d915b36033",
+      "after": "beca2881c076020264355ccfc491fb5dc88470a01461a5ca0b7e5dfd9a97365a"
+    },
+    "scripts/support_run.py": {
+      "before": "cbb99d4da7b8f29111d07bd8b7609e1125f1dd9c1d220b75461e6439757714f1",
+      "after": "db4677bb7b314f3acab1c9311ef895dddddaf768c2bad8f0afc8280bef2b443b"
+    }
+  },
+  "cause": "Native Julia decoder did not receive the JULIA_DEPOT_PATH used by data preparation",
+  "dependency_probe": "PASS with existing depot; no dependency installation required",
+  "scope": "Explicit decoder environment; table resume checkpoint; truthful ERROR status on future exceptions",
+  "model_coefficients_or_parameters_changed": false,
+  "completed_A_models_preserved": 540,
+  "existing_analysis_tables_reused": true,
+  "tests_passed": 6
+}

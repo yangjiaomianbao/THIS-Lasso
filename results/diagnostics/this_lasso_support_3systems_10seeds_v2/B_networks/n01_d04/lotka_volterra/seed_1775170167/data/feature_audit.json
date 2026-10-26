@@ -1,0 +1,8 @@
+{
+  "full_library_features": 816,
+  "Julia_probe_max_abs_difference": 0.0,
+  "training_samples": 1024,
+  "feature_screening": false,
+  "degree": 3,
+  "exchange": "Exact upstream d order, Float64 NPY arrays; Julia CSV probes checked at 1e-13"
+}

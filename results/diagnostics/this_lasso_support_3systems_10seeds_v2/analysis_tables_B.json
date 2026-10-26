@@ -1,0 +1,21 @@
+{
+  "status": "TABLES_COMMITTED",
+  "stage": "B",
+  "created": "2026-10-26T19:19:00.878965+08:00",
+  "files": {
+    "B_networks/paired_summary.csv": "24b368578997520af87f639a71c014dd58020ce1e1506a48bad4ec297f93ccfc",
+    "B_networks/03_support_structure_relation.csv": "e40b4308f1229c60cfcea75eeffaba5fdce239e94c9ec829ac51fbdf9508244c",
+    "B_networks/paired_differences.csv": "2ad55bfe233d081c4890c0933e1bf2b69a08d44ec0169828e356db445709cf73",
+    "B_networks/holdout_1se_structure.csv": "7d951a87c17b0cfd3737f1816b81c297cdca5777e0e3904d13c63e8e360d140b",
+    "B_networks/07_redundancy_diagnostics.csv": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c",
+    "B_networks/01_coefficient_support_nodes.csv": "e9131d289da7837a579650973c032dd28e52c7dc00c84cfcb3d80fb4567152aa",
+    "B_networks/structure_summary.csv": "778765859bf59d945289d23806810022a89fe87b792ca658558607d634316bc1",
+    "B_networks/02_coefficient_support_summary.csv": "a062564ecb1cf3e0d6b4fd537294752ff828e1b89feeeebf6078dada816c3122",
+    "B_networks/05_parameter_selection_diagnostics.csv": "1780e3d9ab376d87d5776ce413db38e485275f76fa44a1a255013a5147366b71",
+    "B_networks/01_coefficient_support_seed.csv": "4d375d393b2afb6379306f35420f3ece778127cc02ff0c235c12d421fa19f094",
+    "B_networks/04_alpha_path.csv": "575de3609e2b6cd7076c929e86b2cdc043999ccf7064b44678ce28dd3999efef",
+    "B_networks/06_decoder_threshold_diagnostics.csv": "3bff19233b7d46c8c80c913615ad9081af3e297b7e36de755281d77d04740161",
+    "B_networks/04_alpha_path_nodes.csv.gz": "fc612829ae9f6cc4bd67049f2a4e8b4418d7350a79a64a72ef8e4ce0567418e5",
+    "B_networks/native_decode_request.toml": "92879f0d19e9c97f2dce7a4a4ebb71ac66bcfa5a2ba7bd0a81b0012362a17850"
+  }
+}

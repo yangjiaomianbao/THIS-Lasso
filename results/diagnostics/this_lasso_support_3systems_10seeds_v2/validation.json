@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "completed": "2026-10-26T19:43:11.398380+08:00",
+  "models": 3240,
+  "counts": {
+    "OK": 3000,
+    "NA": 240,
+    "FAILED": 0
+  },
+  "native_thresholded_structure_checks": 4725000,
+  "unthresholded_raw_score_checks": 4725000,
+  "native_strict_threshold": 1e-08,
+  "raw_subthreshold_scores_preserved": 6,
+  "retained_original_files_verified": 1730,
+  "source_hashes_verified": 13,
+  "new_diagnostic_tests_passed": 8,
+  "full_existing_suite": {
+    "passed": 144,
+    "historical_missing_fixture_errors": 1
+  },
+  "checkpoints_and_model_locks_verified": true,
+  "parameter_or_metric_change_during_repairs": false
+}

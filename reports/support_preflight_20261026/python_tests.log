@@ -1,0 +1,31 @@
+....................................................................................................................R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=echo N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=1 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=1 P=3 K=80
+R3_BRIDGE_PASS solver=lasso mode=solve N=2 P=3 K=80
+R3_BRIDGE_PASS solver=adaptive_lasso mode=solve N=2 P=3 K=80
+E1_FIT seed=1 ratio=0.10 method=M1 status=NA seconds=0.000
+..........E1_FIT seed=1 ratio=0.10 method=M3 status=FAILED seconds=0.017
+....E..............
+======================================================================
+ERROR: test_full_taylor_contract_and_whole_trajectory_splits (test_refactor_s2.DataAndScoreExtractionTests.test_full_taylor_contract_and_whole_trajectory_splits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yg/THIS-Lasso/tests/test_refactor_s2.py", line 127, in test_full_taylor_contract_and_whole_trajectory_splits
+    data=load_dataset(ROOT/'results/r5/e1_full_independent/clean',22261035)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/src/data/contracts.py", line 23, in load_dataset
+    metadata = tomllib.loads((directory/'metadata.toml').read_text())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/.venv-r0/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yg/THIS-Lasso/.venv-r0/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/yg/THIS-Lasso/results/r5/e1_full_independent/clean/seed_22261035/data/metadata.toml'
+
+----------------------------------------------------------------------
+Ran 145 tests in 2.853s
+
+FAILED (errors=1)

@@ -2,7 +2,11 @@
 
 保留 THIS 原始 Taylor 特征与高阶结构解码，比较 STLSQ、普通 LASSO 和 Ridge 初始化的 Adaptive LASSO。
 
-当前科研结果：[R5 E1正式报告](reports/R5_report.md)。30个独立初值seed、四档响应噪声，480条记录：420 OK、60零噪声BIC NA、0 FAILED。当前不支持Adaptive LASSO普遍优于普通LASSO；20%噪声下M2三体F1低于M1。
+最新完成（2026-10-26）：[三类动力学、10种子支持集与误检诊断](results/diagnostics/this_lasso_support_3systems_10seeds_v2/REPORT.md)。保留 Kuramoto、Lotka–Volterra、SIS，15个物理节点、0%/5%/10%响应噪声；固定网络10次数据重复，加5个额外网络各10次重复。共3,240条配置：3,000 OK、240原BIC不适用、0 FAILED；472.5万个候选边的原生结构和连续分数核验通过。
+
+[固定网络报告](results/diagnostics/this_lasso_support_3systems_10seeds_v2/A_fixed/REPORT.md) · [多网络报告](results/diagnostics/this_lasso_support_3systems_10seeds_v2/B_networks/REPORT.md) · [GitHub交付范围与文件清单](docs/publication/support_v2_20261026/README.md)。GitHub保存代码、配置、指标表、图表与哈希；约61 GiB的完整本地产物包含大型系数路径和原始矩阵，未直接放入Git历史。
+
+早期科研结果：[R5 E1正式报告](reports/R5_report.md)。30个独立初值seed、四档响应噪声，480条记录：420 OK、60零噪声BIC NA、0 FAILED。该批次不支持Adaptive LASSO普遍优于普通LASSO；20%噪声下M2三体F1低于M1。
 
 从 [文档导航](docs/README.md) 开始。正式原始指标、诊断、配置、选择锁和图表完整保存在 [results/r5/e1_full_independent](results/r5/e1_full_independent/)。[archive/INDEX.md](archive/INDEX.md)说明历史报告、smoke、中止批次及旧README的来源和位置。
 
@@ -10,6 +14,6 @@ S0–S6文件治理与重构已完成：[最终审计报告](docs/refactor/S6_fi
 
 公共实现已按S2提取至src中的bridge、data、preprocessing、metrics及solvers模块，旧R阶段接口保留。Taylor、Adaptive核心与原论文源码保持原样；[S2接口与回归报告](docs/refactor/S2_report.md)记录实际变化和历史源码哈希保护的边界。
 
-Python环境是项目内Conda prefix `.venv-r0`（Python3.11.17），Julia为1.9.4。激活及锁定重建说明见 [environment/r0/README.md](environment/r0/README.md)。主项目尚未初始化Git，两份原论文在upstream下各自保有独立Git仓库。
+Python环境是项目内Conda prefix `.venv-r0`（Python3.11.17），Julia为1.9.4。激活及锁定重建说明见 [environment/r0/README.md](environment/r0/README.md)。主项目使用Git管理，两份原论文在upstream下各自保有独立Git仓库。
 
 R4的M0s/M1v对照保留；R4完整B、R5 E2/E3尚未运行，仍需独立科研授权。本次文件整理不更改算法或正式实验结论。

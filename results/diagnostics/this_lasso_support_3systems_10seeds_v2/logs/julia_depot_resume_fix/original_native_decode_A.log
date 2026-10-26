@@ -1,0 +1,15 @@
+ERROR: LoadError: ArgumentError: Package DelimitedFiles [8bb1440f-4735-579b-a4ab-409b98df4dab] is required but does not seem to be installed:
+ - Run `Pkg.instantiate()` to install all recorded dependencies.
+
+Stacktrace:
+ [1] _require(pkg::Base.PkgId, env::String)
+   @ Base ./loading.jl:1774
+ [2] _require_prelocked(uuidkey::Base.PkgId, env::String)
+   @ Base ./loading.jl:1660
+ [3] macro expansion
+   @ ./loading.jl:1648 [inlined]
+ [4] macro expansion
+   @ ./lock.jl:267 [inlined]
+ [5] require(into::Module, mod::Symbol)
+   @ Base ./loading.jl:1611
+in expression starting at /home/yg/THIS-Lasso/scripts/dynamics30_native_decode.jl:2

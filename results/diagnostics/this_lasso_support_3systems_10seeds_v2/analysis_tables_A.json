@@ -1,0 +1,22 @@
+{
+  "status": "TABLES_COMMITTED",
+  "stage": "A",
+  "created": "2026-10-26T17:24:43.375916+08:00",
+  "provenance": "Tables completed before Julia dependency-path failure; original model locks verified during finalisation",
+  "files": {
+    "A_fixed/paired_summary.csv": "f7dd5ad6fd5c48bf90d1fc1311faec2722fbb60ee52893c65173e403ec864439",
+    "A_fixed/03_support_structure_relation.csv": "81310b564d6f8ac25eca9a51f953275ad2827fee9ecf0f62de7333aa2d0ef18f",
+    "A_fixed/paired_differences.csv": "fbc5347963e726842e8a7ef25d2dad9fd3b77945fe2df526ffe6a4f756369bd9",
+    "A_fixed/holdout_1se_structure.csv": "922b399c76b3c4ca1e1b467436d50c45865f9fe330f1a189edbd31b02c205b35",
+    "A_fixed/07_redundancy_diagnostics.csv": "e82859c474098a696c27c075d44df4a6cdb8c8a636b5277abfdbb56658ae8567",
+    "A_fixed/01_coefficient_support_nodes.csv": "5d52d6693ecebfa6703cbf53497d03502ce60e13f1108ce97e280d1a83b9a946",
+    "A_fixed/structure_summary.csv": "2af6f8c180b76581c6ce51d7d9f1ac2c75872cd9cabc8b4a08eea7ee7f76d962",
+    "A_fixed/02_coefficient_support_summary.csv": "0da52fe583197880211dda922a002c7ffd7698d96996a4b64567224aba29d42e",
+    "A_fixed/05_parameter_selection_diagnostics.csv": "1aaafb3f4e81b59cd0a877ceeeefd279cec2cc830e76a2441d8d7140f26faa19",
+    "A_fixed/01_coefficient_support_seed.csv": "6a8b044861403203e62ad718353e6378085a8e2c0bb685c106a41ce4cc3e0077",
+    "A_fixed/04_alpha_path.csv": "33ade5cc76ed843fafb3f57555d8d62f8c7ec08081c45d8a52e3d88c641cd3c9",
+    "A_fixed/06_decoder_threshold_diagnostics.csv": "a9647ebaf7f708992796dcf397af7d87d783d949b7e5bfd9b174c90ed61765b8",
+    "A_fixed/04_alpha_path_nodes.csv.gz": "0cf9a424d0a02762b0c8e56005a388c5cba34522ffb9073bdd8754803bd3580c",
+    "A_fixed/native_decode_request.toml": "cf0b9a2c68937625ccda41fa31361d4fb166fe35093fe2287552c4355399d326"
+  }
+}

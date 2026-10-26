@@ -1,0 +1,24 @@
+{
+  "status": "FIXED_AND_RESUMING",
+  "created": "2026-10-26T15:52:34.053377+08:00",
+  "reason": "Repeated NPZ member indexing decompressed the entire candidate matrix per path row",
+  "changes": {
+    "scripts/support_analyse.py": {
+      "before": "b2e220807ccb6511111693b51440b2d9e4140f5e2fc93796519fc722296b607e",
+      "after": "a3e3253de2f0eee7cb5957f694ca5884bd7d52c4ecc0329f810b22d915b36033"
+    },
+    "scripts/support_run.py": {
+      "before": "80ed89df01bf79d9e0e827cb3e29d0274b80a4c6d3d0454ab9dbbc3ce1144872",
+      "after": "cbb99d4da7b8f29111d07bd8b7609e1125f1dd9c1d220b75461e6439757714f1"
+    }
+  },
+  "model_coefficients_or_parameters_changed": false,
+  "source_before_preserved": true,
+  "benchmark": {
+    "repeated_20_access_seconds": 0.5112198060378432,
+    "load_all_once_seconds": 0.03974195197224617,
+    "cached_20_access_seconds": 7.075956091284752e-06
+  },
+  "exact_value_comparison": "PASS",
+  "completed_A_models_preserved": 540
+}
