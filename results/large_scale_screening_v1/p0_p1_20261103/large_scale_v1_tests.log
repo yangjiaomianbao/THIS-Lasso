@@ -1,0 +1,30 @@
+test_actual_native_julia_library_and_decode (test_system.ScientificTests.test_actual_native_julia_library_and_decode) ... ok
+test_affine_scale_invariance (test_system.ScientificTests.test_affine_scale_invariance) ... ok
+test_backend_NA_not_fallback (test_system.ScientificTests.test_backend_NA_not_fallback) ... ok
+test_backend_numerical_regression_to_public_M2 (test_system.ScientificTests.test_backend_numerical_regression_to_public_M2) ... ok
+test_blocked_matches_single_block (test_system.ScientificTests.test_blocked_matches_single_block) ... ok
+test_candidate_counts_pool_and_k (test_system.ScientificTests.test_candidate_counts_pool_and_k) ... ok
+test_constant_and_small_groups (test_system.ScientificTests.test_constant_and_small_groups) ... ok
+test_correlated_proxy_is_not_causal_identification (test_system.ScientificTests.test_correlated_proxy_is_not_causal_identification) ... ok
+test_decode_excludes_repeated_and_target_terms (test_system.ScientificTests.test_decode_excludes_repeated_and_target_terms) ... ok
+test_fwl_exact_added_feature_ols (test_system.ScientificTests.test_fwl_exact_added_feature_ols) ... ok
+test_fwl_nearly_projected_product_avoids_norm_cancellation (test_system.ScientificTests.test_fwl_nearly_projected_product_avoids_norm_cancellation) ... ok
+test_gc_additive_nonlinear_and_proxy_finite (test_system.ScientificTests.test_gc_additive_nonlinear_and_proxy_finite) ... ok
+test_gc_additive_nonlinear_false_positive_boundary (test_system.ScientificTests.test_gc_additive_nonlinear_false_positive_boundary) ... ok
+test_gc_product_failure_boundary (test_system.ScientificTests.test_gc_product_failure_boundary) ... ok
+test_library_groups_and_no_duplicate_monomials (test_system.ScientificTests.test_library_groups_and_no_duplicate_monomials) ... ok
+test_linear_negative_control_fwl (test_system.ScientificTests.test_linear_negative_control_fwl) ... ok
+test_neural_symmetry_both_architectures (test_system.ScientificTests.test_neural_symmetry_both_architectures) ... ok
+test_noise_same_unit_stream_across_ratios (test_system.ScientificTests.test_noise_same_unit_stream_across_ratios) ... ok
+test_pair_symmetry (test_system.ScientificTests.test_pair_symmetry) ... ok
+test_periodic_coordinates_ignore_two_pi_shifts (test_system.ScientificTests.test_periodic_coordinates_ignore_two_pi_shifts) ... ok
+test_product_residual_screens (test_system.ScientificTests.test_product_residual_screens) ... ok
+test_scc_slope_is_intercept_ols_not_correlation (test_system.ScientificTests.test_scc_slope_is_intercept_ols_not_correlation) ... ok
+test_sparse_ap_exact_including_zero_ties (test_system.ScientificTests.test_sparse_ap_exact_including_zero_ties) ... ok
+test_sparse_rhs_matches_explicit_edges_and_zero_degree (test_system.ScientificTests.test_sparse_rhs_matches_explicit_edges_and_zero_degree) ... ok
+test_whole_trajectory_split_and_seed_separation (test_system.ScientificTests.test_whole_trajectory_split_and_seed_separation) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 4.389s
+
+OK

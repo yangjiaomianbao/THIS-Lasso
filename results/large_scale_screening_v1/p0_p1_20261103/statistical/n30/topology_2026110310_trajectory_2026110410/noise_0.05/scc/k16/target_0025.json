@@ -1,0 +1,133 @@
+{
+  "N": 30,
+  "topology_seed": 2026110310,
+  "trajectory_seed": 2026110410,
+  "target": 25,
+  "method": "scc",
+  "K": 16,
+  "mode": "full",
+  "noise": 0.05,
+  "sample_budget": "scaled",
+  "original_candidates": 406,
+  "pool_size": 406,
+  "selected_count": 16,
+  "retained_true": 1,
+  "pool_recall": 1.0,
+  "Recall_at_K": 0.16666666666666666,
+  "Precision_at_K": 0.0625,
+  "compression_ratio": 0.03940886699507389,
+  "pool_AP": 0.025597280278259284,
+  "full_pipeline_screen_AP": 0.025597280278259284,
+  "screening_seconds": 0.015108739957213402,
+  "cpu_peak_rss_bytes": 180592640,
+  "gpu_peak_bytes": null,
+  "gpu_reason": "CPU run; CUDA not used",
+  "common_preprocess_seconds_per_target": 8.335167852540811e-05,
+  "data_generation_seconds_per_target": 0.0015038679974774519,
+  "pool_generation_seconds": 0.00013849791139364243,
+  "features": 242,
+  "experimental": false,
+  "candidate_group_columns": {
+    "9,29": [
+      111,
+      95,
+      112,
+      110
+    ],
+    "6,11": [
+      61,
+      56,
+      62,
+      63
+    ],
+    "6,29": [
+      73,
+      60,
+      74,
+      72
+    ],
+    "0,9": [
+      11,
+      5,
+      12,
+      13
+    ],
+    "0,6": [
+      8,
+      4,
+      9,
+      10
+    ],
+    "14,21": [
+      146,
+      144,
+      147,
+      148
+    ],
+    "9,23": [
+      105,
+      93,
+      106,
+      107
+    ],
+    "6,14": [
+      64,
+      57,
+      65,
+      66
+    ],
+    "19,29": [
+      183,
+      179,
+      184,
+      182
+    ],
+    "11,19": [
+      124,
+      122,
+      125,
+      126
+    ],
+    "9,11": [
+      96,
+      90,
+      97,
+      98
+    ],
+    "3,9": [
+      36,
+      34,
+      37,
+      38
+    ],
+    "9,21": [
+      99,
+      91,
+      100,
+      101
+    ],
+    "6,23": [
+      67,
+      58,
+      68,
+      69
+    ],
+    "0,21": [
+      14,
+      6,
+      15,
+      16
+    ],
+    "9,22": [
+      102,
+      92,
+      103,
+      104
+    ]
+  },
+  "status": "NA",
+  "reason": "Rank-deficient or numerically unstable full design. Explicitly use selection=\"validation\" with independent trajectory groups.",
+  "feature_seconds": 0.002193764317780733,
+  "regression_seconds": 0.04376849997788668,
+  "pipeline_seconds": 0.0627967218402773
+}

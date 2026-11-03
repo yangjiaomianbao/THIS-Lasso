@@ -1,0 +1,34 @@
+[
+  {
+    "architecture": "light",
+    "steps": 3,
+    "smoke_only": true,
+    "parameters": 1681,
+    "pretraining_seconds": 0.04537373501807451,
+    "best_validation_loss": 0.6506835165477934,
+    "test_AP": 0.3264388114204205,
+    "checkpoint": "light.pt",
+    "checkpoint_sha256": "5b6ea2e1a9cc98cd5bb7f0bd01ddd737b31faaa0830ff53266749991ad378d07",
+    "device": "cpu",
+    "calibration": "sigmoid output, class-weighted training; not calibrated probabilities",
+    "train_positive": 96.0,
+    "train_negative": 240.0,
+    "positive_weight": 2.5
+  },
+  {
+    "architecture": "transformer",
+    "steps": 3,
+    "smoke_only": true,
+    "parameters": 3905,
+    "pretraining_seconds": 0.1084286286495626,
+    "best_validation_loss": 0.6987227825891404,
+    "test_AP": 0.28847506737182615,
+    "checkpoint": "transformer.pt",
+    "checkpoint_sha256": "aa1f0cd979c8c63476768ca7ecc1f3d1edb02e161d27f640b40669177ffd0b01",
+    "device": "cpu",
+    "calibration": "sigmoid output, class-weighted training; not calibrated probabilities",
+    "train_positive": 96.0,
+    "train_negative": 240.0,
+    "positive_weight": 2.5
+  }
+]

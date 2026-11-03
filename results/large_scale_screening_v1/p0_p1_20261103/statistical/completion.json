@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE_P1",
+  "elapsed_seconds": 11.081304745282978,
+  "newly_computed_trials": 150,
+  "sources_unchanged": true,
+  "larger_stages_launched": false,
+  "backend": "existing M2 guarded Adaptive LASSO BIC"
+}

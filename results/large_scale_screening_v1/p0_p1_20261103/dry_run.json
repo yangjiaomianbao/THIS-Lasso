@@ -1,0 +1,41 @@
+{
+  "stage": "p1",
+  "methods": [
+    "pearson",
+    "scc",
+    "scc_ols",
+    "fwl",
+    "gc_cmi"
+  ],
+  "rows": [
+    {
+      "N": 30,
+      "mode": "full",
+      "samples": [
+        1024,
+        256,
+        256
+      ],
+      "candidates_per_target": 406,
+      "candidates_network": 12180,
+      "scored_per_target": 406,
+      "K": 16,
+      "design_columns_per_target": 242,
+      "raw_train_design_MiB": 1.890625,
+      "full_cubic_columns_forbidden": 5456,
+      "expected_BIC_guard": "requires rank/condition/variance checks",
+      "fits": 150
+    }
+  ],
+  "limits": {
+    "task_seconds": 120,
+    "memory_gib": 12,
+    "blas_threads": 1
+  },
+  "output": "results/large_scale_screening_v1/p0_p1_20261103/statistical",
+  "run_policy": "explicit stage only; no automatic P2/P3 launch",
+  "noise_ratios": [
+    0.05
+  ],
+  "time_estimate": "Use P1 measured times in REPORT.md; exact SVD/BIC cost depends on rank and cannot be inferred from candidate counts alone"
+}

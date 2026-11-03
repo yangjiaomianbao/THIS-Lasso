@@ -1,0 +1,102 @@
+{
+  "rule": "first registered combination with order max<0.85 and phase excursion<0.8; no structural F1 used",
+  "selected": {
+    "K2": 0.3,
+    "K3": 0.6
+  },
+  "trials": [
+    {
+      "K2": 0.3,
+      "K3": 0.6,
+      "acceptable": true,
+      "generation_seconds": 0.042797576170414686,
+      "nfev": [
+        26,
+        32,
+        26
+      ],
+      "phase_order_mean": 0.251743771097755,
+      "phase_order_max": 0.30138440414524376,
+      "frequency_spread_mean": 0.2672992548857909,
+      "derivative_lag1_median": 0.9999994270930915,
+      "phase_excursion_max": 0.3086875419030073,
+      "topology_sha256": "2f7a2601163067fd955e7bd7f868ac0f3192db0461b40eaef40eae462858b157",
+      "mean_pair_degree": 4.0,
+      "mean_triad_degree": 6.0,
+      "trajectory_count": 3,
+      "counts": [
+        256,
+        256,
+        256
+      ],
+      "topology_seed": 2027010310,
+      "trajectory_seed": 2027010410,
+      "response_noise_definition": "ratio * clean training derivative std(ddof=0); independent split/node streams; no state/process noise",
+      "integration": "RK45 sparse directed edge scatter",
+      "index_base": 0,
+      "split_contract": "whole trajectories, no overlap"
+    },
+    {
+      "K2": 0.1,
+      "K3": 0.3,
+      "acceptable": true,
+      "generation_seconds": 0.019990180153399706,
+      "nfev": [
+        20,
+        26,
+        20
+      ],
+      "phase_order_mean": 0.23452388351279993,
+      "phase_order_max": 0.2659861993174949,
+      "frequency_spread_mean": 0.14046842642092755,
+      "derivative_lag1_median": 0.9999999915029048,
+      "phase_excursion_max": 0.1606628487760866,
+      "topology_sha256": "2f7a2601163067fd955e7bd7f868ac0f3192db0461b40eaef40eae462858b157",
+      "mean_pair_degree": 4.0,
+      "mean_triad_degree": 6.0,
+      "trajectory_count": 3,
+      "counts": [
+        256,
+        256,
+        256
+      ],
+      "topology_seed": 2027010310,
+      "trajectory_seed": 2027010410,
+      "response_noise_definition": "ratio * clean training derivative std(ddof=0); independent split/node streams; no state/process noise",
+      "integration": "RK45 sparse directed edge scatter",
+      "index_base": 0,
+      "split_contract": "whole trajectories, no overlap"
+    },
+    {
+      "K2": 0.6,
+      "K3": 0.6,
+      "acceptable": true,
+      "generation_seconds": 0.01676455605775118,
+      "nfev": [
+        38,
+        32,
+        38
+      ],
+      "phase_order_mean": 0.2616062091158517,
+      "phase_order_max": 0.31814868624545106,
+      "frequency_spread_mean": 0.3288854664973904,
+      "derivative_lag1_median": 0.9999993616800725,
+      "phase_excursion_max": 0.3765417040113641,
+      "topology_sha256": "2f7a2601163067fd955e7bd7f868ac0f3192db0461b40eaef40eae462858b157",
+      "mean_pair_degree": 4.0,
+      "mean_triad_degree": 6.0,
+      "trajectory_count": 3,
+      "counts": [
+        256,
+        256,
+        256
+      ],
+      "topology_seed": 2027010310,
+      "trajectory_seed": 2027010410,
+      "response_noise_definition": "ratio * clean training derivative std(ddof=0); independent split/node streams; no state/process noise",
+      "integration": "RK45 sparse directed edge scatter",
+      "index_base": 0,
+      "split_contract": "whole trajectories, no overlap"
+    }
+  ]
+}

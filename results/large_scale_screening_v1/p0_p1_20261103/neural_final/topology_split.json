@@ -1,0 +1,32 @@
+{
+  "train": [
+    {
+      "n": 8,
+      "topology_seed": 2026120710,
+      "trajectory_seed": 2026121710,
+      "topology_hash": "7dc545d9d2c390351a9c4cfeeaeb7203e85c915019715d21dc338b146e05b85d"
+    },
+    {
+      "n": 8,
+      "topology_seed": 2026120711,
+      "trajectory_seed": 2026121711,
+      "topology_hash": "e98aa4f608d67946bc6f52528675accc04d67f1bc65276b77d367ad77c82c310"
+    }
+  ],
+  "validation": [
+    {
+      "n": 8,
+      "topology_seed": 2026130710,
+      "trajectory_seed": 2026131710,
+      "topology_hash": "7ad7e068fb54b2c73d2517b85c50a42096eaa0a948d0608b475070793f52e4b3"
+    }
+  ],
+  "test": [
+    {
+      "n": 8,
+      "topology_seed": 2026140710,
+      "trajectory_seed": 2026141710,
+      "topology_hash": "ad51eb4ad9606efc8f58945f23ba1c2ce40af346eae831c688057867510a5753"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "method": "scc_ols",
+  "parameters": {
+    "block_size": 128,
+    "pool_size": 2048,
+    "min_group": 3,
+    "copula_shrinkage": 0.001
+  },
+  "experimental": false,
+  "degenerate_groups_or_products": 0,
+  "seconds": 0.015250509604811668,
+  "cpu_peak_rss_bytes": 171229184,
+  "memory_definition": "absolute process RSS, sampled at 10ms, baseline included",
+  "gpu_peak_bytes": null,
+  "gpu_reason": "CPU implementation; CUDA not used",
+  "array_sha256": "f8cb5563e967142690b1fe7046c6c4c6ca73d4bba225a1b49c2247c398bcf2c4"
+}

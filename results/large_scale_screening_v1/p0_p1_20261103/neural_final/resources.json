@@ -1,0 +1,7 @@
+{
+  "seconds": 1.2086548251099885,
+  "cpu_peak_rss_bytes": 630517760,
+  "memory_definition": "absolute process RSS, sampled at 10ms, baseline included",
+  "gpu_peak_bytes": null,
+  "gpu_reason": "CPU implementation; CUDA not used"
+}

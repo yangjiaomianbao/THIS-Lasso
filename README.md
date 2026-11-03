@@ -2,6 +2,10 @@
 
 保留 THIS 原始 Taylor 特征与高阶结构解码，比较 STLSQ、普通 LASSO 和 Ridge 初始化的 Adaptive LASSO。
 
+最新预训练相关内容（2026-11-03）：[大规模预筛选模块与复现命令](experiments/large_scale_screening_v1/README.md)、[P0/P1 交付报告](results/large_scale_screening_v1/p0_p1_20261103/DELIVERY.md)。包含轻量网络与 Transformer 的共享时序编码、对称三体评分、独立训练/验证/测试拓扑、验证损失选权重及后续正式训练 CLI。当前两个架构均仅完成 **3 步训练流程验证（smoke）**，正式神经预训练与 P2/P3/P4 扩量实验尚未运行，不能据此宣称学习优势或跨规模泛化。
+
+有效权重与训练记录位于 [neural_final](results/large_scale_screening_v1/p0_p1_20261103/neural_final/)，N30 推断验证见 [neural_n30_final](results/large_scale_screening_v1/p0_p1_20261103/neural_n30_final/summary.json)，统计对照见 [statistical_final 报告](results/large_scale_screening_v1/p0_p1_20261103/statistical_final/REPORT.md)。本批 150 个统计回归均因库秩亏或病态返回 BIC NA，结构恢复指标为 NA。开发核验批次单独保留，不与有效结果合并；完整交付文件的 SHA-256 见 [清单](results/large_scale_screening_v1/p0_p1_20261103/delivery_artifact_sha256.json)。
+
 最新完成（2026-10-26）：[三类动力学、10种子支持集与误检诊断](results/diagnostics/this_lasso_support_3systems_10seeds_v2/REPORT.md)。保留 Kuramoto、Lotka–Volterra、SIS，15个物理节点、0%/5%/10%响应噪声；固定网络10次数据重复，加5个额外网络各10次重复。共3,240条配置：3,000 OK、240原BIC不适用、0 FAILED；472.5万个候选边的原生结构和连续分数核验通过。
 
 [固定网络报告](results/diagnostics/this_lasso_support_3systems_10seeds_v2/A_fixed/REPORT.md) · [多网络报告](results/diagnostics/this_lasso_support_3systems_10seeds_v2/B_networks/REPORT.md) · [GitHub交付范围与文件清单](docs/publication/support_v2_20261026/README.md)。GitHub保存代码、配置、指标表、图表与哈希；约61 GiB的完整本地产物包含大型系数路径和原始矩阵，未直接放入Git历史。

@@ -1,0 +1,7 @@
+N=30 seed=2026110310/2026110410 noise=0.05 target=5/30 completed
+N=30 seed=2026110310/2026110410 noise=0.05 target=10/30 completed
+N=30 seed=2026110310/2026110410 noise=0.05 target=15/30 completed
+N=30 seed=2026110310/2026110410 noise=0.05 target=20/30 completed
+N=30 seed=2026110310/2026110410 noise=0.05 target=25/30 completed
+N=30 seed=2026110310/2026110410 noise=0.05 target=30/30 completed
+REPORT results/large_scale_screening_v1/p0_p1_20261103/statistical/REPORT.md

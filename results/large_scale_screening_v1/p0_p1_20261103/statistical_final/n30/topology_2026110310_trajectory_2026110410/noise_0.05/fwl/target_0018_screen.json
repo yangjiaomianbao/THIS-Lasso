@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "method": "fwl",
+  "parameters": {
+    "block_size": 128,
+    "pool_size": 2048,
+    "min_group": 3,
+    "copula_shrinkage": 0.001
+  },
+  "experimental": false,
+  "degenerate_groups_or_products": 0,
+  "seconds": 0.007102946750819683,
+  "cpu_peak_rss_bytes": 168964096,
+  "memory_definition": "absolute process RSS, sampled at 10ms, baseline included",
+  "gpu_peak_bytes": null,
+  "gpu_reason": "CPU implementation; CUDA not used",
+  "array_sha256": "2c16a242de7cec493b9ee9421e333cdf9cd7e3a0d66ada806500c91c1972be0d"
+}

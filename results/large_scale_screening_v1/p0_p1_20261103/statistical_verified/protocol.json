@@ -1,0 +1,187 @@
+{
+  "version": "large-scale-screening-v1",
+  "config": {
+    "version": "large-scale-screening-v1",
+    "sizes": [
+      30,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "budgets": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "noise_ratios": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "methods": [
+      "pearson",
+      "scc",
+      "scc_ols",
+      "fwl",
+      "gc_cmi",
+      "triadic_ndformer"
+    ],
+    "seeds": {
+      "topology": 2026110310,
+      "trajectory": 2026110410,
+      "noise": 2026110510,
+      "pool": 2026110610,
+      "neural": 2026110710
+    },
+    "data": {
+      "points_per_trajectory": 256,
+      "duration": 0.5,
+      "initial_width": 0.6,
+      "mean_pair_degree": 4,
+      "mean_triad_degree": 6,
+      "K2": 0.3,
+      "K3": 0.6,
+      "rtol": 1e-08,
+      "atol": 1e-10
+    },
+    "screening": {
+      "block_size": 128,
+      "pool_size": 2048,
+      "min_group": 3,
+      "copula_shrinkage": 0.001
+    },
+    "backend": {
+      "initialization": "ridge",
+      "ridge_rho": 1.0,
+      "gamma": 1.0,
+      "eps": 1e-06,
+      "standardize": false,
+      "fit_intercept": true,
+      "selection": "bic",
+      "max_iter": 100000,
+      "tol": 1e-10,
+      "kkt_tolerance": 1e-06,
+      "bic_noise_floor": 1e-12,
+      "bic_condition_limit": 100000000.0
+    },
+    "limits": {
+      "task_seconds": 120,
+      "memory_gib": 12,
+      "blas_threads": 1
+    },
+    "neural": {
+      "d_model": 16,
+      "nhead": 2,
+      "layers": 1,
+      "points": 32,
+      "steps": 200,
+      "batch_size": 32,
+      "lr": 0.001,
+      "train_sizes": [
+        30,
+        50
+      ],
+      "train_topologies": 8
+    }
+  },
+  "plan": {
+    "stage": "p1",
+    "methods": [
+      "pearson",
+      "scc",
+      "scc_ols",
+      "fwl",
+      "gc_cmi"
+    ],
+    "rows": [
+      {
+        "N": 30,
+        "mode": "full",
+        "samples": [
+          1024,
+          256,
+          256
+        ],
+        "candidates_per_target": 406,
+        "candidates_network": 12180,
+        "scored_per_target": 406,
+        "K": 16,
+        "design_columns_per_target": 242,
+        "raw_train_design_MiB": 1.890625,
+        "full_cubic_columns_forbidden": 5456,
+        "expected_BIC_guard": "requires rank/condition/variance checks",
+        "fits": 150
+      }
+    ],
+    "total_fits": 150,
+    "limits": {
+      "task_seconds": 120,
+      "memory_gib": 12,
+      "blas_threads": 1
+    },
+    "output": "results/large_scale_screening_v1/p0_p1_20261103/statistical_verified",
+    "run_policy": "explicit stage only; no automatic P2/P3 launch",
+    "noise_ratios": [
+      0.05
+    ],
+    "time_estimate": "Use P1 measured times in REPORT.md; exact SVD/BIC cost depends on rank and cannot be inferred from candidate counts alone"
+  },
+  "sources": {
+    "docs/REPRODUCE.md": "ff7b3f0d8a1dfeffa7677b241f05bc21135610978268c7387e03a51156f0301e",
+    "docs/data_contract.md": "c7cc1ebe860fcbea2c91d4d10c616fa693ce4d7ecdaa2ed8900bee12e02a3610",
+    "environment/r0/conda-linux-64.lock.txt": "71222e8fdfd0519523bf14df326c2df8c008c937505fd65b7385878416563287",
+    "environment/r0/julia/Manifest.toml": "2423c762a077859ebdcac57ff4b5ad9ab22e06bccd556b8b2074f9427e8785df",
+    "environment/r0/julia/Project.toml": "466ecd3b98cc6bc65d8cf07b42e272443dc0466902b7655229f4bff518a01539",
+    "environment/r0/requirements.lock.txt": "4b0337f8b8abe87782f89386e7eecb25a1d075af3f7bd777c3364bbab2cc9a5a",
+    "experiments/large_scale_screening_v1/AUDIT_AND_PLAN.md": "6eeb6396b42cc3e8de3a5c9b46d91fdad6f1daa2e309358ca65dd2de3fbd1d77",
+    "experiments/large_scale_screening_v1/README.md": "6ca4d3345eb520bade3d595417e9277b27680d91b689567ad2c3427abac5abfd",
+    "experiments/large_scale_screening_v1/__init__.py": "ae85f4640ec657d6f27c22c6e1f9cd5f5fee330cebfcf61abce7ab604a201f98",
+    "experiments/large_scale_screening_v1/backend.py": "5dbc0958be259161bb41c7a4e31fbd658ce91b4d9c6a8b3044bed1ff58a2e0aa",
+    "experiments/large_scale_screening_v1/candidates.py": "e9d5d9c914f84bf8265cc95661c236b309b6d4ee88692d194f115f6bf4a23e5f",
+    "experiments/large_scale_screening_v1/cli.py": "c6431ef6fe3a6b34450f25627ff014590eeb77b0aa51963306e45ca6d7d792b5",
+    "experiments/large_scale_screening_v1/common.py": "a4b85f7a6d64279597832963b794b1a6e98f63f45349c0397c03f5559b8353f7",
+    "experiments/large_scale_screening_v1/configs/default.json": "2ddb72f437f0ebc6dccc38e2c7b5d7fee897d64367b520173b88fbdf6612b272",
+    "experiments/large_scale_screening_v1/data.py": "7b25a62607c3f010a5a4b6acb22e77a3a5e74e2527509a4df25d9cb9d33e34f8",
+    "experiments/large_scale_screening_v1/library.py": "0d47c9dc104fbb83939fa2ae6b76aee0ea919e0b37ce976fe055761c3ac2b276",
+    "experiments/large_scale_screening_v1/metrics.py": "be74c2d0b9ded2fb47dee0692a3d1016402342bc34693289bc863068a78d82e4",
+    "experiments/large_scale_screening_v1/neural.py": "a85df7d4a4913e790271c175ba6f4c0a75758aaea8f3edf15db1d184535e76ee",
+    "experiments/large_scale_screening_v1/report.py": "962273358dabec8e077bf3ca94ad74934bbeb2e7645c632ac1e920de7ecb8e06",
+    "experiments/large_scale_screening_v1/screeners.py": "8073c03a4226b4870ea8f66e524f5b441a648b076a77cf4dc64691277ed54143",
+    "experiments/large_scale_screening_v1/tests/test_system.py": "459a16546fd063bc02655ed2e3f3e36580100eeb4126f6ee770f47cea3bb5013",
+    "scripts/dynamics30.py": "64b34a9fec537151080a8f05525b59b525a383c69b712faa02194ffa314a28e5",
+    "src/bridge/physical_decode.jl": "edb37fc071e82d09fee080db4701a76ffaa5394ad9e3bdc27442371d49fe703b",
+    "src/preprocessing/pearson_filter.jl": "334252e2f7163087b9344137422add13efc353c53519db6fc26bf742954c673d",
+    "src/preprocessing/taylor.py": "4d9f42cd27dedaa296a74348af9b04835573cf38ed55c3b711c824e5f7390f9c",
+    "src/solvers/adaptive_lasso.py": "30aab9751a1981c2c2901b760ac16bc686bc1f77c81f2103eaffb2ee64e70a23",
+    "src/solvers/large_library.py": "f953df0da304474ebebb9b635cbfe1fe3780dc02f9c5196b6a7cd2856a5504cc",
+    "src/solvers/methods.py": "bf8ffe60b5a2a8de2dd722c28643318d6475c4337fb10dde71dba5c666079ccd",
+    "src/this_adapter.jl": "d542449d32ca005a945db8e1f620b4559eb872b613de52e7aa5774b20d9272dc",
+    "upstream/THIS/eeg-run.jl": "dda35347e012b57bda2fb36fc403f438c74995484b89c81cb27c6007ff4d2c3c",
+    "upstream/THIS/eeg-tools.jl": "b955cc1c859334a252893eeac1f7732ff7324faf5e925ce49c0a944b39242c2b",
+    "upstream/THIS/this-parallel.jl": "959e8c6f07caab3f1328992e0851ff919504591155d1aeada24697fe10067100",
+    "upstream/THIS/this-tools.jl": "18b739b93eb220e72834710eb19b26c734b1d28acf9416406c971dc3b425f8ad",
+    "upstream/THIS/this.jl": "769ca163765aeb1d6eeb39ec4285fb4b93a8391c0caf61f17bf976e64839ec9f"
+  },
+  "runtime": {
+    "python": "3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:40:35) [GCC 12.3.0]",
+    "executable": "/home/yg/miniconda3/envs/nd3/bin/python",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+    "cpu_count": 40,
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.11.4",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.7.3",
+      "torch": "2.5.1"
+    }
+  },
+  "checkpoint_sha256": null,
+  "calibration_sha256": "590c35dca634ec19c8ac7a8a80966c12c3bac2063a5fa8874bed759dbc6f96a4",
+  "paired_seed_protocol": "topology_base+rep; trajectory_base+100*rep+trajectory_repeat; separate noise/pool RNG namespaces",
+  "repeats": 1,
+  "trajectories_per_topology": 1,
+  "fixed_samples": false
+}

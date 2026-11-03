@@ -1,0 +1,17 @@
+N,topology_seed,trajectory_seed,noise,K,mode,sample_budget,method,metric,difference_vs_Pearson,reason
+30,2026110310,2026110410,0.05,16,full,scaled,fwl,mean_Recall_at_K,0.0051058201058201,
+30,2026110310,2026110410,0.05,16,full,scaled,fwl,F1,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,fwl,AP,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,fwl,pipeline_seconds,0.11154661886394046,
+30,2026110310,2026110410,0.05,16,full,scaled,gc_cmi,mean_Recall_at_K,0.017407407407407406,
+30,2026110310,2026110410,0.05,16,full,scaled,gc_cmi,F1,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,gc_cmi,AP,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,gc_cmi,pipeline_seconds,0.024370530620217323,
+30,2026110310,2026110410,0.05,16,full,scaled,scc,mean_Recall_at_K,-0.018968253968253967,
+30,2026110310,2026110410,0.05,16,full,scaled,scc,F1,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,scc,AP,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,scc,pipeline_seconds,0.49269139161333464,
+30,2026110310,2026110410,0.05,16,full,scaled,scc_ols,mean_Recall_at_K,-0.0192989417989418,
+30,2026110310,2026110410,0.05,16,full,scaled,scc_ols,F1,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,scc_ols,AP,,unavailable or unmatched paired observation
+30,2026110310,2026110410,0.05,16,full,scaled,scc_ols,pipeline_seconds,0.5069539947435262,

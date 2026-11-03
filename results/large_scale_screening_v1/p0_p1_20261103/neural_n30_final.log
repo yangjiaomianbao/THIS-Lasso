@@ -1,0 +1,30 @@
+[
+  {
+    "architecture": "light",
+    "N": 30,
+    "target_0": 0,
+    "candidates": 406,
+    "topology_disjoint": true,
+    "smoke_only": true,
+    "swap_max_abs": 0.0,
+    "parameters": 1681,
+    "seconds": 0.04146841913461685,
+    "cpu_peak_rss_bytes": 522326016,
+    "gpu_peak_bytes": null,
+    "gpu_reason": "CPU implementation; CUDA not used"
+  },
+  {
+    "architecture": "transformer",
+    "N": 30,
+    "target_0": 0,
+    "candidates": 406,
+    "topology_disjoint": true,
+    "smoke_only": true,
+    "swap_max_abs": 0.0,
+    "parameters": 3905,
+    "seconds": 0.16743531683459878,
+    "cpu_peak_rss_bytes": 527179776,
+    "gpu_peak_bytes": null,
+    "gpu_reason": "CPU implementation; CUDA not used"
+  }
+]

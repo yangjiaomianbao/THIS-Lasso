@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "method": "gc_cmi",
+  "parameters": {
+    "block_size": 128,
+    "pool_size": 2048,
+    "min_group": 3,
+    "copula_shrinkage": 0.001
+  },
+  "experimental": true,
+  "degenerate_groups_or_products": 0,
+  "seconds": 0.0007815742865204811,
+  "cpu_peak_rss_bytes": 168931328,
+  "memory_definition": "absolute process RSS, sampled at 10ms, baseline included",
+  "gpu_peak_bytes": null,
+  "gpu_reason": "CPU implementation; CUDA not used",
+  "array_sha256": "0f27a2c63c56abe23fac9c50ed951e6116bd5627098451a07933f62a6137505a"
+}

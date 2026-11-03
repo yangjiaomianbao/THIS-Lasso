@@ -1,0 +1,99 @@
+{
+  "stage": "p3",
+  "methods": [
+    "pearson",
+    "scc",
+    "scc_ols",
+    "fwl",
+    "gc_cmi",
+    "triadic_ndformer"
+  ],
+  "rows": [
+    {
+      "N": 1000,
+      "mode": "pool",
+      "samples": [
+        4096,
+        1024,
+        1024
+      ],
+      "candidates_per_target": 498501,
+      "candidates_network": 498501000,
+      "scored_per_target": 2048,
+      "K": 16,
+      "design_columns_per_target": 6062,
+      "raw_train_design_MiB": 189.4375,
+      "full_cubic_columns_forbidden": 167668501,
+      "expected_BIC_guard": "NA: K_samples<=P_features",
+      "fits": 18000
+    },
+    {
+      "N": 1000,
+      "mode": "pool",
+      "samples": [
+        4096,
+        1024,
+        1024
+      ],
+      "candidates_per_target": 498501,
+      "candidates_network": 498501000,
+      "scored_per_target": 2048,
+      "K": 32,
+      "design_columns_per_target": 6126,
+      "raw_train_design_MiB": 191.4375,
+      "full_cubic_columns_forbidden": 167668501,
+      "expected_BIC_guard": "NA: K_samples<=P_features",
+      "fits": 18000
+    },
+    {
+      "N": 1000,
+      "mode": "pool",
+      "samples": [
+        4096,
+        1024,
+        1024
+      ],
+      "candidates_per_target": 498501,
+      "candidates_network": 498501000,
+      "scored_per_target": 2048,
+      "K": 64,
+      "design_columns_per_target": 6254,
+      "raw_train_design_MiB": 195.4375,
+      "full_cubic_columns_forbidden": 167668501,
+      "expected_BIC_guard": "NA: K_samples<=P_features",
+      "fits": 18000
+    },
+    {
+      "N": 1000,
+      "mode": "pool",
+      "samples": [
+        4096,
+        1024,
+        1024
+      ],
+      "candidates_per_target": 498501,
+      "candidates_network": 498501000,
+      "scored_per_target": 2048,
+      "K": 128,
+      "design_columns_per_target": 6510,
+      "raw_train_design_MiB": 203.4375,
+      "full_cubic_columns_forbidden": 167668501,
+      "expected_BIC_guard": "NA: K_samples<=P_features",
+      "fits": 18000
+    }
+  ],
+  "total_fits": 72000,
+  "limits": {
+    "task_seconds": 120,
+    "memory_gib": 12,
+    "blas_threads": 1
+  },
+  "output": "/home/yg/THIS-Lasso/results/large_scale_screening_v1/<unique date label>",
+  "run_policy": "explicit stage only; no automatic P2/P3 launch",
+  "noise_ratios": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "time_estimate": "Use P1 measured times in REPORT.md; exact SVD/BIC cost depends on rank and cannot be inferred from candidate counts alone"
+}

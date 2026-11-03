@@ -1,0 +1,17 @@
+N,noise,K,mode,sample_budget,method,metric,paired_topologies,mean_difference,CI95_low,CI95_high,reason
+30,0.05,16,full,scaled,fwl,mean_Recall_at_K,1,0.0051058201058201,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,fwl,F1,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,fwl,AP,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,fwl,pipeline_seconds,1,0.08904467010870576,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,gc_cmi,mean_Recall_at_K,1,0.017407407407407406,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,gc_cmi,F1,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,gc_cmi,AP,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,gc_cmi,pipeline_seconds,1,-0.02217954769730568,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc,mean_Recall_at_K,1,-0.018968253968253967,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc,F1,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc,AP,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc,pipeline_seconds,1,0.3920005816034977,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc_ols,mean_Recall_at_K,1,-0.0192989417989418,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc_ols,F1,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc_ols,AP,0,,,,fewer than 2 valid paired topology clusters
+30,0.05,16,full,scaled,scc_ols,pipeline_seconds,1,0.4071542215533559,,,fewer than 2 valid paired topology clusters

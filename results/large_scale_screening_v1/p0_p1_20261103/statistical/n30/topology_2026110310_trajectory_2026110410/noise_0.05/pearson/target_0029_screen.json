@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "method": "pearson",
+  "parameters": {
+    "block_size": 128,
+    "pool_size": 2048,
+    "min_group": 3,
+    "copula_shrinkage": 0.001
+  },
+  "experimental": false,
+  "degenerate_groups_or_products": 0,
+  "seconds": 0.0004916186444461346,
+  "cpu_peak_rss_bytes": 167796736,
+  "memory_definition": "absolute process RSS, sampled at 10ms, baseline included",
+  "gpu_peak_bytes": null,
+  "gpu_reason": "CPU implementation; CUDA not used",
+  "array_sha256": "f3a5303854a0bdcf973b7ce3db7f9683fc0eef945e05f392043f65693f25f4eb"
+}

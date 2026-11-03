@@ -1,0 +1,13 @@
+{
+  "version": "large-scale-screening-v1",
+  "sizes": [30, 50, 100, 200, 500, 1000],
+  "budgets": [16, 32, 64, 128],
+  "noise_ratios": [0.0, 0.05, 0.1],
+  "methods": ["pearson", "scc", "scc_ols", "fwl", "gc_cmi", "triadic_ndformer"],
+  "seeds": {"topology": 2026110310, "trajectory": 2026110410, "noise": 2026110510, "pool": 2026110610, "neural": 2026110710},
+  "data": {"points_per_trajectory": 256, "duration": 0.5, "initial_width": 0.6, "mean_pair_degree": 4, "mean_triad_degree": 6, "K2": 0.3, "K3": 0.6, "rtol": 1e-8, "atol": 1e-10},
+  "screening": {"block_size": 128, "pool_size": 2048, "min_group": 3, "copula_shrinkage": 0.001},
+  "backend": {"initialization": "ridge", "ridge_rho": 1.0, "gamma": 1.0, "eps": 1e-6, "standardize": false, "fit_intercept": true, "selection": "bic", "max_iter": 100000, "tol": 1e-10, "kkt_tolerance": 1e-6, "bic_noise_floor": 1e-12, "bic_condition_limit": 100000000.0},
+  "limits": {"task_seconds": 120, "memory_gib": 12, "blas_threads": 1},
+  "neural": {"d_model": 16, "nhead": 2, "layers": 1, "points": 32, "steps": 200, "batch_size": 32, "lr": 0.001, "train_sizes": [30, 50], "train_topologies": 8}
+}
