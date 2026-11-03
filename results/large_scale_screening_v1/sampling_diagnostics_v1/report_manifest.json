@@ -1,0 +1,13 @@
+{
+  "completed_jobs": 90,
+  "target_fits": 29700,
+  "main_topologies": {
+    "15": 30,
+    "30": 30
+  },
+  "status_counts": {
+    "OK": 28440,
+    "NA": 1260
+  },
+  "report_source_sha256": "808aa9b64054ae20fd93f81c9906242355c4bfa3e90e43936b1dc28d0fc098f9"
+}

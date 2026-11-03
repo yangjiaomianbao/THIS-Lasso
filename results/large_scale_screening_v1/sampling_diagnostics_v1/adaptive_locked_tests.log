@@ -1,0 +1,35 @@
+test_bic_does_not_silently_fall_back (test_r2_adaptive_lasso.AdaptiveLassoTests.test_bic_does_not_silently_fall_back) ... ok
+test_bic_on_valid_noisy_full_rank_data (test_r2_adaptive_lasso.AdaptiveLassoTests.test_bic_on_valid_noisy_full_rank_data) ... ok
+test_bic_rejects_K_le_P (test_r2_adaptive_lasso.AdaptiveLassoTests.test_bic_rejects_K_le_P) ... ok
+test_bic_rejects_duplicate_features (test_r2_adaptive_lasso.AdaptiveLassoTests.test_bic_rejects_duplicate_features) ... ok
+test_bic_rejects_ill_conditioned_full_model (test_r2_adaptive_lasso.AdaptiveLassoTests.test_bic_rejects_ill_conditioned_full_model) ... ok
+test_bic_rejects_unreliable_noise_variance (test_r2_adaptive_lasso.AdaptiveLassoTests.test_bic_rejects_unreliable_noise_variance) ... ok
+test_constant_column_prediction_and_no_duplicate_intercept (test_r2_adaptive_lasso.AdaptiveLassoTests.test_constant_column_prediction_and_no_duplicate_intercept) ... ok
+test_constant_only_problem_has_no_model_selection (test_r2_adaptive_lasso.AdaptiveLassoTests.test_constant_only_problem_has_no_model_selection) ... ok
+test_duplicate_features_validation_is_explicit_and_valid (test_r2_adaptive_lasso.AdaptiveLassoTests.test_duplicate_features_validation_is_explicit_and_valid) ... ok
+test_explicit_weight_formula_in_original_units (test_r2_adaptive_lasso.AdaptiveLassoTests.test_explicit_weight_formula_in_original_units) ... ok
+test_extremely_small_initial_coefficients_remain_finite (test_r2_adaptive_lasso.AdaptiveLassoTests.test_extremely_small_initial_coefficients_remain_finite) ... ok
+test_fixed_seed_and_cyclic_solver_are_repeatable (test_r2_adaptive_lasso.AdaptiveLassoTests.test_fixed_seed_and_cyclic_solver_are_repeatable) ... ok
+test_free_constant_column_even_without_additional_intercept (test_r2_adaptive_lasso.AdaptiveLassoTests.test_free_constant_column_even_without_additional_intercept) ... ok
+test_high_dimensional_validation_is_supported (test_r2_adaptive_lasso.AdaptiveLassoTests.test_high_dimensional_validation_is_supported) ... ok
+test_highly_correlated_features_fixed_objective (test_r2_adaptive_lasso.AdaptiveLassoTests.test_highly_correlated_features_fixed_objective) ... ok
+test_independent_kkt_check (test_r2_adaptive_lasso.AdaptiveLassoTests.test_independent_kkt_check) ... ok
+test_inputs_are_not_mutated (test_r2_adaptive_lasso.AdaptiveLassoTests.test_inputs_are_not_mutated) ... ok
+test_invalid_inputs_and_configuration (test_r2_adaptive_lasso.AdaptiveLassoTests.test_invalid_inputs_and_configuration) ... ok
+test_known_sparse_noisy_coefficients (test_r2_adaptive_lasso.AdaptiveLassoTests.test_known_sparse_noisy_coefficients) ... ok
+test_multiple_nonzero_constant_columns_rejected (test_r2_adaptive_lasso.AdaptiveLassoTests.test_multiple_nonzero_constant_columns_rejected) ... ok
+test_no_bias_when_no_constant_and_intercept_disabled (test_r2_adaptive_lasso.AdaptiveLassoTests.test_no_bias_when_no_constant_and_intercept_disabled) ... ok
+test_ols_initialization_switch (test_r2_adaptive_lasso.AdaptiveLassoTests.test_ols_initialization_switch) ... ok
+test_scale_and_offset_prediction_restoration (test_r2_adaptive_lasso.AdaptiveLassoTests.test_scale_and_offset_prediction_restoration) ... ok
+test_trajectory_leakage_is_rejected (test_r2_adaptive_lasso.AdaptiveLassoTests.test_trajectory_leakage_is_rejected) ... ok
+test_unrepresentable_weights_are_rejected (test_r2_adaptive_lasso.AdaptiveLassoTests.test_unrepresentable_weights_are_rejected) ... ok
+test_validation_cannot_change_training_preprocessing_or_weights (test_r2_adaptive_lasso.AdaptiveLassoTests.test_validation_cannot_change_training_preprocessing_or_weights) ... ok
+test_validation_rejects_changed_constant_column (test_r2_adaptive_lasso.AdaptiveLassoTests.test_validation_rejects_changed_constant_column) ... ok
+test_validation_requires_group_ids (test_r2_adaptive_lasso.AdaptiveLassoTests.test_validation_requires_group_ids) ... ok
+test_weighted_and_transformed_objectives_are_equal (test_r2_adaptive_lasso.AdaptiveLassoTests.test_weighted_and_transformed_objectives_are_equal) ... ok
+test_zero_column_retained_as_zero (test_r2_adaptive_lasso.AdaptiveLassoTests.test_zero_column_retained_as_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.100s
+
+OK

@@ -1,0 +1,29 @@
+{
+  "sampling_mode": "local_iid",
+  "delta": 0.6,
+  "train_trajectories": 0,
+  "independent_train_preparations": 1024,
+  "trajectory_count": 0,
+  "counts": [
+    1024,
+    256,
+    256
+  ],
+  "topology_seed": 2026110332,
+  "trajectory_seed": 2026112610,
+  "topology_sha256": "ad9102e1f0c4b921df734436d43bc782622a8109c151fd90ed6c136d68cd07b3",
+  "dynamics_sha256": "445576c69c0c51e7358ed9902bf12c41c93a52bbb489997ffb812453c8f93ebd",
+  "generation_seconds": 0.049138826318085194,
+  "nfev": [],
+  "duration": null,
+  "response_noise_definition": "ratio * clean training derivative std(ddof=0); independent split/node streams; no state/process noise",
+  "integration": "none; analytic rhs at independent preparations",
+  "index_base": 0,
+  "split_contract": "independent split RNG streams; groups are sample IDs, never time windows",
+  "n": 30,
+  "dtype": "float64",
+  "shape": [
+    1536,
+    30
+  ]
+}

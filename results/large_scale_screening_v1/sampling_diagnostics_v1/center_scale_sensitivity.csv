@@ -1,0 +1,9 @@
+sampling_mode,center_mode,scale_mode,rank,condition,rank_rtol_1e-08,rank_rtol_1e-12,rank_rtol_1e-14
+local_iid,fixed,standard,241.0,34.56703832364828,241.0,241.0,241.0
+local_iid,fixed,raw,241.0,79.60990334331399,241.0,241.0,241.0
+local_iid,circular,standard,241.0,34.510693892874926,241.0,241.0,241.0
+local_iid,arithmetic,standard,241.0,34.51091041548828,241.0,241.0,241.0
+trajectory,fixed,standard,88.0,9.817767073860946e+16,32.0,80.0,101.0
+trajectory,fixed,raw,80.0,1.6730168594746834e+18,28.5,71.5,94.0
+trajectory,circular,standard,90.0,9.1014977236205e+16,33.5,83.0,105.5
+trajectory,arithmetic,standard,90.0,8.599477119854504e+16,33.5,83.0,105.5

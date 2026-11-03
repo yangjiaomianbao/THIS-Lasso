@@ -1,0 +1,53 @@
+{
+  "cells": [
+    {
+      "N": 15,
+      "noise": 0.0,
+      "K": 16,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 15,
+      "noise": 0.0,
+      "K": 32,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 15,
+      "noise": 0.05,
+      "K": 16,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 15,
+      "noise": 0.05,
+      "K": 32,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 30,
+      "noise": 0.0,
+      "K": 16,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 30,
+      "noise": 0.0,
+      "K": 32,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 30,
+      "noise": 0.05,
+      "K": 16,
+      "BIC_success_rate": 1.0
+    },
+    {
+      "N": 30,
+      "noise": 0.05,
+      "K": 32,
+      "BIC_success_rate": 1.0
+    }
+  ],
+  "passed": true
+}

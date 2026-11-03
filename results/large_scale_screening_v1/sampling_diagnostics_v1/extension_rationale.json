@@ -1,0 +1,19 @@
+{
+  "trigger": "B1:64 trajectories restore numerical acceptance but both networks have poor structure recovery",
+  "fixed": [
+    "N30",
+    "1024 training rows",
+    "T0.5",
+    "delta0.6 initial width",
+    "5% derivative noise",
+    "K16",
+    "same two topologies"
+  ],
+  "extension_trajectories": [
+    128,
+    256,
+    512
+  ],
+  "reason": "Separate merely passing BIC from sufficient excitation for useful structure recovery; no BIC changes",
+  "exploratory": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "B3_n30_s00_local_iid_d1.5_g4_t0.5",
+  "kind": "B3",
+  "N": 30,
+  "seed_index": 0,
+  "sampling_mode": "local_iid",
+  "delta": 1.5,
+  "train_trajectories": 4,
+  "duration": 0.5,
+  "methods": [
+    "pearson",
+    "scc_ols",
+    "fwl"
+  ],
+  "noises": [
+    0.05
+  ],
+  "budgets": [
+    16
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "A_n30_s10_local_iid_d0.6_g4_t0.5",
+  "kind": "A",
+  "N": 30,
+  "seed_index": 10,
+  "sampling_mode": "local_iid",
+  "delta": 0.6,
+  "train_trajectories": 4,
+  "duration": 0.5,
+  "methods": [
+    "pearson",
+    "scc",
+    "scc_ols",
+    "fwl",
+    "gc_cmi"
+  ],
+  "noises": [
+    0.0,
+    0.05
+  ],
+  "budgets": [
+    16,
+    32
+  ]
+}

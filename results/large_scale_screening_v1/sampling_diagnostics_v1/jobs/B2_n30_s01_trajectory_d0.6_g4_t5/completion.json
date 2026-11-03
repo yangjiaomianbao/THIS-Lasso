@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "seconds": 11.238164545968175,
+  "target_fits": 90,
+  "statuses": {
+    "NA": 90
+  },
+  "hashes": {
+    "selection_locks.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "arrays.npz": "41589abba672d5fbb38e69bb82671d289417fcf69f5948d3f377d71a9e534fb0",
+    "state_diagnostics.json": "455ee30d1d01bab3ca4e28f075e3f151c74deeab6d38d71f12fd7953bd1278c5",
+    "target_rows.json": "33d90e1072a523f6747ad33fb843d924f6e4fe930b71e5744d87ca3e01a07388",
+    "job.json": "ac049795cf81e07f6c180cc445be4f493f77e2eec159cf6f6cd00e6dd3a2af10",
+    "network_rows.json": "81a37d1ca6bdd0afba094aa0bb2558ce9da9dc962e2f37b9fc16126f5557adbe",
+    "phase_blindness.csv": "9261b6bf5f277b3e710dc04326642b7d88f47fcc427ff14c6a7a0391403767bd",
+    "expansion_center.npy": "bb297b41a3924f4e4158e5d8c890fa1a48109c2c82aff1f88c69ebdac134b530",
+    "data/metadata.json": "a3a334a152bd780947ef49e7864f631beebb23aa8effa5b9b5dbe31c1478d6ae",
+    "data/data.npz": "faecc98e59373f066cf40b9f0aa3640b777f225e599427af2d4b3654b9ab6727"
+  }
+}

@@ -1,0 +1,16 @@
+test_analytic_taylor_fourth_order_remainder (test_sampling.SamplingTests.test_analytic_taylor_fourth_order_remainder) ... ok
+test_fixed_center_and_nested_delta_realizations (test_sampling.SamplingTests.test_fixed_center_and_nested_delta_realizations) ... ok
+test_iid_analytic_no_integration_and_no_time (test_sampling.SamplingTests.test_iid_analytic_no_integration_and_no_time) ... ok
+test_invalid_modes_and_counts (test_sampling.SamplingTests.test_invalid_modes_and_counts) ... ok
+test_library_native_indices_and_iid_full_rank (test_sampling.SamplingTests.test_library_native_indices_and_iid_full_rank) ... ok
+test_network_frequency_center_independent_of_data_mode (test_sampling.SamplingTests.test_network_frequency_center_independent_of_data_mode) ... ok
+test_noise_unit_realizations_reused_across_delta (test_sampling.SamplingTests.test_noise_unit_realizations_reused_across_delta) ... ok
+test_quadratic_cross_coefficient_finite_difference (test_sampling.SamplingTests.test_quadratic_cross_coefficient_finite_difference) ... ok
+test_row_shuffle_preserves_spectrum_but_not_lag (test_sampling.SamplingTests.test_row_shuffle_preserves_spectrum_but_not_lag) ... ok
+test_split_independence_and_train_count_invariance (test_sampling.SamplingTests.test_split_independence_and_train_count_invariance) ... ok
+test_trajectory_matches_legacy_exactly (test_sampling.SamplingTests.test_trajectory_matches_legacy_exactly) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.250s
+
+OK

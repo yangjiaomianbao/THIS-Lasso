@@ -1,0 +1,16 @@
+{
+  "jobs_checked": [
+    "A_n15_s00_local_iid_d0.6_g4_t0.5",
+    "A_n30_s00_local_iid_d0.6_g4_t0.5",
+    "B1_n30_s00_trajectory_d0.6_g64_t0.5",
+    "B1_extension_n30_s00_trajectory_d0.6_g512_t0.5",
+    "B2_n30_s00_trajectory_d0.6_g4_t5",
+    "B3_n30_s00_local_iid_d0.2_g4_t0.5"
+  ],
+  "metrics_against_dense_sklearn": 294,
+  "accepted_model_lock_hashes": 1170,
+  "NA_cells_preserved": 3,
+  "saved_spectrum_ranks": 1260,
+  "original_RK45_arrays_exact": true,
+  "original_BIC_refit_coefficients_exact": true
+}

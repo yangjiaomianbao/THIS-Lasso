@@ -1,0 +1,49 @@
+{
+  "generation_seconds": 0.08084082696586847,
+  "nfev": [
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32,
+    32
+  ],
+  "phase_order_mean": 0.1886740801166075,
+  "phase_order_max": 0.23151815019695504,
+  "frequency_spread_mean": 0.21333024934780517,
+  "derivative_lag1_median": 0.9999999265291293,
+  "phase_excursion_max": 0.29073740325622954,
+  "topology_sha256": "2d3e69c27449b0d7942a977702428fad32b65962af7a180144058448cc7392a6",
+  "dynamics_sha256": "c01f7271e2b4f37d16428ca77c2ac23f697c0045e72aa32f7c072eac43813c4f",
+  "mean_pair_degree": 4.0,
+  "mean_triad_degree": 6.0,
+  "trajectory_count": 12,
+  "counts": [
+    1024,
+    256,
+    256
+  ],
+  "topology_seed": 2026110311,
+  "trajectory_seed": 2026110510,
+  "response_noise_definition": "ratio * clean training derivative std(ddof=0); independent split/node streams; no state/process noise",
+  "integration": "RK45 sparse directed edge scatter",
+  "index_base": 0,
+  "split_contract": "whole trajectories, no overlap",
+  "sampling_mode": "trajectory",
+  "train_trajectories": 8,
+  "duration": 0.5,
+  "initial_width": 0.6,
+  "delta": null,
+  "n": 30,
+  "dtype": "float64",
+  "shape": [
+    1536,
+    30
+  ]
+}

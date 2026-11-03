@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "jobs": 90,
+  "total_target_fits": 29700,
+  "primary_target_fits": 27000,
+  "primary_BIC_OK": 27000,
+  "trajectory_BIC_NA_preserved": 1260,
+  "tests_passed": 66,
+  "science_sources_unchanged": true,
+  "old_RK45_arrays_unchanged": true,
+  "original_protected_artifacts": 1993,
+  "root_required_files": [
+    "REPORT.md",
+    "sampling_comparison.csv",
+    "trajectory_ablation.csv",
+    "delta_ablation.csv",
+    "matrix_spectrum.csv",
+    "time_ablation.csv",
+    "matrix_singular_values.npz",
+    "full_quadratic_spectrum.csv",
+    "diagnostics.png",
+    "singular_spectra.png",
+    "protocol.json",
+    "verification.json",
+    "independent_recalculation.json"
+  ]
+}

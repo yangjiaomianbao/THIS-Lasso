@@ -1,0 +1,21 @@
+{
+  "name": "B1_n30_s00_trajectory_d0.6_g64_t0.5",
+  "kind": "B1",
+  "N": 30,
+  "seed_index": 0,
+  "sampling_mode": "trajectory",
+  "delta": 0.6,
+  "train_trajectories": 64,
+  "duration": 0.5,
+  "methods": [
+    "pearson",
+    "scc_ols",
+    "fwl"
+  ],
+  "noises": [
+    0.05
+  ],
+  "budgets": [
+    16
+  ]
+}

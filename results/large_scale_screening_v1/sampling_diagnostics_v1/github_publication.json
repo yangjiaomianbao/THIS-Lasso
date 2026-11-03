@@ -1,0 +1,18 @@
+{
+  "status": "VERIFIED_FOR_GITHUB",
+  "source_commit": "c3e079d34fd73cafa25d07694ae53cd1ceeaf070",
+  "complete_local_artifacts": 29491,
+  "published_scientific_result_files": 871,
+  "omitted_array_files": 28620,
+  "published_scientific_result_bytes": 99619091,
+  "omitted_array_bytes": 791667061,
+  "complete_jobs": 90,
+  "primary_target_fits": 27000,
+  "total_target_fits": 29700,
+  "tests_passed": 66,
+  "all_completed_job_artifact_hashes_verified": true,
+  "original_delivery_manifest_verified": true,
+  "science_source_hashes_verified": true,
+  "publication_scope": "All source, reports, metrics, spectra diagnostics and selection JSON; raw job data/model arrays remain local, explicitly inventoried",
+  "inventory_scope": "All original local delivery files; publication inventory/receipt/list themselves are added separately"
+}

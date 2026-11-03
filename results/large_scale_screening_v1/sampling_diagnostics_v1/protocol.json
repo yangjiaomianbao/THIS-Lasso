@@ -1,0 +1,228 @@
+{
+  "config": {
+    "version": "sampling-diagnostics-v1",
+    "sizes": [
+      30,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "budgets": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "noise_ratios": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "methods": [
+      "pearson",
+      "scc",
+      "scc_ols",
+      "fwl",
+      "gc_cmi"
+    ],
+    "seeds": {
+      "topology": 2026110310,
+      "trajectory": 2026110410,
+      "noise": 2026110510,
+      "pool": 2026110610,
+      "neural": 2026110710
+    },
+    "data": {
+      "points_per_trajectory": 256,
+      "duration": 0.5,
+      "initial_width": 0.6,
+      "mean_pair_degree": 4,
+      "mean_triad_degree": 6,
+      "K2": 0.3,
+      "K3": 0.6,
+      "rtol": 1e-08,
+      "atol": 1e-10
+    },
+    "screening": {
+      "block_size": 128,
+      "pool_size": 2048,
+      "min_group": 3,
+      "copula_shrinkage": 0.001
+    },
+    "backend": {
+      "initialization": "ridge",
+      "ridge_rho": 1.0,
+      "gamma": 1.0,
+      "eps": 1e-06,
+      "standardize": false,
+      "fit_intercept": true,
+      "selection": "bic",
+      "max_iter": 100000,
+      "tol": 1e-10,
+      "kkt_tolerance": 1e-06,
+      "bic_noise_floor": 1e-12,
+      "bic_condition_limit": 100000000.0
+    },
+    "limits": {
+      "task_seconds": 120,
+      "memory_gib": 12,
+      "blas_threads": 1
+    },
+    "neural": {
+      "d_model": 16,
+      "nhead": 2,
+      "layers": 1,
+      "points": 32,
+      "steps": 200,
+      "batch_size": 32,
+      "lr": 0.001,
+      "train_sizes": [
+        30,
+        50
+      ],
+      "train_topologies": 8
+    }
+  },
+  "science_sources": {
+    "experiments/large_scale_screening_v1/backend.py": "5dbc0958be259161bb41c7a4e31fbd658ce91b4d9c6a8b3044bed1ff58a2e0aa",
+    "experiments/large_scale_screening_v1/candidates.py": "e9d5d9c914f84bf8265cc95661c236b309b6d4ee88692d194f115f6bf4a23e5f",
+    "experiments/large_scale_screening_v1/common.py": "a4b85f7a6d64279597832963b794b1a6e98f63f45349c0397c03f5559b8353f7",
+    "experiments/large_scale_screening_v1/configs/default.json": "2ddb72f437f0ebc6dccc38e2c7b5d7fee897d64367b520173b88fbdf6612b272",
+    "experiments/large_scale_screening_v1/data.py": "7b25a62607c3f010a5a4b6acb22e77a3a5e74e2527509a4df25d9cb9d33e34f8",
+    "experiments/large_scale_screening_v1/library.py": "0d47c9dc104fbb83939fa2ae6b76aee0ea919e0b37ce976fe055761c3ac2b276",
+    "experiments/large_scale_screening_v1/metrics.py": "be74c2d0b9ded2fb47dee0692a3d1016402342bc34693289bc863068a78d82e4",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/AUDIT.md": "2444f758dc1ccc4d0a53e62b273eec2b339c7670c6e620f269175fe556f1917f",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/__init__.py": "abe61a6fa28cba1ca194ae91967bd4b2e16b585a971f90f414152d32870cd6ba",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/diagnostics.py": "dbe14c14cc89cd46436d2c71c172ddabc7b8a247cdd79b6a315b119c87631166",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/matrix.py": "47d258d30754a9b2b2cda8ed737b2a77e0292997d7fc601c9962a05b06df289a",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/runner.py": "63a011ea943d19b8e64f2552aabd4f6cf6e97f853f5a9fdd8794d38f52496073",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/sampling.py": "4fe5f7a856837f146dd73378d619754306e05c545dfa979b1b2e95ae32694ef4",
+    "experiments/large_scale_screening_v1/sampling_diagnostics_v1/tests/test_sampling.py": "85c43878f5ba2ff6299bb28cdaff380e299388aec67e4ed8f71fd7d996a9b225",
+    "experiments/large_scale_screening_v1/screeners.py": "8d409019316a9419a9e0dc5a6ce6ceda86950631bcc5f02162c690cde9e99002",
+    "src/data/contracts.py": "53804f127d5cb3a07b8cb121dc9aedcd631ad5a0ca8728a7bf0f2320f2eb5e0a",
+    "src/preprocessing/taylor.py": "4d9f42cd27dedaa296a74348af9b04835573cf38ed55c3b711c824e5f7390f9c",
+    "src/solvers/adaptive_lasso.py": "30aab9751a1981c2c2901b760ac16bc686bc1f77c81f2103eaffb2ee64e70a23",
+    "src/solvers/methods.py": "bf8ffe60b5a2a8de2dd722c28643318d6475c4337fb10dde71dba5c666079ccd"
+  },
+  "counts": [
+    1024,
+    256,
+    256
+  ],
+  "center_mode": "fixed net.center for both sampling mechanisms",
+  "primary_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "pilot_seed_indices": [
+    0,
+    1
+  ],
+  "formal_gate": ">=95% target BIC OK in every N/noise/K cell of the two-seed pilot",
+  "A": {
+    "sizes": [
+      15,
+      30
+    ],
+    "noise": [
+      0.0,
+      0.05
+    ],
+    "K": [
+      16,
+      32
+    ],
+    "delta": 0.6,
+    "methods": [
+      "pearson",
+      "scc",
+      "scc_ols",
+      "fwl",
+      "gc_cmi"
+    ]
+  },
+  "B": {
+    "N": 30,
+    "seeds": [
+      0,
+      1
+    ],
+    "noise": [
+      0.05
+    ],
+    "K": [
+      16
+    ],
+    "methods": [
+      "pearson",
+      "scc_ols",
+      "fwl"
+    ],
+    "trajectories": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "durations": [
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "delta": [
+      0.2,
+      0.4,
+      0.6,
+      1.0,
+      1.5
+    ]
+  },
+  "neural": "excluded; local_iid never passed to temporal windows",
+  "statistics": "topology is experimental unit; first two seeds are included once in 30",
+  "unchanged_BIC_config": {
+    "initialization": "ridge",
+    "ridge_rho": 1.0,
+    "gamma": 1.0,
+    "eps": 1e-06,
+    "standardize": false,
+    "fit_intercept": true,
+    "selection": "bic",
+    "max_iter": 100000,
+    "tol": 1e-10,
+    "kkt_tolerance": 1e-06,
+    "bic_noise_floor": 1e-12,
+    "bic_condition_limit": 100000000.0
+  }
+}

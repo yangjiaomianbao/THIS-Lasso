@@ -1,0 +1,13 @@
+{
+  "python": "3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:40:35) [GCC 12.3.0]",
+  "executable": "/home/yg/miniconda3/envs/nd3/bin/python",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+  "cpu_count": 40,
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.7.3",
+    "torch": "2.5.1"
+  }
+}
